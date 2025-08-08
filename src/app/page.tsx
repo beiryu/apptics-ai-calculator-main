@@ -88,9 +88,9 @@ const Frame2147228222: NextPage = () => {
     calculateResults();
   }, [customerCount, averageOrderValue, profitMargin, subscriptionValue, calculateResults]);
   
-  // Handle slider mouse events for dragging
+    // Handle slider mouse and touch events for dragging
   const [isDragging, setIsDragging] = useState<boolean>(false);
-  
+
   // Update slider position - now working with range 0-1000
   const updateSliderPosition = (clientX: number, slider: HTMLDivElement) => {
     const rect = slider.getBoundingClientRect();
@@ -100,18 +100,30 @@ const Frame2147228222: NextPage = () => {
     const value = Math.round(percentage * 1000); // Range from 0 to 1000
     setSubscriptionValue(value);
   };
-  
+
   // Handle slider change on click
   const handleSliderChange = (e: React.MouseEvent<HTMLDivElement>) => {
     const slider = e.currentTarget;
     updateSliderPosition(e.clientX, slider);
   };
-  
-  // Handle slider mouse down for drag start
+
+  // Handle slider mouse/touch down for drag start
   const handleMouseDown = () => {
     setIsDragging(true);
   };
   
+  // Handle touch start
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    e.preventDefault(); // Prevent scrolling when touching the slider
+    setIsDragging(true);
+    
+    const touch = e.touches[0];
+    const slider = e.currentTarget;
+    if (touch && slider) {
+      updateSliderPosition(touch.clientX, slider);
+    }
+  };
+
   // Handle slider mouse move for dragging
   const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!isDragging) return;
@@ -122,21 +134,49 @@ const Frame2147228222: NextPage = () => {
     }
   }, [isDragging]);
   
-  // Handle slider mouse up for drag end
+  // Handle touch move
+  const handleTouchMove = useCallback((e: TouchEvent) => {
+    if (!isDragging) return;
+    
+    e.preventDefault(); // Prevent scrolling during slider interaction
+    const touch = e.touches[0];
+    const slider = document.querySelector('.slider-track') as HTMLDivElement;
+    if (slider && touch) {
+      updateSliderPosition(touch.clientX, slider);
+    }
+  }, [isDragging]);
+
+  // Handle slider mouse/touch up for drag end
   const handleMouseUp = useCallback(() => {
     setIsDragging(false);
   }, []);
   
+  const handleTouchEnd = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
   // Add and remove event listeners for dragging
   useEffect(() => {
+    // Mouse events
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
     
+    // Touch events
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
+    document.addEventListener('touchcancel', handleTouchEnd);
+    
     return () => {
+      // Remove mouse events
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      
+      // Remove touch events
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
+      document.removeEventListener('touchcancel', handleTouchEnd);
     };
-  }, [handleMouseMove, handleMouseUp]);
+  }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
   
   return (
     <div className="w-full relative min-h-[522px] text-left text-xl text-gray-300 font-plus-jakarta-sans">
@@ -199,12 +239,11 @@ const Frame2147228222: NextPage = () => {
                 </div>
                 <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300">
                   <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center">
-                    <div className="relative flex items-center">
+                    <div className="relative flex items-center w-full">
                       <span className="mr-0">$</span>
                       <input
                         type="text"
-                        className="bg-transparent border-none outline-none pl-0"
-                        style={{ width: `${averageOrderValue.toLocaleString().length * 0.6 + 0.5}em` }}
+                        className="bg-transparent border-none outline-none pl-0 w-full"
                         value={averageOrderValue.toLocaleString()}
                         onChange={(e) => {
                           const value = parseInt(e.target.value.replace(/,/g, ''));
@@ -283,6 +322,8 @@ const Frame2147228222: NextPage = () => {
                              if (!isNaN(value)) {
                                 if(value >= 0 && value <= 1000) {
                                   setSubscriptionValue(value);
+                                } else {
+                                  setSubscriptionValue(1000);
                                 }
                              } else {
                                setSubscriptionValue(0);
@@ -307,6 +348,7 @@ const Frame2147228222: NextPage = () => {
                       className="self-stretch relative shadow-[0px_1px_2px_rgba(0,_0,_0,_0.08)_inset] rounded-[99px] bg-whitesmoke-200 h-2 overflow-hidden shrink-0 z-[0] cursor-pointer slider-track" 
                       onClick={handleSliderChange}
                       onMouseDown={handleMouseDown}
+                      onTouchStart={handleTouchStart}
                     >
                       <div 
                         className="absolute top-[calc(50%_-_4px)] left-[0px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] h-2" 
@@ -317,6 +359,7 @@ const Frame2147228222: NextPage = () => {
                       className="w-3.5 absolute !!m-[0 important] top-[calc(50%_-_8px)] shadow-[-1px_1px_2px_rgba(0,_0,_0,_0.2)] rounded-[50%] bg-white border-whitesmoke-100 border-solid border-[0.5px] box-border h-3.5 z-[1] cursor-grab active:cursor-grabbing" 
                       style={{ left: `calc(${(subscriptionValue / 1000) * 100}% - ${subscriptionValue === 1000 ? '10px' : '1.75px'})` }}
                       onMouseDown={handleMouseDown}
+                      onTouchStart={handleTouchStart}
                     />
                   </div>
                 </div>
