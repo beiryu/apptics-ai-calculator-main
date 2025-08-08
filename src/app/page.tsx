@@ -347,7 +347,7 @@ const Frame2147228222: NextPage = () => {
             <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
               <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
                         <Image
@@ -363,11 +363,11 @@ const Frame2147228222: NextPage = () => {
                         Year 01
                       </div>
                     </div>
-                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 text-center">
+                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0 min-w-0">
                       ${results.withApptics.year1.toLocaleString()}
                     </div>
                   </div>
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
                         <Image
@@ -383,13 +383,13 @@ const Frame2147228222: NextPage = () => {
                         Year 02
                       </div>
                     </div>
-                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 text-center">
+                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                       ${results.withApptics.year2.toLocaleString()}
                     </div>
                   </div>
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
                         <Image
@@ -405,13 +405,13 @@ const Frame2147228222: NextPage = () => {
                         Year 03
                       </div>
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                         ${results.withApptics.year3.toLocaleString()}
                       </div>
                     </div>
                   </div>
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
                         <Image
@@ -427,8 +427,8 @@ const Frame2147228222: NextPage = () => {
                         Year 04
                       </div>
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                         ${results.withApptics.year4.toLocaleString()}
                       </div>
                     </div>
@@ -436,7 +436,7 @@ const Frame2147228222: NextPage = () => {
                 </div>
               </div>
               <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                   <div className="self-stretch flex flex-row items-center justify-center gap-2">
                     <div className="w-4 relative bg-gray-400 h-4">
                       <Image
@@ -452,13 +452,13 @@ const Frame2147228222: NextPage = () => {
                       Passive Subscriber Income
                     </div>
                   </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                       ${results.withApptics.passiveIncome.toLocaleString()}
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
+                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                   <div className="self-stretch flex flex-row items-center justify-center gap-2">
                     <div className="w-4 relative bg-gray-400 h-4">
                       <Image
@@ -474,8 +474,8 @@ const Frame2147228222: NextPage = () => {
                       Income per customer Acquired
                     </div>
                   </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                       ${results.withApptics.incomePerCustomer.toLocaleString()}
                     </div>
                   </div>
@@ -490,71 +490,71 @@ const Frame2147228222: NextPage = () => {
             <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
               <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 01
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
                         ${results.withoutApptics.year1.toLocaleString()}
                       </div>
                     </div>
                   </div>
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 02
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                        ${results.withoutApptics.year1.toLocaleString()}
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                        ${results.withoutApptics.year2.toLocaleString()}
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 03
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                        ${results.withoutApptics.year1.toLocaleString()}
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                        ${results.withoutApptics.year3.toLocaleString()}
                       </div>
                     </div>
                   </div>
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
+                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 04
                     </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                        ${results.withoutApptics.year1.toLocaleString()}
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                        ${results.withoutApptics.year4.toLocaleString()}
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
-                  <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                    Passive Subscriber Income
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                      ${results.withoutApptics.passiveIncome.toLocaleString()}
+                                  <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                      Passive Subscriber Income
+                    </div>
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                        ${results.withoutApptics.passiveIncome.toLocaleString()}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
-                  <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                    Income per customer Acquired
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-center text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                      ${results.withoutApptics.incomePerCustomer.toLocaleString()}
+                                  <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                      Income per customer Acquired
+                    </div>
+                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                        ${results.withoutApptics.incomePerCustomer.toLocaleString()}
+                      </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
