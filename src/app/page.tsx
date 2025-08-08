@@ -91,13 +91,13 @@ const Frame2147228222: NextPage = () => {
   // Handle slider mouse events for dragging
   const [isDragging, setIsDragging] = useState<boolean>(false);
   
-  // Update slider position - now working with range 0-10000
+  // Update slider position - now working with range 0-1000
   const updateSliderPosition = (clientX: number, slider: HTMLDivElement) => {
     const rect = slider.getBoundingClientRect();
     const x = clientX - rect.left;
     const width = rect.width;
     const percentage = Math.max(0, Math.min(1, x / width));
-    const value = Math.round(percentage * 10000); // Range from 0 to 10000
+    const value = Math.round(percentage * 1000); // Range from 0 to 1000
     setSubscriptionValue(value);
   };
   
@@ -281,7 +281,7 @@ const Frame2147228222: NextPage = () => {
                             onChange={(e) => {
                               const value = parseInt(e.target.value.replace(/,/g, ''));
                              if (!isNaN(value)) {
-                                if(value >= 0 && value <= 10000) {
+                                if(value >= 0 && value <= 1000) {
                                   setSubscriptionValue(value);
                                 }
                              } else {
@@ -310,12 +310,12 @@ const Frame2147228222: NextPage = () => {
                     >
                       <div 
                         className="absolute top-[calc(50%_-_4px)] left-[0px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] h-2" 
-                        style={{ width: `${(subscriptionValue / 10000) * 100}%` }}
+                        style={{ width: `${(subscriptionValue / 1000) * 100}%` }}
                       />
                     </div>
                     <div 
                       className="w-3.5 absolute !!m-[0 important] top-[calc(50%_-_8px)] shadow-[-1px_1px_2px_rgba(0,_0,_0,_0.2)] rounded-[50%] bg-white border-whitesmoke-100 border-solid border-[0.5px] box-border h-3.5 z-[1] cursor-grab active:cursor-grabbing" 
-                      style={{ left: `calc(${(subscriptionValue / 10000) * 100}% - ${subscriptionValue === 10000 ? '10px' : '1.75px'})` }}
+                      style={{ left: `calc(${(subscriptionValue / 1000) * 100}% - ${subscriptionValue === 1000 ? '10px' : '1.75px'})` }}
                       onMouseDown={handleMouseDown}
                     />
                   </div>

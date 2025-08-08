@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -25,8 +26,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        "plus-jakarta-sans": "Plus Jakarta Sans",
-        inter: "Inter",
+        "plus-jakarta-sans": ["var(--font-plus-jakarta-sans)", "Plus Jakarta Sans", "sans-serif"],
+        inter: ["var(--font-inter)", "Inter", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
     },
   },
