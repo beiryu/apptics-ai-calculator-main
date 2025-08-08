@@ -1,0 +1,10 @@
+export { default as CustomersIcon } from './CustomersIcon';
+export { default as DollarIcon } from './DollarIcon';
+export { default as ChartIcon } from './ChartIcon';
+export { default as SubscriptionIcon } from './SubscriptionIcon'; 
+export { default as RoiIcon } from './Roi'; 
+export { default as AppticsIcon } from './AppticsIcon';
+export { default as IncomeIcon } from './IncomeIcon';
+export { default as GrowthIcon } from './GrowthIcon';
+export { default as MoneyIcon } from './MoneyIcon';
+export { default as ArrowRightIcon } from './ArrowrightIcon';
