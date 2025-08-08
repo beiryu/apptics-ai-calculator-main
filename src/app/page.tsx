@@ -4,9 +4,9 @@ import Image from "next/image";
 const Frame2147228222: NextPage = () => {
   return (
     <div className="w-full relative min-h-[522px] text-left text-xl text-gray-300 font-plus-jakarta-sans">
-      <div className="mx-auto px-4 py-6 rounded-2xl max-w-7xl w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-4 lg:gap-6">
-        <div className="w-full md:w-[380px] lg:w-[400px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-center p-5">
-          <div className="self-stretch flex flex-col items-start justify-start gap-6">
+      <div className="mx-auto px-4 py-6 rounded-2xl max-w-6xl w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6">
+        <div className="w-full lg:w-[400px] h-auto lg:h-[532px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-start p-5">
+          <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-6">
             <div className="self-stretch flex flex-row items-center justify-start gap-4">
               <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
                 <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
@@ -26,7 +26,7 @@ const Frame2147228222: NextPage = () => {
                 RIO Calculator
               </div>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-4 text-sm text-gray-200">
+            <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-4 text-sm text-gray-200">
               <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2">
                 <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
                   Customer per month
@@ -118,8 +118,8 @@ const Frame2147228222: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex-1 flex flex-col items-start justify-start gap-4 lg:gap-5 text-lg">
-          <div className="w-full shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] overflow-hidden flex flex-col items-center justify-center p-4 md:p-5 gap-3 md:gap-4">
+        <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[532px]">
+          <div className="w-full lg:h-[330px] h-[420px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-4 lg:p-5 gap-3 lg:gap-4">
             <div className="self-stretch flex flex-row items-center justify-start gap-0.5">
               <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
                 Your Business with
@@ -138,9 +138,9 @@ const Frame2147228222: NextPage = () => {
                 Apptics
               </div>
             </div>
-            <div className="self-stretch flex flex-col md:flex-row items-start justify-start gap-3 text-sm text-gray-200 font-inter">
-              <div className="w-full md:w-[260px] flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch flex flex-col sm:flex-row items-center justify-start gap-3">
+            <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 font-inter">
+              <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
+                <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
@@ -182,7 +182,7 @@ const Frame2147228222: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col sm:flex-row items-center justify-start gap-3">
+                <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
                       <div className="w-4 relative bg-gray-400 h-4">
@@ -229,7 +229,7 @@ const Frame2147228222: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:flex-1 flex flex-col items-center justify-center gap-3">
+              <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2">
                   <div className="self-stretch flex flex-row items-center justify-center gap-2">
                     <div className="w-4 relative bg-gray-400 h-4">
@@ -277,13 +277,13 @@ const Frame2147228222: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] flex flex-col items-center justify-center p-4 md:p-5 gap-3 md:gap-4">
+          <div className="w-full shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] flex flex-col items-center justify-center p-4 lg:p-5 gap-3 lg:gap-4">
             <div className="self-stretch relative tracking-[-0.02em] leading-[110%] font-semibold">
               Without Apptics
             </div>
-            <div className="self-stretch flex flex-col md:flex-row items-start justify-start gap-3 text-sm text-gray-200 font-inter">
-              <div className="w-full md:w-[260px] flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch flex flex-col sm:flex-row items-center justify-start gap-3">
+            <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 font-inter">
+              <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
+                <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 01
@@ -305,7 +305,7 @@ const Frame2147228222: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col sm:flex-row items-center justify-start gap-3">
+                <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                       Year 03
@@ -328,7 +328,7 @@ const Frame2147228222: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:flex-1 flex flex-col items-center justify-center gap-3">
+              <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2">
                   <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
                     Passive Subscriber Income
