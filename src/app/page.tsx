@@ -380,7 +380,7 @@ const Frame2147228222: NextPage = () => {
                   height={26.4}
                   sizes="100vw"
                   alt=""
-                  src="logo.svg"
+                  src="/logo.png"
                 />
               </div>
               <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -388,7 +388,7 @@ const Frame2147228222: NextPage = () => {
               </div>
             </div>
             <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
-              <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
+              <div className="w-full lg:w-[320px] flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
@@ -513,7 +513,7 @@ const Frame2147228222: NextPage = () => {
                         src="currency-dollar-circle.svg"
                       />
                     </div>
-                    <div className="flex-1 relative tracking-[-0.02em] leading-[110%]">
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[110%] overflow-hidden text-ellipsis whitespace-nowrap">
                       Income per customer Acquired
                     </div>
                   </div>
@@ -531,7 +531,7 @@ const Frame2147228222: NextPage = () => {
               Without Apptics
             </div>
             <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
-              <div className="w-full lg:w-[260px] flex flex-col items-center justify-center gap-3">
+              <div className="w-full lg:w-[300px] flex flex-col items-center justify-center gap-3">
                 <div className="self-stretch flex flex-row items-center justify-start gap-3">
                   <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
