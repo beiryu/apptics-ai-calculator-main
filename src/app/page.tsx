@@ -4,6 +4,28 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
+const AppticsLogo = () => (
+  <svg width="24" height="24" viewBox="12 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+      </filter>
+      <linearGradient id="paint0_linear_1_119" x1="21.9883" y1="6.28991" x2="6.70913" y2="31.3727" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#12B2F9"/>
+        <stop offset="1" stop-color="#514DFA"/>
+      </linearGradient>
+      <linearGradient id="paint1_linear_1_119" x1="25.6584" y1="8.80369" x2="24.5086" y2="19.7434" gradientUnits="userSpaceOnUse">
+        <stop stop-color="white"/>
+        <stop offset="1" stop-color="#D3D5D8"/>
+      </linearGradient>
+    </defs>
+    <g filter="url(#shadow)">
+      <path d="M13.6724 8.04663C14.1343 3.65255 18.0708 0.464846 22.4648 0.926682L30.421 1.76291C34.8151 2.22475 38.0028 6.16124 37.541 10.5553L36.7047 18.5115C36.2429 22.9056 32.3064 26.0933 27.9123 25.6314L19.9562 24.7952C15.5621 24.3334 12.3744 20.3969 12.8362 16.0028L13.6724 8.04663Z" fill="url(#paint0_linear_1_119)"/>
+      <path d="M20.9665 16.3442C18.5754 16.0928 17.263 14.1082 17.4886 11.9616C17.7142 9.81536 19.4105 8.14701 21.8017 8.39833C22.5699 8.47907 23.1999 8.85541 23.7133 9.32193L23.7777 8.70986L25.2574 8.86539L25.0883 10.4744C24.9877 11.4317 23.8441 11.6546 23.2913 11.057L23.2394 10.9966C22.7091 10.3244 22.1904 9.93483 21.6466 9.87768C20.1646 9.7219 19.1181 10.6926 18.9683 12.1171C18.8186 13.542 19.6404 14.7087 21.122 14.8644C21.4032 14.8939 21.7552 14.8088 22.17 14.5902C22.579 14.3742 22.9914 14.0586 23.369 13.7158C23.7982 13.3236 24.1958 12.8981 24.5581 12.4434L24.6772 12.2895C24.8011 12.1301 24.9291 11.9739 25.061 11.821C25.3895 11.4382 25.7408 11.0756 26.113 10.7352C26.5425 10.3457 27.0586 9.94184 27.6182 9.64684C28.171 9.35487 28.8282 9.13685 29.5156 9.20909C31.9067 9.46041 33.2187 11.4449 32.9931 13.5912C32.7675 15.7374 31.0716 17.4062 28.6804 17.1549C27.9122 17.0742 27.2822 16.6978 26.7683 16.2313L26.3785 19.94L24.8987 19.7844L25.3934 15.0784C25.4972 14.0903 26.7133 13.8845 27.2427 14.5562L27.3417 14.6789C27.8376 15.2761 28.3257 15.6215 28.836 15.6752C30.3171 15.8308 31.3641 14.8601 31.5138 13.4357C31.6635 12.0112 30.8417 10.8446 29.3601 10.6884C29.0789 10.6588 28.727 10.744 28.312 10.9631C27.9032 11.1785 27.4907 11.4951 27.1131 11.8379C26.6839 12.23 26.2863 12.6553 25.924 13.1099L25.7229 13.3693C25.3105 13.887 24.8579 14.3712 24.3692 14.8176C23.9396 15.207 23.4235 15.6109 22.8639 15.9059C22.3107 16.1979 21.6534 16.4163 20.9665 16.3442Z" fill="url(#paint1_linear_1_119)"/>
+    </g>
+  </svg>
+);
+
 const Frame2147228222: NextPage = () => {
   // State for calculator inputs
   const [customerCount, setCustomerCount] = useState<number>(500);
@@ -369,19 +391,12 @@ const Frame2147228222: NextPage = () => {
         </div>
         <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[532px]">
           <div className="w-full lg:h-[330px] h-[420px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-4 lg:p-5 gap-3 lg:gap-4">
-            <div className="self-stretch flex flex-row items-center justify-start gap-0.5">
+            <div className="self-stretch flex flex-row items-center justify-center gap-1">
               <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
                 Your Business with
               </div>
-              <div className="w-[26.4px] relative rounded-lg h-[26.4px] shrink-0 flex items-center justify-center">
-                <Image
-                  className="w-full h-full shrink-0 object-cover absolute left-[0px] top-[13px] [transform:scale(1.848)]"
-                  width={26.4}
-                  height={26.4}
-                  sizes="100vw"
-                  alt=""
-                  src="/logo.png"
-                />
+              <div className="flex items-center justify-center w-6 h-6">
+                <AppticsLogo />
               </div>
               <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
                 Apptics
