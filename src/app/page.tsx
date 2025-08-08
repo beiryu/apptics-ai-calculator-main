@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback } from "react";
 
 const Frame2147228222: NextPage = () => {
   // State for calculator inputs
-  const [customerCount, setCustomerCount] = useState<number>(5000);
+  const [customerCount, setCustomerCount] = useState<number>(500);
   const [averageOrderValue, setAverageOrderValue] = useState<number>(50);
   const [profitMargin, setProfitMargin] = useState<number>(10);
   const [subscriptionValue, setSubscriptionValue] = useState<number>(60);
