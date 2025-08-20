@@ -6,21 +6,10 @@ import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 const AppticsLogo = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="12 0 26 26"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg width="24" height="24" viewBox="12 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow
-          dx="0"
-          dy="2"
-          stdDeviation="2"
-          floodColor="rgba(0,0,0,0.1)"
-        />
+        <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="rgba(0,0,0,0.1)" />
       </filter>
       <linearGradient
         id="paint0_linear_1_119"
@@ -88,8 +77,7 @@ const Frame2147228222: NextPage = () => {
   // Calculate results based on inputs
   const calculateResults = useCallback(() => {
     // Base revenue calculation
-    const baseRevenue =
-      customerCount * averageOrderValue * (profitMargin / 100) * 12;
+    const baseRevenue = customerCount * averageOrderValue * (profitMargin / 100) * 12;
 
     // Determine growth rate based on AOV tier
     const growthRate = averageOrderValue >= 46 ? 384.51 : 274.67;
@@ -106,16 +94,11 @@ const Frame2147228222: NextPage = () => {
 
     // Calculate passive income (subscription retention)
     const passiveIncomeMultiplier = averageOrderValue >= 46 ? 0.12 : 0.08;
-    const passiveIncome =
-      subscriptionValue * customerCount * passiveIncomeMultiplier * 12;
+    const passiveIncome = subscriptionValue * customerCount * passiveIncomeMultiplier * 12;
 
     // Calculate income per customer acquired
     const incomePerCustomer =
-      (year1WithApptics +
-        year2WithApptics +
-        year3WithApptics +
-        year4WithApptics) /
-      customerCount;
+      (year1WithApptics + year2WithApptics + year3WithApptics + year4WithApptics) / customerCount;
 
     // Calculate results without Apptics (standard growth)
     const standardGrowth = 0.05; // 5% standard growth rate
@@ -147,13 +130,7 @@ const Frame2147228222: NextPage = () => {
   // Calculate results when inputs change
   useEffect(() => {
     calculateResults();
-  }, [
-    customerCount,
-    averageOrderValue,
-    profitMargin,
-    subscriptionValue,
-    calculateResults,
-  ]);
+  }, [customerCount, averageOrderValue, profitMargin, subscriptionValue, calculateResults]);
 
   // Handle slider mouse and touch events for dragging
   const [isDragging, setIsDragging] = useState<boolean>(false);
@@ -262,35 +239,29 @@ const Frame2147228222: NextPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             <MyLottieComponent
               animationType="hero"
-              title="Hero Animation"
-              width="w-full"
               height="h-full"
               className="bg-white rounded-lg p-4 shadow-md"
             />
             <MyLottieComponent
               animationType="bento1"
-              title="Bento Animation 1"
               width="w-full"
               height="h-full"
               className="bg-white rounded-lg p-4 shadow-md"
             />
             <MyLottieComponent
               animationType="bento2"
-              title="Bento Animation 2"
               width="w-full"
               height="h-full"
               className="bg-white rounded-lg p-4 shadow-md"
             />
             <MyLottieComponent
               animationType="bento3"
-              title="Bento Animation 3"
               width="w-full"
               height="h-full"
               className="bg-white rounded-lg p-4 shadow-md"
             />
             <MyLottieComponent
               animationType="growth"
-              title="Growth Animation"
               width="w-full"
               height="h-full"
               className="bg-white rounded-lg p-4 shadow-md"
@@ -365,9 +336,7 @@ const Frame2147228222: NextPage = () => {
                         className="bg-transparent border-none outline-none pl-0 w-full"
                         value={averageOrderValue.toLocaleString()}
                         onChange={(e) => {
-                          const value = parseInt(
-                            e.target.value.replace(/,/g, "")
-                          );
+                          const value = parseInt(e.target.value.replace(/,/g, ""));
                           if (!isNaN(value)) {
                             setAverageOrderValue(value);
                           } else {
@@ -400,9 +369,7 @@ const Frame2147228222: NextPage = () => {
                         type="text"
                         className="bg-transparent border-none outline-none w-auto pr-0 -mr-2"
                         style={{
-                          width: `${
-                            profitMargin.toString().length * 0.6 + 0.5
-                          }em`,
+                          width: `${profitMargin.toString().length * 0.6 + 0.5}em`,
                         }}
                         value={profitMargin}
                         onChange={(e) => {
@@ -443,9 +410,7 @@ const Frame2147228222: NextPage = () => {
                           className="bg-transparent border-none outline-none w-full"
                           value={subscriptionValue.toLocaleString()}
                           onChange={(e) => {
-                            const value = parseInt(
-                              e.target.value.replace(/,/g, "")
-                            );
+                            const value = parseInt(e.target.value.replace(/,/g, ""));
                             if (!isNaN(value)) {
                               if (value >= 0 && value <= 1000) {
                                 setSubscriptionValue(value);
@@ -720,8 +685,7 @@ const Frame2147228222: NextPage = () => {
                   </div>
                   <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
                     <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      $
-                      {results.withoutApptics.incomePerCustomer.toLocaleString()}
+                      ${results.withoutApptics.incomePerCustomer.toLocaleString()}
                     </div>
                   </div>
                 </div>

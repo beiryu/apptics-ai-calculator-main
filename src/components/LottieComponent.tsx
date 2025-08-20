@@ -25,7 +25,6 @@ interface LottieComponentProps {
   width?: string;
   height?: string;
   className?: string;
-  title?: string;
 }
 
 const MyLottieComponent = ({
@@ -35,7 +34,6 @@ const MyLottieComponent = ({
   width = "w-full",
   height = "h-full",
   className = "",
-  title,
 }: LottieComponentProps) => {
   const selectedAnimation = animationFiles[animationType];
 
@@ -49,11 +47,6 @@ const MyLottieComponent = ({
 
   return (
     <div className={`${width} ${className}`}>
-      {title && (
-        <h3 className="text-lg font-semibold mb-2 text-center text-gray-800">
-          {title}
-        </h3>
-      )}
       <div className={`${width} ${height}`}>{View}</div>
     </div>
   );
