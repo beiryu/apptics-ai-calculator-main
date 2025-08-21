@@ -34,7 +34,7 @@ const DesktopV3: NextPage = () => {
                     height={101.1}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Frame_2147226509.png"
+                    src="/assets/hero/Frame 2147226509.svg"
                   />
                 </div>
                 <b className="relative tracking-[-0.03em] leading-[115%] text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">{`Subscribers `}</b>
@@ -301,7 +301,7 @@ const DesktopV3: NextPage = () => {
                 height={54.2}
                 sizes="100vw"
                 alt=""
-                src="/assets/features/Frame 2147227937.png"
+                src="/assets/features/Frame 2147227937.svg"
               />
             </div>
           </div>
@@ -396,7 +396,7 @@ const DesktopV3: NextPage = () => {
                             height={12.8}
                             sizes="100vw"
                             alt=""
-                            src="/assets/features/shopping-cart1.png"
+                            src="/assets/features/shopping-cart1.svg"
                           />
                         </div>
                         <div className="relative tracking-[-0.01em] leading-[120%] font-medium">
@@ -626,7 +626,7 @@ const DesktopV3: NextPage = () => {
                 height={51.8}
                 sizes="100vw"
                 alt=""
-                src="/assets/benefits/Frame 2147227937.png"
+                src="/assets/benefits/Frame 2147227937.svg"
               />
             </div>
           </div>
@@ -1024,7 +1024,7 @@ const DesktopV3: NextPage = () => {
                     height={525.2}
                     sizes="100vw"
                     alt=""
-                    src="/assets/benefits/Group 2085663289.png"
+                    src="/assets/benefits/Group 2085663289.svg"
                   />
                 </div>
                 <div className="absolute top-[25px] left-[20px] rounded-[99px] bg-gray-1200 border-gray-1100 border-solid border-[0.6px] box-border w-[58px] h-[58px] overflow-hidden">
@@ -1067,7 +1067,7 @@ const DesktopV3: NextPage = () => {
                 height={56.7}
                 sizes="100vw"
                 alt=""
-                src="/assets/comparison/Frame 2147227938.png"
+                src="/assets/comparison/Frame 2147227938.svg"
               />
             </div>
           </div>
@@ -1722,7 +1722,7 @@ const DesktopV3: NextPage = () => {
             height={881.8}
             sizes="100vw"
             alt=""
-            src="/assets/hero/Layer_1.svg"
+            src="/assets/onboarding/Frame 2147227938.svg"
           />
           <div className="w-[850px] overflow-hidden shrink-0 flex flex-col items-center justify-start py-[60px] px-0 box-border gap-[60px] z-[1]">
             <div className="w-[742px] flex flex-col items-center justify-start relative gap-6">
@@ -1746,7 +1746,7 @@ const DesktopV3: NextPage = () => {
                   height={51.8}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/onboarding/Frame 2147227938.svg"
                 />
               </div>
             </div>
@@ -1774,7 +1774,7 @@ const DesktopV3: NextPage = () => {
                   height={380}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/onboarding/Frame 2147228204.png"
                 />
               </div>
               <div className="self-stretch rounded-2xl bg-whitesmoke-400 border-gainsboro-200 border-solid border-[1px] box-border h-[380px] overflow-hidden shrink-0 flex flex-row items-center justify-start">
@@ -1799,7 +1799,7 @@ const DesktopV3: NextPage = () => {
                     height={210.9}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/onboarding/loader.svg"
                   />
                   <div className="absolute top-[calc(50%_-_144px)] left-[calc(50%_-_139.03px)] shadow-[0px_43.56264114379883px_12.05px_rgba(35,_33,_69,_0),_0px_27.805940628051758px_11.12px_rgba(35,_33,_69,_0.01),_0px_15.756699562072754px_9.27px_rgba(35,_33,_69,_0.03),_0px_6.488052845001221px_6.49px_rgba(35,_33,_69,_0.06),_0px_1.8537293672561646px_3.71px_rgba(35,_33,_69,_0.07)] rounded-[14px] bg-white w-[278.1px] flex flex-col items-start justify-start p-5 box-border">
                     <div className="self-stretch flex flex-col items-start justify-start gap-2">
@@ -1825,7 +1825,7 @@ const DesktopV3: NextPage = () => {
                             height={17.1}
                             sizes="100vw"
                             alt=""
-                            src="/assets/hero/Layer_1.svg"
+                            src="/assets/onboarding/loader.svg"
                           />
                         </div>
                       </div>
@@ -1905,7 +1905,7 @@ const DesktopV3: NextPage = () => {
                         height={55}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/onboarding/Apple_Pay-Logo.wine (1) 1.svg"
                       />
                       <Image
                         className="flex-1 relative rounded-lg max-w-full overflow-hidden h-[55px]"
@@ -1913,7 +1913,7 @@ const DesktopV3: NextPage = () => {
                         height={55}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/onboarding/Logo Alternative.svg.svg"
                       />
                       <Image
                         className="flex-1 relative rounded-lg max-w-full overflow-hidden h-[55px]"
@@ -1921,7 +1921,7 @@ const DesktopV3: NextPage = () => {
                         height={55}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/onboarding/google-pay-primary-logo-logo-svgrepo-com 1.svg"
                       />
                     </div>
                   </div>
@@ -1932,7 +1932,7 @@ const DesktopV3: NextPage = () => {
                       height={68}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/onboarding/3899-1.png"
                     />
                     <div className="flex-1 flex flex-row items-center justify-center gap-[9.1px]">
                       <div className="flex-1 flex flex-col items-center justify-start">
@@ -1972,46 +1972,14 @@ const DesktopV3: NextPage = () => {
                     </b>
                   </div>
                 </div>
-                <div className="w-[425px] relative [background:radial-gradient(50%_50%_at_50%_50%,_rgba(255,_255,_255,_0.8),_rgba(255,_255,_255,_0))] border-gainsboro-800 border-solid border-l-[2px] box-border h-[380px] overflow-hidden shrink-0">
-                  <Image
-                    className="absolute top-[75.31px] left-[-31.4px] w-[484.6px] h-[386.6px]"
-                    width={484.6}
-                    height={386.6}
-                    sizes="100vw"
-                    alt=""
-                    src="/assets/benefits/zap.svg"
-                  />
-                  <div className="absolute top-[173.29px] left-[35.2px] w-[404.5px] h-[218.3px] opacity-[0.1] overflow-hidden flex items-center justify-center">
-                    <Image
-                      className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.101)]"
-                      width={404.5}
-                      height={218.3}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/benefits/zap.svg"
-                    />
-                  </div>
-                  <div className="absolute top-[0px] left-[40.21px] [filter:drop-shadow(-110px_-26px_32px_rgba(47,_48,_80,_0))_drop-shadow(-70px_-16px_29px_rgba(47,_48,_80,_0))_drop-shadow(-39px_-9px_24px_rgba(47,_48,_80,_0.02))_drop-shadow(-18px_-4px_18px_rgba(47,_48,_80,_0.03))_drop-shadow(-4px_-1px_10px_rgba(47,_48,_80,_0.03))] w-[353px] h-[360.6px]">
-                    <Image
-                      className="absolute top-[133.28px] left-[0px] w-[87.4px] h-[221.9px]"
-                      width={87.4}
-                      height={221.9}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/benefits/zap.svg"
-                    />
-                    <div className="absolute top-[calc(50%_-_180.3px)] left-[calc(50%_-_155.78px)] w-[332.3px] h-[360.6px] overflow-hidden flex items-center justify-center">
-                      <Image
-                        className="w-full h-full object-cover absolute left-[7px] top-[0px] [transform:scale(1)]"
-                        width={332.3}
-                        height={360.6}
-                        sizes="100vw"
-                        alt=""
-                        src="/assets/benefits/zap.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  className="w-[425px] relative h-[380px] overflow-hidden shrink-0 object-cover"
+                  width={425}
+                  height={380}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/onboarding/Frame 2147228108.svg"
+                />
               </div>
             </div>
           </div>
@@ -2027,18 +1995,24 @@ const DesktopV3: NextPage = () => {
               <span className="whitespace-pre-wrap">{`See the real         `}</span>
               <span className="text-transparent !bg-clip-text [background:linear-gradient(90.18deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">{`results `}</span>
             </b>
-            <div className="w-12 absolute !!m-[0 important] top-[calc(50%_-_32.5px)] left-[352.2px] shadow-[0px_8px_8px_-2px_rgba(11,_32,_103,_0.05),_0px_2px_4px_-1px_rgba(11,_32,_103,_0.14),_0px_14px_20px_-5px_rgba(0,_0,_0,_0.08),_0px_30px_30px_-6px_rgba(0,_0,_0,_0.08)] rounded-2xl [background:linear-gradient(205.35deg,_#12b2f9,_#514dfa)] h-12 overflow-hidden shrink-0 z-[2]">
-              <div className="absolute top-[calc(50%_-_12px)] left-[calc(50%_-_12px)] shadow-[0px_6px_6px_rgba(0,_0,_0,_0.2)] bg-gray-1500 w-6 h-6">
-                <Image
-                  className="absolute h-[91.67%] w-full top-[4.17%] right-[12.5%] bottom-[4.17%] left-[12.5%] max-w-full overflow-hidden max-h-full"
-                  width={18}
-                  height={22}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/hero/Layer_1.svg"
-                />
-              </div>
-            </div>
+            <Image
+              className="absolute top-[7px] w-full h-full overflow-hidden max-w-full max-h-full"
+              width={18}
+              height={22}
+              sizes="100vw"
+              alt=""
+              src="/assets/case-studies/Frame 2147227937.svg"
+            />
+            {/* <div className="w-12 absolute !!m-[0 important] top-[calc(50%_-_32.5px)] left-[352.2px] shadow-[0px_8px_8px_-2px_rgba(11,_32,_103,_0.05),_0px_2px_4px_-1px_rgba(11,_32,_103,_0.14),_0px_14px_20px_-5px_rgba(0,_0,_0,_0.08),_0px_30px_30px_-6px_rgba(0,_0,_0,_0.08)] rounded-2xl [background:linear-gradient(205.35deg,_#12b2f9,_#514dfa)] h-12 overflow-hidden shrink-0 z-[2]">
+              <Image
+                className="absolute top-[7px] w-full h-full overflow-hidden max-w-full max-h-full"
+                width={18}
+                height={22}
+                sizes="100vw"
+                alt=""
+                src="/assets/case-studies/Frame 2147227937.svg"
+              />
+            </div> */}
             <div className="w-[434.6px] relative text-lg tracking-[-0.04em] leading-[150%] inline-block z-[3]">
               Explore inspiring stories and testimonials from brands that have leveled up with
               Apptics
@@ -2061,7 +2035,7 @@ const DesktopV3: NextPage = () => {
                       height={18}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/case-studies/Frame.svg"
                     />
                   </div>
                 </div>
@@ -2071,7 +2045,7 @@ const DesktopV3: NextPage = () => {
                   height={420}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/case-studies/Frame 79.png"
                 />
               </div>
               <div className="self-stretch flex flex-col items-start justify-start gap-4 text-left text-xl">
@@ -2099,8 +2073,8 @@ const DesktopV3: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch shadow-[0px_0px_9.6px_4.8px_rgba(255,_255,_255,_0.16)_inset,_0px_-2.4000000953674316px_0px_rgba(0,_0,_0,_0.1)_inset,_0px_1.2000000476837158px_1.2px_rgba(0,_0,_0,_0.1)_inset,_0px_2.4000000953674316px_1.2px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
-                  <div className="shadow-[0px_2.4000000953674316px_2.4px_rgba(26,_60,_105,_0.24)] flex flex-row items-center justify-start gap-[14.4px]">
+                <div className="self-stretch rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
+                  <div className="flex flex-row items-center justify-start gap-[14.4px]">
                     <div className="relative tracking-[-0.03em] capitalize font-medium">
                       Read Full case study
                     </div>
@@ -2111,7 +2085,7 @@ const DesktopV3: NextPage = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/case-studies/arrow-right.svg"
                       />
                     </div>
                   </div>
@@ -2136,7 +2110,7 @@ const DesktopV3: NextPage = () => {
                       height={24}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/case-studies/Frame (1).svg"
                     />
                   </div>
                 </div>
@@ -2146,7 +2120,7 @@ const DesktopV3: NextPage = () => {
                   height={420}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/case-studies/Frame 197.png"
                 />
               </div>
               <div className="self-stretch flex flex-col items-start justify-start gap-4 text-left text-xl">
@@ -2174,8 +2148,8 @@ const DesktopV3: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch shadow-[0px_0px_9.6px_4.8px_rgba(255,_255,_255,_0.16)_inset,_0px_-2.4000000953674316px_0px_rgba(0,_0,_0,_0.1)_inset,_0px_1.2000000476837158px_1.2px_rgba(0,_0,_0,_0.1)_inset,_0px_2.4000000953674316px_1.2px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
-                  <div className="shadow-[0px_2.4000000953674316px_2.4px_rgba(26,_60,_105,_0.24)] flex flex-row items-center justify-start gap-[14.4px]">
+                <div className="self-stretch rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
+                  <div className="flex flex-row items-center justify-start gap-[14.4px]">
                     <div className="relative tracking-[-0.03em] capitalize font-medium">
                       Read Full case study
                     </div>
@@ -2186,7 +2160,7 @@ const DesktopV3: NextPage = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/case-studies/arrow-right.svg"
                       />
                     </div>
                   </div>
@@ -2211,7 +2185,7 @@ const DesktopV3: NextPage = () => {
                       height={20}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/case-studies/Frame (2).svg"
                     />
                   </div>
                 </div>
@@ -2221,7 +2195,7 @@ const DesktopV3: NextPage = () => {
                   height={420}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/case-studies/Frame 197 (1).png"
                 />
               </div>
               <div className="self-stretch flex flex-col items-start justify-start gap-4 text-left text-xl">
@@ -2249,8 +2223,8 @@ const DesktopV3: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch shadow-[0px_0px_9.6px_4.8px_rgba(255,_255,_255,_0.16)_inset,_0px_-2.4000000953674316px_0px_rgba(0,_0,_0,_0.1)_inset,_0px_1.2000000476837158px_1.2px_rgba(0,_0,_0,_0.1)_inset,_0px_2.4000000953674316px_1.2px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
-                  <div className="shadow-[0px_2.4000000953674316px_2.4px_rgba(26,_60,_105,_0.24)] flex flex-row items-center justify-start gap-[14.4px]">
+                <div className="self-stretch rounded-[20px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] overflow-hidden flex flex-row items-center justify-center py-4 px-6 text-base text-white">
+                  <div className="flex flex-row items-center justify-start gap-[14.4px]">
                     <div className="relative tracking-[-0.03em] capitalize font-medium">
                       Read Full case study
                     </div>
@@ -2261,7 +2235,7 @@ const DesktopV3: NextPage = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/case-studies/arrow-right.svg"
                       />
                     </div>
                   </div>
