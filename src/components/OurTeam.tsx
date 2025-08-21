@@ -78,11 +78,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -136,11 +136,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -194,11 +194,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -252,11 +252,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -312,11 +312,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -370,11 +370,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -428,11 +428,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"
@@ -486,11 +486,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_9.77px)] left-[calc(50%_-_9.77px)] bg-gray-1500 w-[19.5px] h-[19.5px] overflow-hidden">
+                      <div className="absolute top-[calc(50%_-_10.31px)] left-[calc(50%_-_10.31px)] bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden">
                         <Image
-                          className="absolute h-[91.79%] w-full top-[4.18%] right-[20.59%] bottom-[4.03%] left-[25.05%] max-w-full overflow-hidden max-h-full"
-                          width={10.6}
-                          height={17.9}
+                          className="absolute top-[0.86px] left-[0.86px] w-full h-[18.9px]"
+                          width={18.9}
+                          height={18.9}
                           sizes="100vw"
                           alt=""
                           src="/assets/our-team/facebook.svg"

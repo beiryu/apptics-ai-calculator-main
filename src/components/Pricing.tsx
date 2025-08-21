@@ -32,23 +32,21 @@ const Pricing = () => {
           </div>
           <div className="w-[1280px] flex flex-row items-start justify-center gap-10 text-left text-lg text-gray-300 font-plus-jakarta-sans">
             <div className="w-[420px] shadow-[0px_0px_24px_4px_rgba(255,_255,_255,_0.8)_inset] rounded-3xl bg-white border-gainsboro-600 border-solid border-[1px] box-border flex flex-col items-center justify-start py-10 px-0 relative gap-[60px]">
-              <div className="w-[420px] absolute !!m-[0 important] top-[0px] left-[0px] rounded-3xl h-[723px] overflow-hidden shrink-0 z-[0]">
-                <div className="absolute top-[-308.05px] left-[-91.48px] w-full h-[468px] overflow-hidden flex items-center justify-center">
-                  <Image
-                    className="w-full h-full object-cover absolute left-[0px] top-[44px] [transform:scale(1)]"
-                    width={674.3}
-                    height={468}
-                    sizes="100vw"
-                    alt=""
-                    src="/assets/pricing/Group 2085663297.svg"
-                  />
-                </div>
-              </div>
+              {/* <div className="w-[420px] absolute !!m-[0 important] top-[0px] left-[0px] rounded-3xl h-[723px] overflow-hidden shrink-0 z-[0]">
+                <Image
+                  className="w-full h-full object-cover absolute [transform:scale(1)]"
+                  width={674.3}
+                  height={468}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/pricing/Group 2085663297.svg"
+                />
+              </div> */}
               <div className="self-stretch flex flex-col items-start justify-start gap-8 z-[1] font-inter">
                 <div className="self-stretch h-[180px] flex flex-col items-start justify-start py-0 px-2 box-border">
                   <div className="self-stretch shadow-[0px_1px_2px_rgba(255,_255,_255,_0.8)_inset] [backdrop-filter:blur(8px)] rounded-t-3xl rounded-b-none [background:linear-gradient(180deg,_rgba(255,_255,_255,_0.3),_#fff)] flex flex-col items-start justify-start pt-6 px-5 pb-0 gap-5">
                     <div className="self-stretch flex flex-row items-center justify-center gap-2">
-                      <div className="w-[26px] relative h-[26px] overflow-hidden flex items-center justify-center">
+                      {/* <div className="w-[26px] relative h-[26px] overflow-hidden flex items-center justify-center">
                         <Image
                           className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.696)]"
                           width={26}
@@ -57,7 +55,7 @@ const Pricing = () => {
                           alt=""
                           src="/assets/pricing/Layer_2.svg"
                         />
-                      </div>
+                      </div> */}
                       <div className="flex-1 relative tracking-[-0.04em] leading-[140%] uppercase font-semibold">
                         Pro Plan
                       </div>
@@ -82,11 +80,10 @@ const Pricing = () => {
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-0 px-7 gap-5 text-base text-gray-200">
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -99,11 +96,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -116,11 +112,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -133,11 +128,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -150,11 +144,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -167,11 +160,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -184,11 +176,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex justify-center items-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -212,16 +203,6 @@ const Pricing = () => {
                       alt=""
                       src="/assets/pricing/check.svg"
                     />
-                    <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
-                      <Image
-                        className="w-full h-full [mix-blend-mode:linear-dodge] object-cover absolute left-[0px] top-[0px] [transform:scale(1.274)]"
-                        width={240.4}
-                        height={34.3}
-                        sizes="100vw"
-                        alt=""
-                        src="/assets/pricing/check.svg"
-                      />
-                    </div>
                     <Image
                       className="w-[34px] relative rounded-[96.17px] max-h-full overflow-hidden shrink-0 object-cover z-[2]"
                       width={34}
@@ -237,7 +218,7 @@ const Pricing = () => {
                 </div>
               </div>
               <div className="!!m-[0 important] absolute top-[-17px] right-[23.67px] shadow-[0px_10px_24px_rgba(0,_0,_0,_0.1),_0px_1px_2px_rgba(0,_0,_0,_0.08),_0px_3px_5px_-4px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-whitesmoke-600 border-solid border-[0.5px] flex flex-row items-center justify-center py-2 px-4 gap-2 z-[3] text-sm">
-                <div className="w-7 relative h-[18px] overflow-hidden flex items-center justify-center">
+                <div className="w-7 relative h-[18px] flex items-center justify-center">
                   <Image
                     className="w-full h-full object-cover absolute left-[0px] top-[8px] [transform:scale(1.199)] z-50"
                     width={28}
@@ -262,22 +243,13 @@ const Pricing = () => {
                   alt=""
                   src="/assets/pricing/check.svg"
                 />
-                <div className="absolute top-[-309.73px] left-[-120.21px] w-[615.8px] h-[409.8px] overflow-hidden flex items-center justify-center">
-                  <Image
-                    className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.325)]"
-                    width={615.8}
-                    height={409.8}
-                    sizes="100vw"
-                    alt=""
-                    src="/assets/hero/Frame 2147228256.svg"
-                  />
-                </div>
+                <div className="absolute top-[-309.73px] left-[-120.21px] w-[615.8px] h-[409.8px] overflow-hidden flex items-center justify-center"></div>
               </div>
               <div className="flex flex-col items-start justify-start gap-8 z-[1]">
                 <div className="w-[413.3px] h-[180px] flex flex-col items-start justify-start py-0 px-2 box-border">
                   <div className="self-stretch shadow-[0px_1px_2px_rgba(255,_255,_255,_0.8)_inset] [backdrop-filter:blur(8px)] rounded-t-3xl rounded-b-none [background:linear-gradient(180deg,_rgba(255,_255,_255,_0.3),_#fff)] flex flex-col items-start justify-start pt-6 px-5 pb-0 gap-5">
                     <div className="self-stretch flex flex-row items-center justify-center gap-2.5">
-                      <div className="w-[26px] relative h-[26px] overflow-hidden flex items-center justify-center">
+                      {/* <div className="w-[26px] relative h-[26px] overflow-hidden flex items-center justify-center">
                         <Image
                           className="w-full h-full object-cover absolute left-[0px] top-[9px] [transform:scale(1.696)]"
                           width={26}
@@ -286,7 +258,7 @@ const Pricing = () => {
                           alt=""
                           src="/assets/pricing/Layer_1.svg"
                         />
-                      </div>
+                      </div> */}
                       <div className="flex-1 relative tracking-[-0.04em] leading-[150%] uppercase font-semibold">{`Enterprise `}</div>
                     </div>
                     <div className="self-stretch relative text-sm tracking-[-0.02em] leading-[150%] text-gray-200">
@@ -308,11 +280,10 @@ const Pricing = () => {
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start py-0 px-7 gap-5 text-base text-gray-200">
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="absolute flex items-center justify-center top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -325,11 +296,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -342,11 +312,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -359,11 +328,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -376,11 +344,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -393,11 +360,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -410,11 +376,10 @@ const Pricing = () => {
                   </div>
                   <div className="self-stretch flex flex-row items-center justify-center gap-3">
                     <div className="w-[22px] relative shadow-[0px_9px_6px_-2px_rgba(21,_24,_72,_0.12),_0px_2px_2px_rgba(21,_24,_72,_0.08),_0px_2px_2px_rgba(255,_255,_255,_0.2)_inset,_0px_1px_2px_rgba(255,_255,_255,_0.25)_inset] rounded-[99px] [background:linear-gradient(225.01deg,_#474747,_#000)] h-[22px] overflow-hidden shrink-0">
-                      <div className="absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
+                      <div className="flex items-center justify-center absolute top-[calc(50%_-_7px)] left-[calc(50%_-_7px)] [filter:drop-shadow(0px_1px_1px_#fff_inset)_drop-shadow(0px_2px_1.5px_rgba(0,_0,_0,_0.16))] w-3.5 h-3.5">
                         <Image
-                          className="absolute h-[41.43%] w-full top-[29.17%] right-[18.39%] bottom-[29.4%] left-[18.75%] max-w-full overflow-hidden max-h-full"
-                          width={8.8}
-                          height={5.8}
+                          width={12}
+                          height={12}
                           sizes="100vw"
                           alt=""
                           src="/assets/pricing/check.svg"
@@ -439,31 +404,7 @@ const Pricing = () => {
                     </div>
                   </div>
                   <div className="self-stretch shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] h-[52px] flex flex-row items-center justify-center p-2 box-border gap-3 text-lg text-white font-plus-jakarta-sans">
-                    <div className="hidden flex-row items-center justify-start gap-[5.8px]">
-                      <Image
-                        className="w-[35px] relative rounded-[11.67px] max-h-full overflow-hidden shrink-0 object-cover"
-                        width={35}
-                        height={35}
-                        sizes="100vw"
-                        alt=""
-                        src="/assets/pricing/check.svg"
-                      />
-                      <div className="w-[35px] relative [backdrop-filter:blur(5.83px)] rounded-[11.67px] bg-white border-gray-400 border-solid border-[0.7px] box-border h-[35px] overflow-hidden shrink-0 hidden">
-                        <div className="absolute top-[calc(50%_-_12.76px)] left-[calc(50%_-_12.76px)] bg-gray-1500 w-[25.5px] h-[25.5px] overflow-hidden">
-                          <Image
-                            className="absolute h-[74.9%] w-full top-[12.51%] right-[16.65%] bottom-[12.59%] left-[16.68%] max-w-full overflow-hidden max-h-full"
-                            width={17}
-                            height={19.1}
-                            sizes="100vw"
-                            alt=""
-                            src="/assets/pricing/check.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-row items-center justify-center">
-                      <div className="relative tracking-[-0.03em] font-medium">Get Started</div>
-                    </div>
+                    <div className="relative tracking-[-0.03em] font-medium">Get Started</div>
                   </div>
                 </div>
                 <div className="w-[349.3px] relative text-base tracking-[-0.03em] leading-[150%] text-gray-200 text-center hidden">

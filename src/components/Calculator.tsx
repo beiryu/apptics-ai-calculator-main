@@ -30,49 +30,37 @@ const Calculator = () => {
             </div>
           </div>
           <div className="shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.69)_inset,_0px_0px_24px_8px_rgba(255,_255,_255,_0.8)_inset] rounded-[32px] bg-white border-white border-solid border-[1px] overflow-hidden flex flex-col items-start justify-start p-5 relative gap-2.5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
-            <div className="w-[972.6px] absolute !!m-[0 important] bottom-[-269.98px] left-[330.17px] h-[440.1px] opacity-[0.1] overflow-hidden flex items-center justify-center z-[0]">
-              <Image
-                className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.275)]"
-                width={972.6}
-                height={440.1}
-                sizes="100vw"
-                alt=""
-                src="/assets/hero/Layer_1.svg"
-              />
-            </div>
-            <div className="w-[962.9px] absolute !!m-[0 important] top-[208.84px] left-[-546.96px] h-[747.7px] overflow-hidden flex items-center justify-center z-[1]">
-              <Image
-                className="w-full h-full object-cover absolute left-[75px] top-[0px] [transform:scale(1.131)]"
-                width={962.9}
-                height={747.7}
-                sizes="100vw"
-                alt=""
-                src="/assets/calculator/Group 2085663289.svg"
-              />
-            </div>
-            <div className="w-[962.9px] absolute !!m-[0 important] top-[-231.16px] left-[767.07px] h-[747.7px] overflow-hidden flex items-center justify-center z-[2]">
-              <Image
-                className="w-full h-full object-cover absolute left-[0px] top-[30px] [transform:scale(1.081)]"
-                width={962.9}
-                height={747.7}
-                sizes="100vw"
-                alt=""
-                src="/assets/calculator/Group 2085663290.svg"
-              />
-            </div>
+            <Image
+              className="w-full h-full object-cover absolute [transform:scale(1)]"
+              fill
+              sizes="100vw"
+              alt=""
+              src="/assets/calculator/Group 2085663289.svg"
+            />
+            <Image
+              className="w-full h-full object-cover absolute [transform:scale(1)]"
+              sizes="100vw"
+              fill
+              alt=""
+              src="/assets/calculator/Group 2085663290.svg"
+            />
             <div className="w-[1020px] rounded-2xl flex flex-row items-start justify-center gap-2.5 z-[3]">
               <div className="w-[400px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border overflow-hidden shrink-0 flex flex-col items-start justify-center p-5">
                 <div className="self-stretch flex flex-col items-start justify-start gap-6">
                   <div className="self-stretch flex flex-row items-center justify-start gap-4">
-                    <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 overflow-hidden flex items-center justify-center">
-                      <Image
-                        className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[6px] [transform:scale(1.381)]"
-                        width={42}
-                        height={42}
-                        sizes="100vw"
-                        alt=""
-                        src="/assets/hero/Layer_1.svg"
-                      />
+                    <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
+                      <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
+                        <div className="rounded-xl w-full h-full relative flex items-center justify-center shadow-lg">
+                          <Image
+                            className="w-5 h-5 object-contain transform-[scale(1.3)]"
+                            width={20}
+                            height={20}
+                            sizes="100vw"
+                            alt="Calculator icon"
+                            src="/assets/calculator/bold.svg"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <div className="relative leading-[110%] font-semibold">ROI Calculator</div>
                   </div>
@@ -92,7 +80,7 @@ const Calculator = () => {
                             height={18.3}
                             sizes="100vw"
                             alt=""
-                            src="/assets/hero/Layer_1.svg"
+                            src="/assets/calculator/shopping-cart1.svg"
                           />
                         </div>
                       </div>
@@ -112,7 +100,7 @@ const Calculator = () => {
                             height={18.3}
                             sizes="100vw"
                             alt=""
-                            src="/assets/hero/Layer_1.svg"
+                            src="/assets/calculator/currency-dollar-circle.svg"
                           />
                         </div>
                       </div>
@@ -132,7 +120,7 @@ const Calculator = () => {
                             height={18.3}
                             sizes="100vw"
                             alt=""
-                            src="/assets/hero/Layer_1.svg"
+                            src="/assets/calculator/discount.svg"
                           />
                         </div>
                       </div>
@@ -153,7 +141,7 @@ const Calculator = () => {
                               height={22}
                               sizes="100vw"
                               alt=""
-                              src="/assets/hero/Layer_1.svg"
+                              src="/assets/calculator/discount-check.svg"
                             />
                           </div>
                         </div>
@@ -182,7 +170,7 @@ const Calculator = () => {
                           height={26.4}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/calculator/logo.svg"
                         />
                       </div>
                       <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -202,7 +190,7 @@ const Calculator = () => {
                                 height={14.7}
                                 sizes="100vw"
                                 alt=""
-                                src="/assets/hero/Layer_1.svg"
+                                src="/assets/calculator/calendar.svg"
                               />
                             </div>
                             <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
@@ -222,7 +210,7 @@ const Calculator = () => {
                                 height={14.7}
                                 sizes="100vw"
                                 alt=""
-                                src="/assets/hero/Layer_1.svg"
+                                src="/assets/calculator/calendar.svg"
                               />
                             </div>
                             <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
@@ -244,7 +232,7 @@ const Calculator = () => {
                                 height={14.7}
                                 sizes="100vw"
                                 alt=""
-                                src="/assets/hero/Layer_1.svg"
+                                src="/assets/calculator/calendar.svg"
                               />
                             </div>
                             <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
@@ -266,7 +254,7 @@ const Calculator = () => {
                                 height={14.7}
                                 sizes="100vw"
                                 alt=""
-                                src="/assets/hero/Layer_1.svg"
+                                src="/assets/calculator/calendar.svg"
                               />
                             </div>
                             <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
@@ -291,7 +279,7 @@ const Calculator = () => {
                               height={10.7}
                               sizes="100vw"
                               alt=""
-                              src="/assets/hero/Layer_1.svg"
+                              src="/assets/calculator/calendar.svg"
                             />
                           </div>
                           <div className="flex-1 relative tracking-[-0.02em] leading-[110%]">
@@ -313,7 +301,7 @@ const Calculator = () => {
                               height={14.7}
                               sizes="100vw"
                               alt=""
-                              src="/assets/hero/Layer_1.svg"
+                              src="/assets/calculator/calendar.svg"
                             />
                           </div>
                           <div className="flex-1 relative tracking-[-0.02em] leading-[110%]">
@@ -406,12 +394,13 @@ const Calculator = () => {
                 </div>
               </div>
             </div>
+
             <div className="w-[1020px] shadow-[0px_8px_10px_-4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border h-[126px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-[26px] px-[30px] relative gap-[60px] z-[4] text-lg">
               <div className="w-[336.2px] absolute !!m-[0 important] left-[765px] h-[261px] overflow-hidden flex items-center justify-center z-[0]">
                 <Image
                   className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(0.5)]"
-                  width={10}
-                  height={10}
+                  width={336.2}
+                  height={261}
                   sizes="100vw"
                   alt=""
                   src="/assets/calculator/Mask group (1).svg"
@@ -425,7 +414,7 @@ const Calculator = () => {
                   Automate sales, boost retention, and unlock recurring revenue
                 </div>
               </div>
-              <div className="w-[165.4px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] z-[2] text-base text-white font-inter">
+              <div className="w-[162.4px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] z-[2] text-base text-white font-inter">
                 <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] h-[50px] overflow-hidden flex flex-row items-center justify-center py-3 px-6 box-border">
                   <div className="[filter:drop-shadow(0px_2px_2px_rgba(0,_0,_0,_0.48))] flex flex-row items-center justify-start gap-3">
                     <div className="relative tracking-[-0.03em] font-medium">Get Started</div>
@@ -441,7 +430,7 @@ const Calculator = () => {
                 </div>
               </div>
               <Image
-                className="[transform:scale(0.5)] w-[336.2px] absolute !!m-[0 important] left-[-97.16px] h-[261px] object-cover z-[3]"
+                className="[transform:scale(0.5)] w-[336.2px] absolute !!m-[0 important] left-[-82.16px] h-[261px] object-cover z-[3]"
                 width={336.2}
                 height={261}
                 sizes="100vw"
