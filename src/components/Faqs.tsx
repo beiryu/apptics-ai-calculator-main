@@ -28,7 +28,7 @@ const Faqs = () => {
                   height={52.4}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/faqs/Frame 2147227937.svg"
                 />
               </div>
             </div>
@@ -46,7 +46,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -67,7 +67,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -86,7 +86,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -107,7 +107,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -149,7 +149,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -191,7 +191,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -233,7 +233,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -254,7 +254,7 @@ const Faqs = () => {
                         height={14}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/faqs/plus.svg"
                       />
                     </div>
                   </div>
@@ -277,7 +277,7 @@ const Faqs = () => {
                           height={16.5}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/faqs/arrow-right-circle.svg"
                         />
                       </div>
                     </div>

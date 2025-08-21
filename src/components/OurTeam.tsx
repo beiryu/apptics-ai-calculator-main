@@ -13,16 +13,14 @@ const OurTeam = () => {
               <div className="flex flex-row items-start justify-center gap-1">
                 <b className="relative tracking-[-0.02em] leading-[110%]">Mee the</b>
                 <div className="w-12 relative shadow-[0px_8px_8px_-2px_rgba(11,_32,_103,_0.05),_0px_2px_4px_-1px_rgba(11,_32,_103,_0.14),_0px_14px_20px_-5px_rgba(0,_0,_0,_0.08),_0px_30px_30px_-6px_rgba(0,_0,_0,_0.08)] rounded-2xl [background:linear-gradient(205.35deg,_#12b2f9,_#514dfa)] h-12 overflow-hidden shrink-0">
-                  <div className="absolute top-[12px] left-[12px] shadow-[0px_2px_8px_rgba(0,_0,_0,_0.2)] bg-gray-1500 w-6 h-6">
-                    <Image
-                      className="absolute h-[83.33%] w-full top-[8.33%] right-[4.17%] bottom-[8.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                      width={22}
-                      height={20}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/hero/Layer_1.svg"
-                    />
-                  </div>
+                  <Image
+                    className="absolute h-[73.33%] w-full top-[17.33%] right-[10.17%] bottom-[8.33%] left-[0.17%] max-w-full overflow-hidden max-h-full"
+                    width={22}
+                    height={20}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/our-team/users.svg"
+                  />
                 </div>
                 <b className="relative tracking-[-0.02em] leading-[110%] text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
                   Experts
@@ -43,7 +41,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/photo_2025-07-28_12-09-34 1.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -63,7 +61,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -75,7 +73,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -87,7 +85,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -101,7 +99,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/photo_2025-07-28_12-09-35 2.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -121,7 +119,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -133,7 +131,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -145,7 +143,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -159,7 +157,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/image 1530.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -179,7 +177,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -191,7 +189,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -203,7 +201,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -217,7 +215,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/image 1532.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -237,7 +235,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -249,7 +247,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -261,7 +259,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -277,7 +275,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/image 1531.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -297,7 +295,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -309,7 +307,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -321,7 +319,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -335,7 +333,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/image 1529.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -355,7 +353,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -367,7 +365,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -379,7 +377,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -393,7 +391,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/photo_2025-07-28_12-09-35 1.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -413,7 +411,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -425,7 +423,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -437,7 +435,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>
@@ -451,7 +449,7 @@ const OurTeam = () => {
                   height={260}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/our-team/image 1532.png"
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-6">
                   <div className="self-stretch flex flex-col items-center justify-start">
@@ -471,7 +469,7 @@ const OurTeam = () => {
                           height={18}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/linkedin.svg"
                         />
                       </div>
                     </div>
@@ -483,7 +481,7 @@ const OurTeam = () => {
                           height={18.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/instagram.svg"
                         />
                       </div>
                     </div>
@@ -495,7 +493,7 @@ const OurTeam = () => {
                           height={17.9}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/our-team/facebook.svg"
                         />
                       </div>
                     </div>

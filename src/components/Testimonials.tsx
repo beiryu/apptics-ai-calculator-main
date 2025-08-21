@@ -22,7 +22,7 @@ const Testimonials = () => {
                     height={51.9}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147227937.svg"
                   />
                 </div>
                 <b className="relative tracking-[-0.02em] leading-[110%] text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -52,7 +52,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191.png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -81,7 +81,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (1).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -110,7 +110,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (2).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -140,7 +140,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (3).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -169,7 +169,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (4).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -198,7 +198,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (5).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -228,7 +228,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (6).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -257,7 +257,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (7).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">
@@ -286,7 +286,7 @@ const Testimonials = () => {
                     height={50}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/testimonials/Frame 2147228191 (8).png"
                   />
                   <div className="w-[140.5px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.02em] leading-[150%] font-semibold">

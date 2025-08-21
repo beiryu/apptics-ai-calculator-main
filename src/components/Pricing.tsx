@@ -26,7 +26,7 @@ const Pricing = () => {
                 height={51.2}
                 sizes="100vw"
                 alt=""
-                src="/assets/hero/Layer_1.svg"
+                src="/assets/pricing/Frame 2147227937.svg"
               />
             </div>
           </div>
@@ -40,7 +40,7 @@ const Pricing = () => {
                     height={468}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/pricing/Group 2085663297.svg"
                   />
                 </div>
               </div>
@@ -48,14 +48,14 @@ const Pricing = () => {
                 <div className="self-stretch h-[180px] flex flex-col items-start justify-start py-0 px-2 box-border">
                   <div className="self-stretch shadow-[0px_1px_2px_rgba(255,_255,_255,_0.8)_inset] [backdrop-filter:blur(8px)] rounded-t-3xl rounded-b-none [background:linear-gradient(180deg,_rgba(255,_255,_255,_0.3),_#fff)] flex flex-col items-start justify-start pt-6 px-5 pb-0 gap-5">
                     <div className="self-stretch flex flex-row items-center justify-center gap-2">
-                      <div className="w-[26px] relative max-h-full overflow-hidden flex items-center justify-center">
+                      <div className="w-[26px] relative h-[26px] overflow-hidden flex items-center justify-center">
                         <Image
-                          className="w-full object-cover absolute left-[0px] top-[3px] h-full [transform:scale(2.128)]"
+                          className="w-full h-full object-cover absolute left-[0px] top-[0px] [transform:scale(1.696)]"
                           width={26}
                           height={26}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/Layer_2.svg"
                         />
                       </div>
                       <div className="flex-1 relative tracking-[-0.04em] leading-[140%] uppercase font-semibold">
@@ -89,7 +89,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -106,7 +106,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -123,7 +123,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -140,7 +140,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -157,7 +157,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -174,7 +174,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -191,7 +191,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -210,7 +210,7 @@ const Pricing = () => {
                       height={46.6}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/pricing/check.svg"
                     />
                     <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
                       <Image
@@ -219,7 +219,7 @@ const Pricing = () => {
                         height={34.3}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/pricing/check.svg"
                       />
                     </div>
                     <Image
@@ -228,7 +228,7 @@ const Pricing = () => {
                       height={34}
                       sizes="100vw"
                       alt=""
-                      src="/assets/hero/Layer_1.svg"
+                      src="/assets/pricing/portrait-positive-handsome-blond-man-with-beard-moustache-standing-with-crossed-hands-white-shirt-with-slight-smile-confident-expression 1.png"
                     />
                     <div className="relative tracking-[-0.03em] font-medium [text-shadow:0px_2px_1px_rgba(0,_0,_0,_0.15)] z-[3]">
                       Book a 20-min Call
@@ -239,12 +239,12 @@ const Pricing = () => {
               <div className="!!m-[0 important] absolute top-[-17px] right-[23.67px] shadow-[0px_10px_24px_rgba(0,_0,_0,_0.1),_0px_1px_2px_rgba(0,_0,_0,_0.08),_0px_3px_5px_-4px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-whitesmoke-600 border-solid border-[0.5px] flex flex-row items-center justify-center py-2 px-4 gap-2 z-[3] text-sm">
                 <div className="w-7 relative h-[18px] overflow-hidden flex items-center justify-center">
                   <Image
-                    className="w-full h-full object-cover absolute left-[0px] top-[8px] [transform:scale(1.199)]"
+                    className="w-full h-full object-cover absolute left-[0px] top-[8px] [transform:scale(1.199)] z-50"
                     width={28}
                     height={18}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/pricing/Frame 2147228255.svg"
                   />
                 </div>
                 <div className="relative tracking-[-0.03em] leading-[150%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [text-shadow:0px_1px_2px_rgba(0,_0,_0,_0.08)]">
@@ -260,7 +260,7 @@ const Pricing = () => {
                   height={481.3}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/pricing/check.svg"
                 />
                 <div className="absolute top-[-309.73px] left-[-120.21px] w-[615.8px] h-[409.8px] overflow-hidden flex items-center justify-center">
                   <Image
@@ -269,7 +269,7 @@ const Pricing = () => {
                     height={409.8}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/hero/Frame 2147228256.svg"
                   />
                 </div>
               </div>
@@ -284,7 +284,7 @@ const Pricing = () => {
                           height={26}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/Layer_1.svg"
                         />
                       </div>
                       <div className="flex-1 relative tracking-[-0.04em] leading-[150%] uppercase font-semibold">{`Enterprise `}</div>
@@ -315,7 +315,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -332,7 +332,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -349,7 +349,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -366,7 +366,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -383,7 +383,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -400,7 +400,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -417,7 +417,7 @@ const Pricing = () => {
                           height={5.8}
                           sizes="100vw"
                           alt=""
-                          src="/assets/hero/Layer_1.svg"
+                          src="/assets/pricing/check.svg"
                         />
                       </div>
                     </div>
@@ -446,7 +446,7 @@ const Pricing = () => {
                         height={35}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/pricing/check.svg"
                       />
                       <div className="w-[35px] relative [backdrop-filter:blur(5.83px)] rounded-[11.67px] bg-white border-gray-400 border-solid border-[0.7px] box-border h-[35px] overflow-hidden shrink-0 hidden">
                         <div className="absolute top-[calc(50%_-_12.76px)] left-[calc(50%_-_12.76px)] bg-gray-1500 w-[25.5px] h-[25.5px] overflow-hidden">
@@ -456,12 +456,12 @@ const Pricing = () => {
                             height={19.1}
                             sizes="100vw"
                             alt=""
-                            src="/assets/hero/Layer_1.svg"
+                            src="/assets/pricing/check.svg"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="shadow-[0px_2px_2px_rgba(0,_0,_0,_0.48)] flex flex-row items-center justify-center">
+                    <div className="flex flex-row items-center justify-center">
                       <div className="relative tracking-[-0.03em] font-medium">Get Started</div>
                     </div>
                   </div>

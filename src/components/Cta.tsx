@@ -80,7 +80,7 @@ const Cta = () => {
                     height={77.7}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/cta/Frame 2147227937.svg"
                   />
                 </div>
                 <b className="relative tracking-[-0.02em] leading-[110%]">Subscriptions</b>
@@ -90,7 +90,7 @@ const Cta = () => {
               Apptics is an all-in-one platform that helps online merchants manage subscriptions,
               optimize payments, and boost retention with smart analytics and seamless checkouts
             </div>
-            <div className="w-[216px] relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-16 text-left text-2xl">
+            <div className="w-[216px] relative rounded-full shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-16 text-left text-2xl">
               <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-3xl [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] flex flex-row items-center justify-center p-2 gap-4">
                 <Image
                   className="w-12 relative rounded-2xl max-h-full overflow-hidden shrink-0 object-cover"
@@ -98,9 +98,9 @@ const Cta = () => {
                   height={48}
                   sizes="100vw"
                   alt=""
-                  src="/assets/hero/Layer_1.svg"
+                  src="/assets/cta/Frame 2147228244.png"
                 />
-                <div className="shadow-[0px_2px_2px_rgba(0,_0,_0,_0.48)] flex flex-row items-center justify-start py-0 pl-0 pr-4">
+                <div className="flex flex-row items-center justify-start py-0 pl-0 pr-4">
                   <div className="relative tracking-[-0.03em] font-medium">Book a Call</div>
                 </div>
               </div>
@@ -116,27 +116,11 @@ const Cta = () => {
                 height={40}
                 sizes="100vw"
                 alt=""
-                src="/assets/hero/Layer_1.svg"
+                src="/assets/cta/asset 39.svg"
               />
               <div className="flex flex-row items-center justify-start gap-[22px]">
                 <div className="relative tracking-[-0.04em] leading-[150%]">Social Media</div>
                 <div className="flex flex-row items-center justify-start gap-2">
-                  <Image
-                    className="w-10 relative rounded-lg max-h-full overflow-hidden shrink-0"
-                    width={40}
-                    height={40}
-                    sizes="100vw"
-                    alt=""
-                    src="/assets/hero/Layer_1.svg"
-                  />
-                  <Image
-                    className="w-10 relative rounded-lg max-h-full overflow-hidden shrink-0 object-cover"
-                    width={40}
-                    height={40}
-                    sizes="100vw"
-                    alt=""
-                    src="/assets/hero/Layer_1.svg"
-                  />
                   <div className="w-10 relative rounded-lg bg-white border-gainsboro-300 border-solid border-[1px] box-border h-10 overflow-hidden shrink-0">
                     <div className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] bg-gray-1500 w-5 h-5 overflow-hidden">
                       <Image
@@ -145,7 +129,31 @@ const Cta = () => {
                         height={15.8}
                         sizes="100vw"
                         alt=""
-                        src="/assets/hero/Layer_1.svg"
+                        src="/assets/cta/Capa_1 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-10 relative rounded-lg bg-white border-gainsboro-300 border-solid border-[1px] box-border h-10 overflow-hidden shrink-0">
+                    <div className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] bg-gray-1500 w-5 h-5 overflow-hidden">
+                      <Image
+                        className="absolute h-[79%] w-full top-[8.33%] right-[8.17%] bottom-[12.67%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                        width={16.7}
+                        height={15.8}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/cta/svg168.svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-10 relative rounded-lg bg-white border-gainsboro-300 border-solid border-[1px] box-border h-10 overflow-hidden shrink-0">
+                    <div className="absolute top-[calc(50%_-_10px)] left-[calc(50%_-_10px)] bg-gray-1500 w-5 h-5 overflow-hidden">
+                      <Image
+                        className="absolute h-[79%] w-full top-[8.33%] right-[8.17%] bottom-[12.67%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                        width={16.7}
+                        height={15.8}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/cta/linkedin.svg"
                       />
                     </div>
                   </div>
@@ -165,7 +173,7 @@ const Cta = () => {
                     height={44}
                     sizes="100vw"
                     alt=""
-                    src="/assets/hero/Layer_1.svg"
+                    src="/assets/cta/Capa_1.svg"
                   />
                   <div className="w-[209.4px] flex flex-col items-start justify-start">
                     <div className="self-stretch relative tracking-[-0.04em] leading-[150%]">
@@ -214,7 +222,7 @@ const Cta = () => {
               height={256.3}
               sizes="100vw"
               alt=""
-              src="/assets/hero/Layer_1.svg"
+              src="/assets/cta/Vector.svg"
             />
             <div className="self-stretch flex flex-row items-center justify-between gap-0">
               <div className="relative tracking-[-0.04em] leading-[150%]">
