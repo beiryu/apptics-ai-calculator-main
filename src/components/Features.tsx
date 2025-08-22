@@ -40,15 +40,16 @@ const Features = () => {
               </div>
               <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-start py-3.5 px-6 text-center text-base font-inter">
                 <div className="self-stretch flex flex-col items-end justify-start gap-2">
-                  <div className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-gray-1600 border-whitesmoke-300 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-start p-3 relative gap-[14.5px]">
-                    <Image
-                      className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]"
-                      width={55}
-                      height={55}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/features/Layer_1.svg"
-                    />
+                  <div className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl border-whitesmoke-300 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-start p-3 relative gap-[14.5px]">
+                    <div className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]">
+                      <Image
+                        width={55}
+                        height={55}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/features/Layer_1.svg"
+                      />
+                    </div>
                     <div className="flex flex-col items-start justify-start gap-[1.9px] z-[1]">
                       <div className="relative tracking-[-0.01em] font-medium">Shopify</div>
                       <div className="relative text-sm tracking-[-0.01em] font-medium text-gray-200">
@@ -60,14 +61,15 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-gray-1600 border-whitesmoke-300 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-start p-3 relative gap-[14.5px]">
-                    <Image
-                      className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]"
-                      width={55}
-                      height={55}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/hero/Layer_1.svg"
-                    />
+                    <div className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]">
+                      <Image
+                        width={55}
+                        height={55}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/hero/Layer_1.svg"
+                      />
+                    </div>
                     <div className="flex flex-col items-start justify-start gap-[1.9px] z-[1]">
                       <div className="relative tracking-[-0.01em] font-medium">Shopify</div>
                       <div className="relative text-sm tracking-[-0.01em] font-medium text-gray-200">
@@ -79,14 +81,15 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-gray-1600 border-whitesmoke-300 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-start p-3 relative gap-[14.5px]">
-                    <Image
-                      className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]"
-                      width={55}
-                      height={55}
-                      sizes="100vw"
-                      alt=""
-                      src="/assets/hero/Layer_1.svg"
-                    />
+                    <div className="bg-whitesmoke-200 rounded-full p-4 w-[55px] relative max-h-full overflow-hidden shrink-0 z-[0]">
+                      <Image
+                        width={55}
+                        height={55}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/hero/Layer_1.svg"
+                      />
+                    </div>
                     <div className="flex flex-col items-start justify-start gap-[1.9px] z-[1]">
                       <div className="relative tracking-[-0.01em] font-medium">Shopify</div>
                       <div className="relative text-sm tracking-[-0.01em] font-medium text-gray-200">

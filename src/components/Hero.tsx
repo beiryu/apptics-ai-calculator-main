@@ -181,7 +181,7 @@ const Hero: NextPage = () => {
               height={50.5}
               sizes="100vw"
               alt=""
-              src="/assets/hero/Logo04.svg"
+              src="/assets/hero/Group.svg"
             />
           </div>
           <div className="absolute top-[0px] left-[0px] [background:linear-gradient(270deg,_rgba(245,_245,_245,_0),_#f5f5f5)] w-[134.7px] h-[218px]" />
