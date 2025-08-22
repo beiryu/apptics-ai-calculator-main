@@ -364,7 +364,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -375,7 +375,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -386,7 +386,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -397,7 +397,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -408,7 +408,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -419,7 +419,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -430,7 +430,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -441,7 +441,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -452,7 +452,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -463,7 +463,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
@@ -474,7 +474,7 @@ const Comparison = () => {
                       height={100}
                       sizes="100vw"
                       alt=""
-                      src="/assets/comparison/Frame 2147228169.png"
+                      src="/assets/comparison/Frame 2147228169.svg"
                     />
                   </div>
                 </div>
