@@ -461,7 +461,7 @@ const Pricing = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="shadow-[0px_2px_2px_rgba(0,_0,_0,_0.48)] flex flex-row items-center justify-center">
+                    <div className="flex flex-row items-center justify-center">
                       <div className="relative tracking-[-0.03em] font-medium">Get Started</div>
                     </div>
                   </div>

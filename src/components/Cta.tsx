@@ -6,52 +6,60 @@ const Cta = () => {
       <div className="self-stretch relative bg-white h-[1126px] z-[13] text-white font-plus-jakarta-sans">
         <div className="absolute top-[-137px] left-[calc(50%_-_600px)] shadow-[0px_0px_24px_6px_rgba(255,_255,_255,_0.2)_inset,_0px_177px_49px_rgba(24,_26,_104,_0),_0px_113px_45px_rgba(24,_26,_104,_0.02),_0px_64px_38px_rgba(24,_26,_104,_0.07),_0px_28px_28px_rgba(24,_26,_104,_0.11),_0px_7px_16px_rgba(24,_26,_104,_0.13)] rounded-[40px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] w-[1200px] h-[550px] overflow-hidden">
           <Image
-            className="absolute top-[calc(50%_-_1045.94px)] left-[calc(50%_-_757.9px)] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[0.05]"
+            className="absolute -top-[88%] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[1]"
             width={1515.8}
             height={1515.8}
             sizes="100vw"
             alt=""
-            src="/assets/hero/Layer_1.svg"
+            src="/assets/cta/Frame 2147228249.svg"
           />
-          <div className="absolute top-[73.76px] left-[141.11px] rounded-[32px] w-[94.8px] h-[94.8px] overflow-hidden flex items-center justify-center">
-            <Image
-              className="w-full h-full overflow-hidden object-cover absolute left-[0px] top-[48px] [transform:scale(1.497)]"
-              width={94.8}
-              height={94.8}
-              sizes="100vw"
-              alt=""
-              src="/assets/hero/Layer_1.svg"
-            />
+          <div className="absolute top-[73.76px] left-[141.11px] rounded-[32px] w-[94.8px] h-[94.8px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
+            <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+              <Image
+                className="absolute max-w-full max-h-full"
+                width={40}
+                height={40}
+                sizes="100vw"
+                alt=""
+                src="/assets/cta/unlock-3.svg"
+              />
+            </div>
           </div>
-          <div className="absolute top-[359.75px] left-[93.35px] rounded-[32px] w-[91.3px] h-[91.3px] overflow-hidden flex items-center justify-center">
-            <Image
-              className="w-full h-full overflow-hidden object-cover absolute left-[0px] top-[49px] [transform:scale(1.536)]"
-              width={91.3}
-              height={91.3}
-              sizes="100vw"
-              alt=""
-              src="/assets/hero/Layer_1.svg"
-            />
+          <div className="absolute top-[359.75px] left-[93.35px] rounded-[32px] w-[91.3px] h-[91.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
+            <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+              <Image
+                className="absolute max-w-full max-h-full"
+                width={40}
+                height={40}
+                sizes="100vw"
+                alt=""
+                src="/assets/cta/shopping-cart1.svg"
+              />
+            </div>
           </div>
-          <div className="absolute top-[341.32px] left-[983.22px] rounded-[32px] w-[98.1px] h-[98.1px] overflow-hidden flex items-center justify-center">
-            <Image
-              className="w-full h-full overflow-hidden object-cover absolute left-[0px] top-[47px] [transform:scale(1.444)]"
-              width={98.1}
-              height={98.1}
-              sizes="100vw"
-              alt=""
-              src="/assets/hero/Layer_1.svg"
-            />
+          <div className="absolute top-[341.32px] left-[983.22px] rounded-[32px] w-[98.1px] h-[98.1px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
+            <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+              <Image
+                className="absolute max-w-full max-h-full"
+                width={40}
+                height={40}
+                sizes="100vw"
+                alt=""
+                src="/assets/cta/package.svg"
+              />
+            </div>
           </div>
-          <div className="absolute top-[75.01px] left-[934.25px] rounded-[32px] w-[98.3px] h-[98.3px] overflow-hidden flex items-center justify-center">
-            <Image
-              className="w-full h-full object-cover absolute left-[0px] top-[47px] [transform:scale(1.441)]"
-              width={98.3}
-              height={98.3}
-              sizes="100vw"
-              alt=""
-              src="/assets/hero/Layer_1.svg"
-            />
+          <div className="absolute top-[75.01px] left-[934.25px] rounded-[32px] w-[98.3px] h-[98.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
+            <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+              <Image
+                className="absolute max-w-full max-h-full"
+                width={40}
+                height={40}
+                sizes="100vw"
+                alt=""
+                src="/assets/cta/tag-2.svg"
+              />
+            </div>
           </div>
           <div className="absolute top-[calc(50%_-_187.34px)] left-[calc(50%_-_533px)] w-[1066px] flex flex-col items-center justify-start gap-6">
             <div className="shadow-[0px_90px_35px_-8px_rgba(13,_36,_73,_0.02),_0px_53px_32px_-5px_rgba(13,_36,_73,_0.03),_0px_20px_24px_-2px_rgba(13,_36,_73,_0.06),_0px_6px_12px_-1px_rgba(13,_36,_73,_0.08)] rounded-[60px] bg-gray-600 border-gray-500 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2.5 font-geist">

@@ -390,7 +390,7 @@ const Benefits = () => {
                     className="w-full h-full"
                   />
                   {/* SVG Overlay only over the animation */}
-                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none top-0">
                     <Image
                       src="/assets/features/Vector 1194223260.svg"
                       alt=""
