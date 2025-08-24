@@ -96,7 +96,7 @@ const Faqs = () => {
             </span>
           </b>
           <div className="relative text-base tracking-[-0.04em] leading-[150%] text-gray-1400 text-center">
-            Book a call or reach out anytime, we're here to help.
+            Book a call or reach out anytime, we&apos;re here to help.
           </div>
         </div>
 
@@ -137,7 +137,7 @@ const Faqs = () => {
           <div className="w-full shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden p-4">
             <div className="flex flex-col items-center justify-center gap-4">
               <div className="relative tracking-[-0.03em] leading-[150%] font-medium text-center">
-                Coundn't find an answer you're looking for?
+                Coundn&apos;t find an answer you&apos;re looking for?
               </div>
               <div className="shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]">
                 <div className="relative tracking-[-0.03em] font-medium">Contact Us</div>
@@ -244,7 +244,7 @@ const Faqs = () => {
                 </b>
                 <div className="w-[490.9px] relative text-lg tracking-[-0.04em] leading-[150%] text-gray-1400 inline-block z-[2]">
                   {" "}
-                  Book a call or reach out anytime, we're here to help.
+                  Book a call or reach out anytime, we&apos;re here to help.
                 </div>
                 <div className="w-[52.4px] absolute !!m-[0 important] top-[64.28px] left-[344.78px] rounded-2xl h-[52.4px] shrink-0 overflow-hidden flex items-center justify-center z-[3]">
                   <Image

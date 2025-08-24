@@ -88,9 +88,10 @@ const Testimonials = () => {
                     Efficient Customer Support
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;I can&apos;t praise Apptics enough for their customer support. Whenever I had
-                    questions or needed assistance, their team was there to help me promptly. It&apos;s
-                    comforting to know I have such reliable support while running my business.&quot;
+                    &quot;I can&apos;t praise Apptics enough for their customer support. Whenever I
+                    had questions or needed assistance, their team was there to help me promptly.
+                    It&apos;s comforting to know I have such reliable support while running my
+                    business.&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -116,10 +117,10 @@ const Testimonials = () => {
                     The Ultimate Scaling Solution for Brands
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Apptics is hands down the best subscription management platform I&apos;ve used. From
-                    payments to chargeback protection, upsells, and consulting, they handle
-                    everything. My brand is scaling faster than I ever thought possible, and I
-                    couldn&apos;t have done it without their team!&quot;
+                    &quot;Apptics is hands down the best subscription management platform I&apos;ve
+                    used. From payments to chargeback protection, upsells, and consulting, they
+                    handle everything. My brand is scaling faster than I ever thought possible, and
+                    I couldn&apos;t have done it without their team!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -147,9 +148,10 @@ const Testimonials = () => {
                     Increased Customer Engagement by 150%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Since integrating with Apptics, the engagement on my platform has skyrocketed!
-                    I&apos;ve seen a 150% increase in customer interactions, leading to more sales and
-                    loyal customers. Their analytics help me understand my audience better!&quot;
+                    &quot;Since integrating with Apptics, the engagement on my platform has
+                    skyrocketed! I&apos;ve seen a 150% increase in customer interactions, leading to
+                    more sales and loyal customers. Their analytics help me understand my audience
+                    better!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -175,10 +177,10 @@ const Testimonials = () => {
                     Achieved 200% ROI in 6 Months!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;With Apptics, my investment turned into a 200% ROI in just half a year! Their
-                    data-driven approach allowed me to optimize my campaigns effectively, making
-                    every dollar count. I highly recommend their services to any business looking to
-                    grow!&quot;
+                    &quot;With Apptics, my investment turned into a 200% ROI in just half a year!
+                    Their data-driven approach allowed me to optimize my campaigns effectively,
+                    making every dollar count. I highly recommend their services to any business
+                    looking to grow!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -204,10 +206,10 @@ const Testimonials = () => {
                     Enhanced Marketing Campaign Effectiveness by 120%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Implementing Apptics into my marketing strategy has resulted in a 120% increase
-                    in campaign effectiveness. Their tools allow me to target my audience precisely,
-                    leading to higher conversion rates and successful promotions. I can&apos;t imagine
-                    running my campaigns without them!&quot;
+                    &quot;Implementing Apptics into my marketing strategy has resulted in a 120%
+                    increase in campaign effectiveness. Their tools allow me to target my audience
+                    precisely, leading to higher conversion rates and successful promotions. I
+                    can&apos;t imagine running my campaigns without them!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -235,9 +237,9 @@ const Testimonials = () => {
                     Reduced Churn Rate by 40%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Thanks to Apptics, we&apos;ve drastically cut down our churn rate! In just a few
-                    months, we achieved a 40% reduction by utilizing their retention strategies.
-                    It&apos;s been a game-changer for our subscription service.&quot;
+                    &quot;Thanks to Apptics, we&apos;ve drastically cut down our churn rate! In just
+                    a few months, we achieved a 40% reduction by utilizing their retention
+                    strategies. It&apos;s been a game-changer for our subscription service.&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -263,9 +265,10 @@ const Testimonials = () => {
                     Unmatched Flexibility in Subscription
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;The flexibility Apptics offers in managing my subscription plans has been a
-                    lifesaver. I can easily adjust pricing, create promotional offers, and analyze
-                    performance metrics without hassle. It&apos;s incredibly empowering for my business!&quot;
+                    &quot;The flexibility Apptics offers in managing my subscription plans has been
+                    a lifesaver. I can easily adjust pricing, create promotional offers, and analyze
+                    performance metrics without hassle. It&apos;s incredibly empowering for my
+                    business!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -291,10 +294,10 @@ const Testimonials = () => {
                     Improved Analytics
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;The analytics provided by Apptics have transformed my understanding of customer
-                    behavior. I can now tailor my offerings based on real-time data, resulting in
-                    improved customer satisfaction and increased sales. It&apos;s a must-have for any
-                    business!&quot;
+                    &quot;The analytics provided by Apptics have transformed my understanding of
+                    customer behavior. I can now tailor my offerings based on real-time data,
+                    resulting in improved customer satisfaction and increased sales. It&apos;s a
+                    must-have for any business!&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -392,8 +395,8 @@ const Testimonials = () => {
                     Efficient Customer Support
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;I can&apos;t praise Apptics enough for their customer support. Whenever I had
-                    questions or needed assistance, their team was there to help me promptly.
+                    &quot;I can&apos;t praise Apptics enough for their customer support. Whenever I
+                    had questions or needed assistance, their team was there to help me promptly.
                     It&apos;s comforting to know I have such reliable support while running my
                     business&quot;
                   </div>
@@ -421,10 +424,10 @@ const Testimonials = () => {
                     The Ultimate Scaling Solution for Brands
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Apptics is hands down the best subscription management platform I&apos;ve used.
-                    From payments to chargeback protection, upsells, and consulting, they handle
-                    everything. My brand is scaling faster than I ever thought possible, and I
-                    couldn&apos;t have done it without their team&quot;
+                    &quot;Apptics is hands down the best subscription management platform I&apos;ve
+                    used. From payments to chargeback protection, upsells, and consulting, they
+                    handle everything. My brand is scaling faster than I ever thought possible, and
+                    I couldn&apos;t have done it without their team&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -452,9 +455,10 @@ const Testimonials = () => {
                     Increased Customer Engagement by 150%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Since integrating with Apptics, the engagement on my platform has skyrocketed!
-                    I&apos;ve seen a 150% increase in customer interactions, leading to more sales
-                    and loyal customers. Their analytics help me understand my audience better&quot;
+                    &quot;Since integrating with Apptics, the engagement on my platform has
+                    skyrocketed! I&apos;ve seen a 150% increase in customer interactions, leading to
+                    more sales and loyal customers. Their analytics help me understand my audience
+                    better&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -480,10 +484,10 @@ const Testimonials = () => {
                     Achieved 200% ROI in 6 Months!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;With Apptics, my investment turned into a 200% ROI in just half a year! Their
-                    data-driven approach allowed me to optimize my campaigns effectively, making
-                    every dollar count. I highly recommend their services to any business looking to
-                    grow&quot;
+                    &quot;With Apptics, my investment turned into a 200% ROI in just half a year!
+                    Their data-driven approach allowed me to optimize my campaigns effectively,
+                    making every dollar count. I highly recommend their services to any business
+                    looking to grow&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -509,10 +513,10 @@ const Testimonials = () => {
                     Enhanced Marketing Campaign Effectiveness by 120%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Implementing Apptics into my marketing strategy has resulted in a 120% increase
-                    in campaign effectiveness. Their tools allow me to target my audience precisely,
-                    leading to higher conversion rates and successful promotions. I can&apos;t
-                    imagine running my campaigns without them&quot;
+                    &quot;Implementing Apptics into my marketing strategy has resulted in a 120%
+                    increase in campaign effectiveness. Their tools allow me to target my audience
+                    precisely, leading to higher conversion rates and successful promotions. I
+                    can&apos;t imagine running my campaigns without them&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -540,9 +544,9 @@ const Testimonials = () => {
                     Reduced Churn Rate by 40%!
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;Thanks to Apptics, we&apos;ve drastically cut down our churn rate! In just a
-                    few months, we achieved a 40% reduction by utilizing their retention strategies.
-                    It&apos;s been a game-changer for our subscription service&quot;
+                    &quot;Thanks to Apptics, we&apos;ve drastically cut down our churn rate! In just
+                    a few months, we achieved a 40% reduction by utilizing their retention
+                    strategies. It&apos;s been a game-changer for our subscription service&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
@@ -568,8 +572,8 @@ const Testimonials = () => {
                     Unmatched Flexibility in Subscription
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;The flexibility Apptics offers in managing my subscription plans has been a
-                    lifesaver. I can easily adjust pricing, create promotional offers, and analyze
+                    &quot;The flexibility Apptics offers in managing my subscription plans has been
+                    a lifesaver. I can easily adjust pricing, create promotional offers, and analyze
                     performance metrics without hassle. It&apos;s incredibly empowering for my
                     business&quot;
                   </div>
@@ -597,10 +601,10 @@ const Testimonials = () => {
                     Improved Analytics
                   </div>
                   <div className="self-stretch relative text-lg tracking-[-0.02em] leading-[150%] text-gray-200">
-                    &quot;The analytics provided by Apptics have transformed my understanding of customer
-                    behavior. I can now tailor my offerings based on real-time data, resulting in
-                    improved customer satisfaction and increased sales. It&apos;s a must-have for
-                    any business&quot;
+                    &quot;The analytics provided by Apptics have transformed my understanding of
+                    customer behavior. I can now tailor my offerings based on real-time data,
+                    resulting in improved customer satisfaction and increased sales. It&apos;s a
+                    must-have for any business&quot;
                   </div>
                   <div className="flex flex-row items-center justify-start gap-3 text-base">
                     <Image
