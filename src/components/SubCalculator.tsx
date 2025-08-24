@@ -47,8 +47,25 @@ const AppticsLogo = () => (
 );
 
 const SubCalculator: NextPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    checkIfMobile();
+
+    // Add resize listener
+    window.addEventListener("resize", checkIfMobile);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
   // State for calculator inputs
-  const [customerCount, setCustomerCount] = useState<number>(500);
+  const [customerCount, setCustomerCount] = useState<number>(5000);
   const [averageOrderValue, setAverageOrderValue] = useState<number>(50);
   const [profitMargin, setProfitMargin] = useState<number>(10);
   const [subscriptionValue, setSubscriptionValue] = useState<number>(60);
@@ -228,428 +245,532 @@ const SubCalculator: NextPage = () => {
   }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   return (
-    <div className="w-full relative min-h-[522px] text-left text-xl text-gray-300 font-plus-jakarta-sans">
-      <div className="mx-auto px-4 py-6 rounded-2xl max-w-6xl w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6">
-        <div className="w-full lg:w-[400px] h-auto lg:h-[532px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-start p-5">
-          <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-6">
-            <div className="self-stretch flex flex-row items-center justify-start gap-4">
-              <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
-                <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
-                  <div className="rounded-xl w-full h-full relative flex items-center justify-center shadow-lg">
-                    <Image
-                      className="w-5 h-5 object-contain transform-[scale(1.3)]"
-                      width={20}
-                      height={20}
-                      sizes="100vw"
-                      alt="Calculator icon"
-                      src="/bold.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                RIO Calculator
-              </div>
+    <div className="w-full relative min-h-[522px] ">
+      <div className="self-stretch rounded-[60px] flex flex-col items-center justify-start z-[8]">
+        <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center justify-start py-20 px-4 box-border gap-[60px]">
+          <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
+            <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
+              <div className="relative tracking-[-0.04em] leading-[130%]">Calculator ROI</div>
             </div>
-            <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-4 text-sm text-gray-200">
-              <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2">
-                <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
-                  Customer per month
-                </div>
-                <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300 ">
-                  <input
-                    type="text"
-                    className="relative tracking-[-0.02em] leading-[110%] font-semibold bg-transparent border-none outline-none w-full"
-                    value={customerCount.toLocaleString()}
-                    onChange={(e) => {
-                      const value = parseInt(e.target.value.replace(/,/g, ""));
-                      if (!isNaN(value)) {
-                        setCustomerCount(value);
-                      } else {
-                        setCustomerCount(0);
-                      }
-                    }}
-                  />
-                  <div className="w-5 relative bg-gray-400 h-5">
-                    <Image
-                      className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                      width={18.3}
-                      height={18.3}
-                      sizes="100vw"
-                      alt=""
-                      src="shopping-cart1.svg"
-                    />
-                  </div>
-                </div>
+            {isMobile ? (
+              <b className="w-full relative text-[28px] tracking-[-0.02em] leading-[130%] capitalize inline-block font-plus-jakarta-sans z-[1] text-center text-gray-300">
+                <p className="m-0">{`Calculate how Apptics `}</p>
+                <p className="m-0">{`could transform `}</p>
+                <p className="m-0">
+                  <span className="whitespace-pre-wrap">{`        `}</span>
+                  <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                    your business
+                  </span>
+                </p>
+              </b>
+            ) : (
+              <b className="w-[644.3px] relative text-[44px] tracking-[-0.02em] leading-[130%] capitalize inline-block font-plus-jakarta-sans z-[1] text-center text-gray-300">
+                <p className="m-0">Calculate how Apptics could</p>
+                <p className="m-0">
+                  <span className="whitespace-pre-wrap">{` transform         `}</span>
+                  <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                    your business
+                  </span>
+                </p>
+              </b>
+            )}
+            {isMobile ? (
+              <div className="w-[56.2px] absolute !!m-[0 important] top-[130px] left-[150px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
+                <Image
+                  className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.757)]"
+                  width={56.2}
+                  height={56.2}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/calculator/Frame 2147227937.svg"
+                />
               </div>
-              <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2 ">
-                <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
-                  Average oder value
-                </div>
-                <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300">
-                  <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center">
-                    <div className="relative flex items-center w-full">
-                      <span className="mr-0">$</span>
-                      <input
-                        type="text"
-                        className="bg-transparent border-none outline-none pl-0 w-full"
-                        value={averageOrderValue.toLocaleString()}
-                        onChange={(e) => {
-                          const value = parseInt(e.target.value.replace(/,/g, ""));
-                          if (!isNaN(value)) {
-                            setAverageOrderValue(value);
-                          } else {
-                            setAverageOrderValue(0);
-                          }
-                        }}
-                      />
+            ) : (
+              <div className="w-[56.2px] absolute !!m-[0 important] top-[118.92px] left-[330.24px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
+                <Image
+                  className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.757)]"
+                  width={56.2}
+                  height={56.2}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/calculator/Frame 2147227937.svg"
+                />
+              </div>
+            )}
+          </div>
+          <div className="max-w-[1050px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.69)_inset,_0px_0px_24px_8px_rgba(255,_255,_255,_0.8)_inset] rounded-[32px] overflow-hidden mx-auto px-4 py-6 w-full flex flex-col items-start gap-4 lg:gap-6 relative text-left">
+            <div className="rounded-[32px] max-w-[1020px] overflow-hidden mx-auto w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6 relative text-left">
+              <div className="w-full lg:w-[400px] h-auto lg:h-[532px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-start p-5 z-[3]">
+                <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-6">
+                  <div className="self-stretch flex flex-row items-center justify-start gap-4">
+                    <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
+                      <div className="w-[42px] relative rounded-xl h-[42px] shrink-0 flex items-center justify-center">
+                        <div className="rounded-xl w-full h-full relative flex items-center justify-center shadow-lg">
+                          <Image
+                            className="w-5 h-5 object-contain transform-[scale(1.3)]"
+                            width={20}
+                            height={20}
+                            sizes="100vw"
+                            alt="Calculator icon"
+                            src="/assets/calculator/bold.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-gray-300 text-xl">
+                      ROI Calculator
                     </div>
                   </div>
-                  <div className="w-5 relative bg-gray-400 h-5">
-                    <Image
-                      className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                      width={18.3}
-                      height={18.3}
-                      sizes="100vw"
-                      alt=""
-                      src="currency-dollar-circle.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2 ">
-                <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
-                  Profit margin (%)
-                </div>
-                <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300">
-                  <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center">
-                    <div className="relative flex items-center">
-                      <input
-                        type="text"
-                        className="bg-transparent border-none outline-none w-auto pr-0 -mr-2"
-                        style={{
-                          width: `${profitMargin.toString().length * 0.6 + 0.5}em`,
-                        }}
-                        value={profitMargin}
-                        onChange={(e) => {
-                          const value = parseInt(e.target.value);
-                          if (!isNaN(value)) {
-                            setProfitMargin(value);
-                          } else {
-                            setProfitMargin(0);
-                          }
-                        }}
-                      />
-                      <span className="text-base ml-0">%</span>
-                    </div>
-                  </div>
-                  <div className="w-5 relative bg-gray-400 h-5 overflow-hidden shrink-0">
-                    <Image
-                      className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                      width={18.3}
-                      height={18.3}
-                      sizes="100vw"
-                      alt=""
-                      src="discount.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] box-border h-[154px] flex flex-col items-center justify-between p-3.5 gap-0 text-base text-gray-300">
-                <div className="self-stretch relative tracking-[-0.02em] leading-[110%] capitalize font-semibold">
-                  Monthly subscription value
-                </div>
-                <div className="self-stretch flex flex-col items-start justify-start gap-4 text-xl ">
-                  <div className="self-stretch rounded-xl border-gainsboro-100 border-solid border-[1px] overflow-visible flex flex-row items-center justify-between py-3 px-6 gap-0">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center w-full">
-                      <div className="flex items-center w-full">
-                        <span>$</span>
+                  <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-4 text-sm text-gray-200">
+                    <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2">
+                      <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
+                        Customer per month
+                      </div>
+                      <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300 ">
                         <input
                           type="text"
-                          className="bg-transparent border-none outline-none w-full"
-                          value={subscriptionValue.toLocaleString()}
+                          className="relative tracking-[-0.02em] leading-[110%] font-semibold bg-transparent border-none outline-none w-full"
+                          value={customerCount.toLocaleString()}
                           onChange={(e) => {
                             const value = parseInt(e.target.value.replace(/,/g, ""));
                             if (!isNaN(value)) {
-                              if (value >= 0 && value <= 1000) {
-                                setSubscriptionValue(value);
-                              } else {
-                                setSubscriptionValue(1000);
-                              }
+                              setCustomerCount(value);
                             } else {
-                              setSubscriptionValue(0);
+                              setCustomerCount(0);
                             }
                           }}
                         />
+                        <div className="w-5 relative h-5">
+                          <Image
+                            className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                            width={18.3}
+                            height={18.3}
+                            sizes="100vw"
+                            alt=""
+                            src="/assets/calculator/shopping-cart1.svg"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div className="w-6 relative bg-gray-400 h-6 overflow-hidden shrink-0">
+                    <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2 ">
+                      <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
+                        Average oder value
+                      </div>
+                      <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300">
+                        <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center">
+                          <div className="relative flex items-center w-full">
+                            <span className="mr-0">$</span>
+                            <input
+                              type="text"
+                              className="bg-transparent border-none outline-none pl-0 w-full"
+                              value={averageOrderValue.toLocaleString()}
+                              onChange={(e) => {
+                                const value = parseInt(e.target.value.replace(/,/g, ""));
+                                if (!isNaN(value)) {
+                                  setAverageOrderValue(value);
+                                } else {
+                                  setAverageOrderValue(0);
+                                }
+                              }}
+                            />
+                          </div>
+                        </div>
+                        <div className="w-5 relative h-5">
+                          <Image
+                            className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                            width={18.3}
+                            height={18.3}
+                            sizes="100vw"
+                            alt=""
+                            src="/assets/calculator/currency-dollar-circle.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="self-stretch rounded-xl flex flex-col items-start justify-start gap-2 ">
+                      <div className="self-stretch relative tracking-[-0.01em] leading-[110%] capitalize">
+                        Profit margin (%)
+                      </div>
+                      <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-between p-3.5 gap-0 text-center text-base text-gray-300">
+                        <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center">
+                          <div className="relative flex items-center">
+                            <input
+                              type="text"
+                              className="bg-transparent border-none outline-none w-auto pr-0 -mr-2"
+                              style={{
+                                width: `${profitMargin.toString().length * 0.6 + 0.5}em`,
+                              }}
+                              value={profitMargin}
+                              onChange={(e) => {
+                                const value = parseInt(e.target.value);
+                                if (!isNaN(value)) {
+                                  setProfitMargin(value);
+                                } else {
+                                  setProfitMargin(0);
+                                }
+                              }}
+                            />
+                            <span className="text-base ml-0">%</span>
+                          </div>
+                        </div>
+                        <div className="w-5 relative h-5 overflow-hidden shrink-0">
+                          <Image
+                            className="absolute h-[91.5%] w-full top-[4.17%] right-[4.33%] bottom-[4.33%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                            width={18.3}
+                            height={18.3}
+                            sizes="100vw"
+                            alt=""
+                            src="/assets/calculator/discount.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="self-stretch shadow-[0px_8px_4px_-3px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-gainsboro-200 border-solid border-[0.5px] box-border h-[154px] flex flex-col items-center justify-between p-3.5 gap-0 text-base text-gray-300">
+                      <div className="self-stretch relative tracking-[-0.02em] leading-[110%] capitalize font-semibold">
+                        Monthly subscription value
+                      </div>
+                      <div className="self-stretch flex flex-col items-start justify-start gap-4 text-xl ">
+                        <div className="self-stretch rounded-xl border-gainsboro-100 border-solid border-[1px] overflow-visible flex flex-row items-center justify-between py-3 px-6 gap-0">
+                          <div className="relative tracking-[-0.02em] leading-[110%] font-semibold flex items-center w-full">
+                            <div className="flex items-center w-full">
+                              <span>$</span>
+                              <input
+                                type="text"
+                                className="bg-transparent border-none outline-none w-full"
+                                value={subscriptionValue.toLocaleString()}
+                                onChange={(e) => {
+                                  const value = parseInt(e.target.value.replace(/,/g, ""));
+                                  if (!isNaN(value)) {
+                                    if (value >= 0 && value <= 1000) {
+                                      setSubscriptionValue(value);
+                                    } else {
+                                      setSubscriptionValue(1000);
+                                    }
+                                  } else {
+                                    setSubscriptionValue(0);
+                                  }
+                                }}
+                              />
+                            </div>
+                          </div>
+                          <div className="w-6 relative h-6 overflow-hidden shrink-0">
+                            <Image
+                              className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                              width={22}
+                              height={22}
+                              sizes="100vw"
+                              alt=""
+                              src="/assets/calculator/discount-check.svg"
+                            />
+                          </div>
+                        </div>
+                        <div className="self-stretch h-2 flex flex-col items-start justify-start relative gap-2.5">
+                          <div
+                            className="self-stretch relative shadow-[0px_1px_2px_rgba(0,_0,_0,_0.08)_inset] rounded-[99px] bg-whitesmoke-200 h-2 overflow-hidden shrink-0 z-[0] cursor-pointer slider-track"
+                            onClick={handleSliderChange}
+                            onMouseDown={handleMouseDown}
+                            onTouchStart={handleTouchStart}
+                          >
+                            <div
+                              className="absolute top-[calc(50%_-_4px)] left-[0px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] h-2"
+                              style={{
+                                width: `${(subscriptionValue / 1000) * 100}%`,
+                              }}
+                            />
+                          </div>
+                          <div
+                            className="w-3.5 absolute !!m-[0 important] top-[calc(50%_-_8px)] shadow-[-1px_1px_2px_rgba(0,_0,_0,_0.2)] rounded-[50%] bg-white border-whitesmoke-100 border-solid border-[0.5px] box-border h-3.5 z-[1] cursor-grab active:cursor-grabbing"
+                            style={{
+                              left: `calc(${(subscriptionValue / 1000) * 100}% - ${
+                                subscriptionValue === 1000 ? "10px" : "1.75px"
+                              })`,
+                            }}
+                            onMouseDown={handleMouseDown}
+                            onTouchStart={handleTouchStart}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[532px] z-[3]">
+                <div className="w-full lg:h-[330px] h-[420px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-4 lg:p-5 gap-3 lg:gap-4">
+                  <div className="self-stretch flex flex-row items-center justify-start gap-1 text-left text-xl">
+                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-gray-300">
+                      Your Business with
+                    </div>
+                    <div className="flex items-center justify-center w-6 h-6">
+                      <AppticsLogo />
+                    </div>
+                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                      Apptics
+                    </div>
+                  </div>
+                  <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
+                    <div className="w-full lg:w-[320px] flex flex-col items-center justify-center gap-3">
+                      <div className="self-stretch flex flex-row items-center justify-start gap-3">
+                        <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
+                            <div className="w-4 relative h-4">
+                              <Image
+                                className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                                width={13.3}
+                                height={14.7}
+                                sizes="100vw"
+                                alt=""
+                                src="/assets/calculator/calendar.svg"
+                              />
+                            </div>
+                            <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
+                              Year 01
+                            </div>
+                          </div>
+                          <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withApptics.year1.toLocaleString()}
+                          </div>
+                        </div>
+                        <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
+                            <div className="w-4 relative h-4">
+                              <Image
+                                className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                                width={13.3}
+                                height={14.7}
+                                sizes="100vw"
+                                alt=""
+                                src="/assets/calculator/calendar.svg"
+                              />
+                            </div>
+                            <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
+                              Year 02
+                            </div>
+                          </div>
+                          <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withApptics.year2.toLocaleString()}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="self-stretch flex flex-row items-center justify-start gap-3">
+                        <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
+                            <div className="w-4 relative h-4">
+                              <Image
+                                className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                                width={13.3}
+                                height={14.7}
+                                sizes="100vw"
+                                alt=""
+                                src="/assets/calculator/calendar.svg"
+                              />
+                            </div>
+                            <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
+                              Year 03
+                            </div>
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withApptics.year3.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
+                            <div className="w-4 relative h-4">
+                              <Image
+                                className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                                width={13.3}
+                                height={14.7}
+                                sizes="100vw"
+                                alt=""
+                                src="/assets/calculator/calendar.svg"
+                              />
+                            </div>
+                            <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
+                              Year 04
+                            </div>
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withApptics.year4.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
+                      <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                        <div className="self-stretch flex flex-row items-center justify-center gap-2">
+                          <div className="w-4 relative h-4">
+                            <Image
+                              className="absolute h-[66.88%] w-full top-[16.67%] right-[3.96%] bottom-[16.46%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                              width={14.7}
+                              height={10.7}
+                              sizes="100vw"
+                              alt=""
+                              src="/assets/calculator/note4.svg"
+                            />
+                          </div>
+                          <div className="flex-1 relative tracking-[-0.02em] leading-[110%]">
+                            Passive Subscriber Income
+                          </div>
+                        </div>
+                        <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                          <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withApptics.passiveIncome.toLocaleString()}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                        <div className="self-stretch flex flex-row items-center justify-center gap-2">
+                          <div className="w-4 relative h-4">
+                            <Image
+                              className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                              width={14.7}
+                              height={14.7}
+                              sizes="100vw"
+                              alt=""
+                              src="/assets/calculator/currency-dollar-circle.svg"
+                            />
+                          </div>
+                          <div className="flex-1 relative tracking-[-0.02em] leading-[110%] overflow-hidden text-ellipsis whitespace-nowrap">
+                            Income per customer Acquired
+                          </div>
+                        </div>
+                        <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                          <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withApptics.incomePerCustomer.toLocaleString()}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] flex flex-col items-center justify-center p-4 lg:p-5 gap-3 lg:gap-4">
+                  <div className="self-stretch relative tracking-[-0.02em] leading-[110%] font-semibold text-xl text-gray-300">
+                    Without Apptics
+                  </div>
+                  <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
+                    <div className="w-full lg:w-[300px] flex flex-col items-center justify-center gap-3">
+                      <div className="self-stretch flex flex-row items-center justify-start gap-3">
+                        <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                            Year 01
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withoutApptics.year1.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                            Year 02
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withoutApptics.year2.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="self-stretch flex flex-row items-center justify-start gap-3">
+                        <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                            Year 03
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withoutApptics.year3.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                          <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                            Year 04
+                          </div>
+                          <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                            <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                              ${results.withoutApptics.year4.toLocaleString()}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
+                      <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                        <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                          Passive Subscriber Income
+                        </div>
+                        <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                          <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withoutApptics.passiveIncome.toLocaleString()}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
+                        <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
+                          Income per customer Acquired
+                        </div>
+                        <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
+                          <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
+                            ${results.withoutApptics.incomePerCustomer.toLocaleString()}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Call to action section from Calculator component */}
+            {!isMobile && (
+              <div className="w-full max-w-[1020px] mx-auto shadow-[0px_8px_10px_-4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[26px] px-[30px] relative gap-[60px] z-[4] text-lg">
+                <div className="w-[336.2px] absolute !!m-[0 important] right-0 h-[261px] overflow-hidden flex items-center justify-center z-[0]">
+                  <Image
+                    className="w-full h-full object-cover absolute left-[80px] top-[0px] [transform:scale(0.5)]"
+                    width={336.2}
+                    height={261}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/calculator/Mask group (1).svg"
+                  />
+                </div>
+                <div className="w-[464px] flex flex-col items-center justify-start gap-2 z-[1] text-gray-300">
+                  <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
+                    Get Started With Apptics, Acheive ROI Like Never Before
+                  </div>
+                  <div className="self-stretch relative text-base tracking-[-0.02em] leading-[110%] text-gray-200">
+                    Automate sales, boost retention, and unlock recurring revenue
+                  </div>
+                </div>
+                <div className="w-[162.4px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] z-[2] text-base text-white">
+                  <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] h-[50px] overflow-hidden flex flex-row items-center justify-center py-3 px-6 box-border">
+                    <div className="[filter:drop-shadow(0px_2px_2px_rgba(0,_0,_0,_0.48))] flex flex-row items-center justify-start gap-3">
+                      <div className="relative tracking-[-0.03em] font-medium whitespace-nowrap">
+                        Get Started
+                      </div>
                       <Image
-                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                        width={22}
-                        height={22}
+                        className="w-[20.4px] relative max-h-full"
+                        width={20.4}
+                        height={20}
                         sizes="100vw"
                         alt=""
-                        src="discount-check.svg"
+                        src="/assets/calculator/Group 1000011035.svg"
                       />
                     </div>
                   </div>
-                  <div className="self-stretch h-2 flex flex-col items-start justify-start relative gap-2.5">
-                    <div
-                      className="self-stretch relative shadow-[0px_1px_2px_rgba(0,_0,_0,_0.08)_inset] rounded-[99px] bg-whitesmoke-200 h-2 overflow-hidden shrink-0 z-[0] cursor-pointer slider-track"
-                      onClick={handleSliderChange}
-                      onMouseDown={handleMouseDown}
-                      onTouchStart={handleTouchStart}
-                    >
-                      <div
-                        className="absolute top-[calc(50%_-_4px)] left-[0px] [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] h-2"
-                        style={{
-                          width: `${(subscriptionValue / 1000) * 100}%`,
-                        }}
-                      />
-                    </div>
-                    <div
-                      className="w-3.5 absolute !!m-[0 important] top-[calc(50%_-_8px)] shadow-[-1px_1px_2px_rgba(0,_0,_0,_0.2)] rounded-[50%] bg-white border-whitesmoke-100 border-solid border-[0.5px] box-border h-3.5 z-[1] cursor-grab active:cursor-grabbing"
-                      style={{
-                        left: `calc(${(subscriptionValue / 1000) * 100}% - ${
-                          subscriptionValue === 1000 ? "10px" : "1.75px"
-                        })`,
-                      }}
-                      onMouseDown={handleMouseDown}
-                      onTouchStart={handleTouchStart}
-                    />
-                  </div>
                 </div>
+                <Image
+                  className="[transform:scale(0.5)] w-[336.2px] absolute !!m-[0 important] left-[-82.16px] h-[261px] object-cover z-[3]"
+                  width={336.2}
+                  height={261}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/calculator/Mask group.svg"
+                />
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[532px]">
-          <div className="w-full lg:h-[330px] h-[420px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-4 lg:p-5 gap-3 lg:gap-4">
-            <div className="self-stretch flex flex-row items-center justify-center gap-1">
-              <div className="relative tracking-[-0.02em] leading-[110%] font-semibold">
-                Your Business with
-              </div>
-              <div className="flex items-center justify-center w-6 h-6">
-                <AppticsLogo />
-              </div>
-              <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                Apptics
-              </div>
-            </div>
-            <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
-              <div className="w-full lg:w-[320px] flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
-                      <div className="w-4 relative bg-gray-400 h-4">
-                        <Image
-                          className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
-                          width={13.3}
-                          height={14.7}
-                          sizes="100vw"
-                          alt=""
-                          src="calendar.svg"
-                        />
-                      </div>
-                      <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
-                        Year 01
-                      </div>
-                    </div>
-                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0 min-w-0">
-                      ${results.withApptics.year1.toLocaleString()}
-                    </div>
-                  </div>
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
-                      <div className="w-4 relative bg-gray-400 h-4">
-                        <Image
-                          className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
-                          width={13.3}
-                          height={14.7}
-                          sizes="100vw"
-                          alt=""
-                          src="calendar.svg"
-                        />
-                      </div>
-                      <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
-                        Year 02
-                      </div>
-                    </div>
-                    <div className="relative text-lg tracking-[-0.02em] leading-[110%] font-semibold font-plus-jakarta-sans text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      ${results.withApptics.year2.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-                <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
-                      <div className="w-4 relative bg-gray-400 h-4">
-                        <Image
-                          className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
-                          width={13.3}
-                          height={14.7}
-                          sizes="100vw"
-                          alt=""
-                          src="calendar.svg"
-                        />
-                      </div>
-                      <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
-                        Year 03
-                      </div>
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withApptics.year3.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1 shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
-                      <div className="w-4 relative bg-gray-400 h-4">
-                        <Image
-                          className="absolute h-[91.88%] w-full top-[4.17%] right-[8.54%] bottom-[3.96%] left-[8.33%] max-w-full overflow-hidden max-h-full"
-                          width={13.3}
-                          height={14.7}
-                          sizes="100vw"
-                          alt=""
-                          src="calendar.svg"
-                        />
-                      </div>
-                      <div className="flex-1 relative tracking-[-0.02em] leading-[110%] font-medium">
-                        Year 04
-                      </div>
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withApptics.year4.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                  <div className="self-stretch flex flex-row items-center justify-center gap-2">
-                    <div className="w-4 relative bg-gray-400 h-4">
-                      <Image
-                        className="absolute h-[66.88%] w-full top-[16.67%] right-[3.96%] bottom-[16.46%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                        width={14.7}
-                        height={10.7}
-                        sizes="100vw"
-                        alt=""
-                        src="note4.svg"
-                      />
-                    </div>
-                    <div className="flex-1 relative tracking-[-0.02em] leading-[110%]">
-                      Passive Subscriber Income
-                    </div>
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      ${results.withApptics.passiveIncome.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-                <div className="self-stretch shadow-[0px_6px_4px_-2px_rgba(35,_40,_51,_0.02),_0px_1px_2px_-0.4px_rgba(35,_40,_51,_0.08)] rounded-xl bg-gray-100 border-white border-solid border-[1.5px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                  <div className="self-stretch flex flex-row items-center justify-center gap-2">
-                    <div className="w-4 relative bg-gray-400 h-4">
-                      <Image
-                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
-                        width={14.7}
-                        height={14.7}
-                        sizes="100vw"
-                        alt=""
-                        src="currency-dollar-circle.svg"
-                      />
-                    </div>
-                    <div className="flex-1 relative tracking-[-0.02em] leading-[110%] overflow-hidden text-ellipsis whitespace-nowrap">
-                      Income per customer Acquired
-                    </div>
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      ${results.withApptics.incomePerCustomer.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue border-solid border-[1px] flex flex-col items-center justify-center p-4 lg:p-5 gap-3 lg:gap-4">
-            <div className="self-stretch relative tracking-[-0.02em] leading-[110%] font-semibold">
-              Without Apptics
-            </div>
-            <div className="self-stretch flex-1 flex flex-col lg:flex-row items-start justify-start gap-3 text-sm text-gray-200 ">
-              <div className="w-full lg:w-[300px] flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                      Year 01
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withoutApptics.year1.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                      Year 02
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withoutApptics.year2.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="self-stretch flex flex-row items-center justify-start gap-3">
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                      Year 03
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withoutApptics.year3.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1 rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                    <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                      Year 04
-                    </div>
-                    <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                      <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                        ${results.withoutApptics.year4.toLocaleString()}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full lg:flex-1 flex flex-col items-center justify-center gap-3">
-                <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                  <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                    Passive Subscriber Income
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      ${results.withoutApptics.passiveIncome.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-                <div className="self-stretch rounded-xl bg-white border-gainsboro-200 border-solid border-[1px] flex flex-col items-start justify-start p-4 gap-2 min-w-0">
-                  <div className="self-stretch relative tracking-[-0.02em] leading-[110%]">
-                    Income per customer Acquired
-                  </div>
-                  <div className="self-stretch rounded-xl overflow-hidden flex flex-row items-center justify-start text-lg text-gray-300 font-plus-jakarta-sans">
-                    <div className="relative tracking-[-0.02em] leading-[110%] font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full min-w-0">
-                      ${results.withoutApptics.incomePerCustomer.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

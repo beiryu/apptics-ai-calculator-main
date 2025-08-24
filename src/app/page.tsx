@@ -22,7 +22,7 @@ const CaseStudies = dynamic(() => import("@/components/CaseStudies"), {
   loading: () => <div className="w-full h-64 bg-gray-100 animate-pulse rounded-xl" />,
 });
 
-const Calculator = dynamic(() => import("@/components/Calculator"), {
+const SubCalculator = dynamic(() => import("@/components/SubCalculator"), {
   ssr: false, // Disable SSR for interactive components
   loading: () => <div className="w-full h-96 bg-gray-100 animate-pulse rounded-xl" />,
 });
@@ -102,7 +102,7 @@ const DesktopV3: NextPage = () => {
       </Suspense>
 
       {/* Calculator needs client-side interaction, loaded without SSR */}
-      <Calculator />
+      <SubCalculator />
 
       {/* Components far below the fold with intersection observer */}
       <LazyLoadComponent height="h-96" id="pricing-section">
