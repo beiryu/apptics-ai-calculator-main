@@ -70,7 +70,7 @@ const Hero: NextPage = () => {
             <div className="self-stretch relative tracking-[-0.01em] leading-[150%] text-gray-200 whitespace-pre-wrap">
               Everything you need to create and grow your subscriptions all in one place!
             </div>
-            <div className="rounded-full shadow-[0px_70.80000305175781px_19.2px_rgba(0,_0,_0,_0),_0px_45.60000228881836px_18px_rgba(0,_0,_0,_0.01),_0px_25.200000762939453px_15.6px_rgba(0,_0,_0,_0.05),_0px_10.800000190734863px_10.8px_rgba(0,_0,_0,_0.09),_0px_2.4000000953674316px_6px_rgba(0,_0,_0,_0.1)] h-[60px] flex flex-row items-start justify-start text-left text-white">
+            <div className="rounded-full h-[60px] flex flex-row items-start justify-start text-left text-white">
               <div className="shadow-[0px_0px_9.6px_4.8px_rgba(255,_255,_255,_0.16)_inset,_0px_-2.4000000953674316px_0px_#000_inset,_0px_1.2000000476837158px_1.2px_#000_inset,_0px_2.4000000953674316px_1.2px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] flex flex-row items-center justify-center py-4 px-6">
                 <div className="[filter:drop-shadow(0px_2.4000000953674316px_2.4px_rgba(0,_0,_0,_0.48))] flex flex-row items-center justify-start gap-[14.4px]">
                   <div className="relative tracking-[-0.03em] font-medium">Calculate My MRR</div>

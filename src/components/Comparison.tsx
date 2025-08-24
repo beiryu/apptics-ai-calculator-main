@@ -1,6 +1,670 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Comparison = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    checkIfMobile();
+
+    // Add resize listener
+    window.addEventListener("resize", checkIfMobile);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+  // Mobile component rendering
+  if (isMobile) {
+    return (
+      <>
+        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-5 z-[4]">
+          <div className="flex-1 flex flex-col items-center justify-start py-12 px-0 gap-12">
+            <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
+              <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
+                <div className="relative tracking-[-0.04em] leading-[130%]">Apptics vs Others</div>
+              </div>
+              <b className="self-stretch relative text-[28px] tracking-[-0.02em] leading-[110%] font-plus-jakarta-sans z-[1] text-gray-300">
+                <p className="m-0 whitespace-pre-wrap">{`Why Apptics Beats   `}</p>
+                <p className="m-0">
+                  <span>{` `}</span>
+                  <span className="text-transparent !bg-clip-text [background:linear-gradient(90.55deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                    Every Competitor
+                  </span>
+                </p>
+              </b>
+              <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200 z-[2]">
+                Get everything other platforms promise, plus the features they don&apos;t, without
+                the headaches, high fees, or months of setup. While other platforms nickel and dime
+                you with hidden fees and force you to juggle multiple tools, Apptics gives you
+                everything in one place at a price that actually makes sense.
+              </div>
+              <div className="w-[37.8px] absolute !!m-[0 important] top-[87px] left-[calc(50%_-_156px)] rounded-[10.67px] h-[37.8px] shrink-0 overflow-hidden flex items-center justify-center z-[4]">
+                <Image
+                  className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[17px] [transform:scale(1.744)]"
+                  width={37.8}
+                  height={37.8}
+                  sizes="100vw"
+                  alt=""
+                  src="/assets/comparison/Frame 2147227938.svg"
+                />
+              </div>
+            </div>
+            <div className="self-stretch flex flex-row items-center justify-start py-0 px-5 text-xs text-gray-300">
+              <div className="flex-1 rounded-2xl bg-white overflow-hidden flex flex-row items-end justify-center p-2 gap-2">
+                <div className="flex-1 rounded-2xl border-whitesmoke-400 border-solid border-[1px] overflow-hidden flex flex-col items-start justify-start">
+                  <div className="self-stretch h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-6 box-border gap-4 text-base">
+                    <div className="w-5 relative bg-gray-1500 h-5 hidden" />
+                    <div className="relative tracking-[-0.01em] leading-[150%] capitalize font-medium hidden">
+                      Customizable checkout
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/shopping-cart1.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Customizable checkout
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[66.88%] w-full top-[16.67%] right-[3.96%] bottom-[16.46%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={10.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/credit-card2.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.01em] leading-[125%] capitalize font-medium text-start">
+                      Custom subscription plans
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/refresh-cw.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Chargeback mitigation
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/arrows-split.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      MID management & Routing
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/currency-pound-circle.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Multi-merchant support
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/sparkles-3.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Decline salvage AI
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/lock-3.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Fraud Prevention
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/help-circle.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      24/7 Dedicated Support
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/clock-hour-2.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Start Selling Within 24h
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/discount-check.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Unmatched Approval Rates
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 gap-2">
+                    <div className="w-4 relative bg-gray-1500 h-4">
+                      <Image
+                        className="absolute h-[91.88%] w-full top-[4.17%] right-[3.96%] bottom-[3.96%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={14.7}
+                        height={14.7}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/shopping-bag4.svg"
+                      />
+                    </div>
+                    <div className="flex-1 relative tracking-[-0.02em] leading-[125%] capitalize font-medium text-start">
+                      Engineered For Scale
+                    </div>
+                  </div>
+                  {/* Rest of the comparison table rows would go here */}
+                </div>
+                <div className="w-[72px] rounded-2xl border-whitesmoke-400 border-solid border-[1px] box-border flex flex-col items-start justify-start text-sm">
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="relative tracking-[-0.01em] leading-[150%] capitalize font-medium">
+                      Others
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-whitesmoke-400 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (1).svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[72px] rounded-2xl [background:linear-gradient(178.19deg,_#12b2f9,_#514dfa)] overflow-hidden shrink-0 flex flex-col items-start justify-start">
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center p-2">
+                    <Image
+                      width={77.1}
+                      height={24}
+                      sizes="100vw"
+                      alt=""
+                      src="/assets/comparison/asset 39.svg"
+                    />
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  <div className="self-stretch border-gray-1000 border-solid border-b-[1px] box-border h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6">
+                    <div className="w-[18px] relative bg-gray-1500 h-[18px] overflow-hidden shrink-0">
+                      <Image
+                        className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
+                        width={16.5}
+                        height={16.5}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/comparison/check-circle-2 (2).svg"
+                      />
+                    </div>
+                  </div>
+                  {/* Rest of the comparison table for Apptics column */}
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch w-full pb-4 shrink-0 text-[14.61px]">
+              <div className="flex flex-row items-center justify-center flex-wrap gap-2 px-2">
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-blueviolet whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group.svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Decline Salvage
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-mediumseagreen-300 whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (1).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Custom Webhook
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-chocolate whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (2).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">{`Affiliate tracking `}</div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-crimson whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (3).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Team activity log
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-olivedrab whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (4).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">{`IP & Geo blocking`}</div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-royalblue whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (5).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Smart tax handling
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-fuchsia whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (6).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Plan A/B testing
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-royalblue whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (7).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    Subscription Billing
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-blueviolet whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (8).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    PCI Tokenization
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-deepskyblue-200 whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (9).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%] font-medium">
+                    One click checkout solution
+                  </div>
+                </div>
+                <div className="rounded-[10.96px] bg-white border-gainsboro-300 border-solid border-[0.9px] flex flex-row items-center justify-center py-[7.3px] px-[11px] gap-[7.3px] text-chocolate whitespace-nowrap">
+                  <Image
+                    className="w-[20.1px] relative max-h-full"
+                    width={20.1}
+                    height={20.1}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/comparison/Group (10).svg"
+                  />
+                  <div className="relative tracking-[-0.04em] leading-[150%]">
+                    Dispute prevention
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  // Desktop component rendering
   return (
     <>
       <div className="self-stretch rounded-[60px] flex flex-col items-center justify-start z-[5] text-left">
