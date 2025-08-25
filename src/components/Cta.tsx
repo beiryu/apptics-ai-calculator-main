@@ -2,17 +2,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const Cta = () => {
-  // Используем хук для определения мобильного устройства только для клиентской стороны
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkIfMobile = () => {
-      const isMobileView = window.innerWidth < 768;
-      setIsMobile(isMobileView);
-      // Отладочная информация для разработчика
-      console.debug(
-        `Cta component: ${isMobileView ? "Mobile" : "Desktop"} view (${window.innerWidth}px)`
-      );
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -25,12 +19,11 @@ const Cta = () => {
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
-  // Мобильная версия компонента
   const MobileVersion = () => {
     return (
       <>
         <div className="mt-48 self-stretch bg-white flex flex-col items-start justify-start relative gap-2.5 z-[13] text-xs text-white">
-          <div className="w-[370px] absolute !!m-[0 important] top-[-144.87px] left-[calc(50%_-_185px)] shadow-[0px_0px_7.8px_1.95px_rgba(255,_255,_255,_0.2)_inset,_0px_57.525001525878906px_15.93px_rgba(24,_26,_104,_0),_0px_36.72500228881836px_14.63px_rgba(24,_26,_104,_0.02),_0px_20.80000114440918px_12.35px_rgba(24,_26,_104,_0.07),_0px_9.100000381469727px_9.1px_rgba(24,_26,_104,_0.11),_0px_2.2750000953674316px_5.2px_rgba(24,_26,_104,_0.13)] rounded-[13px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] h-[400px] overflow-hidden shrink-0 z-[0]">
+          <div className="w-full max-w-[370px] sm:max-w-[600px] absolute !!m-[0 important] top-[-144.87px] left-1/2 -translate-x-1/2 shadow-[0px_0px_7.8px_1.95px_rgba(255,_255,_255,_0.2)_inset,_0px_57.525001525878906px_15.93px_rgba(24,_26,_104,_0),_0px_36.72500228881836px_14.63px_rgba(24,_26,_104,_0.02),_0px_20.80000114440918px_12.35px_rgba(24,_26,_104,_0.07),_0px_9.100000381469727px_9.1px_rgba(24,_26,_104,_0.11),_0px_2.2750000953674316px_5.2px_rgba(24,_26,_104,_0.13)] rounded-[13px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] h-[400px] overflow-hidden shrink-0 z-[0]">
             <Image
               className="absolute -top-[140%] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[1]"
               width={779}
@@ -39,7 +32,7 @@ const Cta = () => {
               alt=""
               src="/assets/cta/Frame 2147228249.svg"
             />
-            <div className="absolute top-[31.04px] left-[28.22px] rounded-[15.8px] w-[46.8px] h-[46.8px] overflow-hidden flex items-center justify-center rotate-[10deg]">
+            <div className="absolute top-6 left-6 rounded-[15.8px] w-[46.8px] h-[46.8px] overflow-hidden flex items-center justify-center rotate-[10deg]">
               <div className="size-10 rounded-xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
                 <Image
                   className="absolute max-w-full max-h-full"
@@ -51,7 +44,7 @@ const Cta = () => {
                 />
               </div>
             </div>
-            <div className="absolute top-[311.45px] left-[22.58px] rounded-2xl w-[45.6px] h-[45.6px] overflow-hidden flex items-center justify-center rotate-[-10deg]">
+            <div className="absolute bottom-6 left-6 rounded-2xl w-[45.6px] h-[45.6px] overflow-hidden flex items-center justify-center rotate-[-10deg]">
               <div className="size-10 rounded-xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
                 <Image
                   className="absolute max-w-full max-h-full"
@@ -63,7 +56,7 @@ const Cta = () => {
                 />
               </div>
             </div>
-            <div className="absolute bottom-[33.13px] left-[292.98px] rounded-2xl w-[49.1px] h-[49.1px] overflow-hidden flex items-center justify-center rotate-[10deg]">
+            <div className="absolute bottom-6 right-6 rounded-2xl w-[49.1px] h-[49.1px] overflow-hidden flex items-center justify-center rotate-[10deg]">
               <div className="size-10 rounded-xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
                 <Image
                   className="absolute max-w-full max-h-full"
@@ -75,7 +68,7 @@ const Cta = () => {
                 />
               </div>
             </div>
-            <div className="absolute top-[28.84px] left-[298.93px] rounded-2xl w-[49.1px] h-[49.1px] overflow-hidden flex items-center justify-center rotate-[-10deg]">
+            <div className="absolute top-6 right-6 rounded-2xl w-[49.1px] h-[49.1px] overflow-hidden flex items-center justify-center rotate-[-10deg]">
               <div className="size-10 rounded-xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
                 <Image
                   className="absolute max-w-full max-h-full"
@@ -281,12 +274,11 @@ const Cta = () => {
     );
   };
 
-  // Десктопная версия компонента
   const DesktopVersion = () => {
     return (
       <>
         <div className="self-stretch relative bg-white h-[1126px] z-[13] text-white font-plus-jakarta-sans">
-          <div className="absolute top-[-137px] left-[calc(50%_-_600px)] shadow-[0px_0px_24px_6px_rgba(255,_255,_255,_0.2)_inset,_0px_177px_49px_rgba(24,_26,_104,_0),_0px_113px_45px_rgba(24,_26,_104,_0.02),_0px_64px_38px_rgba(24,_26,_104,_0.07),_0px_28px_28px_rgba(24,_26,_104,_0.11),_0px_7px_16px_rgba(24,_26,_104,_0.13)] rounded-[40px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] w-[1200px] h-[550px] overflow-hidden">
+          <div className="absolute top-[-137px] left-1/2 -translate-x-1/2 shadow-[0px_0px_24px_6px_rgba(255,_255,_255,_0.2)_inset,_0px_177px_49px_rgba(24,_26,_104,_0),_0px_113px_45px_rgba(24,_26,_104,_0.02),_0px_64px_38px_rgba(24,_26,_104,_0.07),_0px_28px_28px_rgba(24,_26,_104,_0.11),_0px_7px_16px_rgba(24,_26,_104,_0.13)] rounded-[40px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] w-full max-w-[1000px] xl:max-w-[1200px] h-[550px] overflow-hidden">
             <Image
               className="absolute -top-[88%] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[1]"
               width={1515.8}
@@ -295,52 +287,54 @@ const Cta = () => {
               alt=""
               src="/assets/cta/Frame 2147228249.svg"
             />
-            <div className="absolute top-[73.76px] left-[141.11px] rounded-[32px] w-[94.8px] h-[94.8px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
-              <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
-                <Image
-                  className="absolute max-w-full max-h-full"
-                  width={40}
-                  height={40}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/cta/unlock-3.svg"
-                />
+            <div className="absolute inset-0 px-5 md:px-10">
+              <div className="absolute top-[73.76px] left-10 md:left-14 rounded-[32px] w-[94.8px] h-[94.8px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
+                <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+                  <Image
+                    className="absolute max-w-full max-h-full"
+                    width={40}
+                    height={40}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/cta/unlock-3.svg"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="absolute top-[359.75px] left-[93.35px] rounded-[32px] w-[91.3px] h-[91.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
-              <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
-                <Image
-                  className="absolute max-w-full max-h-full"
-                  width={40}
-                  height={40}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/cta/shopping-cart1.svg"
-                />
+              <div className="absolute bottom-10 left-8 md:left-10 rounded-[32px] w-[91.3px] h-[91.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
+                <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+                  <Image
+                    className="absolute max-w-full max-h-full"
+                    width={40}
+                    height={40}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/cta/shopping-cart1.svg"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="absolute top-[341.32px] left-[983.22px] rounded-[32px] w-[98.1px] h-[98.1px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
-              <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
-                <Image
-                  className="absolute max-w-full max-h-full"
-                  width={40}
-                  height={40}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/cta/package.svg"
-                />
+              <div className="absolute bottom-10 right-8 md:right-10 rounded-[32px] w-[98.1px] h-[98.1px] overflow-hidden flex items-center justify-center transform rotate-[10deg]">
+                <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+                  <Image
+                    className="absolute max-w-full max-h-full"
+                    width={40}
+                    height={40}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/cta/package.svg"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="absolute top-[75.01px] left-[934.25px] rounded-[32px] w-[98.3px] h-[98.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
-              <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
-                <Image
-                  className="absolute max-w-full max-h-full"
-                  width={40}
-                  height={40}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/cta/tag-2.svg"
-                />
+              <div className="absolute top-[75.01px] right-10 md:right-14 rounded-[32px] w-[98.3px] h-[98.3px] overflow-hidden flex items-center justify-center transform rotate-[-10deg]">
+                <div className="size-16 rounded-3xl relative bg-whitesmoke-200 shadow-[0px_2px_2px_rgba(0,_0,_0,_0.1),_0px_8px_5px_rgba(0,_0,_0,_0.12)] flex justify-center items-center">
+                  <Image
+                    className="absolute max-w-full max-h-full"
+                    width={40}
+                    height={40}
+                    sizes="100vw"
+                    alt=""
+                    src="/assets/cta/tag-2.svg"
+                  />
+                </div>
               </div>
             </div>
             <div className="absolute top-[calc(50%_-_187.34px)] left-[calc(50%_-_533px)] w-[1066px] flex flex-col items-center justify-start gap-6">
@@ -397,7 +391,7 @@ const Cta = () => {
               </div>
             </div>
           </div>
-          <div className="absolute top-[493px] left-[calc(50%_-_640px)] w-[1280px] flex flex-col items-center justify-start gap-[68px] text-gray-300 font-inter">
+          <div className="absolute top-[493px] left-1/2 -translate-x-1/2 w-full max-w-[1280px] px-5 flex flex-col items-center justify-start gap-[68px] text-gray-300 font-inter">
             <div className="self-stretch flex flex-col items-start justify-start gap-10">
               <div className="self-stretch flex flex-row items-center justify-between gap-0">
                 <Image
@@ -507,7 +501,7 @@ const Cta = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[1280px] h-[277.3px] flex flex-col items-center justify-between gap-0 text-left text-sm text-gray-200">
+            <div className="w-full max-w-[1280px] px-5 h-[277.3px] flex flex-col items-center justify-between gap-0 text-left text-sm text-gray-200">
               <Image
                 className="self-stretch relative max-w-full overflow-hidden h-[256.3px] shrink-0"
                 width={1280}

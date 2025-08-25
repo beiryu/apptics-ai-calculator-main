@@ -22,9 +22,9 @@ const Comparison = () => {
   if (isMobile) {
     return (
       <>
-        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-5 z-[4]">
+        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-0 z-[4]">
           <div className="flex-1 flex flex-col items-center justify-start py-12 px-0 gap-12">
-            <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
+            <div className="self-stretch flex flex-col items-center justify-start relative gap-5 px-5">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Apptics vs Others</div>
               </div>
@@ -667,9 +667,9 @@ const Comparison = () => {
   // Desktop component rendering
   return (
     <>
-      <div className="self-stretch rounded-[60px] flex flex-col items-center justify-start z-[5] text-left">
-        <div className="w-[1200px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-          <div className="w-[548px] flex flex-col items-center justify-start relative gap-6 text-center">
+      <div className="self-stretch rounded-[60px] flex flex-col items-center justify-start px-5 z-[5] text-left">
+        <div className="w-full max-w-[1200px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
+          <div className="w-full max-w-[548px] flex flex-col items-center justify-start relative gap-6 text-center">
             <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
               <div className="relative tracking-[-0.04em] leading-[130%]">Apptics vs Others</div>
             </div>
@@ -695,9 +695,9 @@ const Comparison = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-start gap-5 text-gray-300">
-            <div className="w-[980px] rounded-[20px] bg-white overflow-hidden flex flex-row items-end justify-center p-4 box-border gap-4">
-              <div className="flex-1 rounded-2xl border-whitesmoke-400 border-solid border-[1px] overflow-hidden flex flex-col items-start justify-start">
-                <div className="self-stretch h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-6 box-border gap-4">
+            <div className="w-full max-w-[980px] mx-auto rounded-[20px] bg-white overflow-hidden flex flex-row items-end justify-center p-2 sm:p-4 box-border gap-2 sm:gap-4">
+              <div className="md:min-w-[300px] lg:min-w-[450px] xl:min-w-[600px] flex-1 rounded-2xl border-whitesmoke-400 border-solid border-[1px] overflow-hidden flex flex-col items-start justify-start">
+                <div className="self-stretch h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-4 px-3 sm:px-6 box-border gap-2 sm:gap-4">
                   <div className="w-5 relative bg-gray-1500 h-5 hidden" />
                   <div className="relative tracking-[-0.01em] leading-[150%] capitalize font-medium hidden">
                     Customizable checkout
@@ -1144,7 +1144,7 @@ const Comparison = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[980px] relative shadow-[0px_2px_2px_rgba(0,_0,_0,_0.04),_0px_0px_14px_5px_rgba(255,_255,_255,_0.8)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border h-[126px] overflow-hidden shrink-0 hidden text-2xl font-plus-jakarta-sans">
+            <div className="w-full max-w-[980px] relative shadow-[0px_2px_2px_rgba(0,_0,_0,_0.04),_0px_0px_14px_5px_rgba(255,_255,_255,_0.8)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border h-[126px] overflow-hidden shrink-0 hidden text-2xl font-plus-jakarta-sans">
               <div className="absolute top-[39px] left-[145px] w-[363px] flex flex-col items-center justify-start">
                 <div className="self-stretch relative tracking-[-0.02em] leading-[130%] font-semibold">
                   Get Started With Apptics, Acheive ROI Like Never Before
@@ -1183,7 +1183,7 @@ const Comparison = () => {
               />
             </div>
           </div>
-          <div className="w-[980px] overflow-hidden flex flex-row items-start justify-center flex-wrap content-start gap-3 text-blueviolet">
+          <div className="w-full max-w-[980px] overflow-hidden flex flex-row items-start justify-center flex-wrap content-start gap-3 text-blueviolet">
             <div className="rounded-xl bg-white border-gainsboro-300 border-solid border-[1px] flex flex-row items-center justify-center py-2 px-3 gap-2">
               <Image
                 className="w-[22px] relative max-h-full"

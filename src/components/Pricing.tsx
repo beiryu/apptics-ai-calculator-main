@@ -23,7 +23,7 @@ const Pricing = () => {
     return (
       <>
         <div className="self-stretch flex flex-col items-center justify-start py-10 px-0 z-[9]">
-          <div className="self-stretch rounded-[32px] bg-white flex flex-col items-center justify-start py-12 px-5 gap-12">
+          <div className="self-stretch rounded-[32px] bg-white flex flex-col items-center justify-start py-12 px-5 sm:px-10 md:px-32 gap-12">
             <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Pricing</div>
@@ -49,7 +49,7 @@ const Pricing = () => {
                 work payments, disputes, data, and retention.
               </div>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-5 text-left text-lg text-gray-300">
+            <div className="self-stretch flex flex-col items-start justify-start gap-12 lg:gap-5 text-left text-lg text-gray-300">
               <div className="self-stretch shadow-[0px_0px_24px_4px_rgba(255,_255,_255,_0.8)_inset] rounded-3xl bg-white border-gainsboro-600 border-solid border-[1px] flex flex-col items-center justify-start py-10 px-0 relative gap-[60px]">
                 <div className="absolute !!m-[0 important] top-[-0.1px] left-[0px] w-full rounded-3xl h-[723px] overflow-hidden shrink-0 z-[0]">
                   <div className="absolute top-[-270.73px] left-[-123.88px] w-[200%] h-[409.8px] overflow-hidden flex items-center justify-center">
@@ -665,7 +665,7 @@ const Pricing = () => {
       <>
         <div className="self-stretch flex flex-col items-center justify-start py-10 px-0 z-[9]">
           <div className="self-stretch rounded-[60px] bg-white flex flex-col items-center justify-start py-[60px] px-0 gap-[60px]">
-            <div className="w-[780px] flex flex-col items-center justify-start relative gap-6">
+            <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Pricing</div>
               </div>
@@ -690,8 +690,8 @@ const Pricing = () => {
                 />
               </div>
             </div>
-            <div className="w-[1280px] flex flex-row items-start justify-center gap-10 text-left text-lg text-gray-300 font-plus-jakarta-sans">
-              <div className="w-[420px] shadow-[0px_0px_24px_4px_rgba(255,_255,_255,_0.8)_inset] rounded-3xl bg-white border-gainsboro-600 border-solid border-[1px] box-border flex flex-col items-center justify-start py-10 px-0 relative gap-[60px]">
+            <div className="w-full max-w-[1280px] flex flex-row items-start justify-center gap-10 text-left text-lg text-gray-300 font-plus-jakarta-sans">
+              <div className="w-full max-w-[420px] shadow-[0px_0px_24px_4px_rgba(255,_255,_255,_0.8)_inset] rounded-3xl bg-white border-gainsboro-600 border-solid border-[1px] box-border flex flex-col items-center justify-start py-10 px-0 relative gap-[60px]">
                 <div className="absolute !!m-[0 important] top-[0px] left-[0px] w-full rounded-3xl h-[723px] overflow-hidden shrink-0 z-[0]">
                   <div className="absolute top-[0px] left-[0px] w-full h-full overflow-hidden flex items-center justify-center">
                     <Image

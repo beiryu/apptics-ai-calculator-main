@@ -7,16 +7,13 @@ const Faqs = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
-    // Initial check
     checkIfMobile();
 
-    // Add resize listener
     window.addEventListener("resize", checkIfMobile);
 
-    // Cleanup
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
@@ -84,7 +81,7 @@ const Faqs = () => {
     ];
 
     return (
-      <div className="flex flex-col items-center justify-start px-4 py-10 bg-whitesmoke-400">
+      <div className="flex flex-col items-center justify-start px-5 sm:px-10 md:px-20 py-10 bg-whitesmoke-400">
         <div className="flex flex-col items-center justify-start gap-6 mb-10">
           <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
             <div className="relative tracking-[-0.04em] leading-[130%]">FAQs</div>
@@ -228,11 +225,11 @@ const Faqs = () => {
 
     return (
       <>
-        <div className="self-stretch flex flex-col items-start justify-start relative gap-2.5 z-[12] text-gray-300">
-          <div className="w-[1440px] absolute !!m-[0 important] bottom-[-0.05px] left-[0px] bg-white h-[124.3px] z-[0]" />
+        <div className="self-stretch flex flex-col items-start justify-start relative gap-2.5 z-[12] text-gray-300 px-5">
+          <div className="w-full max-w-[1440px] absolute !!m-[0 important] bottom-[-0.05px] left-[0px] bg-white h-[124.3px] z-[0]" />
           <div className="self-stretch rounded-t-none rounded-b-[32px] bg-whitesmoke-400 flex flex-col items-center justify-start z-[1]">
-            <div className="w-[1280px] flex flex-col items-center justify-start pt-20 px-0 pb-60 box-border gap-[59px]">
-              <div className="w-[780px] flex flex-col items-center justify-start relative gap-6">
+            <div className="w-full max-w-[1280px] flex flex-col items-center justify-start pt-20 px-0 pb-60 box-border gap-[59px]">
+              <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                   <div className="relative tracking-[-0.04em] leading-[130%]">FAQs</div>
                 </div>

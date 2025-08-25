@@ -6,7 +6,7 @@ const Testimonials = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -23,7 +23,7 @@ const Testimonials = () => {
     return (
       <>
         <div className="self-stretch flex flex-col items-center justify-start z-[11]">
-          <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-12 px-5 gap-12">
+          <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-12 px-5 sm:px-10 md:px-20 gap-12">
             <div className="self-stretch flex flex-col items-center justify-start gap-5">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Testimonials</div>
@@ -329,9 +329,9 @@ const Testimonials = () => {
   const DesktopVersion = () => {
     return (
       <>
-        <div className="self-stretch flex flex-col items-center justify-start z-[11]">
-          <div className="w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-            <div className="w-[780px] flex flex-col items-center justify-start gap-6">
+        <div className="self-stretch flex flex-col items-center justify-start px-5 z-[11]">
+          <div className="w-full max-w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
+            <div className="w-full max-w-[780px] flex flex-col items-center justify-start gap-6">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Testimonials</div>
               </div>

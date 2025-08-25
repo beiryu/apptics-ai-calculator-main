@@ -79,7 +79,7 @@ const OurTeam = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1280);
     };
 
     // Initial check
@@ -156,12 +156,6 @@ const OurTeam = () => {
                   />
                 ))}
               </div>
-              <div className="self-stretch flex flex-row items-center justify-center gap-1.5">
-                <div className="w-2 relative rounded-[50%] bg-whitesmoke-400 h-2" />
-                <div className="w-2 relative rounded-[50%] bg-gray-200 h-2" />
-                <div className="w-2 relative rounded-[50%] bg-whitesmoke-400 h-2" />
-                <div className="w-2 relative rounded-[50%] bg-whitesmoke-400 h-2" />
-              </div>
             </div>
           </div>
         </div>
@@ -172,8 +166,8 @@ const OurTeam = () => {
     return (
       <>
         <div className="self-stretch flex flex-col items-center justify-start z-[10]">
-          <div className="w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-10">
-            <div className="w-[600px] flex flex-col items-center justify-start gap-6">
+          <div className="w-full max-w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-10">
+            <div className="w-full max-w-[600px] flex flex-col items-center justify-start gap-6">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Our Team</div>
               </div>

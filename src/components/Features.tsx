@@ -6,7 +6,7 @@ const Features = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -23,7 +23,7 @@ const Features = () => {
   if (isMobile) {
     return (
       <>
-        <div className="self-stretch flex flex-col items-center justify-start py-0 px-5 z-[3]">
+        <div className="self-stretch flex flex-col items-center justify-start py-0 px-5 sm:px-20 md:px-32 z-[3]">
           <div className="self-stretch flex flex-col items-center justify-start py-12 px-0 gap-12">
             <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
@@ -51,8 +51,8 @@ const Features = () => {
                 Everything you need to build and scale subscriptions – all in one platform.
               </div>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-center gap-5 text-left text-gray-300 font-plus-jakarta-sans">
-              <div className="self-stretch shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
+            <div className="w-full self-stretch flex flex-col items-start justify-center gap-5 text-left text-gray-300 font-plus-jakarta-sans">
+              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-0 gap-1">
                   <div className="self-stretch relative leading-[150%] font-semibold">{`Subscription Creation & Management`}</div>
                   <div className="self-stretch relative text-sm tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -125,7 +125,7 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
+              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-4 gap-1">
                   <div className="self-stretch relative leading-[150%] font-semibold">{`Custom Checkouts & Strategies`}</div>
                   <div className="self-stretch relative text-sm tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -201,9 +201,9 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end text-sm">
+              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end text-sm">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-0 gap-1">
-                  <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue & Projections`}</div>
+                  <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue`}</div>
                   <div className="self-stretch relative tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
                     See real-time revenue insights and forecasts to make smarter business decision
                   </div>
@@ -343,9 +343,9 @@ const Features = () => {
   // Desktop component rendering
   return (
     <>
-      <div className="self-stretch flex flex-col items-center justify-start z-[3]">
-        <div className="w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-          <div className="w-[1026px] flex flex-col items-center justify-start relative gap-6">
+      <div className="self-stretch flex flex-col items-center justify-start px-5 z-[3] overflow-x-hidden">
+        <div className="w-full max-w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
+          <div className="w-full max-w-[1026px] flex flex-col items-center justify-start relative gap-6">
             <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
               <div className="relative tracking-[-0.04em] leading-[130%]">Features</div>
             </div>
@@ -367,12 +367,12 @@ const Features = () => {
                 </span>
               </div>
             </b>
-            <div className="w-[722.8px] relative text-lg tracking-[-0.01em] leading-[150%] text-gray-200 inline-block z-[2]">
+            <div className="w-full max-w-[722.8px] relative text-lg tracking-[-0.01em] leading-[150%] text-gray-200 inline-block z-[2]">
               Everything you need to build and scale subscriptions – all in one platform.
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
-            <div className="flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+          <div className="self-stretch flex flex-col md:flex-row items-center justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
+            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
                 <div className="self-stretch relative leading-[150%] font-semibold">{`Create & Manage Subscriptions`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -445,9 +445,9 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
-                <div className="self-stretch relative leading-[150%] font-semibold">{` Build Custom Checkouts & Upsells`}</div>
+                <div className="self-stretch relative leading-[150%] font-semibold">{` Build Custom Checkouts & Upsells`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
                   Convert more visitors with smart checkouts, built-in upsells, and flexible payment
                   options.
@@ -529,14 +529,14 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
-                <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue & Projections`}</div>
+                <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
                   See real-time revenue insights and forecasts to make smarter business decision
                 </div>
               </div>
-              <div className="w-[386.7px] relative bg-gray-100 h-[297px] overflow-hidden shrink-0 text-center text-[10px] text-gray-200">
+              <div className="w-full relative bg-gray-100 h-[297px] overflow-hidden shrink-0 text-center text-[10px] text-gray-200">
                 <Image
                   className="absolute top-[0px] left-[-16.53px] w-0 h-0"
                   width={1}
@@ -545,8 +545,8 @@ const Features = () => {
                   alt=""
                   src="/assets/hero/Layer_1.svg"
                 />
-                <div className="absolute top-[124.68px] left-[-16.53px] [background:linear-gradient(180deg,_rgba(225,_226,_229,_0),_#f0f2f5)] w-[418.9px] h-[129.3px]" />
-                <div className="absolute top-[17px] left-[calc(50%_-_165.02px)] h-[237px] flex flex-row items-end justify-center gap-1.5 text-gray-1300">
+                <div className="absolute top-[124.68px] left-0 right-0 [background:linear-gradient(180deg,_rgba(225,_226,_229,_0),_#f0f2f5)] h-[129.3px]" />
+                <div className="absolute top-[17px] left-0 right-0 h-[237px] flex flex-row items-end justify-center gap-1.5 text-gray-1300">
                   <div className="w-[50px] flex flex-col items-start justify-start gap-0.5">
                     <div className="self-stretch shadow-[0px_0px_4px_2px_rgba(255,_255,_255,_0.24)_inset] rounded-lg bg-darkslategray-200 border-aliceblue-400 border-solid border-[0.6px] box-border h-[26px] overflow-hidden shrink-0 flex flex-row items-center justify-center">
                       <div className="relative leading-[150%] font-medium">$86K</div>
@@ -626,7 +626,7 @@ const Features = () => {
                     />
                   </div>
                 </div>
-                <div className="absolute top-[262.6px] left-[33.33px] flex flex-row items-center justify-start gap-1">
+                <div className="absolute top-[262.6px] left-0 right-0 flex flex-row items-center justify-center gap-1">
                   <div className="w-[50px] flex flex-col items-center justify-center">
                     <div className="self-stretch relative tracking-[-0.04em] leading-[150%]">
                       JAN
@@ -658,7 +658,7 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute top-[0px] left-[4.83px] w-[229px] overflow-hidden flex flex-col items-end justify-start py-4 px-6 box-border text-left text-xs">
+                <div className="absolute top-[0px] left-[4.83px] md:left-[10px] lg:left-[20px] w-[229px] overflow-hidden flex flex-col items-start justify-start py-4 px-6 box-border text-left text-xs">
                   <div className="self-stretch relative leading-[150%]">Revenue Forecasts</div>
                   <div className="self-stretch relative text-base leading-[150%] font-semibold text-gray-300">
                     $1,256,345.00

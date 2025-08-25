@@ -6,7 +6,7 @@ const CaseStudies = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -21,7 +21,7 @@ const CaseStudies = () => {
 
   const MobileVersion = () => {
     return (
-      <div className="self-stretch bg-whitesmoke-400 flex flex-col items-center justify-start py-0 px-5 z-[7]">
+      <div className="self-stretch bg-whitesmoke-400 flex flex-col items-center justify-start py-0 px-5 sm:px-20 md:px-40 z-[7]">
         <div className="self-stretch flex flex-col items-start justify-center py-12 px-0 gap-12">
           <div className="self-stretch flex flex-col items-start justify-end gap-5">
             <div className="self-stretch flex flex-col items-center justify-center relative gap-5">
@@ -53,7 +53,7 @@ const CaseStudies = () => {
               Apptics
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[30px] text-gray-300">
+          <div className="self-stretch flex flex-col items-start justify-start gap-[60px] text-gray-300">
             <div className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4">
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
@@ -291,8 +291,8 @@ const CaseStudies = () => {
 
   const DesktopVersion = () => {
     return (
-      <div className="self-stretch flex flex-col items-center justify-start z-[7]">
-        <div className="w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
+      <div className="self-stretch flex flex-col items-center justify-start px-5 z-[7]">
+        <div className="w-full max-w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
           <div className="flex flex-col items-center justify-start relative gap-6">
             <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
               <div className="relative tracking-[-0.04em] leading-[130%]">Case studies</div>
@@ -433,7 +433,7 @@ const CaseStudies = () => {
                     <div className="relative tracking-[-0.01em] leading-[150%] font-semibold">
                       $120,450
                     </div>
-                    <div className="relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200">
+                    <div className="text-start relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200">
                       New customer acquisitions
                     </div>
                   </div>
@@ -441,7 +441,7 @@ const CaseStudies = () => {
                     <div className="relative tracking-[-0.01em] leading-[150%] font-semibold">
                       1500+
                     </div>
-                    <div className="relative text-sm tracking-[-0.04em] leading-[150%] text-gray-800">
+                    <div className="text-start relative text-sm tracking-[-0.04em] leading-[150%] text-gray-800">
                       New customer acquisitions
                     </div>
                   </div>

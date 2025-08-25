@@ -4,28 +4,23 @@ import { useState, useEffect } from "react";
 const Onboarding = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Используем useEffect для определения мобильного устройства и добавления слушателя изменения размера окна
   useEffect(() => {
-    // Функция для проверки размера экрана
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768); // Устанавливаем breakpoint на 768px
+      setIsMobile(window.innerWidth < 1024);
     };
 
-    // Начальная проверка при монтировании компонента
     checkIfMobile();
 
-    // Добавляем слушатель изменения размера окна
     window.addEventListener("resize", checkIfMobile);
 
-    // Очистка слушателя при размонтировании компонента
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
   const MobileVersion = () => {
     return (
       <>
-        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-center justify-start py-6 px-2.5 z-[6]">
-          <div className="flex-1 rounded-[32px] bg-white overflow-hidden flex flex-row items-center justify-center">
+        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-center justify-start py-6 px-5 z-[6]">
+          <div className="flex-1 rounded-[32px] bg-white overflow-hidden flex flex-row items-center justify-center px-0 sm:px-10 md:px-20">
             <div className="flex-1 overflow-hidden flex flex-col items-center justify-start py-12 px-3 gap-[60px]">
               <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
@@ -299,7 +294,7 @@ const Onboarding = () => {
     return (
       <>
         <div className="self-stretch overflow-hidden flex flex-row items-center justify-start py-[60px] px-0 z-[6]">
-          <div className="flex-1 rounded-[60px] bg-white overflow-hidden flex flex-row items-center justify-center relative gap-2.5">
+          <div className="flex-1 rounded-[60px] bg-white overflow-hidden flex flex-row items-center justify-center relative gap-2.5 px-5 lg:px-0">
             <Image
               className="w-[812.4px] absolute !!m-[0 important] top-[calc(50%_-_1318.88px)] left-[-284.81px] h-[881.8px] object-contain hidden z-[0]"
               width={812.4}
@@ -308,8 +303,8 @@ const Onboarding = () => {
               alt=""
               src="/assets/onboarding/Frame 2147227938.svg"
             />
-            <div className="w-[850px] overflow-hidden shrink-0 flex flex-col items-center justify-start py-[60px] px-0 box-border gap-[60px] z-[1]">
-              <div className="w-[742px] flex flex-col items-center justify-start relative gap-6">
+            <div className="w-full max-w-[850px] overflow-hidden shrink-0 flex flex-col items-center justify-start py-[60px] px-0 box-border gap-[60px] z-[1]">
+              <div className="w-full max-w-[742px] flex flex-col items-center justify-start relative gap-6">
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                   <div className="relative tracking-[-0.04em] leading-[130%]">Onboarding</div>
                 </div>

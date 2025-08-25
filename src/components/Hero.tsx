@@ -176,8 +176,8 @@ const Hero: NextPage = () => {
   // Desktop component rendering
   return (
     <>
-      <div className="self-stretch rounded-3xl overflow-hidden flex flex-col items-center justify-start pt-[140px] px-[70px] pb-0 z-[0] text-left text-lg text-white">
-        <div className="w-[1150px] flex flex-col items-center justify-start gap-12">
+      <div className="self-stretch rounded-3xl overflow-hidden flex flex-col items-center justify-start pt-[140px] px-5 sm:px-10 md:px-[70px] pb-0 z-[0] text-left text-lg text-white">
+        <div className="w-full max-w-[1150px] flex flex-col items-center justify-start gap-12">
           <div className="self-stretch flex flex-col items-center justify-start gap-6 text-center text-gray-300 font-plus-jakarta-sans">
             <div className="shadow-[0px_51px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_18px_11px_rgba(0,_0,_0,_0.03),_0px_8px_8px_rgba(0,_0,_0,_0.06),_0px_2px_5px_rgba(0,_0,_0,_0.07)] rounded-[60px] bg-white border-gainsboro-300 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2.5">
               <Image
@@ -192,7 +192,7 @@ const Hero: NextPage = () => {
                 Built for shopify
               </div>
             </div>
-            <div className="self-stretch flex flex-col items-center justify-start text-[90px]">
+            <div className="self-stretch flex flex-col items-center justify-start text-5xl sm:text-6xl md:text-[90px]">
               <b className="self-stretch relative tracking-[-0.01em] leading-[115%]">
                 Turn Your Shoppers
               </b>
@@ -211,7 +211,7 @@ const Hero: NextPage = () => {
                 <b className="relative tracking-[-0.03em] leading-[115%] text-transparent !bg-clip-text [background:linear-gradient(90deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">{`Subscribers `}</b>
               </div>
             </div>
-            <div className="w-[596.7px] relative text-2xl tracking-[-0.01em] leading-[150%] font-inter text-gray-200 whitespace-pre-wrap inline-block">
+            <div className="w-full max-w-[596.7px] relative text-xl md:text-2xl tracking-[-0.01em] leading-[150%] font-inter text-gray-200 whitespace-pre-wrap inline-block">
               Everything you need to create and grow your subscriptions all in one place!
             </div>
           </div>
@@ -259,11 +259,11 @@ const Hero: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1250px] relative h-[580px] text-sm text-dimgray">
+        <div className="w-full max-w-[1250px] relative h-[400px] md:h-[500px] lg:h-[580px] text-sm text-dimgray">
           <MyLottieComponent animationType="hero" width="w-full" height="h-full" />
         </div>
       </div>
-      <div className="w-[1280px] absolute top-[24px] left-[calc(50%_-_640px)] rounded-2xl flex flex-row items-center justify-between gap-0 z-[1] text-left text-lg text-gray-200 font-plus-jakarta-sans">
+      <div className="w-full max-w-[1280px] absolute top-[24px] left-1/2 -translate-x-1/2 rounded-2xl flex flex-row items-center justify-between px-5 gap-0 z-[1] text-left text-lg text-gray-200 font-plus-jakarta-sans">
         <Image
           className="w-[128.5px] h-10 object-cover"
           width={128.5}
@@ -272,7 +272,7 @@ const Hero: NextPage = () => {
           alt=""
           src="/assets/nav/asset 39.svg"
         />
-        <div className="flex flex-row items-center justify-start gap-4">
+        <div className="hidden md:flex flex-row items-center justify-start gap-0 md-gap-4">
           <div className="rounded-2xl flex flex-row items-center justify-center py-3 px-4">
             <div className="relative tracking-[-0.03em] leading-[140%] font-medium">Features</div>
           </div>
@@ -286,15 +286,15 @@ const Hero: NextPage = () => {
             <div className="relative tracking-[-0.03em] leading-[140%] font-medium">FAQs</div>
           </div>
         </div>
-        <div className="shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 text-gray-300 font-inter">
+        <div className="shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden hidden md:flex flex-row items-center justify-center py-3 px-4 text-gray-300 font-inter">
           <div className="flex flex-row items-center justify-center opacity-[0.6]">
             <div className="relative tracking-[-0.03em] font-medium">Book a Call</div>
           </div>
         </div>
       </div>
-      <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-10 px-0 z-[2] text-2xl text-gray-300 font-plus-jakarta-sans">
-        <div className="w-[1200px] relative rounded-2xl h-[138px] overflow-hidden shrink-0">
-          <div className="absolute top-[0px] left-[0px] tracking-[-0.02em] leading-[110%] font-medium inline-block w-[1200px]">
+      <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-10 px-5 z-[2] text-xl md:text-2xl text-gray-300 font-plus-jakarta-sans">
+        <div className="w-full max-w-[1200px] relative rounded-2xl h-[138px] overflow-hidden shrink-0">
+          <div className="absolute top-[0px] left-[0px] tracking-[-0.02em] leading-[110%] font-medium inline-block w-full">
             Seamless Integration Across all your Apps
           </div>
           <div className="absolute top-[58px] left-[-627px] flex flex-row items-center justify-start gap-[100px]">
@@ -355,8 +355,6 @@ const Hero: NextPage = () => {
               src="/assets/hero/Group.svg"
             />
           </div>
-          <div className="absolute top-[0px] left-[0px] [background:linear-gradient(270deg,_rgba(245,_245,_245,_0),_#f5f5f5)] w-[134.7px] h-[218px]" />
-          <div className="absolute top-[0px] right-[-134.7px] [background:linear-gradient(270deg,_rgba(245,_245,_245,_0),_#f5f5f5)] w-[134.7px] h-[218px] [transform:_rotate(180deg)] [transform-origin:0_0]" />
         </div>
       </div>
     </>

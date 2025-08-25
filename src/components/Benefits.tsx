@@ -12,7 +12,7 @@ const Benefits = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -28,7 +28,7 @@ const Benefits = () => {
   if (isMobile) {
     return (
       <>
-        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-5 z-[4]">
+        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-5 sm:px-20 md:px-32 z-[4]">
           <div className="flex-1 flex flex-col items-center justify-start py-12 px-0 gap-12">
             <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
@@ -416,9 +416,9 @@ const Benefits = () => {
     // Desktop component rendering
     return (
       <>
-        <div className="self-stretch flex flex-row items-start justify-center z-[4]">
-          <div className="w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-            <div className="w-[780px] flex flex-col items-center justify-start relative gap-6">
+        <div className="self-stretch flex flex-row items-start justify-center px-5 z-[4] overflow-x-hidden">
+          <div className="w-full max-w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
+            <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Benefits</div>
               </div>
