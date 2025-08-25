@@ -6,7 +6,7 @@ const Pricing = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     // Initial check
@@ -418,7 +418,7 @@ const Pricing = () => {
                         alt=""
                         src="Rectangle 841.svg"
                       />
-                      <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
+                      {/* <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
                         <Image
                           className="w-full h-full [mix-blend-mode:linear-dodge] object-cover absolute left-[0px] top-[0px] [transform:scale(1.274)]"
                           width={240.4}
@@ -427,7 +427,7 @@ const Pricing = () => {
                           alt=""
                           src="/assets/pricing/Rectangle 842.svg"
                         />
-                      </div>
+                      </div> */}
                       <Image
                         className="bg-mediumslateblue-100 w-[34px] relative rounded-[96.17px] max-h-full overflow-hidden shrink-0 object-cover z-[2]"
                         width={34}
@@ -872,7 +872,7 @@ const Pricing = () => {
                       alt=""
                       src="Rectangle 841.svg"
                     /> */}
-                      <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
+                      {/* <div className="w-[240.4px] absolute !!m-[0 important] top-[-23.02px] left-[calc(50%_-_120.51px)] h-[34.3px] opacity-[0.2] [mix-blend-mode:linear-dodge] overflow-hidden flex items-center justify-center z-[1]">
                         <Image
                           className="w-full h-full [mix-blend-mode:linear-dodge] object-cover absolute left-[0px] top-[0px] [transform:scale(1.274)]"
                           width={240.4}
@@ -881,7 +881,7 @@ const Pricing = () => {
                           alt=""
                           src="/assets/pricing/Rectangle 842.svg"
                         />
-                      </div>
+                      </div> */}
                       <Image
                         className="bg-mediumslateblue-100 w-[34px] relative rounded-[96.17px] max-h-full overflow-hidden shrink-0 object-cover z-[2]"
                         width={34}
