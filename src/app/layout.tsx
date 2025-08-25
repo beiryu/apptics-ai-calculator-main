@@ -21,9 +21,28 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "Apptics - All-in-One CRM Tool",
-  description: "Turn One-Time Shopify Customers Into Recurring Revenue Goldmines. Apptics is an all in one platform that handles subscription management, payment optimization, and customer retention with smart analytics and seamless checkouts.",
+  description:
+    "Turn One-Time Shopify Customers Into Recurring Revenue Goldmines. Apptics is an all in one platform that handles subscription management, payment optimization, and customer retention with smart analytics and seamless checkouts.",
   applicationName: "Apptics - All-in-One CRM Tool",
-  keywords: ["roi calculator", "subscription", "saas", "revenue", "apptics", "ai", "calculator", "crm", "shopify", "shopify crm", "shopify subscription", "shopify subscription management", "shopify subscription platform", "shopify subscription revenue", "shopify subscription revenue growth", "shopify subscription revenue growth platform", "shopify subscription revenue growth platform"],
+  keywords: [
+    "roi calculator",
+    "subscription",
+    "saas",
+    "revenue",
+    "apptics",
+    "ai",
+    "calculator",
+    "crm",
+    "shopify",
+    "shopify crm",
+    "shopify subscription",
+    "shopify subscription management",
+    "shopify subscription platform",
+    "shopify subscription revenue",
+    "shopify subscription revenue growth",
+    "shopify subscription revenue growth platform",
+    "shopify subscription revenue growth platform",
+  ],
 
   openGraph: {
     title: "Apptics - All-in-One CRM Tool",
@@ -34,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Apptics - All-in-One CRM Tool",
     images: [
       {
-        url: "/assets/og.webp",
+        url: "/og.webp",
         width: 1200,
         height: 630,
         alt: "Apptics - All-in-One CRM Tool",
