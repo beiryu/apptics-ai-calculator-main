@@ -7,7 +7,8 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  preload: true,
+  preload: false,
+  weight: ["400", "500", "600", "700"],
   fallback: ["system-ui", "sans-serif"],
 });
 
@@ -15,7 +16,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
   display: "swap",
-  preload: true,
+  preload: false,
+  weight: ["400", "500", "600", "700"],
   fallback: ["system-ui", "sans-serif"],
 });
 
@@ -53,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Apptics - All-in-One CRM Tool",
     images: [
       {
-        url: "/og.webp",
+        url: "https://apptics-ai-calculator-main.vercel.app/og.webp",
         width: 1200,
         height: 630,
         alt: "Apptics - All-in-One CRM Tool",
@@ -79,10 +81,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable} bg-[#FEFEFE]`}>
       <head>
-        {/* Preload critical assets */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preload" href="/assets/hero/Layer_1.svg" as="image" type="image/svg+xml" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link
+          rel="preload"
+          href="https://apptics-ai-calculator-main.vercel.app/og.webp"
+          as="image"
+        />
       </head>
       <body className="font-sans antialiased bg-[#FEFEFE]">
         {children}
