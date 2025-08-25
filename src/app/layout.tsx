@@ -3,7 +3,6 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-// Optimize font loading with display swap and preload
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -20,13 +19,29 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   fallback: ["system-ui", "sans-serif"],
 });
 
-// Improved metadata for SEO and performance
 export const metadata: Metadata = {
-  title: "ROI Calculator",
-  description: "Calculate your ROI with Apptics - Increase your subscription revenue",
-  applicationName: "Apptics ROI Calculator",
-  keywords: ["roi calculator", "subscription", "saas", "revenue", "apptics"],
-  metadataBase: new URL("https://www.apptics.ai"),
+  title: "Apptics - All-in-One CRM Tool",
+  description: "Turn One-Time Shopify Customers Into Recurring Revenue Goldmines. Apptics is an all in one platform that handles subscription management, payment optimization, and customer retention with smart analytics and seamless checkouts.",
+  applicationName: "Apptics - All-in-One CRM Tool",
+  keywords: ["roi calculator", "subscription", "saas", "revenue", "apptics", "ai", "calculator", "crm", "shopify", "shopify crm", "shopify subscription", "shopify subscription management", "shopify subscription platform", "shopify subscription revenue", "shopify subscription revenue growth", "shopify subscription revenue growth platform", "shopify subscription revenue growth platform"],
+
+  openGraph: {
+    title: "Apptics - All-in-One CRM Tool",
+    description:
+      "Turn One-Time Shopify Customers Into Recurring Revenue Goldmines. Apptics is an all in one platform that handles subscription management, payment optimization, and customer retention with smart analytics and seamless checkouts.",
+    type: "website",
+    url: "https://apptics-ai-calculator-main.vercel.app",
+    siteName: "Apptics - All-in-One CRM Tool",
+    images: [
+      {
+        url: "/assets/og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Apptics - All-in-One CRM Tool",
+      },
+    ],
+    locale: "en_US",
+  },
 };
 
 // Viewport optimization with FID improvement
