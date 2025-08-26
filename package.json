@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "eslint-config-prettier": "^10.1.8",
+    "framer-motion": "^12.23.12",
     "lottie-react": "^2.4.1",
     "next": "15.3.4",
     "prettier": "^3.6.2",

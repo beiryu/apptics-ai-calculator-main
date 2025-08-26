@@ -6,6 +6,9 @@ import bento1Animation from "../assets/lottie/bento animation 1 (1).json";
 import bento2Animation from "../assets/lottie/bento animation 2 (1).json";
 import bento3Animation from "../assets/lottie/bento animation 3 (3).json";
 import growthAnimation from "../assets/lottie/more growth1 (1).json";
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Benefits = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +33,13 @@ const Benefits = () => {
       <>
         <div className="self-stretch bg-whitesmoke-400 flex flex-row items-start justify-center py-0 px-5 sm:px-20 md:px-32 z-[4]">
           <div className="flex-1 flex flex-col items-center justify-start py-12 px-0 gap-12">
-            <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-col items-center justify-start relative gap-5"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Benefits</div>
               </div>
@@ -57,8 +66,14 @@ const Benefits = () => {
                   src="/assets/benefits/Frame 2147227937.svg"
                 />
               </div>
-            </div>
-            <div className="self-stretch flex flex-col items-start justify-center gap-5 text-left text-sm text-gray-300">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-col items-start justify-center gap-5 text-left text-sm text-gray-300"
+            >
               <div className="self-stretch flex flex-col items-start justify-start gap-5 text-dimgray">
                 <div className="self-stretch rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-center justify-end">
                   <div className="self-stretch w-full relative overflow-hidden">
@@ -407,7 +422,7 @@ const Benefits = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>
@@ -418,7 +433,13 @@ const Benefits = () => {
       <>
         <div className="self-stretch flex flex-row items-start justify-center px-5 z-[4] overflow-x-hidden">
           <div className="w-full max-w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-            <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Benefits</div>
               </div>
@@ -442,8 +463,14 @@ const Benefits = () => {
                   src="/assets/benefits/Frame 2147227937.svg"
                 />
               </div>
-            </div>
-            <div className="self-stretch flex flex-row items-center justify-start gap-5 text-left text-sm text-gray-300">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-row items-center justify-start gap-5 text-left text-sm text-gray-300"
+            >
               <div className="flex-1 flex flex-col items-start justify-start gap-5 text-dimgray">
                 <div className="self-stretch rounded-2xl bg-white border-white border-solid border-[0.8px] box-border h-[460px] overflow-hidden shrink-0 flex flex-col items-start justify-end">
                   <div className="self-stretch flex-1 relative overflow-hidden">
@@ -879,7 +906,11 @@ const Benefits = () => {
                       Enhance Profits from your Shopify via Memberships
                     </div>
                     <div className="self-stretch relative tracking-[-0.01em] leading-[140%] text-gray-200 whitespace-pre-wrap">{`Our platform is built for highly driven and focused entrepreneurs who want to achieve conversion &  retention rates which will shoot their profits to the moon.`}</div>
-                    <div className="w-[191px] relative rounded-full shadow-[0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] text-white">
+                    <Link
+                      href="https://cal.com/akash-fmj/30min"
+                      target="_blank"
+                      className="w-[191px] relative rounded-full shadow-[0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] hover:shadow-none transition-all duration-300 h-[50px] text-white cursor-pointer"
+                    >
                       <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] h-[50px] overflow-hidden flex flex-row items-center justify-center py-3 px-6 box-border">
                         <div className="flex flex-row items-center justify-start gap-3">
                           <div className="relative tracking-[-0.03em] font-medium">
@@ -897,7 +928,7 @@ const Benefits = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className="absolute top-[25px] left-[20px] rounded-[99px] bg-gray-1200 border-gray-1100 border-solid border-[0.6px] box-border w-[58px] h-[58px] overflow-hidden z-10">
                     <div className="absolute top-[calc(50%_-_15px)] left-[calc(50%_-_15px)] bg-gray-1500 w-[30px] h-[30px] overflow-hidden">
@@ -913,7 +944,7 @@ const Benefits = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>

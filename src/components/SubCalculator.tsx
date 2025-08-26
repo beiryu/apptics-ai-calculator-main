@@ -1,7 +1,10 @@
 "use client";
 
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 
 const AppticsLogo = () => (
@@ -245,10 +248,16 @@ const SubCalculator: NextPage = () => {
   }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   return (
-    <div className="w-full relative min-h-[522px] ">
+    <div id="calculator" className="w-full relative min-h-[522px]">
       <div className="self-stretch rounded-[60px] flex flex-col items-center justify-start z-[8]">
         <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center justify-start py-20 px-4 box-border gap-[60px]">
-          <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={scrollAnimationVariants}
+            className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6"
+          >
             <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
               <div className="relative tracking-[-0.04em] leading-[130%]">Calculator ROI</div>
             </div>
@@ -297,8 +306,14 @@ const SubCalculator: NextPage = () => {
                 />
               </div>
             )}
-          </div>
-          <div className="max-w-[1050px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.69)_inset,_0px_0px_24px_8px_rgba(255,_255,_255,_0.8)_inset] rounded-[32px] overflow-hidden mx-auto px-4 py-6 w-full flex flex-col items-start gap-4 lg:gap-6 relative text-left">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={scrollAnimationVariants}
+            className="max-w-[1050px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.69)_inset,_0px_0px_24px_8px_rgba(255,_255,_255,_0.8)_inset] rounded-[32px] overflow-hidden mx-auto px-4 py-6 w-full flex flex-col items-start gap-4 lg:gap-6 relative text-left"
+          >
             <div className="rounded-[32px] max-w-[1020px] overflow-hidden mx-auto w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6 relative text-left">
               <div className="w-full lg:w-[400px] h-auto lg:h-[532px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-start p-5 z-[3]">
                 <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-6">
@@ -744,7 +759,11 @@ const SubCalculator: NextPage = () => {
                     Automate sales, boost retention, and unlock recurring revenue
                   </div>
                 </div>
-                <div className="w-[162.4px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] z-[2] text-base text-white">
+                <Link
+                  href="https://cal.com/akash-fmj/30min"
+                  target="_blank"
+                  className="w-[162.4px] rounded-full relative hover:shadow-none transition-all duration-300 shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-[50px] z-[2] text-base text-white cursor-pointer"
+                >
                   <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-[20px] [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] h-[50px] overflow-hidden flex flex-row items-center justify-center py-3 px-6 box-border">
                     <div className="[filter:drop-shadow(0px_2px_2px_rgba(0,_0,_0,_0.48))] flex flex-row items-center justify-start gap-3">
                       <div className="relative tracking-[-0.03em] font-medium whitespace-nowrap">
@@ -760,7 +779,7 @@ const SubCalculator: NextPage = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </Link>
                 <Image
                   className="[transform:scale(0.5)] w-[336.2px] absolute !!m-[0 important] left-[-82.16px] h-[261px] object-cover z-[3]"
                   width={336.2}
@@ -771,7 +790,7 @@ const SubCalculator: NextPage = () => {
                 />
               </div>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

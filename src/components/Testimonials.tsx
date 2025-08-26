@@ -1,3 +1,5 @@
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -24,7 +26,13 @@ const Testimonials = () => {
       <>
         <div className="self-stretch flex flex-col items-center justify-start z-[11]">
           <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-12 px-5 sm:px-10 md:px-20 gap-12">
-            <div className="self-stretch flex flex-col items-center justify-start gap-5">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-col items-center justify-start gap-5"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Testimonials</div>
               </div>
@@ -52,9 +60,15 @@ const Testimonials = () => {
               <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200">
                 Trusted by users for seamless subscriptions, smarter payments, and real results.
               </div>
-            </div>
+            </motion.div>
             <div className="self-stretch flex flex-col items-start justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
-              <div className="self-stretch flex flex-col items-start justify-start gap-5">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="self-stretch flex flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Increased Customer Retention by 40%!
@@ -141,8 +155,14 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-[350px] hidden flex-col items-start justify-start gap-5">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-[350px] hidden flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Increased Customer Engagement by 150%!
@@ -230,8 +250,14 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-[350px] hidden flex-col items-start justify-start gap-5">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-[350px] hidden flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Reduced Churn Rate by 40%!
@@ -318,7 +344,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -331,7 +357,13 @@ const Testimonials = () => {
       <>
         <div className="self-stretch flex flex-col items-center justify-start px-5 z-[11]">
           <div className="w-full max-w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-            <div className="w-full max-w-[780px] flex flex-col items-center justify-start gap-6">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full max-w-[780px] flex flex-col items-center justify-start gap-6"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Testimonials</div>
               </div>
@@ -359,9 +391,15 @@ const Testimonials = () => {
               <div className="w-[706.5px] relative text-lg tracking-[-0.04em] leading-[150%] text-gray-200 inline-block">
                 Trusted by users for seamless subscriptions, smarter payments, and real results.
               </div>
-            </div>
+            </motion.div>
             <div className="self-stretch flex flex-row items-start justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
-              <div className="flex-1 flex flex-col items-start justify-start gap-5">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="flex-1 flex flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Increased Customer Retention by 40%!
@@ -448,8 +486,14 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex-1 flex flex-col items-start justify-start gap-5">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="flex-1 flex flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Increased Customer Engagement by 150%!
@@ -537,8 +581,14 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex-1 flex flex-col items-start justify-start gap-5">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="flex-1 flex flex-col items-start justify-start gap-5"
+              >
                 <div className="self-stretch rounded-3xl bg-white flex flex-col items-start justify-start p-6 gap-6">
                   <div className="self-stretch relative leading-[130%] font-semibold">
                     Reduced Churn Rate by 40%!
@@ -625,7 +675,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

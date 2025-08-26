@@ -1,3 +1,5 @@
+import { scrollAnimation2Variants, scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -32,7 +34,7 @@ const TeamMember = ({
           </div>
         </div>
         <div className="flex flex-row items-center justify-start gap-3">
-          <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+          <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
             <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-contain"
@@ -44,7 +46,7 @@ const TeamMember = ({
               />
             </div>
           </div>
-          <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+          <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
             <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-contain"
@@ -56,7 +58,7 @@ const TeamMember = ({
               />
             </div>
           </div>
-          <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+          <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
             <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
               <Image
                 className="w-full h-full object-contain"
@@ -121,7 +123,13 @@ const OurTeam = () => {
       <>
         <div className="self-stretch flex flex-col items-center justify-start z-[10]">
           <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-12 px-0 gap-12">
-            <div className="self-stretch flex flex-col items-center justify-start py-0 px-5 gap-5">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-col items-center justify-start py-0 px-5 gap-5"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Our Team</div>
               </div>
@@ -144,7 +152,7 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore `}</div>
-            </div>
+            </motion.div>
             <div className="self-stretch rounded-3xl bg-white overflow-hidden flex flex-col items-start justify-start py-6 px-4 gap-8 text-2xl text-gray-300 font-plus-jakarta-sans">
               <div className="self-stretch flex flex-row items-center justify-start gap-4 overflow-x-auto pb-4">
                 {teamMembers.map((member, index) => (
@@ -167,7 +175,13 @@ const OurTeam = () => {
       <>
         <div className="self-stretch flex flex-col items-center justify-start z-[10]">
           <div className="w-full max-w-[1280px] overflow-hidden flex flex-col items-center justify-start py-20 px-0 box-border gap-10">
-            <div className="w-full max-w-[600px] flex flex-col items-center justify-start gap-6">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full max-w-[600px] flex flex-col items-center justify-start gap-6"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Our Team</div>
               </div>
@@ -193,10 +207,22 @@ const OurTeam = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua
               </div>
-            </div>
+            </motion.div>
             <div className="self-stretch rounded-[48px] bg-white overflow-hidden flex flex-col items-start justify-start p-4 gap-8 text-2xl text-gray-300 font-plus-jakarta-sans">
-              <div className="self-stretch flex flex-row items-center justify-start gap-4">
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="self-stretch flex flex-row items-center justify-start gap-4"
+              >
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -217,7 +243,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -229,7 +255,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -241,7 +267,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -255,8 +281,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -277,7 +309,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -289,7 +321,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -301,7 +333,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -315,8 +347,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -337,7 +375,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -349,7 +387,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -361,7 +399,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -375,8 +413,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -397,7 +441,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -409,7 +453,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -421,7 +465,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -435,10 +479,22 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="self-stretch flex flex-row items-center justify-start gap-4">
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="self-stretch flex flex-row items-center justify-start gap-4"
+              >
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -459,7 +515,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -471,7 +527,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -483,7 +539,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -497,8 +553,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -519,7 +581,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -531,7 +593,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -543,7 +605,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -557,8 +619,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -579,7 +647,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -591,7 +659,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -603,7 +671,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -617,8 +685,14 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0">
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimation2Variants}
+                  className="flex-1 rounded-t-[999px] rounded-b-[500px] bg-whitesmoke-400 h-[450px] overflow-hidden flex flex-col items-center justify-between p-5 box-border gap-0"
+                >
                   <div className="w-[260px] h-[260px] rounded-full overflow-hidden shrink-0 flex items-center justify-center bg-gray-100">
                     <Image
                       className="w-full h-full object-cover"
@@ -639,7 +713,7 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-center justify-start gap-3">
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -651,7 +725,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -663,7 +737,7 @@ const OurTeam = () => {
                           />
                         </div>
                       </div>
-                      <div className="w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
+                      <div className="cursor-pointer w-[38px] relative shadow-[0px_6.333333969116211px_4.75px_-1.58px_rgba(0,_0,_0,_0.08),_0px_2.171428680419922px_0.87px_#fff_inset,_0px_1.5833334922790527px_1.58px_-0.79px_rgba(0,_0,_0,_0.25)] rounded-[12.67px] bg-whitesmoke-200 border-gainsboro-700 border-solid border-[0.5px] box-border h-[38px] overflow-hidden shrink-0 flex items-center justify-center">
                         <div className="bg-gray-1500 w-[20.6px] h-[20.6px] overflow-hidden flex items-center justify-center">
                           <Image
                             className="w-full h-full object-contain"
@@ -677,8 +751,8 @@ const OurTeam = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>

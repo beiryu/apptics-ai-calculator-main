@@ -1,3 +1,5 @@
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -19,10 +21,19 @@ const Onboarding = () => {
   const MobileVersion = () => {
     return (
       <>
-        <div className="self-stretch bg-whitesmoke-400 flex flex-row items-center justify-start py-6 px-5 z-[6]">
+        <div
+          id="onboarding"
+          className="self-stretch bg-whitesmoke-400 flex flex-row items-center justify-start py-6 px-5 z-[6]"
+        >
           <div className="flex-1 rounded-[32px] bg-white overflow-hidden flex flex-row items-center justify-center px-0 sm:px-10 md:px-20">
             <div className="flex-1 overflow-hidden flex flex-col items-center justify-start py-12 px-3 gap-[60px]">
-              <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="self-stretch flex flex-col items-center justify-start relative gap-5"
+              >
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                   <div className="relative tracking-[-0.04em] leading-[130%]">Onboarding</div>
                 </div>
@@ -46,7 +57,7 @@ const Onboarding = () => {
                     src="/assets/onboarding/Frame 2147227938.svg"
                   />
                 </div>
-              </div>
+              </motion.div>
               <div className="self-stretch flex flex-col items-center justify-start gap-8 text-left text-sm text-white">
                 <div className="self-stretch rounded-2xl bg-whitesmoke-400 border-gainsboro-200 border-solid border-[1px] overflow-hidden flex flex-col items-start justify-center">
                   <Image
@@ -293,7 +304,10 @@ const Onboarding = () => {
   const DesktopVersion = () => {
     return (
       <>
-        <div className="self-stretch overflow-hidden flex flex-row items-center justify-start py-[60px] px-0 z-[6]">
+        <div
+          id="onboarding"
+          className="self-stretch overflow-hidden flex flex-row items-center justify-start py-[60px] px-0 z-[6]"
+        >
           <div className="flex-1 rounded-[60px] bg-white overflow-hidden flex flex-row items-center justify-center relative gap-2.5 px-5 lg:px-0">
             <Image
               className="w-[812.4px] absolute !!m-[0 important] top-[calc(50%_-_1318.88px)] left-[-284.81px] h-[881.8px] object-contain hidden z-[0]"
@@ -304,7 +318,13 @@ const Onboarding = () => {
               src="/assets/onboarding/Frame 2147227938.svg"
             />
             <div className="w-full max-w-[850px] overflow-hidden shrink-0 flex flex-col items-center justify-start py-[60px] px-0 box-border gap-[60px] z-[1]">
-              <div className="w-full max-w-[742px] flex flex-col items-center justify-start relative gap-6">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full max-w-[742px] flex flex-col items-center justify-start relative gap-6"
+              >
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                   <div className="relative tracking-[-0.04em] leading-[130%]">Onboarding</div>
                 </div>
@@ -328,7 +348,7 @@ const Onboarding = () => {
                     src="/assets/onboarding/Frame 2147227938.svg"
                   />
                 </div>
-              </div>
+              </motion.div>
               <div className="self-stretch flex flex-col items-center justify-start gap-10 text-left text-sm text-white">
                 <div className="self-stretch rounded-2xl bg-whitesmoke-400 border-gainsboro-200 border-solid border-[1px] box-border h-[380px] overflow-hidden shrink-0 flex flex-row items-center justify-start">
                   <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end py-6 px-10 relative gap-4">

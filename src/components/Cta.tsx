@@ -1,5 +1,10 @@
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
+
+const MotionImage = motion(Image);
 
 const Cta = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +27,7 @@ const Cta = () => {
   const MobileVersion = () => {
     return (
       <>
-        <div className="mt-48 self-stretch bg-white flex flex-col items-start justify-start relative gap-2.5 z-[13] text-xs text-white">
+        <div className="mt-48 self-stretch bg-white flex flex-col items-start justify-start relative gap-2.5 z-[6] text-xs text-white">
           <div className="w-full max-w-[370px] sm:max-w-[600px] absolute !!m-[0 important] top-[-144.87px] left-1/2 -translate-x-1/2 shadow-[0px_0px_7.8px_1.95px_rgba(255,_255,_255,_0.2)_inset,_0px_57.525001525878906px_15.93px_rgba(24,_26,_104,_0),_0px_36.72500228881836px_14.63px_rgba(24,_26,_104,_0.02),_0px_20.80000114440918px_12.35px_rgba(24,_26,_104,_0.07),_0px_9.100000381469727px_9.1px_rgba(24,_26,_104,_0.11),_0px_2.2750000953674316px_5.2px_rgba(24,_26,_104,_0.13)] rounded-[13px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] h-[400px] overflow-hidden shrink-0 z-[0]">
             <Image
               className="absolute -top-[140%] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[1]"
@@ -81,7 +86,7 @@ const Cta = () => {
               </div>
             </div>
             <div className="absolute top-[calc(50%_-_137.76px)] left-[calc(50%_-_173.23px)] w-[346.5px] flex flex-col items-center justify-start gap-6">
-              <div className="shadow-[0px_90px_35px_-8px_rgba(13,_36,_73,_0.02),_0px_53px_32px_-5px_rgba(13,_36,_73,_0.03),_0px_20px_24px_-2px_rgba(13,_36,_73,_0.06),_0px_6px_12px_-1px_rgba(13,_36,_73,_0.08)] rounded-[60px] bg-gray-600 border-gray-500 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2">
+              <div className="font-geist shadow-[0px_90px_35px_-8px_rgba(13,_36,_73,_0.02),_0px_53px_32px_-5px_rgba(13,_36,_73,_0.03),_0px_20px_24px_-2px_rgba(13,_36,_73,_0.06),_0px_6px_12px_-1px_rgba(13,_36,_73,_0.08)] rounded-[60px] bg-gray-600 border-gray-500 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2">
                 <Image
                   className="w-4 relative max-h-full"
                   width={16}
@@ -117,7 +122,11 @@ const Cta = () => {
                 Apptics is a platform for online merchants to manage subscriptions, optimize
                 payments, and enhance retention with analytics and checkouts.
               </div>
-              <div className="w-[135px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-10 text-left text-[15px] font-plus-jakarta-sans">
+              <Link
+                href="https://cal.com/akash-fmj/30min"
+                target="_blank"
+                className="w-[135px] rounded-full relative shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-10 text-left text-[15px] font-plus-jakarta-sans"
+              >
                 <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-3xl [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] flex flex-row items-center justify-center p-2 gap-4">
                   <Image
                     className="size-6 relative rounded-md max-h-full overflow-hidden shrink-0 object-cover"
@@ -133,7 +142,7 @@ const Cta = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="self-stretch overflow-hidden flex flex-col items-center justify-start pt-[300px] px-0 pb-5 gap-[68px] z-[1] text-base text-gray-300">
@@ -249,7 +258,11 @@ const Cta = () => {
               </div>
             </div>
             <div className="self-stretch flex flex-col items-center justify-start gap-6 text-left text-sm text-gray-200">
-              <Image
+              <MotionImage
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
                 className="self-stretch relative max-w-full overflow-hidden h-[256.3px] shrink-0"
                 width={1280}
                 height={256.3}
@@ -277,7 +290,7 @@ const Cta = () => {
   const DesktopVersion = () => {
     return (
       <>
-        <div className="self-stretch relative bg-white h-[1126px] z-[13] text-white font-plus-jakarta-sans">
+        <div className="self-stretch relative bg-white h-[1126px] z-[6] text-white font-plus-jakarta-sans">
           <div className="absolute top-[-137px] left-1/2 -translate-x-1/2 shadow-[0px_0px_24px_6px_rgba(255,_255,_255,_0.2)_inset,_0px_177px_49px_rgba(24,_26,_104,_0),_0px_113px_45px_rgba(24,_26,_104,_0.02),_0px_64px_38px_rgba(24,_26,_104,_0.07),_0px_28px_28px_rgba(24,_26,_104,_0.11),_0px_7px_16px_rgba(24,_26,_104,_0.13)] rounded-[40px] [background:radial-gradient(50%_50%_at_50%_50%,_#12b2f9_20%,_#514dfa)] w-full max-w-[1000px] xl:max-w-[1200px] h-[550px] overflow-hidden">
             <Image
               className="absolute -top-[88%] w-[1515.8px] h-[1515.8px] overflow-hidden opacity-[1]"
@@ -338,7 +351,7 @@ const Cta = () => {
               </div>
             </div>
             <div className="absolute top-[calc(50%_-_187.34px)] left-[calc(50%_-_533px)] w-[1066px] flex flex-col items-center justify-start gap-6">
-              <div className="shadow-[0px_90px_35px_-8px_rgba(13,_36,_73,_0.02),_0px_53px_32px_-5px_rgba(13,_36,_73,_0.03),_0px_20px_24px_-2px_rgba(13,_36,_73,_0.06),_0px_6px_12px_-1px_rgba(13,_36,_73,_0.08)] rounded-[60px] bg-gray-600 border-gray-500 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2.5 font-geist">
+              <div className="shadow-[0px_90px_35px_-8px_rgba(13,_36,_73,_0.02),_0px_53px_32px_-5px_rgba(13,_36,_73,_0.03),_0px_20px_24px_-2px_rgba(13,_36,_73,_0.06),_0px_6px_12px_-1px_rgba(13,_36,_73,_0.08)] rounded-[60px] bg-gray-600 border-gray-500 border-solid border-[1px] flex flex-row items-center justify-start py-2 px-4 gap-2.5">
                 <Image
                   className="w-5 relative max-h-full"
                   width={20}
@@ -374,7 +387,11 @@ const Cta = () => {
                 Apptics is an all-in-one platform that helps online merchants manage subscriptions,
                 optimize payments, and boost retention with smart analytics and seamless checkouts
               </div>
-              <div className="w-[216px] relative rounded-full shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-16 text-left text-2xl">
+              <Link
+                href="https://cal.com/akash-fmj/30min"
+                target="_blank"
+                className="w-[216px] relative rounded-full cursor-pointer hover:shadow-none transition-all duration-300 shadow-[0px_88px_25px_rgba(0,_0,_0,_0),_0px_56px_23px_rgba(0,_0,_0,_0.03),_0px_32px_19px_rgba(0,_0,_0,_0.1),_0px_14px_14px_rgba(0,_0,_0,_0.17),_0px_4px_8px_rgba(0,_0,_0,_0.2)] h-16 text-left text-2xl"
+              >
                 <div className="absolute top-[0px] left-[0px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.16)_inset,_0px_-2px_0px_#000_inset,_0px_1px_1px_#000_inset,_0px_2px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-3xl [background:linear-gradient(88.67deg,_#1d1d1d,_#333_34.6%,_#3d3d3d_76.69%,_#1d1d1d)] flex flex-row items-center justify-center p-2 gap-4">
                   <Image
                     className="w-12 relative rounded-2xl max-h-full overflow-hidden shrink-0 object-cover"
@@ -388,7 +405,7 @@ const Cta = () => {
                     <div className="relative tracking-[-0.03em] font-medium">Book a Call</div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="absolute top-[493px] left-1/2 -translate-x-1/2 w-full max-w-[1280px] px-5 flex flex-col items-center justify-start gap-[68px] text-gray-300 font-inter">
@@ -502,7 +519,11 @@ const Cta = () => {
               </div>
             </div>
             <div className="w-full max-w-[1280px] px-5 h-[277.3px] flex flex-col items-center justify-between gap-0 text-left text-sm text-gray-200">
-              <Image
+              <MotionImage
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
                 className="self-stretch relative max-w-full overflow-hidden h-[256.3px] shrink-0"
                 width={1280}
                 height={256.3}

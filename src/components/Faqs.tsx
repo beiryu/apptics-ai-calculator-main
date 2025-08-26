@@ -1,4 +1,7 @@
+import { scrollAnimationVariants } from "@/libs/framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Faqs = () => {
@@ -81,8 +84,17 @@ const Faqs = () => {
     ];
 
     return (
-      <div className="flex flex-col items-center justify-start px-5 sm:px-10 md:px-20 py-10 bg-whitesmoke-400">
-        <div className="flex flex-col items-center justify-start gap-6 mb-10">
+      <div
+        id="faqs"
+        className="flex flex-col items-center justify-start px-5 sm:px-10 md:px-20 py-10 bg-whitesmoke-400"
+      >
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={scrollAnimationVariants}
+          className="flex flex-col items-center justify-start gap-6 mb-10"
+        >
           <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4">
             <div className="relative tracking-[-0.04em] leading-[130%]">FAQs</div>
           </div>
@@ -95,9 +107,15 @@ const Faqs = () => {
           <div className="relative text-base tracking-[-0.04em] leading-[150%] text-gray-1400 text-center">
             Book a call or reach out anytime, we&apos;re here to help.
           </div>
-        </div>
+        </motion.div>
 
-        <div className="w-full flex flex-col items-start justify-start gap-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={scrollAnimationVariants}
+          className="w-full flex flex-col items-start justify-start gap-3"
+        >
           {faqItems.map((item, index) => (
             <div
               key={index}
@@ -137,7 +155,13 @@ const Faqs = () => {
                 Coundn&apos;t find an answer you&apos;re looking for?
               </div>
               <div className="shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]">
-                <div className="relative tracking-[-0.03em] font-medium">Contact Us</div>
+                <Link
+                  href="https://cal.com/akash-fmj/30min"
+                  target="_blank"
+                  className="relative tracking-[-0.03em] font-medium"
+                >
+                  Contact Us
+                </Link>
                 <div className="w-[18px] relative bg-gray-1500 h-[18px]">
                   <Image
                     className="absolute h-[91.67%] w-full top-[4.17%] right-[4.17%] bottom-[4.17%] left-[4.17%] max-w-full overflow-hidden max-h-full"
@@ -151,7 +175,7 @@ const Faqs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     );
   };
@@ -225,11 +249,20 @@ const Faqs = () => {
 
     return (
       <>
-        <div className="self-stretch flex flex-col items-start justify-start relative gap-2.5 z-[12] text-gray-300 px-5">
+        <div
+          id="faqs"
+          className="self-stretch flex flex-col items-start justify-start relative gap-2.5 z-[6] text-gray-300"
+        >
           <div className="w-full max-w-[1440px] absolute !!m-[0 important] bottom-[-0.05px] left-[0px] bg-white h-[124.3px] z-[0]" />
           <div className="self-stretch rounded-t-none rounded-b-[32px] bg-whitesmoke-400 flex flex-col items-center justify-start z-[1]">
             <div className="w-full max-w-[1280px] flex flex-col items-center justify-start pt-20 px-0 pb-60 box-border gap-[59px]">
-              <div className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6"
+              >
                 <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                   <div className="relative tracking-[-0.04em] leading-[130%]">FAQs</div>
                 </div>
@@ -253,8 +286,14 @@ const Faqs = () => {
                     src="/assets/faqs/Frame 2147227937.svg"
                   />
                 </div>
-              </div>
-              <div className="self-stretch flex flex-row items-start justify-start gap-8 text-left">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="self-stretch flex flex-row items-start justify-start gap-8 text-left px-5"
+              >
                 <div className="flex-1 flex flex-col items-start justify-start gap-4">
                   {faqItems.map((item, index) => (
                     <div
@@ -291,7 +330,13 @@ const Faqs = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex-1 flex flex-col items-start justify-start gap-4">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  variants={scrollAnimationVariants}
+                  className="flex-1 flex flex-col items-start justify-start gap-4"
+                >
                   {faqItems2.map((item, index) => {
                     const actualIndex = index + faqItems.length;
 
@@ -305,7 +350,11 @@ const Faqs = () => {
                             <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-medium">
                               {item.question}
                             </div>
-                            <div className="shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]">
+                            <Link
+                              href="https://cal.com/akash-fmj/30min"
+                              target="_blank"
+                              className="cursor-pointer hover:shadow-none transition-all duration-300 shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]"
+                            >
                               <div className="relative tracking-[-0.03em] font-medium">
                                 Contact Us
                               </div>
@@ -319,7 +368,7 @@ const Faqs = () => {
                                   src="/assets/faqs/arrow-right-circle.svg"
                                 />
                               </div>
-                            </div>
+                            </Link>
                           </div>
                         </div>
                       );
@@ -360,8 +409,8 @@ const Faqs = () => {
                       </div>
                     );
                   })}
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { scrollAnimationVariants } from "@/libs/framer-motion";
 
 const Features = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -23,9 +25,18 @@ const Features = () => {
   if (isMobile) {
     return (
       <>
-        <div className="self-stretch flex flex-col items-center justify-start py-0 px-5 sm:px-20 md:px-32 z-[3]">
+        <div
+          id="features"
+          className="self-stretch flex flex-col items-center justify-start py-0 px-5 sm:px-20 md:px-32 z-[3]"
+        >
           <div className="self-stretch flex flex-col items-center justify-start py-12 px-0 gap-12">
-            <div className="self-stretch flex flex-col items-center justify-start relative gap-5">
+            <motion.b
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch flex flex-col items-center justify-start relative gap-5"
+            >
               <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
                 <div className="relative tracking-[-0.04em] leading-[130%]">Features</div>
               </div>
@@ -50,9 +61,15 @@ const Features = () => {
               <div className="w-[270.3px] relative text-sm tracking-[-0.01em] leading-[150%] text-gray-200 inline-block z-[2]">
                 Everything you need to build and scale subscriptions – all in one platform.
               </div>
-            </div>
+            </motion.b>
             <div className="w-full self-stretch flex flex-col items-start justify-center gap-5 text-left text-gray-300 font-plus-jakarta-sans">
-              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
+              <motion.b
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end"
+              >
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-0 gap-1">
                   <div className="self-stretch relative leading-[150%] font-semibold">{`Subscription Creation & Management`}</div>
                   <div className="self-stretch relative text-sm tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -124,8 +141,14 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end">
+              </motion.b>
+              <motion.b
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end"
+              >
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-4 gap-1">
                   <div className="self-stretch relative leading-[150%] font-semibold">{`Custom Checkouts & Strategies`}</div>
                   <div className="self-stretch relative text-sm tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -200,8 +223,14 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end text-sm">
+              </motion.b>
+              <motion.b
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end text-sm"
+              >
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-0 gap-1">
                   <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue`}</div>
                   <div className="self-stretch relative tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -332,7 +361,7 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.b>
             </div>
           </div>
         </div>
@@ -343,9 +372,18 @@ const Features = () => {
   // Desktop component rendering
   return (
     <>
-      <div className="self-stretch flex flex-col items-center justify-start px-5 z-[3] overflow-x-hidden">
+      <div
+        id="features"
+        className="self-stretch flex flex-col items-center justify-start px-5 z-[3] overflow-x-hidden"
+      >
         <div className="w-full max-w-[1280px] flex flex-col items-center justify-start py-20 px-0 box-border gap-[60px]">
-          <div className="w-full max-w-[1026px] flex flex-col items-center justify-start relative gap-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={scrollAnimationVariants}
+            className="w-full max-w-[1026px] flex flex-col items-center justify-start relative gap-6"
+          >
             <div className="shadow-[0px_8px_8px_-4px_rgba(0,_0,_0,_0.12),_0px_3px_2px_-1px_rgba(0,_0,_0,_0.08)] rounded-[99px] bg-white border-gainsboro-400 border-solid border-[1px] overflow-hidden flex flex-row items-center justify-center py-2 px-4 z-[0]">
               <div className="relative tracking-[-0.04em] leading-[130%]">Features</div>
             </div>
@@ -370,9 +408,15 @@ const Features = () => {
             <div className="w-full max-w-[722.8px] relative text-lg tracking-[-0.01em] leading-[150%] text-gray-200 inline-block z-[2]">
               Everything you need to build and scale subscriptions – all in one platform.
             </div>
-          </div>
+          </motion.div>
           <div className="self-stretch flex flex-col md:flex-row items-center justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
-            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end"
+            >
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
                 <div className="self-stretch relative leading-[150%] font-semibold">{`Create & Manage Subscriptions`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -444,8 +488,14 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end"
+            >
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
                 <div className="self-stretch relative leading-[150%] font-semibold">{` Build Custom Checkouts & Upsells`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -528,8 +578,14 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="w-full md:flex-1 shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border h-[420px] overflow-hidden flex flex-col items-start justify-end"
+            >
               <div className="self-stretch overflow-hidden flex flex-col items-start justify-start p-6 gap-1">
                 <div className="self-stretch relative leading-[150%] font-semibold">{`Analyze Revenue`}</div>
                 <div className="self-stretch relative text-base tracking-[-0.02em] leading-[140%] font-inter text-gray-200">
@@ -668,7 +724,7 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
