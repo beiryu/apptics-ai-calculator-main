@@ -9,21 +9,43 @@ import { forwardRef as forwardRef2 } from "react";
 var mask = `url('data:image/svg+xml,<svg display="block" role="presentation" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g d="M 0 0 L 20 0 L 20 20 L 0 20 Z M 7.75 3.5 L 12.25 3.5 L 12.25 2.75 C 12.25 2.336 12.586 2 13 2 C 13.414 2 13.75 2.336 13.75 2.75 L 13.75 3.5 L 14.5 3.5 C 16.157 3.5 17.5 4.843 17.5 6.5 L 17.5 15.5 C 17.5 17.157 16.157 18.5 14.5 18.5 L 5.5 18.5 C 3.843 18.5 2.5 17.157 2.5 15.5 L 2.5 6.5 C 2.5 4.843 3.843 3.5 5.5 3.5 L 6.25 3.5 L 6.25 2.75 C 6.25 2.336 6.586 2 7 2 C 7.414 2 7.75 2.336 7.75 2.75 Z M 4 6.5 L 4 8 L 16 8 L 16 6.5 C 16 5.672 15.328 5 14.5 5 L 13.75 5 L 13.75 5.75 C 13.75 6.164 13.414 6.5 13 6.5 C 12.586 6.5 12.25 6.164 12.25 5.75 L 12.25 5 L 7.75 5 L 7.75 5.75 C 7.75 6.164 7.414 6.5 7 6.5 C 6.586 6.5 6.25 6.164 6.25 5.75 L 6.25 5 L 5.5 5 C 4.672 5 4 5.672 4 6.5 Z" fill="transparent" height="20px" id="fk9fnBJ_F" width="20px"><path d="M 0 0 L 20 0 L 20 20 L 0 20 Z" fill="transparent" height="20px" id="bl2imAQwC" width="20px"/><path d="M 5.25 1.5 L 9.75 1.5 L 9.75 0.75 C 9.75 0.336 10.086 0 10.5 0 C 10.914 0 11.25 0.336 11.25 0.75 L 11.25 1.5 L 12 1.5 C 13.657 1.5 15 2.843 15 4.5 L 15 13.5 C 15 15.157 13.657 16.5 12 16.5 L 3 16.5 C 1.343 16.5 0 15.157 0 13.5 L 0 4.5 C 0 2.843 1.343 1.5 3 1.5 L 3.75 1.5 L 3.75 0.75 C 3.75 0.336 4.086 0 4.5 0 C 4.914 0 5.25 0.336 5.25 0.75 Z M 1.5 4.5 L 1.5 6 L 13.5 6 L 13.5 4.5 C 13.5 3.672 12.828 3 12 3 L 11.25 3 L 11.25 3.75 C 11.25 4.164 10.914 4.5 10.5 4.5 C 10.086 4.5 9.75 4.164 9.75 3.75 L 9.75 3 L 5.25 3 L 5.25 3.75 C 5.25 4.164 4.914 4.5 4.5 4.5 C 4.086 4.5 3.75 4.164 3.75 3.75 L 3.75 3 L 3 3 C 2.172 3 1.5 3.672 1.5 4.5 Z" fill="var(--11w489b, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))" height="16.5px" id="VDUK5iANU" transform="translate(2.5 2)" width="15px"/></g></svg>') alpha no-repeat center / auto var(--framer-icon-mask-mode, add), var(--framer-icon-mask, none)`;
 var SVG = /* @__PURE__ */ forwardRef2((props, ref) => {
   const { animated, layoutId, children, ...rest } = props;
-  return animated ? /* @__PURE__ */ _jsx(motion.div, { ...rest, layoutId, ref }) : /* @__PURE__ */ _jsx("div", { ...rest, ref });
+  return animated
+    ? /* @__PURE__ */ _jsx(motion.div, { ...rest, layoutId, ref })
+    : /* @__PURE__ */ _jsx("div", { ...rest, ref });
 });
 var getProps = ({ fill, height, id, width, ...props }) => {
-  return { ...props, jnziNDfrA: fill ?? props.jnziNDfrA ?? "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))" };
+  return {
+    ...props,
+    jnziNDfrA:
+      fill ??
+      props.jnziNDfrA ??
+      "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+  };
 };
-var Component = /* @__PURE__ */ React.forwardRef(function(props, ref) {
+var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
   const { style, className, layoutId, variant, jnziNDfrA, ...restProps } = getProps(props);
-  return /* @__PURE__ */ _jsx(SVG, { ...restProps, className: cx("framer-HLiUA", className), layoutId, ref, style: { "--11w489b": jnziNDfrA, ...style } });
+  return /* @__PURE__ */ _jsx(SVG, {
+    ...restProps,
+    className: cx("framer-HLiUA", className),
+    layoutId,
+    ref,
+    style: { "--11w489b": jnziNDfrA, ...style },
+  });
 });
-var css = [`.framer-HLiUA { -webkit-mask: ${mask}; aspect-ratio: 1; background-color: var(--11w489b); mask: ${mask}; width: 20px; }`];
+var css = [
+  `.framer-HLiUA { -webkit-mask: ${mask}; aspect-ratio: 1; background-color: var(--11w489b); mask: ${mask}; width: 20px; }`,
+];
 var Icon = withCSS(Component, css, "framer-HLiUA");
 Icon.displayName = "Calender";
 var stdin_default = Icon;
-addPropertyControls(Icon, { jnziNDfrA: { defaultValue: 'var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)) /* {"name":"Black"} */', hidden: false, title: "Fill", type: ControlType.Color } });
+addPropertyControls(Icon, {
+  jnziNDfrA: {
+    defaultValue:
+      'var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)) /* {"name":"Black"} */',
+    hidden: false,
+    title: "Fill",
+    type: ControlType.Color,
+  },
+});
 
-export {
-  stdin_default
-};
+export { stdin_default };

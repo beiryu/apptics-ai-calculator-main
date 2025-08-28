@@ -24,11 +24,7 @@
 
  */
 import { className, css, fonts } from "../chunks/chunk-GADYL2RR.js";
-import {
-	className as className2,
-	css as css2,
-	fonts as fonts2,
-} from "../chunks/chunk-ZDFCFOXJ.js";
+import { className as className2, css as css2, fonts as fonts2 } from "../chunks/chunk-ZDFCFOXJ.js";
 import { routes } from "../chunks/chunk-VAWW4KIH.js";
 
 // virtual:card/features-card-2
@@ -38,1339 +34,1292 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/pfopyerf4msoOCv2ktWQ/V0fSSJys72s75ZuM1y6r/qD5YppHVs.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getFontsFromSharedStyle,
-	getLoadingLazyAtYPosition,
-	Image,
-	RichText,
-	SVG,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
-	withFX,
-	withOptimizedAppearEffect,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getFontsFromSharedStyle,
+  getLoadingLazyAtYPosition,
+  Image,
+  RichText,
+  SVG,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
+  withFX,
+  withOptimizedAppearEffect,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
 import { useRef } from "react";
-var MotionDivWithFXWithOptimizedAppearEffect = withOptimizedAppearEffect(
-	withFX(motion.div),
-);
+var MotionDivWithFXWithOptimizedAppearEffect = withOptimizedAppearEffect(withFX(motion.div));
 var enabledGestures = {
-	WauCV_zII: {
-		hover: true,
-	},
+  WauCV_zII: {
+    hover: true,
+  },
 };
 var cycleOrder = ["WauCV_zII", "xPuuhzSH0"];
 var serializationHash = "framer-11xFF";
 var variantClassNames = {
-	WauCV_zII: "framer-v-gzftvr",
-	xPuuhzSH0: "framer-v-rkbb1d",
+  WauCV_zII: "framer-v-gzftvr",
+  xPuuhzSH0: "framer-v-rkbb1d",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var transition1 = {
-	delay: 0,
-	duration: 0.5,
-	ease: [0.49, 0.39, 0.14, 1],
-	type: "tween",
+  delay: 0,
+  duration: 0.5,
+  ease: [0.49, 0.39, 0.14, 1],
+  type: "tween",
 };
 var transition2 = {
-	delay: 0.7,
-	duration: 0.5,
-	ease: [0.49, 0.39, 0.14, 1],
-	type: "tween",
+  delay: 0.7,
+  duration: 0.5,
+  ease: [0.49, 0.39, 0.14, 1],
+  type: "tween",
 };
 var transformTemplate1 = (_, t) => `translateX(-50%) ${t}`;
 var transition3 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var animation = {
-	opacity: 1,
-	rotate: 0,
-	rotateX: 0,
-	rotateY: 0,
-	scale: 1,
-	skewX: 0,
-	skewY: 0,
-	transition: transition3,
-	x: 0,
-	y: 0,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
+  transition: transition3,
+  x: 0,
+  y: 0,
 };
 var animation1 = {
-	opacity: 1e-3,
-	rotate: 0,
-	rotateX: 0,
-	rotateY: 0,
-	scale: 1,
-	skewX: 0,
-	skewY: 0,
-	x: 0,
-	y: 22,
+  opacity: 1e-3,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
+  x: 0,
+  y: 22,
 };
 var transition4 = {
-	bounce: 0.2,
-	delay: 0.1,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0.1,
+  duration: 0.4,
+  type: "spring",
 };
 var animation2 = {
-	opacity: 1,
-	rotate: 0,
-	rotateX: 0,
-	rotateY: 0,
-	scale: 1,
-	skewX: 0,
-	skewY: 0,
-	transition: transition4,
-	x: 0,
-	y: 0,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
+  transition: transition4,
+  x: 0,
+  y: 0,
 };
 var transition5 = {
-	bounce: 0.2,
-	delay: 0.2,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0.2,
+  duration: 0.4,
+  type: "spring",
 };
 var animation3 = {
-	opacity: 1,
-	rotate: 0,
-	rotateX: 0,
-	rotateY: 0,
-	scale: 1,
-	skewX: 0,
-	skewY: 0,
-	transition: transition5,
-	x: 0,
-	y: 0,
+  opacity: 1,
+  rotate: 0,
+  rotateX: 0,
+  rotateY: 0,
+  scale: 1,
+  skewX: 0,
+  skewY: 0,
+  transition: transition5,
+  x: 0,
+  y: 0,
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	Desktop: "WauCV_zII",
-	Mobile: "xPuuhzSH0",
+  Desktop: "WauCV_zII",
+  Mobile: "xPuuhzSH0",
 };
 var getProps = ({ height, id, width, ...props }) => {
-	return {
-		...props,
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "WauCV_zII",
-	};
+  return {
+    ...props,
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "WauCV_zII",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const {
-		style,
-		className: className3,
-		layoutId,
-		variant,
-		...restProps
-	} = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "WauCV_zII",
-		enabledGestures,
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [className, className2];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	const isDisplayed = () => {
-		if (gestureVariant === "WauCV_zII-hover") return true;
-		if (baseVariant === "xPuuhzSH0") return true;
-		return false;
-	};
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition
-					value={transition1}
-					{...addPropertyOverrides(
-						{
-							xPuuhzSH0: {
-								value: transition2,
-							},
-						},
-						baseVariant,
-						gestureVariant,
-					)}
-				>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-gzftvr",
-							className3,
-							classNames,
-						)}
-						data-border={true}
-						data-framer-name={"Desktop"}
-						layoutDependency={layoutDependency}
-						layoutId={"WauCV_zII"}
-						ref={refBinding}
-						style={{
-							"--border-bottom-width": "0.800000011920929px",
-							"--border-color": "rgb(255, 255, 255)",
-							"--border-left-width": "0.800000011920929px",
-							"--border-right-width": "0.800000011920929px",
-							"--border-style": "solid",
-							"--border-top-width": "0.800000011920929px",
-							backgroundColor:
-								"var(--token-73d8ce1b-a47d-4172-a795-e13da0db4ec3, rgb(249, 249, 249))",
-							borderBottomLeftRadius: 16,
-							borderBottomRightRadius: 16,
-							borderTopLeftRadius: 16,
-							borderTopRightRadius: 16,
-							boxShadow:
-								"inset 0px 3px 1px 0px rgba(255, 255, 255, 0.25), 0px 24px 35px -12px rgba(26, 39, 66, 0.05)",
-							...style,
-						}}
-						{...addPropertyOverrides(
-							{
-								"WauCV_zII-hover": {
-									"data-framer-name": void 0,
-								},
-								xPuuhzSH0: {
-									"data-framer-name": "Mobile",
-								},
-							},
-							baseVariant,
-							gestureVariant,
-						)}
-					>
-						<motion.div
-							className={"framer-1s3ijx1"}
-							layoutDependency={layoutDependency}
-							layoutId={"bsJEiqryT"}
-						>
-							<RichText
-								__fromCanvasComponent={true}
-								className={"framer-1iz58zm"}
-								data-framer-name={"Create & Manage Subscriptions"}
-								fonts={["Inter"]}
-								layoutDependency={layoutDependency}
-								layoutId={"cjKcAPq5K"}
-								style={{
-									"--framer-paragraph-spacing": "0px",
-								}}
-								verticalAlignment={"top"}
-								withExternalLayout={true}
-							>
-								<React.Fragment>
-									<motion.p
-										className={"framer-styles-preset-16o54if"}
-										data-styles-preset={"D5KfVnha7"}
-									>
-										{"Custom Checkouts & Upsells"}
-									</motion.p>
-								</React.Fragment>
-							</RichText>
-							<RichText
-								__fromCanvasComponent={true}
-								className={"framer-u0piap"}
-								data-framer-name={
-									"Create and manage subscription programs that increase your revenue, without any hassle"
-								}
-								fonts={["Inter"]}
-								layoutDependency={layoutDependency}
-								layoutId={"DgYiK0eu8"}
-								style={{
-									"--framer-paragraph-spacing": "0px",
-								}}
-								verticalAlignment={"top"}
-								withExternalLayout={true}
-							>
-								<React.Fragment>
-									<motion.p
-										className={"framer-styles-preset-13hsas3"}
-										data-styles-preset={"pwS_W0qLQ"}
-										style={{
-											"--framer-text-alignment": "left",
-										}}
-									>
-										{
-											"Convert more visitors with smart checkouts, built-in upsells, and flexible payments."
-										}
-									</motion.p>
-								</React.Fragment>
-							</RichText>
-						</motion.div>
-						<motion.div
-							className={"framer-1izh0pf"}
-							data-framer-name={"Cover"}
-							layoutDependency={layoutDependency}
-							layoutId={"ih08wTH_r"}
-							style={{
-								mask: "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%) add",
-								WebkitMask:
-									"linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%) add",
-							}}
-						>
-							<motion.div
-								className={"framer-10xdnk0"}
-								data-border={true}
-								layoutDependency={layoutDependency}
-								layoutId={"fsltYEsqi"}
-								style={{
-									"--border-bottom-width": "1px",
-									"--border-color": "rgb(214, 214, 214)",
-									"--border-left-width": "1px",
-									"--border-right-width": "1px",
-									"--border-style": "solid",
-									"--border-top-width": "1px",
-									background:
-										"linear-gradient(180deg, rgb(234, 234, 234) 0%, rgba(255, 255, 255, 0) 100%)",
-									borderBottomLeftRadius: 12,
-									borderBottomRightRadius: 12,
-									borderTopLeftRadius: 12,
-									borderTopRightRadius: 12,
-								}}
-								transformTemplate={transformTemplate1}
-							>
-								<motion.div
-									className={"framer-r5i1j9"}
-									layoutDependency={layoutDependency}
-									layoutId={"BfcnCYU5b"}
-									style={{
-										backgroundColor: "rgb(244, 244, 244)",
-										borderBottomLeftRadius: 8,
-										borderBottomRightRadius: 8,
-										borderTopLeftRadius: 8,
-										borderTopRightRadius: 8,
-										boxShadow: "0px 1px 3px 0px rgba(0, 0, 0, 0.1)",
-									}}
-								>
-									<motion.div
-										className={"framer-bs0aug"}
-										data-framer-name={"Frame 2147227993"}
-										layoutDependency={layoutDependency}
-										layoutId={"lhqg3wUEl"}
-									>
-										<motion.div
-											className={"framer-12duxj6"}
-											data-framer-name={"Frame 2147227992"}
-											layoutDependency={layoutDependency}
-											layoutId={"TNKn4BS_P"}
-										>
-											<motion.div
-												className={"framer-gsjkzd"}
-												data-framer-name={"shopping-cart1"}
-												layoutDependency={layoutDependency}
-												layoutId={"POSuQFINP"}
-												style={{
-													backgroundColor: "rgba(255, 255, 255, 0)",
-												}}
-											>
-												<SVG
-													className={"framer-l705yr"}
-													data-framer-name={"Vector"}
-													fill={"rgba(0,0,0,1)"}
-													intrinsicHeight={15}
-													intrinsicWidth={16}
-													layoutDependency={layoutDependency}
-													layoutId={"I2481:3327;145:331"}
-													svg={
-														'<svg width="16" height="15" viewBox="-1 -1 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">\n<path fill-rule="evenodd" clip-rule="evenodd" d="M2.08408 1.25489C2.02267 1.25009 1.93736 1.24968 1.77904 1.24968H1.16536C0.843198 1.24968 0.582031 0.98851 0.582031 0.666344C0.582031 0.344178 0.843198 0.0830106 1.16536 0.0830106L1.79643 0.0830092C1.93055 0.0829928 2.06247 0.0829767 2.17499 0.0917712C2.29956 0.101508 2.44515 0.124421 2.59413 0.1948C2.80255 0.293261 2.97713 0.451256 3.09584 0.648845C3.1807 0.790078 3.21798 0.932671 3.24007 1.05566C3.25845 1.15805 3.27103 1.2776 3.28333 1.4002L2.09063 1.25569L2.08408 1.25489ZM3.28333 1.4002L11.6697 2.41636C12.7889 2.42104 13.6169 3.46156 13.3686 4.55418L12.4406 8.63751C12.2595 9.43427 11.5512 9.99968 10.7341 9.99968L4.7694 9.9997C4.57039 9.99984 4.3983 9.99997 4.24142 9.97144C3.58665 9.85237 3.05608 9.37222 2.87245 8.73254C2.82846 8.57928 2.81146 8.40803 2.7918 8.21L2.12731 1.56485C2.11155 1.40732 2.10265 1.32247 2.09177 1.26185L2.09063 1.25569L3.28333 1.4002ZM3.28333 1.4002L3.38494 2.41634H11.6621L3.28333 1.4002ZM4.95703 11.1663C4.47378 11.1663 4.08203 11.5581 4.08203 12.0413C4.08203 12.5246 4.47378 12.9163 4.95703 12.9163C5.44028 12.9163 5.83203 12.5246 5.83203 12.0413C5.83203 11.5581 5.44028 11.1663 4.95703 11.1663ZM9.6237 11.1663C9.14045 11.1663 8.7487 11.5581 8.7487 12.0413C8.7487 12.5246 9.14045 12.9163 9.6237 12.9163C10.1069 12.9163 10.4987 12.5246 10.4987 12.0413C10.4987 11.5581 10.1069 11.1663 9.6237 11.1663Z" fill="#3D3D3D"/>\n</svg>\n'
-													}
-													withExternalLayout={true}
-												/>
-											</motion.div>
-											<RichText
-												__fromCanvasComponent={true}
-												className={"framer-1qbkoak"}
-												data-framer-name={"Your cart"}
-												fonts={["Inter-Medium"]}
-												layoutDependency={layoutDependency}
-												layoutId={"dMMQ3TDrM"}
-												style={{
-													"--extracted-r6o4lv": "rgb(61, 61, 61)",
-													"--framer-paragraph-spacing": "0px",
-												}}
-												verticalAlignment={"top"}
-												withExternalLayout={true}
-											>
-												<React.Fragment>
-													<motion.p
-														style={{
-															"--font-selector": "SW50ZXItTWVkaXVt",
-															"--framer-font-family":
-																'"Inter", "Inter Placeholder", sans-serif',
-															"--framer-font-size": "11px",
-															"--framer-font-weight": "500",
-															"--framer-letter-spacing": "-0.01em",
-															"--framer-line-height": "120%",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, rgb(61, 61, 61))",
-														}}
-													>
-														{"Your cart"}
-													</motion.p>
-												</React.Fragment>
-											</RichText>
-										</motion.div>
-										<RichText
-											__fromCanvasComponent={true}
-											className={"framer-1s7ler3"}
-											data-framer-name={"3 Items"}
-											fonts={["Inter"]}
-											layoutDependency={layoutDependency}
-											layoutId={"oXT_3McV7"}
-											style={{
-												"--extracted-r6o4lv": "rgb(125, 126, 128)",
-												"--framer-paragraph-spacing": "0px",
-											}}
-											verticalAlignment={"top"}
-											withExternalLayout={true}
-											{...addPropertyOverrides(
-												{
-													"WauCV_zII-hover": {
-														children: (
-															<React.Fragment>
-																<motion.p
-																	style={{
-																		"--framer-font-size": "11px",
-																		"--framer-letter-spacing": "-0.01em",
-																		"--framer-line-height": "140%",
-																		"--framer-text-color":
-																			"var(--extracted-r6o4lv, rgb(125, 126, 128))",
-																	}}
-																>
-																	{"2 Items"}
-																</motion.p>
-															</React.Fragment>
-														),
-													},
-												},
-												baseVariant,
-												gestureVariant,
-											)}
-										>
-											<React.Fragment>
-												<motion.p
-													style={{
-														"--framer-font-size": "11px",
-														"--framer-letter-spacing": "-0.01em",
-														"--framer-line-height": "140%",
-														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(125, 126, 128))",
-													}}
-												>
-													{"1 Items"}
-												</motion.p>
-											</React.Fragment>
-										</RichText>
-									</motion.div>
-								</motion.div>
-								<motion.div
-									className={"framer-12vo0wt"}
-									data-framer-name={"Static"}
-									layoutDependency={layoutDependency}
-									layoutId={"FrMXhcNHE"}
-									style={{
-										opacity: 1,
-									}}
-									variants={{
-										"WauCV_zII-hover": {
-											opacity: 0,
-										},
-										xPuuhzSH0: {
-											opacity: 0,
-										},
-									}}
-								>
-									<motion.div
-										className={"framer-1sfvi4l"}
-										data-border={true}
-										layoutDependency={layoutDependency}
-										layoutId={"gUA5LDpZn"}
-										style={{
-											"--border-bottom-width": "0.37735849618911743px",
-											"--border-color": "rgb(239, 239, 239)",
-											"--border-left-width": "0.37735849618911743px",
-											"--border-right-width": "0.37735849618911743px",
-											"--border-style": "solid",
-											"--border-top-width": "0.37735849618911743px",
-											backgroundColor: "rgb(249, 249, 249)",
-											borderBottomLeftRadius: 6.04,
-											borderBottomRightRadius: 6.04,
-											borderTopLeftRadius: 6.04,
-											borderTopRightRadius: 6.04,
-											boxShadow:
-												"0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
-										}}
-									>
-										<Image
-											background={{
-												alt: "",
-												fit: "fit",
-												loading: getLoadingLazyAtYPosition(
-													(componentViewport?.y || 0) +
-														0 +
-														((componentViewport?.height || 454) -
-															0 -
-															622 +
-															322 +
-															0) +
-														20 +
-														16 +
-														43.4 +
-														0 +
-														0 +
-														6,
-												),
-												pixelHeight: 272,
-												pixelWidth: 272,
-												positionX: "center",
-												positionY: "center",
-												src: "https://framerusercontent.com/images/GKgyFuoAUCcgpBmIoKVTerv50.png",
-											}}
-											className={"framer-o4yx7o"}
-											data-framer-name={"Frame 2147227914"}
-											layoutDependency={layoutDependency}
-											layoutId={"xuiZGH_Ts"}
-										/>
-										<motion.div
-											className={"framer-nkc58t"}
-											data-framer-name={"Frame 2147227936"}
-											layoutDependency={layoutDependency}
-											layoutId={"EIvoYuKc0"}
-										>
-											<SVG
-												className={"framer-hehsfi"}
-												data-framer-name={"Frame 2147227915"}
-												fill={"rgba(0,0,0,1)"}
-												intrinsicHeight={29}
-												intrinsicWidth={172}
-												layoutDependency={layoutDependency}
-												layoutId={"dlzDvKj5U"}
-												svg={
-													'<svg width="172" height="29" viewBox="0 0 172 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n<path d="M1.29688 11.4336H0.28125L3.21875 3.43359H4.21875L7.15625 11.4336H6.14062L3.75 4.69922H3.6875L1.29688 11.4336ZM1.67188 8.30859H5.76563V9.16797H1.67188V8.30859ZM10.433 11.5586C9.93297 11.5586 9.49156 11.4323 9.10875 11.1797C8.72594 10.9245 8.42646 10.5651 8.21031 10.1016C7.99417 9.63542 7.88609 9.08464 7.88609 8.44922C7.88609 7.81901 7.99417 7.27214 8.21031 6.80859C8.42646 6.34505 8.72724 5.98698 9.11266 5.73437C9.49807 5.48177 9.94339 5.35547 10.4486 5.35547C10.8392 5.35547 11.1478 5.42057 11.3744 5.55078C11.6035 5.67839 11.778 5.82422 11.8978 5.98828C12.0202 6.14974 12.1153 6.28255 12.183 6.38672H12.2611V3.43359H13.183V11.4336H12.2923V10.5117H12.183C12.1153 10.6211 12.0189 10.7591 11.8939 10.9258C11.7689 11.0898 11.5905 11.237 11.3588 11.3672C11.127 11.4948 10.8184 11.5586 10.433 11.5586ZM10.558 10.7305C10.9278 10.7305 11.2403 10.6341 11.4955 10.4414C11.7507 10.2461 11.9447 9.97656 12.0775 9.63281C12.2103 9.28646 12.2767 8.88672 12.2767 8.43359C12.2767 7.98568 12.2116 7.59375 12.0814 7.25781C11.9512 6.91927 11.7585 6.65625 11.5033 6.46875C11.2481 6.27865 10.933 6.18359 10.558 6.18359C10.1673 6.18359 9.84182 6.28385 9.58141 6.48437C9.32359 6.68229 9.12958 6.95182 8.99937 7.29297C8.87177 7.63151 8.80797 8.01172 8.80797 8.43359C8.80797 8.86068 8.87307 9.2487 9.00328 9.59766C9.13609 9.94401 9.33141 10.2201 9.58922 10.4258C9.84964 10.6289 10.1726 10.7305 10.558 10.7305ZM17.155 11.5586C16.655 11.5586 16.2136 11.4323 15.8308 11.1797C15.448 10.9245 15.1485 10.5651 14.9323 10.1016C14.7162 9.63542 14.6081 9.08464 14.6081 8.44922C14.6081 7.81901 14.7162 7.27214 14.9323 6.80859C15.1485 6.34505 15.4493 5.98698 15.8347 5.73437C16.2201 5.48177 16.6654 5.35547 17.1706 5.35547C17.5612 5.35547 17.8698 5.42057 18.0964 5.55078C18.3256 5.67839 18.5001 5.82422 18.6198 5.98828C18.7422 6.14974 18.8373 6.28255 18.905 6.38672H18.9831V3.43359L19.905 3.43359V11.4336H19.0144V10.5117H18.905C18.8373 10.6211 18.7409 10.7591 18.6159 10.9258C18.4909 11.0898 18.3126 11.237 18.0808 11.3672C17.849 11.4948 17.5404 11.5586 17.155 11.5586ZM17.28 10.7305C17.6498 10.7305 17.9623 10.6341 18.2175 10.4414C18.4727 10.2461 18.6667 9.97656 18.7995 9.63281C18.9323 9.28646 18.9987 8.88672 18.9987 8.43359C18.9987 7.98568 18.9336 7.59375 18.8034 7.25781C18.6732 6.91927 18.4805 6.65625 18.2253 6.46875C17.9701 6.27865 17.655 6.18359 17.28 6.18359C16.8894 6.18359 16.5639 6.28385 16.3034 6.48437C16.0456 6.68229 15.8516 6.95182 15.7214 7.29297C15.5938 7.63151 15.53 8.01172 15.53 8.43359C15.53 8.86068 15.5951 9.2487 15.7253 9.59766C15.8581 9.94401 16.0534 10.2201 16.3112 10.4258C16.5717 10.6289 16.8946 10.7305 17.28 10.7305ZM31.4702 7.43359C31.4702 8.27734 31.3178 9.00651 31.0131 9.62109C30.7084 10.2357 30.2905 10.7096 29.7592 11.043C29.228 11.3763 28.6212 11.543 27.9389 11.543C27.2566 11.543 26.6498 11.3763 26.1186 11.043C25.5873 10.7096 25.1694 10.2357 24.8647 9.62109C24.56 9.00651 24.4077 8.27734 24.4077 7.43359C24.4077 6.58984 24.56 5.86068 24.8647 5.24609C25.1694 4.63151 25.5873 4.15755 26.1186 3.82422C26.6498 3.49089 27.2566 3.32422 27.9389 3.32422C28.6212 3.32422 29.228 3.49089 29.7592 3.82422C30.2905 4.15755 30.7084 4.63151 31.0131 5.24609C31.3178 5.86068 31.4702 6.58984 31.4702 7.43359ZM30.5327 7.43359C30.5327 6.74089 30.4168 6.15625 30.185 5.67969C29.9558 5.20312 29.6446 4.84245 29.2514 4.59766C28.8608 4.35286 28.4233 4.23047 27.9389 4.23047C27.4545 4.23047 27.0157 4.35286 26.6225 4.59766C26.2319 4.84245 25.9207 5.20312 25.6889 5.67969C25.4597 6.15625 25.3452 6.74089 25.3452 7.43359C25.3452 8.1263 25.4597 8.71094 25.6889 9.1875C25.9207 9.66406 26.2319 10.0247 26.6225 10.2695C27.0157 10.5143 27.4545 10.6367 27.9389 10.6367C28.4233 10.6367 28.8608 10.5143 29.2514 10.2695C29.6446 10.0247 29.9558 9.66406 30.185 9.1875C30.4168 8.71094 30.5327 8.1263 30.5327 7.43359ZM33.7859 7.82422V11.4336H32.8641V5.43359H33.7547V6.37109H33.8328C33.9734 6.06641 34.187 5.82161 34.4734 5.63672C34.7599 5.44922 35.1297 5.35547 35.5828 5.35547C35.9891 5.35547 36.3445 5.4388 36.6492 5.60547C36.9539 5.76953 37.1909 6.01953 37.3602 6.35547C37.5294 6.6888 37.6141 7.11068 37.6141 7.62109V11.4336H36.6922V7.68359C36.6922 7.21224 36.5698 6.84505 36.325 6.58203C36.0802 6.31641 35.7443 6.18359 35.3172 6.18359C35.0229 6.18359 34.7599 6.2474 34.5281 6.375C34.299 6.5026 34.118 6.6888 33.9852 6.93359C33.8523 7.17839 33.7859 7.47526 33.7859 7.82422ZM41.7043 11.5586C41.1261 11.5586 40.6274 11.431 40.2082 11.1758C39.7915 10.918 39.4699 10.5586 39.2433 10.0977C39.0194 9.63411 38.9074 9.09505 38.9074 8.48047C38.9074 7.86589 39.0194 7.32422 39.2433 6.85547C39.4699 6.38411 39.785 6.01693 40.1886 5.75391C40.5949 5.48828 41.0688 5.35547 41.6105 5.35547C41.923 5.35547 42.2316 5.40755 42.5363 5.51172C42.841 5.61589 43.1183 5.78516 43.3683 6.01953C43.6183 6.2513 43.8175 6.55859 43.966 6.94141C44.1144 7.32422 44.1886 7.79557 44.1886 8.35547V8.74609H39.5636V7.94922H43.2511C43.2511 7.61068 43.1834 7.30859 43.048 7.04297C42.9152 6.77734 42.7251 6.56771 42.4777 6.41406C42.2329 6.26042 41.9438 6.18359 41.6105 6.18359C41.2433 6.18359 40.9256 6.27474 40.6574 6.45703C40.3918 6.63672 40.1873 6.87109 40.0441 7.16016C39.9009 7.44922 39.8293 7.75911 39.8293 8.08984V8.62109C39.8293 9.07422 39.9074 9.45833 40.0636 9.77344C40.2225 10.0859 40.4425 10.3242 40.7238 10.4883C41.005 10.6497 41.3319 10.7305 41.7043 10.7305C41.9464 10.7305 42.1652 10.6966 42.3605 10.6289C42.5584 10.5586 42.729 10.4544 42.8722 10.3164C43.0155 10.1758 43.1261 10.0013 43.2043 9.79297L44.0949 10.043C44.0011 10.3451 43.8436 10.6107 43.6222 10.8398C43.4009 11.0664 43.1274 11.2435 42.8019 11.3711C42.4764 11.4961 42.1105 11.5586 41.7043 11.5586ZM48.5897 3.43359H49.746L52.4647 10.0742H52.5585L55.2772 3.43359H56.4335V11.4336H55.5272V5.35547H55.4491L52.9491 11.4336H52.0741L49.5741 5.35547H49.496V11.4336H48.5897V3.43359ZM60.5784 11.5586C60.0367 11.5586 59.5614 11.4297 59.1526 11.1719C58.7463 10.9141 58.4286 10.5534 58.1995 10.0898C57.9729 9.6263 57.8596 9.08464 57.8596 8.46484C57.8596 7.83984 57.9729 7.29427 58.1995 6.82812C58.4286 6.36198 58.7463 6 59.1526 5.74219C59.5614 5.48438 60.0367 5.35547 60.5784 5.35547C61.12 5.35547 61.594 5.48438 62.0002 5.74219C62.4091 6 62.7268 6.36198 62.9534 6.82812C63.1825 7.29427 63.2971 7.83984 63.2971 8.46484C63.2971 9.08464 63.1825 9.6263 62.9534 10.0898C62.7268 10.5534 62.4091 10.9141 62.0002 11.1719C61.594 11.4297 61.12 11.5586 60.5784 11.5586ZM60.5784 10.7305C60.9898 10.7305 61.3284 10.625 61.594 10.4141C61.8596 10.2031 62.0562 9.92578 62.1838 9.58203C62.3114 9.23828 62.3752 8.86589 62.3752 8.46484C62.3752 8.0638 62.3114 7.6901 62.1838 7.34375C62.0562 6.9974 61.8596 6.71745 61.594 6.50391C61.3284 6.29036 60.9898 6.18359 60.5784 6.18359C60.1669 6.18359 59.8284 6.29036 59.5627 6.50391C59.2971 6.71745 59.1005 6.9974 58.9729 7.34375C58.8453 7.6901 58.7815 8.0638 58.7815 8.46484C58.7815 8.86589 58.8453 9.23828 58.9729 9.58203C59.1005 9.92578 59.2971 10.2031 59.5627 10.4141C59.8284 10.625 60.1669 10.7305 60.5784 10.7305ZM64.5943 11.4336V5.43359H65.485V6.33984H65.5475C65.6568 6.04297 65.8548 5.80208 66.1412 5.61719C66.4277 5.43229 66.7506 5.33984 67.11 5.33984C67.1777 5.33984 67.2623 5.34115 67.3639 5.34375C67.4654 5.34635 67.5423 5.35026 67.5943 5.35547V6.29297C67.5631 6.28516 67.4915 6.27344 67.3795 6.25781C67.2701 6.23958 67.1542 6.23047 67.0318 6.23047C66.7402 6.23047 66.4798 6.29167 66.2506 6.41406C66.024 6.53385 65.8443 6.70052 65.7115 6.91406C65.5813 7.125 65.5162 7.36589 65.5162 7.63672V11.4336H64.5943ZM70.9101 11.5586C70.332 11.5586 69.8333 11.431 69.414 11.1758C68.9974 10.918 68.6757 10.5586 68.4492 10.0977C68.2252 9.63411 68.1132 9.09505 68.1132 8.48047C68.1132 7.86589 68.2252 7.32422 68.4492 6.85547C68.6757 6.38411 68.9908 6.01693 69.3945 5.75391C69.8007 5.48828 70.2747 5.35547 70.8164 5.35547C71.1289 5.35547 71.4375 5.40755 71.7421 5.51172C72.0468 5.61589 72.3242 5.78516 72.5742 6.01953C72.8242 6.2513 73.0234 6.55859 73.1718 6.94141C73.3203 7.32422 73.3945 7.79557 73.3945 8.35547V8.74609H68.7695V7.94922H72.457C72.457 7.61068 72.3893 7.30859 72.2539 7.04297C72.1211 6.77734 71.931 6.56771 71.6836 6.41406C71.4388 6.26042 71.1497 6.18359 70.8164 6.18359C70.4492 6.18359 70.1315 6.27474 69.8632 6.45703C69.5976 6.63672 69.3932 6.87109 69.25 7.16016C69.1067 7.44922 69.0351 7.75911 69.0351 8.08984V8.62109C69.0351 9.07422 69.1132 9.45833 69.2695 9.77344C69.4283 10.0859 69.6484 10.3242 69.9296 10.4883C70.2109 10.6497 70.5377 10.7305 70.9101 10.7305C71.1523 10.7305 71.3711 10.6966 71.5664 10.6289C71.7643 10.5586 71.9349 10.4544 72.0781 10.3164C72.2213 10.1758 72.332 10.0013 72.4101 9.79297L73.3007 10.043C73.207 10.3451 73.0494 10.6107 72.8281 10.8398C72.6067 11.0664 72.3333 11.2435 72.0078 11.3711C71.6823 11.4961 71.3164 11.5586 70.9101 11.5586ZM78.7643 3.43359V11.4336H77.7956V3.43359H78.7643ZM83.0811 5.43359V6.21484H79.9717V5.43359H83.0811ZM80.878 3.99609H81.7998V9.71484C81.7998 9.97526 81.8376 10.1706 81.9131 10.3008C81.9912 10.4284 82.0902 10.5143 82.21 10.5586C82.3324 10.6003 82.4613 10.6211 82.5967 10.6211C82.6983 10.6211 82.7816 10.6159 82.8467 10.6055C82.9118 10.5924 82.9639 10.582 83.003 10.5742L83.1905 11.4023C83.128 11.4258 83.0407 11.4492 82.9287 11.4727C82.8168 11.4987 82.6748 11.5117 82.503 11.5117C82.2426 11.5117 81.9873 11.4557 81.7373 11.3437C81.4899 11.2318 81.2842 11.0612 81.1202 10.832C80.9587 10.6029 80.878 10.3138 80.878 9.96484V3.99609ZM86.809 11.5586C86.2309 11.5586 85.7322 11.431 85.3129 11.1758C84.8962 10.918 84.5746 10.5586 84.348 10.0977C84.1241 9.63411 84.0121 9.09505 84.0121 8.48047C84.0121 7.86589 84.1241 7.32422 84.348 6.85547C84.5746 6.38411 84.8897 6.01693 85.2934 5.75391C85.6996 5.48828 86.1736 5.35547 86.7152 5.35547C87.0277 5.35547 87.3363 5.40755 87.641 5.51172C87.9457 5.61589 88.223 5.78516 88.473 6.01953C88.723 6.2513 88.9223 6.55859 89.0707 6.94141C89.2191 7.32422 89.2934 7.79557 89.2934 8.35547V8.74609H84.6684V7.94922H88.3559C88.3559 7.61068 88.2881 7.30859 88.1527 7.04297C88.0199 6.77734 87.8298 6.56771 87.5824 6.41406C87.3376 6.26042 87.0486 6.18359 86.7152 6.18359C86.348 6.18359 86.0303 6.27474 85.7621 6.45703C85.4965 6.63672 85.2921 6.87109 85.1488 7.16016C85.0056 7.44922 84.934 7.75911 84.934 8.08984V8.62109C84.934 9.07422 85.0121 9.45833 85.1684 9.77344C85.3272 10.0859 85.5473 10.3242 85.8285 10.4883C86.1098 10.6497 86.4366 10.7305 86.809 10.7305C87.0512 10.7305 87.2699 10.6966 87.4652 10.6289C87.6631 10.5586 87.8337 10.4544 87.977 10.3164C88.1202 10.1758 88.2309 10.0013 88.309 9.79297L89.1996 10.043C89.1059 10.3451 88.9483 10.6107 88.727 10.8398C88.5056 11.0664 88.2322 11.2435 87.9066 11.3711C87.5811 11.4961 87.2152 11.5586 86.809 11.5586ZM90.5857 11.4336V5.43359H91.4763V6.37109H91.5545C91.6795 6.05078 91.8813 5.80208 92.1599 5.625C92.4386 5.44531 92.7732 5.35547 93.1638 5.35547C93.5597 5.35547 93.8891 5.44531 94.1521 5.625C94.4177 5.80208 94.6248 6.05078 94.7732 6.37109H94.8357C94.9893 6.0612 95.2198 5.8151 95.5271 5.63281C95.8344 5.44792 96.2029 5.35547 96.6326 5.35547C97.169 5.35547 97.6078 5.52344 97.949 5.85937C98.2901 6.19271 98.4607 6.71224 98.4607 7.41797V11.4336H97.5388V7.41797C97.5388 6.97526 97.4177 6.65885 97.1755 6.46875C96.9334 6.27865 96.6482 6.18359 96.3201 6.18359C95.8982 6.18359 95.5714 6.3112 95.3396 6.56641C95.1078 6.81901 94.992 7.13932 94.992 7.52734V11.4336H94.0545V7.32422C94.0545 6.98307 93.9438 6.70833 93.7224 6.5C93.5011 6.28906 93.2159 6.18359 92.867 6.18359C92.6274 6.18359 92.4034 6.2474 92.1951 6.375C91.9893 6.5026 91.8227 6.67969 91.6951 6.90625C91.5701 7.13021 91.5076 7.38932 91.5076 7.68359V11.4336H90.5857ZM103.145 11.4336V3.43359H107.942V4.29297H104.114V6.99609H107.582V7.85547H104.114V11.4336H103.145ZM111.363 11.5586C110.821 11.5586 110.346 11.4297 109.937 11.1719C109.531 10.9141 109.213 10.5534 108.984 10.0898C108.758 9.6263 108.644 9.08464 108.644 8.46484C108.644 7.83984 108.758 7.29427 108.984 6.82812C109.213 6.36198 109.531 6 109.937 5.74219C110.346 5.48438 110.821 5.35547 111.363 5.35547C111.905 5.35547 112.379 5.48438 112.785 5.74219C113.194 6 113.512 6.36198 113.738 6.82812C113.967 7.29427 114.082 7.83984 114.082 8.46484C114.082 9.08464 113.967 9.6263 113.738 10.0898C113.512 10.5534 113.194 10.9141 112.785 11.1719C112.379 11.4297 111.905 11.5586 111.363 11.5586ZM111.363 10.7305C111.775 10.7305 112.113 10.625 112.379 10.4141C112.644 10.2031 112.841 9.92578 112.969 9.58203C113.096 9.23828 113.16 8.86589 113.16 8.46484C113.16 8.0638 113.096 7.6901 112.969 7.34375C112.841 6.9974 112.644 6.71745 112.379 6.50391C112.113 6.29036 111.775 6.18359 111.363 6.18359C110.952 6.18359 110.613 6.29036 110.348 6.50391C110.082 6.71745 109.885 6.9974 109.758 7.34375C109.63 7.6901 109.566 8.0638 109.566 8.46484C109.566 8.86589 109.63 9.23828 109.758 9.58203C109.885 9.92578 110.082 10.2031 110.348 10.4141C110.613 10.625 110.952 10.7305 111.363 10.7305ZM115.379 11.4336V5.43359L116.27 5.43359V6.33984H116.332C116.442 6.04297 116.64 5.80208 116.926 5.61719C117.212 5.43229 117.535 5.33984 117.895 5.33984C117.962 5.33984 118.047 5.34115 118.149 5.34375C118.25 5.34635 118.327 5.35026 118.379 5.35547V6.29297C118.348 6.28516 118.276 6.27344 118.164 6.25781C118.055 6.23958 117.939 6.23047 117.817 6.23047C117.525 6.23047 117.265 6.29167 117.035 6.41406C116.809 6.53385 116.629 6.70052 116.496 6.91406C116.366 7.125 116.301 7.36589 116.301 7.63672V11.4336H115.379Z" fill="#242424"/>\n<path d="M0.695312 25.4336V17.4336H5.99219V18.8281H2.38672V20.7344H5.64063V22.1289H2.38672V25.4336H0.695312ZM6.89195 25.4336V19.4336H8.50523V20.4805H8.56773C8.67711 20.1081 8.8607 19.8268 9.11852 19.6367C9.37633 19.444 9.6732 19.3477 10.0091 19.3477C10.0925 19.3477 10.1823 19.3529 10.2787 19.3633C10.375 19.3737 10.4597 19.388 10.5326 19.4062V20.8828C10.4545 20.8594 10.3464 20.8385 10.2084 20.8203C10.0703 20.8021 9.94404 20.793 9.82945 20.793C9.58466 20.793 9.36591 20.8464 9.1732 20.9531C8.9831 21.0573 8.83206 21.2031 8.72008 21.3906C8.6107 21.5781 8.55602 21.7943 8.55602 22.0391V25.4336H6.89195ZM13.738 25.5508C13.1208 25.5508 12.5896 25.4258 12.1443 25.1758C11.7015 24.9232 11.3604 24.5664 11.1208 24.1055C10.8812 23.6419 10.7614 23.0937 10.7614 22.4609C10.7614 21.8437 10.8812 21.3021 11.1208 20.8359C11.3604 20.3698 11.6976 20.0065 12.1325 19.7461C12.57 19.4857 13.0831 19.3555 13.6716 19.3555C14.0674 19.3555 14.4359 19.4193 14.7771 19.5469C15.1208 19.6719 15.4203 19.8607 15.6755 20.1133C15.9333 20.3659 16.1338 20.6836 16.2771 21.0664C16.4203 21.4466 16.4919 21.8919 16.4919 22.4023V22.8594H11.4255V21.8281H14.9255C14.9255 21.5885 14.8734 21.3763 14.7693 21.1914C14.6651 21.0065 14.5206 20.862 14.3357 20.7578C14.1534 20.651 13.9411 20.5977 13.6989 20.5977C13.4463 20.5977 13.2224 20.6562 13.0271 20.7734C12.8344 20.888 12.6833 21.043 12.5739 21.2383C12.4646 21.431 12.4086 21.6458 12.406 21.8828V22.8633C12.406 23.1602 12.4607 23.4167 12.57 23.6328C12.682 23.849 12.8396 24.0156 13.0427 24.1328C13.2458 24.25 13.4867 24.3086 13.7654 24.3086C13.9502 24.3086 14.1195 24.2826 14.2732 24.2305C14.4268 24.1784 14.5583 24.1003 14.6677 23.9961C14.7771 23.8919 14.8604 23.7643 14.9177 23.6133L16.4568 23.7148C16.3786 24.0846 16.2185 24.4076 15.9763 24.6836C15.7367 24.957 15.4268 25.1706 15.0466 25.3242C14.669 25.4753 14.2328 25.5508 13.738 25.5508ZM20.2022 25.5508C19.585 25.5508 19.0538 25.4258 18.6085 25.1758C18.1658 24.9232 17.8246 24.5664 17.585 24.1055C17.3455 23.6419 17.2257 23.0937 17.2257 22.4609C17.2257 21.8437 17.3455 21.3021 17.585 20.8359C17.8246 20.3698 18.1619 20.0065 18.5968 19.7461C19.0343 19.4857 19.5473 19.3555 20.1358 19.3555C20.5317 19.3555 20.9001 19.4193 21.2413 19.5469C21.585 19.6719 21.8845 19.8607 22.1397 20.1133C22.3975 20.3659 22.5981 20.6836 22.7413 21.0664C22.8845 21.4466 22.9561 21.8919 22.9561 22.4023V22.8594H17.8897V21.8281H21.3897C21.3897 21.5885 21.3376 21.3763 21.2335 21.1914C21.1293 21.0065 20.9848 20.862 20.7999 20.7578C20.6176 20.651 20.4054 20.5977 20.1632 20.5977C19.9106 20.5977 19.6866 20.6562 19.4913 20.7734C19.2986 20.888 19.1475 21.043 19.0382 21.2383C18.9288 21.431 18.8728 21.6458 18.8702 21.8828V22.8633C18.8702 23.1602 18.9249 23.4167 19.0343 23.6328C19.1462 23.849 19.3038 24.0156 19.5069 24.1328C19.71 24.25 19.9509 24.3086 20.2296 24.3086C20.4145 24.3086 20.5837 24.2826 20.7374 24.2305C20.891 24.1784 21.0225 24.1003 21.1319 23.9961C21.2413 23.8919 21.3246 23.7643 21.3819 23.6133L22.921 23.7148C22.8429 24.0846 22.6827 24.4076 22.4405 24.6836C22.2009 24.957 21.891 25.1706 21.5108 25.3242C21.1332 25.4753 20.697 25.5508 20.2022 25.5508ZM30.7391 19.7344C30.7078 19.4193 30.5737 19.1745 30.3367 19C30.0997 18.8255 29.7781 18.7383 29.3719 18.7383C29.0958 18.7383 28.8628 18.7773 28.6727 18.8555C28.4826 18.931 28.3367 19.0365 28.2352 19.1719C28.1362 19.3073 28.0867 19.4609 28.0867 19.6328C28.0815 19.776 28.1115 19.901 28.1766 20.0078C28.2443 20.1146 28.3367 20.207 28.4539 20.2852C28.5711 20.3607 28.7065 20.4271 28.8602 20.4844C29.0138 20.5391 29.1779 20.5859 29.3523 20.625L30.0711 20.7969C30.4201 20.875 30.7404 20.9792 31.032 21.1094C31.3237 21.2396 31.5763 21.3997 31.7898 21.5898C32.0034 21.7799 32.1688 22.0039 32.2859 22.2617C32.4057 22.5195 32.4669 22.8151 32.4695 23.1484C32.4669 23.638 32.3419 24.0625 32.0945 24.4219C31.8497 24.7786 31.4956 25.056 31.032 25.2539C30.5711 25.4492 30.0151 25.5469 29.3641 25.5469C28.7182 25.5469 28.1557 25.4479 27.6766 25.25C27.2 25.0521 26.8276 24.7591 26.5594 24.3711C26.2938 23.9805 26.1544 23.4974 26.1414 22.9219H27.7781C27.7964 23.1901 27.8732 23.4141 28.0086 23.5937C28.1466 23.7708 28.3302 23.9049 28.5594 23.9961C28.7911 24.0846 29.0529 24.1289 29.3445 24.1289C29.631 24.1289 29.8797 24.0872 30.0906 24.0039C30.3042 23.9206 30.4695 23.8047 30.5867 23.6563C30.7039 23.5078 30.7625 23.3372 30.7625 23.1445C30.7625 22.9648 30.7091 22.8138 30.6023 22.6914C30.4982 22.569 30.3445 22.4648 30.1414 22.3789C29.9409 22.293 29.6948 22.2148 29.4031 22.1445L28.532 21.9258C27.8576 21.7617 27.325 21.5052 26.9344 21.1562C26.5438 20.8073 26.3497 20.3372 26.3523 19.7461C26.3497 19.2617 26.4786 18.8385 26.7391 18.4766C27.0021 18.1146 27.3628 17.832 27.8211 17.6289C28.2794 17.4258 28.8003 17.3242 29.3836 17.3242C29.9773 17.3242 30.4956 17.4258 30.9383 17.6289C31.3836 17.832 31.7299 18.1146 31.9773 18.4766C32.2247 18.8385 32.3523 19.2578 32.3602 19.7344H30.7391ZM35.13 21.9648V25.4336H33.466V17.4336H35.0832V20.4922H35.1535C35.2889 20.138 35.5076 19.8607 35.8097 19.6602C36.1118 19.457 36.4907 19.3555 36.9464 19.3555C37.3631 19.3555 37.7264 19.4466 38.0363 19.6289C38.3488 19.8086 38.591 20.0677 38.7629 20.4062C38.9373 20.7422 39.0233 21.1445 39.0207 21.6133V25.4336H37.3566V21.9102C37.3592 21.5404 37.2655 21.2526 37.0754 21.0469C36.8879 20.8411 36.6248 20.7383 36.2863 20.7383C36.0597 20.7383 35.8592 20.7865 35.6847 20.8828C35.5129 20.9792 35.3774 21.1198 35.2785 21.3047C35.1821 21.487 35.1326 21.707 35.13 21.9648ZM40.2202 25.4336V19.4336H41.8843V25.4336H40.2202ZM41.0562 18.6602C40.8088 18.6602 40.5965 18.5781 40.4195 18.4141C40.245 18.2474 40.1577 18.0482 40.1577 17.8164C40.1577 17.5872 40.245 17.3906 40.4195 17.2266C40.5965 17.0599 40.8088 16.9766 41.0562 16.9766C41.3036 16.9766 41.5145 17.0599 41.689 17.2266C41.8661 17.3906 41.9546 17.5872 41.9546 17.8164C41.9546 18.0482 41.8661 18.2474 41.689 18.4141C41.5145 18.5781 41.3036 18.6602 41.0562 18.6602ZM43.1073 27.6836V19.4336H44.7479V20.4414H44.8221C44.8951 20.2799 45.0005 20.1159 45.1386 19.9492C45.2792 19.7799 45.4615 19.6393 45.6854 19.5273C45.912 19.4128 46.1932 19.3555 46.5292 19.3555C46.9667 19.3555 47.3703 19.4701 47.7401 19.6992C48.1099 19.9258 48.4055 20.2682 48.6268 20.7266C48.8482 21.1823 48.9589 21.7539 48.9589 22.4414C48.9589 23.1107 48.8508 23.6758 48.6346 24.1367C48.4211 24.5951 48.1294 24.9427 47.7596 25.1797C47.3925 25.4141 46.981 25.5312 46.5253 25.5312C46.2024 25.5312 45.9276 25.4779 45.7011 25.3711C45.4771 25.2643 45.2935 25.1302 45.1503 24.9687C45.007 24.8047 44.8977 24.6393 44.8221 24.4727H44.7714V27.6836H43.1073ZM44.7362 22.4336C44.7362 22.7904 44.7857 23.1016 44.8846 23.3672C44.9836 23.6328 45.1268 23.8398 45.3143 23.9883C45.5018 24.1341 45.7297 24.207 45.9979 24.207C46.2688 24.207 46.4979 24.1328 46.6854 23.9844C46.8729 23.8333 47.0149 23.625 47.1112 23.3594C47.2102 23.0911 47.2596 22.7826 47.2596 22.4336C47.2596 22.0872 47.2115 21.7826 47.1151 21.5195C47.0188 21.2565 46.8768 21.0508 46.6893 20.9023C46.5018 20.7539 46.2714 20.6797 45.9979 20.6797C45.7271 20.6797 45.4979 20.7513 45.3104 20.8945C45.1255 21.0378 44.9836 21.2409 44.8846 21.5039C44.7857 21.7669 44.7362 22.0768 44.7362 22.4336ZM49.9582 27.6836V19.4336H51.5989V20.4414H51.6731C51.746 20.2799 51.8515 20.1159 51.9895 19.9492C52.1301 19.7799 52.3124 19.6393 52.5364 19.5273C52.7629 19.4128 53.0442 19.3555 53.3801 19.3555C53.8176 19.3555 54.2213 19.4701 54.5911 19.6992C54.9608 19.9258 55.2564 20.2682 55.4778 20.7266C55.6991 21.1823 55.8098 21.7539 55.8098 22.4414C55.8098 23.1107 55.7017 23.6758 55.4856 24.1367C55.272 24.5951 54.9804 24.9427 54.6106 25.1797C54.2434 25.4141 53.8319 25.5312 53.3762 25.5312C53.0533 25.5312 52.7786 25.4779 52.552 25.3711C52.328 25.2643 52.1444 25.1302 52.0012 24.9687C51.858 24.8047 51.7486 24.6393 51.6731 24.4727H51.6223V27.6836H49.9582ZM51.5871 22.4336C51.5871 22.7904 51.6366 23.1016 51.7356 23.3672C51.8345 23.6328 51.9778 23.8398 52.1653 23.9883C52.3528 24.1341 52.5806 24.207 52.8489 24.207C53.1197 24.207 53.3489 24.1328 53.5364 23.9844C53.7239 23.8333 53.8658 23.625 53.9621 23.3594C54.0611 23.0911 54.1106 22.7826 54.1106 22.4336C54.1106 22.0872 54.0624 21.7826 53.9661 21.5195C53.8697 21.2565 53.7278 21.0508 53.5403 20.9023C53.3528 20.7539 53.1223 20.6797 52.8489 20.6797C52.578 20.6797 52.3489 20.7513 52.1614 20.8945C51.9765 21.0378 51.8345 21.2409 51.7356 21.5039C51.6366 21.7669 51.5871 22.0768 51.5871 22.4336ZM56.8092 25.4336V19.4336H58.4732V25.4336H56.8092ZM57.6451 18.6602C57.3977 18.6602 57.1855 18.5781 57.0084 18.4141C56.8339 18.2474 56.7467 18.0482 56.7467 17.8164C56.7467 17.5872 56.8339 17.3906 57.0084 17.2266C57.1855 17.0599 57.3977 16.9766 57.6451 16.9766C57.8925 16.9766 58.1035 17.0599 58.2779 17.2266C58.455 17.3906 58.5436 17.5872 58.5436 17.8164C58.5436 18.0482 58.455 18.2474 58.2779 18.4141C58.1035 18.5781 57.8925 18.6602 57.6451 18.6602ZM61.3603 21.9648V25.4336H59.6963V19.4336H61.2822V20.4922H61.3525C61.4853 20.1432 61.708 19.8672 62.0205 19.6641C62.333 19.4583 62.7119 19.3555 63.1572 19.3555C63.5739 19.3555 63.9371 19.4466 64.247 19.6289C64.5569 19.8112 64.7978 20.0716 64.9697 20.4102C65.1416 20.7461 65.2275 21.1471 65.2275 21.6133V25.4336H63.5634V21.9102C63.566 21.543 63.4723 21.2565 63.2822 21.0508C63.0921 20.8424 62.8304 20.7383 62.497 20.7383C62.2731 20.7383 62.0752 20.7865 61.9033 20.8828C61.734 20.9792 61.6012 21.1198 61.5048 21.3047C61.4111 21.487 61.3629 21.707 61.3603 21.9648ZM69.1321 27.8086C68.5931 27.8086 68.1308 27.7344 67.7454 27.5859C67.3626 27.4401 67.0579 27.2409 66.8314 26.9883C66.6048 26.7357 66.4577 26.4518 66.39 26.1367L67.929 25.9297C67.9759 26.0495 68.0501 26.1615 68.1517 26.2656C68.2532 26.3698 68.3874 26.4531 68.554 26.5156C68.7233 26.5807 68.929 26.6133 69.1712 26.6133C69.5332 26.6133 69.8314 26.5247 70.0657 26.3477C70.3027 26.1732 70.4212 25.8802 70.4212 25.4688V24.3711H70.3509C70.278 24.5378 70.1686 24.6953 70.0228 24.8437C69.8769 24.9922 69.6894 25.1133 69.4603 25.207C69.2311 25.3008 68.9577 25.3477 68.64 25.3477C68.1894 25.3477 67.7793 25.2435 67.4095 25.0352C67.0423 24.8242 66.7493 24.5026 66.5306 24.0703C66.3144 23.6354 66.2064 23.0859 66.2064 22.4219C66.2064 21.7422 66.317 21.1745 66.5384 20.7187C66.7598 20.263 67.054 19.9219 67.4212 19.6953C67.791 19.4688 68.196 19.3555 68.6361 19.3555C68.972 19.3555 69.2532 19.4128 69.4798 19.5273C69.7064 19.6393 69.8887 19.7799 70.0267 19.9492C70.1673 20.1159 70.2754 20.2799 70.3509 20.4414H70.4134V19.4336H72.0657V25.4922C72.0657 26.0026 71.9407 26.4297 71.6907 26.7734C71.4407 27.1172 71.0944 27.375 70.6517 27.5469C70.2116 27.7214 69.7051 27.8086 69.1321 27.8086ZM69.1673 24.0977C69.4355 24.0977 69.6621 24.0312 69.847 23.8984C70.0345 23.763 70.1777 23.5703 70.2767 23.3203C70.3782 23.0677 70.429 22.7656 70.429 22.4141C70.429 22.0625 70.3795 21.7578 70.2806 21.5C70.1816 21.2396 70.0384 21.0378 69.8509 20.8945C69.6634 20.7513 69.4355 20.6797 69.1673 20.6797C68.8939 20.6797 68.6634 20.7539 68.4759 20.9023C68.2884 21.0482 68.1465 21.2513 68.0501 21.5117C67.9538 21.7721 67.9056 22.0729 67.9056 22.4141C67.9056 22.7604 67.9538 23.0599 68.0501 23.3125C68.1491 23.5625 68.291 23.7565 68.4759 23.8945C68.6634 24.0299 68.8939 24.0977 69.1673 24.0977ZM75.2682 17.4336L75.1159 23.0352H73.6862L73.53 17.4336H75.2682ZM74.4011 25.5352C74.1432 25.5352 73.9219 25.444 73.737 25.2617C73.5521 25.0768 73.461 24.8555 73.4636 24.5977C73.461 24.3424 73.5521 24.1237 73.737 23.9414C73.9219 23.7591 74.1432 23.668 74.4011 23.668C74.6485 23.668 74.8659 23.7591 75.0534 23.9414C75.2409 24.1237 75.336 24.3424 75.3386 24.5977C75.336 24.7695 75.2904 24.9271 75.2018 25.0703C75.1159 25.2109 75.0026 25.3242 74.862 25.4102C74.7214 25.4935 74.5677 25.5352 74.4011 25.5352Z" fill="url(#paint0_linear_2481_3335)"/>\n<defs>\n<linearGradient id="paint0_linear_2481_3335" x1="0" y1="14.4336" x2="172" y2="14.4336" gradientUnits="userSpaceOnUse">\n<stop stop-color="#12B2F9"/>\n<stop offset="1" stop-color="#514DFA"/>\n</linearGradient>\n</defs>\n</svg>\n'
-												}
-												withExternalLayout={true}
-											/>
-											<motion.div
-												className={"framer-tyvsjy"}
-												layoutDependency={layoutDependency}
-												layoutId={"v8fZHxoHm"}
-												style={{
-													backgroundColor: "rgb(36, 36, 36)",
-													borderBottomLeftRadius: 9.06,
-													borderBottomRightRadius: 9.06,
-													borderTopLeftRadius: 9.06,
-													borderTopRightRadius: 9.06,
-												}}
-											>
-												<RichText
-													__fromCanvasComponent={true}
-													className={"framer-16z4tzc"}
-													data-framer-name={"Add to cart"}
-													fonts={["Inter-Medium"]}
-													layoutDependency={layoutDependency}
-													layoutId={"Xlf0ab9mk"}
-													style={{
-														"--extracted-r6o4lv": "rgb(255, 255, 255)",
-														"--framer-paragraph-spacing": "0px",
-													}}
-													verticalAlignment={"top"}
-													withExternalLayout={true}
-												>
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "9.06px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.01em",
-																"--framer-line-height": "130%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, rgb(255, 255, 255))",
-																"--framer-text-transform": "capitalize",
-															}}
-														>
-															{"Add to cart"}
-														</motion.p>
-													</React.Fragment>
-												</RichText>
-											</motion.div>
-										</motion.div>
-									</motion.div>
-									<motion.div
-										className={"framer-nnrccr"}
-										data-border={true}
-										layoutDependency={layoutDependency}
-										layoutId={"QLOjo8fmz"}
-										style={{
-											"--border-bottom-width": "0.8999999761581421px",
-											"--border-color": "rgb(224, 224, 224)",
-											"--border-left-width": "0.8999999761581421px",
-											"--border-right-width": "0.8999999761581421px",
-											"--border-style": "dashed",
-											"--border-top-width": "0.8999999761581421px",
-											borderBottomLeftRadius: 7.2,
-											borderBottomRightRadius: 7.2,
-											borderTopLeftRadius: 7.2,
-											borderTopRightRadius: 7.2,
-										}}
-									>
-										<SVG
-											className={"framer-s5r21t"}
-											data-framer-name={"Frame 2147227914"}
-											fill={"rgba(0,0,0,1)"}
-											intrinsicHeight={68}
-											intrinsicWidth={68}
-											layoutDependency={layoutDependency}
-											layoutId={"YjiJDAHeU"}
-											svg={
-												'<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="68" height="68" rx="4.05" fill="#EBEBEB"/>\n</svg>\n'
-											}
-											withExternalLayout={true}
-										/>
-										<motion.div
-											className={"framer-r5uoae"}
-											data-framer-name={"Frame 2147228054"}
-											layoutDependency={layoutDependency}
-											layoutId={"Gc3xTR5pn"}
-										>
-											<motion.div
-												className={"framer-1cca3zg"}
-												data-framer-name={"Rectangle 811"}
-												layoutDependency={layoutDependency}
-												layoutId={"qVMihpvQQ"}
-												style={{
-													backgroundColor: "rgb(234, 234, 234)",
-													borderBottomLeftRadius: 14.4,
-													borderBottomRightRadius: 14.4,
-													borderTopLeftRadius: 14.4,
-													borderTopRightRadius: 14.4,
-												}}
-											/>
-											<motion.div
-												className={"framer-g4576h"}
-												data-framer-name={"Rectangle 812"}
-												layoutDependency={layoutDependency}
-												layoutId={"WR8ZBFIqD"}
-												style={{
-													backgroundColor: "rgb(234, 234, 234)",
-													borderBottomLeftRadius: 14.4,
-													borderBottomRightRadius: 14.4,
-													borderTopLeftRadius: 14.4,
-													borderTopRightRadius: 14.4,
-												}}
-											/>
-										</motion.div>
-									</motion.div>
-									<motion.div
-										className={"framer-mhjyjk"}
-										data-border={true}
-										layoutDependency={layoutDependency}
-										layoutId={"bBZOt14aX"}
-										style={{
-											"--border-bottom-width": "0.8999999761581421px",
-											"--border-color": "rgb(224, 224, 224)",
-											"--border-left-width": "0.8999999761581421px",
-											"--border-right-width": "0.8999999761581421px",
-											"--border-style": "dashed",
-											"--border-top-width": "0.8999999761581421px",
-											borderBottomLeftRadius: 7.2,
-											borderBottomRightRadius: 7.2,
-											borderTopLeftRadius: 7.2,
-											borderTopRightRadius: 7.2,
-										}}
-									>
-										<SVG
-											className={"framer-18m7aoj"}
-											data-framer-name={"Frame 2147227914"}
-											fill={"rgba(0,0,0,1)"}
-											intrinsicHeight={68}
-											intrinsicWidth={68}
-											layoutDependency={layoutDependency}
-											layoutId={"fqJW1ahpx"}
-											svg={
-												'<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="68" height="68" rx="4.05" fill="#EBEBEB"/>\n</svg>\n'
-											}
-											withExternalLayout={true}
-										/>
-										<motion.div
-											className={"framer-fnw2tr"}
-											data-framer-name={"Frame 2147228054"}
-											layoutDependency={layoutDependency}
-											layoutId={"R2wPtho3w"}
-										>
-											<motion.div
-												className={"framer-1e3w3qc"}
-												data-framer-name={"Rectangle 811"}
-												layoutDependency={layoutDependency}
-												layoutId={"U2DYiD8TR"}
-												style={{
-													backgroundColor: "rgb(234, 234, 234)",
-													borderBottomLeftRadius: 14.4,
-													borderBottomRightRadius: 14.4,
-													borderTopLeftRadius: 14.4,
-													borderTopRightRadius: 14.4,
-												}}
-											/>
-											<motion.div
-												className={"framer-eci1ah"}
-												data-framer-name={"Rectangle 812"}
-												layoutDependency={layoutDependency}
-												layoutId={"fJRyBGR9m"}
-												style={{
-													backgroundColor: "rgb(234, 234, 234)",
-													borderBottomLeftRadius: 14.4,
-													borderBottomRightRadius: 14.4,
-													borderTopLeftRadius: 14.4,
-													borderTopRightRadius: 14.4,
-												}}
-											/>
-										</motion.div>
-									</motion.div>
-								</motion.div>
-								{isDisplayed() && (
-									<motion.div
-										className={"framer-5ytnhl"}
-										data-framer-name={"Hover"}
-										layoutDependency={layoutDependency}
-										layoutId={"v4op72oeP"}
-										style={{
-											opacity: 0,
-										}}
-										transformTemplate={transformTemplate1}
-										variants={{
-											"WauCV_zII-hover": {
-												opacity: 1,
-											},
-											xPuuhzSH0: {
-												opacity: 1,
-											},
-										}}
-									>
-										{isDisplayed() && (
-											<MotionDivWithFXWithOptimizedAppearEffect
-												__perspectiveFX={false}
-												__smartComponentFX={true}
-												__targetOpacity={1}
-												animate={animation}
-												className={"framer-qn2oyw"}
-												data-border={true}
-												data-framer-appear-id={"qn2oyw"}
-												initial={animation1}
-												layoutDependency={layoutDependency}
-												layoutId={"mRvvh0DZm"}
-												optimized={true}
-												style={{
-													"--border-bottom-width": "0.37735849618911743px",
-													"--border-color": "rgb(239, 239, 239)",
-													"--border-left-width": "0.37735849618911743px",
-													"--border-right-width": "0.37735849618911743px",
-													"--border-style": "solid",
-													"--border-top-width": "0.37735849618911743px",
-													backgroundColor: "rgb(249, 249, 249)",
-													borderBottomLeftRadius: 6.04,
-													borderBottomRightRadius: 6.04,
-													borderTopLeftRadius: 6.04,
-													borderTopRightRadius: 6.04,
-													boxShadow:
-														"0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
-												}}
-											>
-												<Image
-													background={{
-														alt: "",
-														fit: "fill",
-														pixelHeight: 1e3,
-														pixelWidth: 667,
-														positionX: "center",
-														positionY: "top",
-														src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
-													}}
-													className={"framer-zvrcgs"}
-													data-framer-name={"Frame 2147227914"}
-													layoutDependency={layoutDependency}
-													layoutId={"ghTv6zRxf"}
-													{...addPropertyOverrides(
-														{
-															"WauCV_zII-hover": {
-																background: {
-																	alt: "",
-																	fit: "fill",
-																	loading: getLoadingLazyAtYPosition(
-																		(componentViewport?.y || 0) +
-																			0 +
-																			((componentViewport?.height || 454) -
-																				0 -
-																				622 +
-																				322 +
-																				0) +
-																			20 +
-																			43 +
-																			16 +
-																			0 +
-																			78.5283,
-																	),
-																	pixelHeight: 1e3,
-																	pixelWidth: 667,
-																	positionX: "center",
-																	positionY: "top",
-																	src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
-																},
-															},
-															xPuuhzSH0: {
-																background: {
-																	alt: "",
-																	fit: "fill",
-																	loading: getLoadingLazyAtYPosition(
-																		(componentViewport?.y || 0) +
-																			0 +
-																			((componentViewport?.height || 454) -
-																				0 -
-																				622 +
-																				322 +
-																				0) +
-																			20 +
-																			43 +
-																			16 +
-																			0 +
-																			78.5283,
-																	),
-																	pixelHeight: 1e3,
-																	pixelWidth: 667,
-																	positionX: "center",
-																	positionY: "top",
-																	src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
-																},
-															},
-														},
-														baseVariant,
-														gestureVariant,
-													)}
-												/>
-												<motion.div
-													className={"framer-8fkbi1"}
-													layoutDependency={layoutDependency}
-													layoutId={"fBMEKYXHN"}
-												>
-													<RichText
-														__fromCanvasComponent={true}
-														className={"framer-ku4ek3"}
-														fonts={["Inter"]}
-														layoutDependency={layoutDependency}
-														layoutId={"qJIZdr41y"}
-														style={{
-															"--extracted-2gxw0f":
-																"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-															"--extracted-r6o4lv":
-																"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-															"--framer-link-text-color": "rgb(0, 153, 255)",
-															"--framer-link-text-decoration": "underline",
-														}}
-														verticalAlignment={"top"}
-														withExternalLayout={true}
-													>
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--framer-font-size": "12px",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-																}}
-															>
-																{"Superwear Heritage "}
-															</motion.p>
-															<motion.p
-																style={{
-																	"--framer-font-size": "12px",
-																	"--framer-text-color":
-																		"var(--extracted-2gxw0f, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-																}}
-															>
-																{"Hoodie - Black"}
-															</motion.p>
-														</React.Fragment>
-													</RichText>
-													<RichText
-														__fromCanvasComponent={true}
-														className={"framer-10w9hs4"}
-														fonts={["Inter"]}
-														layoutDependency={layoutDependency}
-														layoutId={"xgKrdzg7v"}
-														style={{
-															"--extracted-r6o4lv":
-																"var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105))",
-															"--framer-link-text-color": "rgb(0, 153, 255)",
-															"--framer-link-text-decoration": "underline",
-														}}
-														verticalAlignment={"top"}
-														withExternalLayout={true}
-													>
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--framer-font-size": "10px",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105)))",
-																}}
-															>
-																{"Size - L"}
-															</motion.p>
-														</React.Fragment>
-													</RichText>
-												</motion.div>
-											</MotionDivWithFXWithOptimizedAppearEffect>
-										)}
-										{isDisplayed() && (
-											<MotionDivWithFXWithOptimizedAppearEffect
-												__perspectiveFX={false}
-												__smartComponentFX={true}
-												__targetOpacity={1}
-												animate={animation2}
-												className={"framer-1h3vna7"}
-												data-border={true}
-												data-framer-appear-id={"1h3vna7"}
-												initial={animation1}
-												layoutDependency={layoutDependency}
-												layoutId={"UizVfHnVB"}
-												optimized={true}
-												style={{
-													"--border-bottom-width": "0.37735849618911743px",
-													"--border-color": "rgb(239, 239, 239)",
-													"--border-left-width": "0.37735849618911743px",
-													"--border-right-width": "0.37735849618911743px",
-													"--border-style": "solid",
-													"--border-top-width": "0.37735849618911743px",
-													backgroundColor: "rgb(249, 249, 249)",
-													borderBottomLeftRadius: 6.04,
-													borderBottomRightRadius: 6.04,
-													borderTopLeftRadius: 6.04,
-													borderTopRightRadius: 6.04,
-													boxShadow:
-														"0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
-												}}
-											>
-												<Image
-													background={{
-														alt: "",
-														fit: "fill",
-														pixelHeight: 1e3,
-														pixelWidth: 667,
-														src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
-													}}
-													className={"framer-1bfx16l"}
-													data-framer-name={"Frame 2147227914"}
-													layoutDependency={layoutDependency}
-													layoutId={"rN952Cy9m"}
-													{...addPropertyOverrides(
-														{
-															"WauCV_zII-hover": {
-																background: {
-																	alt: "",
-																	fit: "fill",
-																	loading: getLoadingLazyAtYPosition(
-																		(componentViewport?.y || 0) +
-																			0 +
-																			((componentViewport?.height || 454) -
-																				0 -
-																				622 +
-																				322 +
-																				0) +
-																			20 +
-																			43 +
-																			16 +
-																			237.0566 +
-																			42.5283,
-																	),
-																	pixelHeight: 1e3,
-																	pixelWidth: 667,
-																	src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
-																},
-															},
-															xPuuhzSH0: {
-																background: {
-																	alt: "",
-																	fit: "fill",
-																	loading: getLoadingLazyAtYPosition(
-																		(componentViewport?.y || 0) +
-																			0 +
-																			((componentViewport?.height || 454) -
-																				0 -
-																				622 +
-																				322 +
-																				0) +
-																			20 +
-																			43 +
-																			16 +
-																			237.0566 +
-																			42.5283,
-																	),
-																	pixelHeight: 1e3,
-																	pixelWidth: 667,
-																	src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
-																},
-															},
-														},
-														baseVariant,
-														gestureVariant,
-													)}
-												/>
-												<motion.div
-													className={"framer-fim0ao"}
-													layoutDependency={layoutDependency}
-													layoutId={"hQ5PKDpmc"}
-												>
-													<RichText
-														__fromCanvasComponent={true}
-														className={"framer-16ox55c"}
-														fonts={["Inter"]}
-														layoutDependency={layoutDependency}
-														layoutId={"KM992goP_"}
-														style={{
-															"--extracted-r6o4lv":
-																"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-															"--framer-link-text-color": "rgb(0, 153, 255)",
-															"--framer-link-text-decoration": "underline",
-														}}
-														verticalAlignment={"top"}
-														withExternalLayout={true}
-													>
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--framer-font-size": "12px",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-																}}
-															>
-																{"T-Shirt Dry Fit"}
-															</motion.p>
-														</React.Fragment>
-													</RichText>
-													<RichText
-														__fromCanvasComponent={true}
-														className={"framer-1ggcy76"}
-														fonts={["Inter"]}
-														layoutDependency={layoutDependency}
-														layoutId={"tSnWF4R1l"}
-														style={{
-															"--extracted-r6o4lv":
-																"var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105))",
-															"--framer-link-text-color": "rgb(0, 153, 255)",
-															"--framer-link-text-decoration": "underline",
-														}}
-														verticalAlignment={"top"}
-														withExternalLayout={true}
-													>
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--framer-font-size": "10px",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105)))",
-																}}
-															>
-																{"Size - XL"}
-															</motion.p>
-														</React.Fragment>
-													</RichText>
-												</motion.div>
-											</MotionDivWithFXWithOptimizedAppearEffect>
-										)}
-										{isDisplayed() && (
-											<MotionDivWithFXWithOptimizedAppearEffect
-												__perspectiveFX={false}
-												__smartComponentFX={true}
-												__targetOpacity={1}
-												animate={animation3}
-												className={"framer-92n1zn"}
-												data-framer-appear-id={"92n1zn"}
-												initial={animation1}
-												layoutDependency={layoutDependency}
-												layoutId={"A2Zf1bJcs"}
-												optimized={true}
-												style={{
-													backgroundColor: "rgb(36, 36, 36)",
-													borderBottomLeftRadius: 9.06,
-													borderBottomRightRadius: 9.06,
-													borderTopLeftRadius: 9.06,
-													borderTopRightRadius: 9.06,
-												}}
-											>
-												<RichText
-													__fromCanvasComponent={true}
-													className={"framer-1nf9bec"}
-													data-framer-name={"Add to cart"}
-													fonts={["Inter-Medium"]}
-													layoutDependency={layoutDependency}
-													layoutId={"jxpiBtr0Q"}
-													style={{
-														"--extracted-r6o4lv":
-															"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-														"--framer-paragraph-spacing": "0px",
-													}}
-													verticalAlignment={"top"}
-													withExternalLayout={true}
-												>
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "12px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.01em",
-																"--framer-line-height": "140%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "capitalize",
-															}}
-														>
-															{"Continue to billing"}
-														</motion.p>
-													</React.Fragment>
-												</RichText>
-											</MotionDivWithFXWithOptimizedAppearEffect>
-										)}
-									</motion.div>
-								)}
-							</motion.div>
-						</motion.div>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const { style, className: className3, layoutId, variant, ...restProps } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "WauCV_zII",
+    enabledGestures,
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [className, className2];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  const isDisplayed = () => {
+    if (gestureVariant === "WauCV_zII-hover") return true;
+    if (baseVariant === "xPuuhzSH0") return true;
+    return false;
+  };
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition
+          value={transition1}
+          {...addPropertyOverrides(
+            {
+              xPuuhzSH0: {
+                value: transition2,
+              },
+            },
+            baseVariant,
+            gestureVariant
+          )}
+        >
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-gzftvr", className3, classNames)}
+            data-border={true}
+            data-framer-name={"Desktop"}
+            layoutDependency={layoutDependency}
+            layoutId={"WauCV_zII"}
+            ref={refBinding}
+            style={{
+              "--border-bottom-width": "0.800000011920929px",
+              "--border-color": "rgb(255, 255, 255)",
+              "--border-left-width": "0.800000011920929px",
+              "--border-right-width": "0.800000011920929px",
+              "--border-style": "solid",
+              "--border-top-width": "0.800000011920929px",
+              backgroundColor:
+                "var(--token-73d8ce1b-a47d-4172-a795-e13da0db4ec3, rgb(249, 249, 249))",
+              borderBottomLeftRadius: 16,
+              borderBottomRightRadius: 16,
+              borderTopLeftRadius: 16,
+              borderTopRightRadius: 16,
+              boxShadow:
+                "inset 0px 3px 1px 0px rgba(255, 255, 255, 0.25), 0px 24px 35px -12px rgba(26, 39, 66, 0.05)",
+              ...style,
+            }}
+            {...addPropertyOverrides(
+              {
+                "WauCV_zII-hover": {
+                  "data-framer-name": void 0,
+                },
+                xPuuhzSH0: {
+                  "data-framer-name": "Mobile",
+                },
+              },
+              baseVariant,
+              gestureVariant
+            )}
+          >
+            <motion.div
+              className={"framer-1s3ijx1"}
+              layoutDependency={layoutDependency}
+              layoutId={"bsJEiqryT"}
+            >
+              <RichText
+                __fromCanvasComponent={true}
+                className={"framer-1iz58zm"}
+                data-framer-name={"Create & Manage Subscriptions"}
+                fonts={["Inter"]}
+                layoutDependency={layoutDependency}
+                layoutId={"cjKcAPq5K"}
+                style={{
+                  "--framer-paragraph-spacing": "0px",
+                }}
+                verticalAlignment={"top"}
+                withExternalLayout={true}
+              >
+                <React.Fragment>
+                  <motion.p
+                    className={"framer-styles-preset-16o54if"}
+                    data-styles-preset={"D5KfVnha7"}
+                  >
+                    {"Custom Checkouts & Upsells"}
+                  </motion.p>
+                </React.Fragment>
+              </RichText>
+              <RichText
+                __fromCanvasComponent={true}
+                className={"framer-u0piap"}
+                data-framer-name={
+                  "Create and manage subscription programs that increase your revenue, without any hassle"
+                }
+                fonts={["Inter"]}
+                layoutDependency={layoutDependency}
+                layoutId={"DgYiK0eu8"}
+                style={{
+                  "--framer-paragraph-spacing": "0px",
+                }}
+                verticalAlignment={"top"}
+                withExternalLayout={true}
+              >
+                <React.Fragment>
+                  <motion.p
+                    className={"framer-styles-preset-13hsas3"}
+                    data-styles-preset={"pwS_W0qLQ"}
+                    style={{
+                      "--framer-text-alignment": "left",
+                    }}
+                  >
+                    {
+                      "Convert more visitors with smart checkouts, built-in upsells, and flexible payments."
+                    }
+                  </motion.p>
+                </React.Fragment>
+              </RichText>
+            </motion.div>
+            <motion.div
+              className={"framer-1izh0pf"}
+              data-framer-name={"Cover"}
+              layoutDependency={layoutDependency}
+              layoutId={"ih08wTH_r"}
+              style={{
+                mask: "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%) add",
+                WebkitMask: "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%) add",
+              }}
+            >
+              <motion.div
+                className={"framer-10xdnk0"}
+                data-border={true}
+                layoutDependency={layoutDependency}
+                layoutId={"fsltYEsqi"}
+                style={{
+                  "--border-bottom-width": "1px",
+                  "--border-color": "rgb(214, 214, 214)",
+                  "--border-left-width": "1px",
+                  "--border-right-width": "1px",
+                  "--border-style": "solid",
+                  "--border-top-width": "1px",
+                  background:
+                    "linear-gradient(180deg, rgb(234, 234, 234) 0%, rgba(255, 255, 255, 0) 100%)",
+                  borderBottomLeftRadius: 12,
+                  borderBottomRightRadius: 12,
+                  borderTopLeftRadius: 12,
+                  borderTopRightRadius: 12,
+                }}
+                transformTemplate={transformTemplate1}
+              >
+                <motion.div
+                  className={"framer-r5i1j9"}
+                  layoutDependency={layoutDependency}
+                  layoutId={"BfcnCYU5b"}
+                  style={{
+                    backgroundColor: "rgb(244, 244, 244)",
+                    borderBottomLeftRadius: 8,
+                    borderBottomRightRadius: 8,
+                    borderTopLeftRadius: 8,
+                    borderTopRightRadius: 8,
+                    boxShadow: "0px 1px 3px 0px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  <motion.div
+                    className={"framer-bs0aug"}
+                    data-framer-name={"Frame 2147227993"}
+                    layoutDependency={layoutDependency}
+                    layoutId={"lhqg3wUEl"}
+                  >
+                    <motion.div
+                      className={"framer-12duxj6"}
+                      data-framer-name={"Frame 2147227992"}
+                      layoutDependency={layoutDependency}
+                      layoutId={"TNKn4BS_P"}
+                    >
+                      <motion.div
+                        className={"framer-gsjkzd"}
+                        data-framer-name={"shopping-cart1"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"POSuQFINP"}
+                        style={{
+                          backgroundColor: "rgba(255, 255, 255, 0)",
+                        }}
+                      >
+                        <SVG
+                          className={"framer-l705yr"}
+                          data-framer-name={"Vector"}
+                          fill={"rgba(0,0,0,1)"}
+                          intrinsicHeight={15}
+                          intrinsicWidth={16}
+                          layoutDependency={layoutDependency}
+                          layoutId={"I2481:3327;145:331"}
+                          svg={
+                            '<svg width="16" height="15" viewBox="-1 -1 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">\n<path fill-rule="evenodd" clip-rule="evenodd" d="M2.08408 1.25489C2.02267 1.25009 1.93736 1.24968 1.77904 1.24968H1.16536C0.843198 1.24968 0.582031 0.98851 0.582031 0.666344C0.582031 0.344178 0.843198 0.0830106 1.16536 0.0830106L1.79643 0.0830092C1.93055 0.0829928 2.06247 0.0829767 2.17499 0.0917712C2.29956 0.101508 2.44515 0.124421 2.59413 0.1948C2.80255 0.293261 2.97713 0.451256 3.09584 0.648845C3.1807 0.790078 3.21798 0.932671 3.24007 1.05566C3.25845 1.15805 3.27103 1.2776 3.28333 1.4002L2.09063 1.25569L2.08408 1.25489ZM3.28333 1.4002L11.6697 2.41636C12.7889 2.42104 13.6169 3.46156 13.3686 4.55418L12.4406 8.63751C12.2595 9.43427 11.5512 9.99968 10.7341 9.99968L4.7694 9.9997C4.57039 9.99984 4.3983 9.99997 4.24142 9.97144C3.58665 9.85237 3.05608 9.37222 2.87245 8.73254C2.82846 8.57928 2.81146 8.40803 2.7918 8.21L2.12731 1.56485C2.11155 1.40732 2.10265 1.32247 2.09177 1.26185L2.09063 1.25569L3.28333 1.4002ZM3.28333 1.4002L3.38494 2.41634H11.6621L3.28333 1.4002ZM4.95703 11.1663C4.47378 11.1663 4.08203 11.5581 4.08203 12.0413C4.08203 12.5246 4.47378 12.9163 4.95703 12.9163C5.44028 12.9163 5.83203 12.5246 5.83203 12.0413C5.83203 11.5581 5.44028 11.1663 4.95703 11.1663ZM9.6237 11.1663C9.14045 11.1663 8.7487 11.5581 8.7487 12.0413C8.7487 12.5246 9.14045 12.9163 9.6237 12.9163C10.1069 12.9163 10.4987 12.5246 10.4987 12.0413C10.4987 11.5581 10.1069 11.1663 9.6237 11.1663Z" fill="#3D3D3D"/>\n</svg>\n'
+                          }
+                          withExternalLayout={true}
+                        />
+                      </motion.div>
+                      <RichText
+                        __fromCanvasComponent={true}
+                        className={"framer-1qbkoak"}
+                        data-framer-name={"Your cart"}
+                        fonts={["Inter-Medium"]}
+                        layoutDependency={layoutDependency}
+                        layoutId={"dMMQ3TDrM"}
+                        style={{
+                          "--extracted-r6o4lv": "rgb(61, 61, 61)",
+                          "--framer-paragraph-spacing": "0px",
+                        }}
+                        verticalAlignment={"top"}
+                        withExternalLayout={true}
+                      >
+                        <React.Fragment>
+                          <motion.p
+                            style={{
+                              "--font-selector": "SW50ZXItTWVkaXVt",
+                              "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                              "--framer-font-size": "11px",
+                              "--framer-font-weight": "500",
+                              "--framer-letter-spacing": "-0.01em",
+                              "--framer-line-height": "120%",
+                              "--framer-text-color": "var(--extracted-r6o4lv, rgb(61, 61, 61))",
+                            }}
+                          >
+                            {"Your cart"}
+                          </motion.p>
+                        </React.Fragment>
+                      </RichText>
+                    </motion.div>
+                    <RichText
+                      __fromCanvasComponent={true}
+                      className={"framer-1s7ler3"}
+                      data-framer-name={"3 Items"}
+                      fonts={["Inter"]}
+                      layoutDependency={layoutDependency}
+                      layoutId={"oXT_3McV7"}
+                      style={{
+                        "--extracted-r6o4lv": "rgb(125, 126, 128)",
+                        "--framer-paragraph-spacing": "0px",
+                      }}
+                      verticalAlignment={"top"}
+                      withExternalLayout={true}
+                      {...addPropertyOverrides(
+                        {
+                          "WauCV_zII-hover": {
+                            children: (
+                              <React.Fragment>
+                                <motion.p
+                                  style={{
+                                    "--framer-font-size": "11px",
+                                    "--framer-letter-spacing": "-0.01em",
+                                    "--framer-line-height": "140%",
+                                    "--framer-text-color":
+                                      "var(--extracted-r6o4lv, rgb(125, 126, 128))",
+                                  }}
+                                >
+                                  {"2 Items"}
+                                </motion.p>
+                              </React.Fragment>
+                            ),
+                          },
+                        },
+                        baseVariant,
+                        gestureVariant
+                      )}
+                    >
+                      <React.Fragment>
+                        <motion.p
+                          style={{
+                            "--framer-font-size": "11px",
+                            "--framer-letter-spacing": "-0.01em",
+                            "--framer-line-height": "140%",
+                            "--framer-text-color": "var(--extracted-r6o4lv, rgb(125, 126, 128))",
+                          }}
+                        >
+                          {"1 Items"}
+                        </motion.p>
+                      </React.Fragment>
+                    </RichText>
+                  </motion.div>
+                </motion.div>
+                <motion.div
+                  className={"framer-12vo0wt"}
+                  data-framer-name={"Static"}
+                  layoutDependency={layoutDependency}
+                  layoutId={"FrMXhcNHE"}
+                  style={{
+                    opacity: 1,
+                  }}
+                  variants={{
+                    "WauCV_zII-hover": {
+                      opacity: 0,
+                    },
+                    xPuuhzSH0: {
+                      opacity: 0,
+                    },
+                  }}
+                >
+                  <motion.div
+                    className={"framer-1sfvi4l"}
+                    data-border={true}
+                    layoutDependency={layoutDependency}
+                    layoutId={"gUA5LDpZn"}
+                    style={{
+                      "--border-bottom-width": "0.37735849618911743px",
+                      "--border-color": "rgb(239, 239, 239)",
+                      "--border-left-width": "0.37735849618911743px",
+                      "--border-right-width": "0.37735849618911743px",
+                      "--border-style": "solid",
+                      "--border-top-width": "0.37735849618911743px",
+                      backgroundColor: "rgb(249, 249, 249)",
+                      borderBottomLeftRadius: 6.04,
+                      borderBottomRightRadius: 6.04,
+                      borderTopLeftRadius: 6.04,
+                      borderTopRightRadius: 6.04,
+                      boxShadow:
+                        "0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
+                    }}
+                  >
+                    <Image
+                      background={{
+                        alt: "",
+                        fit: "fit",
+                        loading: getLoadingLazyAtYPosition(
+                          (componentViewport?.y || 0) +
+                            0 +
+                            ((componentViewport?.height || 454) - 0 - 622 + 322 + 0) +
+                            20 +
+                            16 +
+                            43.4 +
+                            0 +
+                            0 +
+                            6
+                        ),
+                        pixelHeight: 272,
+                        pixelWidth: 272,
+                        positionX: "center",
+                        positionY: "center",
+                        src: "https://framerusercontent.com/images/GKgyFuoAUCcgpBmIoKVTerv50.png",
+                      }}
+                      className={"framer-o4yx7o"}
+                      data-framer-name={"Frame 2147227914"}
+                      layoutDependency={layoutDependency}
+                      layoutId={"xuiZGH_Ts"}
+                    />
+                    <motion.div
+                      className={"framer-nkc58t"}
+                      data-framer-name={"Frame 2147227936"}
+                      layoutDependency={layoutDependency}
+                      layoutId={"EIvoYuKc0"}
+                    >
+                      <SVG
+                        className={"framer-hehsfi"}
+                        data-framer-name={"Frame 2147227915"}
+                        fill={"rgba(0,0,0,1)"}
+                        intrinsicHeight={29}
+                        intrinsicWidth={172}
+                        layoutDependency={layoutDependency}
+                        layoutId={"dlzDvKj5U"}
+                        svg={
+                          '<svg width="172" height="29" viewBox="0 0 172 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n<path d="M1.29688 11.4336H0.28125L3.21875 3.43359H4.21875L7.15625 11.4336H6.14062L3.75 4.69922H3.6875L1.29688 11.4336ZM1.67188 8.30859H5.76563V9.16797H1.67188V8.30859ZM10.433 11.5586C9.93297 11.5586 9.49156 11.4323 9.10875 11.1797C8.72594 10.9245 8.42646 10.5651 8.21031 10.1016C7.99417 9.63542 7.88609 9.08464 7.88609 8.44922C7.88609 7.81901 7.99417 7.27214 8.21031 6.80859C8.42646 6.34505 8.72724 5.98698 9.11266 5.73437C9.49807 5.48177 9.94339 5.35547 10.4486 5.35547C10.8392 5.35547 11.1478 5.42057 11.3744 5.55078C11.6035 5.67839 11.778 5.82422 11.8978 5.98828C12.0202 6.14974 12.1153 6.28255 12.183 6.38672H12.2611V3.43359H13.183V11.4336H12.2923V10.5117H12.183C12.1153 10.6211 12.0189 10.7591 11.8939 10.9258C11.7689 11.0898 11.5905 11.237 11.3588 11.3672C11.127 11.4948 10.8184 11.5586 10.433 11.5586ZM10.558 10.7305C10.9278 10.7305 11.2403 10.6341 11.4955 10.4414C11.7507 10.2461 11.9447 9.97656 12.0775 9.63281C12.2103 9.28646 12.2767 8.88672 12.2767 8.43359C12.2767 7.98568 12.2116 7.59375 12.0814 7.25781C11.9512 6.91927 11.7585 6.65625 11.5033 6.46875C11.2481 6.27865 10.933 6.18359 10.558 6.18359C10.1673 6.18359 9.84182 6.28385 9.58141 6.48437C9.32359 6.68229 9.12958 6.95182 8.99937 7.29297C8.87177 7.63151 8.80797 8.01172 8.80797 8.43359C8.80797 8.86068 8.87307 9.2487 9.00328 9.59766C9.13609 9.94401 9.33141 10.2201 9.58922 10.4258C9.84964 10.6289 10.1726 10.7305 10.558 10.7305ZM17.155 11.5586C16.655 11.5586 16.2136 11.4323 15.8308 11.1797C15.448 10.9245 15.1485 10.5651 14.9323 10.1016C14.7162 9.63542 14.6081 9.08464 14.6081 8.44922C14.6081 7.81901 14.7162 7.27214 14.9323 6.80859C15.1485 6.34505 15.4493 5.98698 15.8347 5.73437C16.2201 5.48177 16.6654 5.35547 17.1706 5.35547C17.5612 5.35547 17.8698 5.42057 18.0964 5.55078C18.3256 5.67839 18.5001 5.82422 18.6198 5.98828C18.7422 6.14974 18.8373 6.28255 18.905 6.38672H18.9831V3.43359L19.905 3.43359V11.4336H19.0144V10.5117H18.905C18.8373 10.6211 18.7409 10.7591 18.6159 10.9258C18.4909 11.0898 18.3126 11.237 18.0808 11.3672C17.849 11.4948 17.5404 11.5586 17.155 11.5586ZM17.28 10.7305C17.6498 10.7305 17.9623 10.6341 18.2175 10.4414C18.4727 10.2461 18.6667 9.97656 18.7995 9.63281C18.9323 9.28646 18.9987 8.88672 18.9987 8.43359C18.9987 7.98568 18.9336 7.59375 18.8034 7.25781C18.6732 6.91927 18.4805 6.65625 18.2253 6.46875C17.9701 6.27865 17.655 6.18359 17.28 6.18359C16.8894 6.18359 16.5639 6.28385 16.3034 6.48437C16.0456 6.68229 15.8516 6.95182 15.7214 7.29297C15.5938 7.63151 15.53 8.01172 15.53 8.43359C15.53 8.86068 15.5951 9.2487 15.7253 9.59766C15.8581 9.94401 16.0534 10.2201 16.3112 10.4258C16.5717 10.6289 16.8946 10.7305 17.28 10.7305ZM31.4702 7.43359C31.4702 8.27734 31.3178 9.00651 31.0131 9.62109C30.7084 10.2357 30.2905 10.7096 29.7592 11.043C29.228 11.3763 28.6212 11.543 27.9389 11.543C27.2566 11.543 26.6498 11.3763 26.1186 11.043C25.5873 10.7096 25.1694 10.2357 24.8647 9.62109C24.56 9.00651 24.4077 8.27734 24.4077 7.43359C24.4077 6.58984 24.56 5.86068 24.8647 5.24609C25.1694 4.63151 25.5873 4.15755 26.1186 3.82422C26.6498 3.49089 27.2566 3.32422 27.9389 3.32422C28.6212 3.32422 29.228 3.49089 29.7592 3.82422C30.2905 4.15755 30.7084 4.63151 31.0131 5.24609C31.3178 5.86068 31.4702 6.58984 31.4702 7.43359ZM30.5327 7.43359C30.5327 6.74089 30.4168 6.15625 30.185 5.67969C29.9558 5.20312 29.6446 4.84245 29.2514 4.59766C28.8608 4.35286 28.4233 4.23047 27.9389 4.23047C27.4545 4.23047 27.0157 4.35286 26.6225 4.59766C26.2319 4.84245 25.9207 5.20312 25.6889 5.67969C25.4597 6.15625 25.3452 6.74089 25.3452 7.43359C25.3452 8.1263 25.4597 8.71094 25.6889 9.1875C25.9207 9.66406 26.2319 10.0247 26.6225 10.2695C27.0157 10.5143 27.4545 10.6367 27.9389 10.6367C28.4233 10.6367 28.8608 10.5143 29.2514 10.2695C29.6446 10.0247 29.9558 9.66406 30.185 9.1875C30.4168 8.71094 30.5327 8.1263 30.5327 7.43359ZM33.7859 7.82422V11.4336H32.8641V5.43359H33.7547V6.37109H33.8328C33.9734 6.06641 34.187 5.82161 34.4734 5.63672C34.7599 5.44922 35.1297 5.35547 35.5828 5.35547C35.9891 5.35547 36.3445 5.4388 36.6492 5.60547C36.9539 5.76953 37.1909 6.01953 37.3602 6.35547C37.5294 6.6888 37.6141 7.11068 37.6141 7.62109V11.4336H36.6922V7.68359C36.6922 7.21224 36.5698 6.84505 36.325 6.58203C36.0802 6.31641 35.7443 6.18359 35.3172 6.18359C35.0229 6.18359 34.7599 6.2474 34.5281 6.375C34.299 6.5026 34.118 6.6888 33.9852 6.93359C33.8523 7.17839 33.7859 7.47526 33.7859 7.82422ZM41.7043 11.5586C41.1261 11.5586 40.6274 11.431 40.2082 11.1758C39.7915 10.918 39.4699 10.5586 39.2433 10.0977C39.0194 9.63411 38.9074 9.09505 38.9074 8.48047C38.9074 7.86589 39.0194 7.32422 39.2433 6.85547C39.4699 6.38411 39.785 6.01693 40.1886 5.75391C40.5949 5.48828 41.0688 5.35547 41.6105 5.35547C41.923 5.35547 42.2316 5.40755 42.5363 5.51172C42.841 5.61589 43.1183 5.78516 43.3683 6.01953C43.6183 6.2513 43.8175 6.55859 43.966 6.94141C44.1144 7.32422 44.1886 7.79557 44.1886 8.35547V8.74609H39.5636V7.94922H43.2511C43.2511 7.61068 43.1834 7.30859 43.048 7.04297C42.9152 6.77734 42.7251 6.56771 42.4777 6.41406C42.2329 6.26042 41.9438 6.18359 41.6105 6.18359C41.2433 6.18359 40.9256 6.27474 40.6574 6.45703C40.3918 6.63672 40.1873 6.87109 40.0441 7.16016C39.9009 7.44922 39.8293 7.75911 39.8293 8.08984V8.62109C39.8293 9.07422 39.9074 9.45833 40.0636 9.77344C40.2225 10.0859 40.4425 10.3242 40.7238 10.4883C41.005 10.6497 41.3319 10.7305 41.7043 10.7305C41.9464 10.7305 42.1652 10.6966 42.3605 10.6289C42.5584 10.5586 42.729 10.4544 42.8722 10.3164C43.0155 10.1758 43.1261 10.0013 43.2043 9.79297L44.0949 10.043C44.0011 10.3451 43.8436 10.6107 43.6222 10.8398C43.4009 11.0664 43.1274 11.2435 42.8019 11.3711C42.4764 11.4961 42.1105 11.5586 41.7043 11.5586ZM48.5897 3.43359H49.746L52.4647 10.0742H52.5585L55.2772 3.43359H56.4335V11.4336H55.5272V5.35547H55.4491L52.9491 11.4336H52.0741L49.5741 5.35547H49.496V11.4336H48.5897V3.43359ZM60.5784 11.5586C60.0367 11.5586 59.5614 11.4297 59.1526 11.1719C58.7463 10.9141 58.4286 10.5534 58.1995 10.0898C57.9729 9.6263 57.8596 9.08464 57.8596 8.46484C57.8596 7.83984 57.9729 7.29427 58.1995 6.82812C58.4286 6.36198 58.7463 6 59.1526 5.74219C59.5614 5.48438 60.0367 5.35547 60.5784 5.35547C61.12 5.35547 61.594 5.48438 62.0002 5.74219C62.4091 6 62.7268 6.36198 62.9534 6.82812C63.1825 7.29427 63.2971 7.83984 63.2971 8.46484C63.2971 9.08464 63.1825 9.6263 62.9534 10.0898C62.7268 10.5534 62.4091 10.9141 62.0002 11.1719C61.594 11.4297 61.12 11.5586 60.5784 11.5586ZM60.5784 10.7305C60.9898 10.7305 61.3284 10.625 61.594 10.4141C61.8596 10.2031 62.0562 9.92578 62.1838 9.58203C62.3114 9.23828 62.3752 8.86589 62.3752 8.46484C62.3752 8.0638 62.3114 7.6901 62.1838 7.34375C62.0562 6.9974 61.8596 6.71745 61.594 6.50391C61.3284 6.29036 60.9898 6.18359 60.5784 6.18359C60.1669 6.18359 59.8284 6.29036 59.5627 6.50391C59.2971 6.71745 59.1005 6.9974 58.9729 7.34375C58.8453 7.6901 58.7815 8.0638 58.7815 8.46484C58.7815 8.86589 58.8453 9.23828 58.9729 9.58203C59.1005 9.92578 59.2971 10.2031 59.5627 10.4141C59.8284 10.625 60.1669 10.7305 60.5784 10.7305ZM64.5943 11.4336V5.43359H65.485V6.33984H65.5475C65.6568 6.04297 65.8548 5.80208 66.1412 5.61719C66.4277 5.43229 66.7506 5.33984 67.11 5.33984C67.1777 5.33984 67.2623 5.34115 67.3639 5.34375C67.4654 5.34635 67.5423 5.35026 67.5943 5.35547V6.29297C67.5631 6.28516 67.4915 6.27344 67.3795 6.25781C67.2701 6.23958 67.1542 6.23047 67.0318 6.23047C66.7402 6.23047 66.4798 6.29167 66.2506 6.41406C66.024 6.53385 65.8443 6.70052 65.7115 6.91406C65.5813 7.125 65.5162 7.36589 65.5162 7.63672V11.4336H64.5943ZM70.9101 11.5586C70.332 11.5586 69.8333 11.431 69.414 11.1758C68.9974 10.918 68.6757 10.5586 68.4492 10.0977C68.2252 9.63411 68.1132 9.09505 68.1132 8.48047C68.1132 7.86589 68.2252 7.32422 68.4492 6.85547C68.6757 6.38411 68.9908 6.01693 69.3945 5.75391C69.8007 5.48828 70.2747 5.35547 70.8164 5.35547C71.1289 5.35547 71.4375 5.40755 71.7421 5.51172C72.0468 5.61589 72.3242 5.78516 72.5742 6.01953C72.8242 6.2513 73.0234 6.55859 73.1718 6.94141C73.3203 7.32422 73.3945 7.79557 73.3945 8.35547V8.74609H68.7695V7.94922H72.457C72.457 7.61068 72.3893 7.30859 72.2539 7.04297C72.1211 6.77734 71.931 6.56771 71.6836 6.41406C71.4388 6.26042 71.1497 6.18359 70.8164 6.18359C70.4492 6.18359 70.1315 6.27474 69.8632 6.45703C69.5976 6.63672 69.3932 6.87109 69.25 7.16016C69.1067 7.44922 69.0351 7.75911 69.0351 8.08984V8.62109C69.0351 9.07422 69.1132 9.45833 69.2695 9.77344C69.4283 10.0859 69.6484 10.3242 69.9296 10.4883C70.2109 10.6497 70.5377 10.7305 70.9101 10.7305C71.1523 10.7305 71.3711 10.6966 71.5664 10.6289C71.7643 10.5586 71.9349 10.4544 72.0781 10.3164C72.2213 10.1758 72.332 10.0013 72.4101 9.79297L73.3007 10.043C73.207 10.3451 73.0494 10.6107 72.8281 10.8398C72.6067 11.0664 72.3333 11.2435 72.0078 11.3711C71.6823 11.4961 71.3164 11.5586 70.9101 11.5586ZM78.7643 3.43359V11.4336H77.7956V3.43359H78.7643ZM83.0811 5.43359V6.21484H79.9717V5.43359H83.0811ZM80.878 3.99609H81.7998V9.71484C81.7998 9.97526 81.8376 10.1706 81.9131 10.3008C81.9912 10.4284 82.0902 10.5143 82.21 10.5586C82.3324 10.6003 82.4613 10.6211 82.5967 10.6211C82.6983 10.6211 82.7816 10.6159 82.8467 10.6055C82.9118 10.5924 82.9639 10.582 83.003 10.5742L83.1905 11.4023C83.128 11.4258 83.0407 11.4492 82.9287 11.4727C82.8168 11.4987 82.6748 11.5117 82.503 11.5117C82.2426 11.5117 81.9873 11.4557 81.7373 11.3437C81.4899 11.2318 81.2842 11.0612 81.1202 10.832C80.9587 10.6029 80.878 10.3138 80.878 9.96484V3.99609ZM86.809 11.5586C86.2309 11.5586 85.7322 11.431 85.3129 11.1758C84.8962 10.918 84.5746 10.5586 84.348 10.0977C84.1241 9.63411 84.0121 9.09505 84.0121 8.48047C84.0121 7.86589 84.1241 7.32422 84.348 6.85547C84.5746 6.38411 84.8897 6.01693 85.2934 5.75391C85.6996 5.48828 86.1736 5.35547 86.7152 5.35547C87.0277 5.35547 87.3363 5.40755 87.641 5.51172C87.9457 5.61589 88.223 5.78516 88.473 6.01953C88.723 6.2513 88.9223 6.55859 89.0707 6.94141C89.2191 7.32422 89.2934 7.79557 89.2934 8.35547V8.74609H84.6684V7.94922H88.3559C88.3559 7.61068 88.2881 7.30859 88.1527 7.04297C88.0199 6.77734 87.8298 6.56771 87.5824 6.41406C87.3376 6.26042 87.0486 6.18359 86.7152 6.18359C86.348 6.18359 86.0303 6.27474 85.7621 6.45703C85.4965 6.63672 85.2921 6.87109 85.1488 7.16016C85.0056 7.44922 84.934 7.75911 84.934 8.08984V8.62109C84.934 9.07422 85.0121 9.45833 85.1684 9.77344C85.3272 10.0859 85.5473 10.3242 85.8285 10.4883C86.1098 10.6497 86.4366 10.7305 86.809 10.7305C87.0512 10.7305 87.2699 10.6966 87.4652 10.6289C87.6631 10.5586 87.8337 10.4544 87.977 10.3164C88.1202 10.1758 88.2309 10.0013 88.309 9.79297L89.1996 10.043C89.1059 10.3451 88.9483 10.6107 88.727 10.8398C88.5056 11.0664 88.2322 11.2435 87.9066 11.3711C87.5811 11.4961 87.2152 11.5586 86.809 11.5586ZM90.5857 11.4336V5.43359H91.4763V6.37109H91.5545C91.6795 6.05078 91.8813 5.80208 92.1599 5.625C92.4386 5.44531 92.7732 5.35547 93.1638 5.35547C93.5597 5.35547 93.8891 5.44531 94.1521 5.625C94.4177 5.80208 94.6248 6.05078 94.7732 6.37109H94.8357C94.9893 6.0612 95.2198 5.8151 95.5271 5.63281C95.8344 5.44792 96.2029 5.35547 96.6326 5.35547C97.169 5.35547 97.6078 5.52344 97.949 5.85937C98.2901 6.19271 98.4607 6.71224 98.4607 7.41797V11.4336H97.5388V7.41797C97.5388 6.97526 97.4177 6.65885 97.1755 6.46875C96.9334 6.27865 96.6482 6.18359 96.3201 6.18359C95.8982 6.18359 95.5714 6.3112 95.3396 6.56641C95.1078 6.81901 94.992 7.13932 94.992 7.52734V11.4336H94.0545V7.32422C94.0545 6.98307 93.9438 6.70833 93.7224 6.5C93.5011 6.28906 93.2159 6.18359 92.867 6.18359C92.6274 6.18359 92.4034 6.2474 92.1951 6.375C91.9893 6.5026 91.8227 6.67969 91.6951 6.90625C91.5701 7.13021 91.5076 7.38932 91.5076 7.68359V11.4336H90.5857ZM103.145 11.4336V3.43359H107.942V4.29297H104.114V6.99609H107.582V7.85547H104.114V11.4336H103.145ZM111.363 11.5586C110.821 11.5586 110.346 11.4297 109.937 11.1719C109.531 10.9141 109.213 10.5534 108.984 10.0898C108.758 9.6263 108.644 9.08464 108.644 8.46484C108.644 7.83984 108.758 7.29427 108.984 6.82812C109.213 6.36198 109.531 6 109.937 5.74219C110.346 5.48438 110.821 5.35547 111.363 5.35547C111.905 5.35547 112.379 5.48438 112.785 5.74219C113.194 6 113.512 6.36198 113.738 6.82812C113.967 7.29427 114.082 7.83984 114.082 8.46484C114.082 9.08464 113.967 9.6263 113.738 10.0898C113.512 10.5534 113.194 10.9141 112.785 11.1719C112.379 11.4297 111.905 11.5586 111.363 11.5586ZM111.363 10.7305C111.775 10.7305 112.113 10.625 112.379 10.4141C112.644 10.2031 112.841 9.92578 112.969 9.58203C113.096 9.23828 113.16 8.86589 113.16 8.46484C113.16 8.0638 113.096 7.6901 112.969 7.34375C112.841 6.9974 112.644 6.71745 112.379 6.50391C112.113 6.29036 111.775 6.18359 111.363 6.18359C110.952 6.18359 110.613 6.29036 110.348 6.50391C110.082 6.71745 109.885 6.9974 109.758 7.34375C109.63 7.6901 109.566 8.0638 109.566 8.46484C109.566 8.86589 109.63 9.23828 109.758 9.58203C109.885 9.92578 110.082 10.2031 110.348 10.4141C110.613 10.625 110.952 10.7305 111.363 10.7305ZM115.379 11.4336V5.43359L116.27 5.43359V6.33984H116.332C116.442 6.04297 116.64 5.80208 116.926 5.61719C117.212 5.43229 117.535 5.33984 117.895 5.33984C117.962 5.33984 118.047 5.34115 118.149 5.34375C118.25 5.34635 118.327 5.35026 118.379 5.35547V6.29297C118.348 6.28516 118.276 6.27344 118.164 6.25781C118.055 6.23958 117.939 6.23047 117.817 6.23047C117.525 6.23047 117.265 6.29167 117.035 6.41406C116.809 6.53385 116.629 6.70052 116.496 6.91406C116.366 7.125 116.301 7.36589 116.301 7.63672V11.4336H115.379Z" fill="#242424"/>\n<path d="M0.695312 25.4336V17.4336H5.99219V18.8281H2.38672V20.7344H5.64063V22.1289H2.38672V25.4336H0.695312ZM6.89195 25.4336V19.4336H8.50523V20.4805H8.56773C8.67711 20.1081 8.8607 19.8268 9.11852 19.6367C9.37633 19.444 9.6732 19.3477 10.0091 19.3477C10.0925 19.3477 10.1823 19.3529 10.2787 19.3633C10.375 19.3737 10.4597 19.388 10.5326 19.4062V20.8828C10.4545 20.8594 10.3464 20.8385 10.2084 20.8203C10.0703 20.8021 9.94404 20.793 9.82945 20.793C9.58466 20.793 9.36591 20.8464 9.1732 20.9531C8.9831 21.0573 8.83206 21.2031 8.72008 21.3906C8.6107 21.5781 8.55602 21.7943 8.55602 22.0391V25.4336H6.89195ZM13.738 25.5508C13.1208 25.5508 12.5896 25.4258 12.1443 25.1758C11.7015 24.9232 11.3604 24.5664 11.1208 24.1055C10.8812 23.6419 10.7614 23.0937 10.7614 22.4609C10.7614 21.8437 10.8812 21.3021 11.1208 20.8359C11.3604 20.3698 11.6976 20.0065 12.1325 19.7461C12.57 19.4857 13.0831 19.3555 13.6716 19.3555C14.0674 19.3555 14.4359 19.4193 14.7771 19.5469C15.1208 19.6719 15.4203 19.8607 15.6755 20.1133C15.9333 20.3659 16.1338 20.6836 16.2771 21.0664C16.4203 21.4466 16.4919 21.8919 16.4919 22.4023V22.8594H11.4255V21.8281H14.9255C14.9255 21.5885 14.8734 21.3763 14.7693 21.1914C14.6651 21.0065 14.5206 20.862 14.3357 20.7578C14.1534 20.651 13.9411 20.5977 13.6989 20.5977C13.4463 20.5977 13.2224 20.6562 13.0271 20.7734C12.8344 20.888 12.6833 21.043 12.5739 21.2383C12.4646 21.431 12.4086 21.6458 12.406 21.8828V22.8633C12.406 23.1602 12.4607 23.4167 12.57 23.6328C12.682 23.849 12.8396 24.0156 13.0427 24.1328C13.2458 24.25 13.4867 24.3086 13.7654 24.3086C13.9502 24.3086 14.1195 24.2826 14.2732 24.2305C14.4268 24.1784 14.5583 24.1003 14.6677 23.9961C14.7771 23.8919 14.8604 23.7643 14.9177 23.6133L16.4568 23.7148C16.3786 24.0846 16.2185 24.4076 15.9763 24.6836C15.7367 24.957 15.4268 25.1706 15.0466 25.3242C14.669 25.4753 14.2328 25.5508 13.738 25.5508ZM20.2022 25.5508C19.585 25.5508 19.0538 25.4258 18.6085 25.1758C18.1658 24.9232 17.8246 24.5664 17.585 24.1055C17.3455 23.6419 17.2257 23.0937 17.2257 22.4609C17.2257 21.8437 17.3455 21.3021 17.585 20.8359C17.8246 20.3698 18.1619 20.0065 18.5968 19.7461C19.0343 19.4857 19.5473 19.3555 20.1358 19.3555C20.5317 19.3555 20.9001 19.4193 21.2413 19.5469C21.585 19.6719 21.8845 19.8607 22.1397 20.1133C22.3975 20.3659 22.5981 20.6836 22.7413 21.0664C22.8845 21.4466 22.9561 21.8919 22.9561 22.4023V22.8594H17.8897V21.8281H21.3897C21.3897 21.5885 21.3376 21.3763 21.2335 21.1914C21.1293 21.0065 20.9848 20.862 20.7999 20.7578C20.6176 20.651 20.4054 20.5977 20.1632 20.5977C19.9106 20.5977 19.6866 20.6562 19.4913 20.7734C19.2986 20.888 19.1475 21.043 19.0382 21.2383C18.9288 21.431 18.8728 21.6458 18.8702 21.8828V22.8633C18.8702 23.1602 18.9249 23.4167 19.0343 23.6328C19.1462 23.849 19.3038 24.0156 19.5069 24.1328C19.71 24.25 19.9509 24.3086 20.2296 24.3086C20.4145 24.3086 20.5837 24.2826 20.7374 24.2305C20.891 24.1784 21.0225 24.1003 21.1319 23.9961C21.2413 23.8919 21.3246 23.7643 21.3819 23.6133L22.921 23.7148C22.8429 24.0846 22.6827 24.4076 22.4405 24.6836C22.2009 24.957 21.891 25.1706 21.5108 25.3242C21.1332 25.4753 20.697 25.5508 20.2022 25.5508ZM30.7391 19.7344C30.7078 19.4193 30.5737 19.1745 30.3367 19C30.0997 18.8255 29.7781 18.7383 29.3719 18.7383C29.0958 18.7383 28.8628 18.7773 28.6727 18.8555C28.4826 18.931 28.3367 19.0365 28.2352 19.1719C28.1362 19.3073 28.0867 19.4609 28.0867 19.6328C28.0815 19.776 28.1115 19.901 28.1766 20.0078C28.2443 20.1146 28.3367 20.207 28.4539 20.2852C28.5711 20.3607 28.7065 20.4271 28.8602 20.4844C29.0138 20.5391 29.1779 20.5859 29.3523 20.625L30.0711 20.7969C30.4201 20.875 30.7404 20.9792 31.032 21.1094C31.3237 21.2396 31.5763 21.3997 31.7898 21.5898C32.0034 21.7799 32.1688 22.0039 32.2859 22.2617C32.4057 22.5195 32.4669 22.8151 32.4695 23.1484C32.4669 23.638 32.3419 24.0625 32.0945 24.4219C31.8497 24.7786 31.4956 25.056 31.032 25.2539C30.5711 25.4492 30.0151 25.5469 29.3641 25.5469C28.7182 25.5469 28.1557 25.4479 27.6766 25.25C27.2 25.0521 26.8276 24.7591 26.5594 24.3711C26.2938 23.9805 26.1544 23.4974 26.1414 22.9219H27.7781C27.7964 23.1901 27.8732 23.4141 28.0086 23.5937C28.1466 23.7708 28.3302 23.9049 28.5594 23.9961C28.7911 24.0846 29.0529 24.1289 29.3445 24.1289C29.631 24.1289 29.8797 24.0872 30.0906 24.0039C30.3042 23.9206 30.4695 23.8047 30.5867 23.6563C30.7039 23.5078 30.7625 23.3372 30.7625 23.1445C30.7625 22.9648 30.7091 22.8138 30.6023 22.6914C30.4982 22.569 30.3445 22.4648 30.1414 22.3789C29.9409 22.293 29.6948 22.2148 29.4031 22.1445L28.532 21.9258C27.8576 21.7617 27.325 21.5052 26.9344 21.1562C26.5438 20.8073 26.3497 20.3372 26.3523 19.7461C26.3497 19.2617 26.4786 18.8385 26.7391 18.4766C27.0021 18.1146 27.3628 17.832 27.8211 17.6289C28.2794 17.4258 28.8003 17.3242 29.3836 17.3242C29.9773 17.3242 30.4956 17.4258 30.9383 17.6289C31.3836 17.832 31.7299 18.1146 31.9773 18.4766C32.2247 18.8385 32.3523 19.2578 32.3602 19.7344H30.7391ZM35.13 21.9648V25.4336H33.466V17.4336H35.0832V20.4922H35.1535C35.2889 20.138 35.5076 19.8607 35.8097 19.6602C36.1118 19.457 36.4907 19.3555 36.9464 19.3555C37.3631 19.3555 37.7264 19.4466 38.0363 19.6289C38.3488 19.8086 38.591 20.0677 38.7629 20.4062C38.9373 20.7422 39.0233 21.1445 39.0207 21.6133V25.4336H37.3566V21.9102C37.3592 21.5404 37.2655 21.2526 37.0754 21.0469C36.8879 20.8411 36.6248 20.7383 36.2863 20.7383C36.0597 20.7383 35.8592 20.7865 35.6847 20.8828C35.5129 20.9792 35.3774 21.1198 35.2785 21.3047C35.1821 21.487 35.1326 21.707 35.13 21.9648ZM40.2202 25.4336V19.4336H41.8843V25.4336H40.2202ZM41.0562 18.6602C40.8088 18.6602 40.5965 18.5781 40.4195 18.4141C40.245 18.2474 40.1577 18.0482 40.1577 17.8164C40.1577 17.5872 40.245 17.3906 40.4195 17.2266C40.5965 17.0599 40.8088 16.9766 41.0562 16.9766C41.3036 16.9766 41.5145 17.0599 41.689 17.2266C41.8661 17.3906 41.9546 17.5872 41.9546 17.8164C41.9546 18.0482 41.8661 18.2474 41.689 18.4141C41.5145 18.5781 41.3036 18.6602 41.0562 18.6602ZM43.1073 27.6836V19.4336H44.7479V20.4414H44.8221C44.8951 20.2799 45.0005 20.1159 45.1386 19.9492C45.2792 19.7799 45.4615 19.6393 45.6854 19.5273C45.912 19.4128 46.1932 19.3555 46.5292 19.3555C46.9667 19.3555 47.3703 19.4701 47.7401 19.6992C48.1099 19.9258 48.4055 20.2682 48.6268 20.7266C48.8482 21.1823 48.9589 21.7539 48.9589 22.4414C48.9589 23.1107 48.8508 23.6758 48.6346 24.1367C48.4211 24.5951 48.1294 24.9427 47.7596 25.1797C47.3925 25.4141 46.981 25.5312 46.5253 25.5312C46.2024 25.5312 45.9276 25.4779 45.7011 25.3711C45.4771 25.2643 45.2935 25.1302 45.1503 24.9687C45.007 24.8047 44.8977 24.6393 44.8221 24.4727H44.7714V27.6836H43.1073ZM44.7362 22.4336C44.7362 22.7904 44.7857 23.1016 44.8846 23.3672C44.9836 23.6328 45.1268 23.8398 45.3143 23.9883C45.5018 24.1341 45.7297 24.207 45.9979 24.207C46.2688 24.207 46.4979 24.1328 46.6854 23.9844C46.8729 23.8333 47.0149 23.625 47.1112 23.3594C47.2102 23.0911 47.2596 22.7826 47.2596 22.4336C47.2596 22.0872 47.2115 21.7826 47.1151 21.5195C47.0188 21.2565 46.8768 21.0508 46.6893 20.9023C46.5018 20.7539 46.2714 20.6797 45.9979 20.6797C45.7271 20.6797 45.4979 20.7513 45.3104 20.8945C45.1255 21.0378 44.9836 21.2409 44.8846 21.5039C44.7857 21.7669 44.7362 22.0768 44.7362 22.4336ZM49.9582 27.6836V19.4336H51.5989V20.4414H51.6731C51.746 20.2799 51.8515 20.1159 51.9895 19.9492C52.1301 19.7799 52.3124 19.6393 52.5364 19.5273C52.7629 19.4128 53.0442 19.3555 53.3801 19.3555C53.8176 19.3555 54.2213 19.4701 54.5911 19.6992C54.9608 19.9258 55.2564 20.2682 55.4778 20.7266C55.6991 21.1823 55.8098 21.7539 55.8098 22.4414C55.8098 23.1107 55.7017 23.6758 55.4856 24.1367C55.272 24.5951 54.9804 24.9427 54.6106 25.1797C54.2434 25.4141 53.8319 25.5312 53.3762 25.5312C53.0533 25.5312 52.7786 25.4779 52.552 25.3711C52.328 25.2643 52.1444 25.1302 52.0012 24.9687C51.858 24.8047 51.7486 24.6393 51.6731 24.4727H51.6223V27.6836H49.9582ZM51.5871 22.4336C51.5871 22.7904 51.6366 23.1016 51.7356 23.3672C51.8345 23.6328 51.9778 23.8398 52.1653 23.9883C52.3528 24.1341 52.5806 24.207 52.8489 24.207C53.1197 24.207 53.3489 24.1328 53.5364 23.9844C53.7239 23.8333 53.8658 23.625 53.9621 23.3594C54.0611 23.0911 54.1106 22.7826 54.1106 22.4336C54.1106 22.0872 54.0624 21.7826 53.9661 21.5195C53.8697 21.2565 53.7278 21.0508 53.5403 20.9023C53.3528 20.7539 53.1223 20.6797 52.8489 20.6797C52.578 20.6797 52.3489 20.7513 52.1614 20.8945C51.9765 21.0378 51.8345 21.2409 51.7356 21.5039C51.6366 21.7669 51.5871 22.0768 51.5871 22.4336ZM56.8092 25.4336V19.4336H58.4732V25.4336H56.8092ZM57.6451 18.6602C57.3977 18.6602 57.1855 18.5781 57.0084 18.4141C56.8339 18.2474 56.7467 18.0482 56.7467 17.8164C56.7467 17.5872 56.8339 17.3906 57.0084 17.2266C57.1855 17.0599 57.3977 16.9766 57.6451 16.9766C57.8925 16.9766 58.1035 17.0599 58.2779 17.2266C58.455 17.3906 58.5436 17.5872 58.5436 17.8164C58.5436 18.0482 58.455 18.2474 58.2779 18.4141C58.1035 18.5781 57.8925 18.6602 57.6451 18.6602ZM61.3603 21.9648V25.4336H59.6963V19.4336H61.2822V20.4922H61.3525C61.4853 20.1432 61.708 19.8672 62.0205 19.6641C62.333 19.4583 62.7119 19.3555 63.1572 19.3555C63.5739 19.3555 63.9371 19.4466 64.247 19.6289C64.5569 19.8112 64.7978 20.0716 64.9697 20.4102C65.1416 20.7461 65.2275 21.1471 65.2275 21.6133V25.4336H63.5634V21.9102C63.566 21.543 63.4723 21.2565 63.2822 21.0508C63.0921 20.8424 62.8304 20.7383 62.497 20.7383C62.2731 20.7383 62.0752 20.7865 61.9033 20.8828C61.734 20.9792 61.6012 21.1198 61.5048 21.3047C61.4111 21.487 61.3629 21.707 61.3603 21.9648ZM69.1321 27.8086C68.5931 27.8086 68.1308 27.7344 67.7454 27.5859C67.3626 27.4401 67.0579 27.2409 66.8314 26.9883C66.6048 26.7357 66.4577 26.4518 66.39 26.1367L67.929 25.9297C67.9759 26.0495 68.0501 26.1615 68.1517 26.2656C68.2532 26.3698 68.3874 26.4531 68.554 26.5156C68.7233 26.5807 68.929 26.6133 69.1712 26.6133C69.5332 26.6133 69.8314 26.5247 70.0657 26.3477C70.3027 26.1732 70.4212 25.8802 70.4212 25.4688V24.3711H70.3509C70.278 24.5378 70.1686 24.6953 70.0228 24.8437C69.8769 24.9922 69.6894 25.1133 69.4603 25.207C69.2311 25.3008 68.9577 25.3477 68.64 25.3477C68.1894 25.3477 67.7793 25.2435 67.4095 25.0352C67.0423 24.8242 66.7493 24.5026 66.5306 24.0703C66.3144 23.6354 66.2064 23.0859 66.2064 22.4219C66.2064 21.7422 66.317 21.1745 66.5384 20.7187C66.7598 20.263 67.054 19.9219 67.4212 19.6953C67.791 19.4688 68.196 19.3555 68.6361 19.3555C68.972 19.3555 69.2532 19.4128 69.4798 19.5273C69.7064 19.6393 69.8887 19.7799 70.0267 19.9492C70.1673 20.1159 70.2754 20.2799 70.3509 20.4414H70.4134V19.4336H72.0657V25.4922C72.0657 26.0026 71.9407 26.4297 71.6907 26.7734C71.4407 27.1172 71.0944 27.375 70.6517 27.5469C70.2116 27.7214 69.7051 27.8086 69.1321 27.8086ZM69.1673 24.0977C69.4355 24.0977 69.6621 24.0312 69.847 23.8984C70.0345 23.763 70.1777 23.5703 70.2767 23.3203C70.3782 23.0677 70.429 22.7656 70.429 22.4141C70.429 22.0625 70.3795 21.7578 70.2806 21.5C70.1816 21.2396 70.0384 21.0378 69.8509 20.8945C69.6634 20.7513 69.4355 20.6797 69.1673 20.6797C68.8939 20.6797 68.6634 20.7539 68.4759 20.9023C68.2884 21.0482 68.1465 21.2513 68.0501 21.5117C67.9538 21.7721 67.9056 22.0729 67.9056 22.4141C67.9056 22.7604 67.9538 23.0599 68.0501 23.3125C68.1491 23.5625 68.291 23.7565 68.4759 23.8945C68.6634 24.0299 68.8939 24.0977 69.1673 24.0977ZM75.2682 17.4336L75.1159 23.0352H73.6862L73.53 17.4336H75.2682ZM74.4011 25.5352C74.1432 25.5352 73.9219 25.444 73.737 25.2617C73.5521 25.0768 73.461 24.8555 73.4636 24.5977C73.461 24.3424 73.5521 24.1237 73.737 23.9414C73.9219 23.7591 74.1432 23.668 74.4011 23.668C74.6485 23.668 74.8659 23.7591 75.0534 23.9414C75.2409 24.1237 75.336 24.3424 75.3386 24.5977C75.336 24.7695 75.2904 24.9271 75.2018 25.0703C75.1159 25.2109 75.0026 25.3242 74.862 25.4102C74.7214 25.4935 74.5677 25.5352 74.4011 25.5352Z" fill="url(#paint0_linear_2481_3335)"/>\n<defs>\n<linearGradient id="paint0_linear_2481_3335" x1="0" y1="14.4336" x2="172" y2="14.4336" gradientUnits="userSpaceOnUse">\n<stop stop-color="#12B2F9"/>\n<stop offset="1" stop-color="#514DFA"/>\n</linearGradient>\n</defs>\n</svg>\n'
+                        }
+                        withExternalLayout={true}
+                      />
+                      <motion.div
+                        className={"framer-tyvsjy"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"v8fZHxoHm"}
+                        style={{
+                          backgroundColor: "rgb(36, 36, 36)",
+                          borderBottomLeftRadius: 9.06,
+                          borderBottomRightRadius: 9.06,
+                          borderTopLeftRadius: 9.06,
+                          borderTopRightRadius: 9.06,
+                        }}
+                      >
+                        <RichText
+                          __fromCanvasComponent={true}
+                          className={"framer-16z4tzc"}
+                          data-framer-name={"Add to cart"}
+                          fonts={["Inter-Medium"]}
+                          layoutDependency={layoutDependency}
+                          layoutId={"Xlf0ab9mk"}
+                          style={{
+                            "--extracted-r6o4lv": "rgb(255, 255, 255)",
+                            "--framer-paragraph-spacing": "0px",
+                          }}
+                          verticalAlignment={"top"}
+                          withExternalLayout={true}
+                        >
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "9.06px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.01em",
+                                "--framer-line-height": "130%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, rgb(255, 255, 255))",
+                                "--framer-text-transform": "capitalize",
+                              }}
+                            >
+                              {"Add to cart"}
+                            </motion.p>
+                          </React.Fragment>
+                        </RichText>
+                      </motion.div>
+                    </motion.div>
+                  </motion.div>
+                  <motion.div
+                    className={"framer-nnrccr"}
+                    data-border={true}
+                    layoutDependency={layoutDependency}
+                    layoutId={"QLOjo8fmz"}
+                    style={{
+                      "--border-bottom-width": "0.8999999761581421px",
+                      "--border-color": "rgb(224, 224, 224)",
+                      "--border-left-width": "0.8999999761581421px",
+                      "--border-right-width": "0.8999999761581421px",
+                      "--border-style": "dashed",
+                      "--border-top-width": "0.8999999761581421px",
+                      borderBottomLeftRadius: 7.2,
+                      borderBottomRightRadius: 7.2,
+                      borderTopLeftRadius: 7.2,
+                      borderTopRightRadius: 7.2,
+                    }}
+                  >
+                    <SVG
+                      className={"framer-s5r21t"}
+                      data-framer-name={"Frame 2147227914"}
+                      fill={"rgba(0,0,0,1)"}
+                      intrinsicHeight={68}
+                      intrinsicWidth={68}
+                      layoutDependency={layoutDependency}
+                      layoutId={"YjiJDAHeU"}
+                      svg={
+                        '<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="68" height="68" rx="4.05" fill="#EBEBEB"/>\n</svg>\n'
+                      }
+                      withExternalLayout={true}
+                    />
+                    <motion.div
+                      className={"framer-r5uoae"}
+                      data-framer-name={"Frame 2147228054"}
+                      layoutDependency={layoutDependency}
+                      layoutId={"Gc3xTR5pn"}
+                    >
+                      <motion.div
+                        className={"framer-1cca3zg"}
+                        data-framer-name={"Rectangle 811"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"qVMihpvQQ"}
+                        style={{
+                          backgroundColor: "rgb(234, 234, 234)",
+                          borderBottomLeftRadius: 14.4,
+                          borderBottomRightRadius: 14.4,
+                          borderTopLeftRadius: 14.4,
+                          borderTopRightRadius: 14.4,
+                        }}
+                      />
+                      <motion.div
+                        className={"framer-g4576h"}
+                        data-framer-name={"Rectangle 812"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"WR8ZBFIqD"}
+                        style={{
+                          backgroundColor: "rgb(234, 234, 234)",
+                          borderBottomLeftRadius: 14.4,
+                          borderBottomRightRadius: 14.4,
+                          borderTopLeftRadius: 14.4,
+                          borderTopRightRadius: 14.4,
+                        }}
+                      />
+                    </motion.div>
+                  </motion.div>
+                  <motion.div
+                    className={"framer-mhjyjk"}
+                    data-border={true}
+                    layoutDependency={layoutDependency}
+                    layoutId={"bBZOt14aX"}
+                    style={{
+                      "--border-bottom-width": "0.8999999761581421px",
+                      "--border-color": "rgb(224, 224, 224)",
+                      "--border-left-width": "0.8999999761581421px",
+                      "--border-right-width": "0.8999999761581421px",
+                      "--border-style": "dashed",
+                      "--border-top-width": "0.8999999761581421px",
+                      borderBottomLeftRadius: 7.2,
+                      borderBottomRightRadius: 7.2,
+                      borderTopLeftRadius: 7.2,
+                      borderTopRightRadius: 7.2,
+                    }}
+                  >
+                    <SVG
+                      className={"framer-18m7aoj"}
+                      data-framer-name={"Frame 2147227914"}
+                      fill={"rgba(0,0,0,1)"}
+                      intrinsicHeight={68}
+                      intrinsicWidth={68}
+                      layoutDependency={layoutDependency}
+                      layoutId={"fqJW1ahpx"}
+                      svg={
+                        '<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="68" height="68" rx="4.05" fill="#EBEBEB"/>\n</svg>\n'
+                      }
+                      withExternalLayout={true}
+                    />
+                    <motion.div
+                      className={"framer-fnw2tr"}
+                      data-framer-name={"Frame 2147228054"}
+                      layoutDependency={layoutDependency}
+                      layoutId={"R2wPtho3w"}
+                    >
+                      <motion.div
+                        className={"framer-1e3w3qc"}
+                        data-framer-name={"Rectangle 811"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"U2DYiD8TR"}
+                        style={{
+                          backgroundColor: "rgb(234, 234, 234)",
+                          borderBottomLeftRadius: 14.4,
+                          borderBottomRightRadius: 14.4,
+                          borderTopLeftRadius: 14.4,
+                          borderTopRightRadius: 14.4,
+                        }}
+                      />
+                      <motion.div
+                        className={"framer-eci1ah"}
+                        data-framer-name={"Rectangle 812"}
+                        layoutDependency={layoutDependency}
+                        layoutId={"fJRyBGR9m"}
+                        style={{
+                          backgroundColor: "rgb(234, 234, 234)",
+                          borderBottomLeftRadius: 14.4,
+                          borderBottomRightRadius: 14.4,
+                          borderTopLeftRadius: 14.4,
+                          borderTopRightRadius: 14.4,
+                        }}
+                      />
+                    </motion.div>
+                  </motion.div>
+                </motion.div>
+                {isDisplayed() && (
+                  <motion.div
+                    className={"framer-5ytnhl"}
+                    data-framer-name={"Hover"}
+                    layoutDependency={layoutDependency}
+                    layoutId={"v4op72oeP"}
+                    style={{
+                      opacity: 0,
+                    }}
+                    transformTemplate={transformTemplate1}
+                    variants={{
+                      "WauCV_zII-hover": {
+                        opacity: 1,
+                      },
+                      xPuuhzSH0: {
+                        opacity: 1,
+                      },
+                    }}
+                  >
+                    {isDisplayed() && (
+                      <MotionDivWithFXWithOptimizedAppearEffect
+                        __perspectiveFX={false}
+                        __smartComponentFX={true}
+                        __targetOpacity={1}
+                        animate={animation}
+                        className={"framer-qn2oyw"}
+                        data-border={true}
+                        data-framer-appear-id={"qn2oyw"}
+                        initial={animation1}
+                        layoutDependency={layoutDependency}
+                        layoutId={"mRvvh0DZm"}
+                        optimized={true}
+                        style={{
+                          "--border-bottom-width": "0.37735849618911743px",
+                          "--border-color": "rgb(239, 239, 239)",
+                          "--border-left-width": "0.37735849618911743px",
+                          "--border-right-width": "0.37735849618911743px",
+                          "--border-style": "solid",
+                          "--border-top-width": "0.37735849618911743px",
+                          backgroundColor: "rgb(249, 249, 249)",
+                          borderBottomLeftRadius: 6.04,
+                          borderBottomRightRadius: 6.04,
+                          borderTopLeftRadius: 6.04,
+                          borderTopRightRadius: 6.04,
+                          boxShadow:
+                            "0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
+                        }}
+                      >
+                        <Image
+                          background={{
+                            alt: "",
+                            fit: "fill",
+                            pixelHeight: 1e3,
+                            pixelWidth: 667,
+                            positionX: "center",
+                            positionY: "top",
+                            src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
+                          }}
+                          className={"framer-zvrcgs"}
+                          data-framer-name={"Frame 2147227914"}
+                          layoutDependency={layoutDependency}
+                          layoutId={"ghTv6zRxf"}
+                          {...addPropertyOverrides(
+                            {
+                              "WauCV_zII-hover": {
+                                background: {
+                                  alt: "",
+                                  fit: "fill",
+                                  loading: getLoadingLazyAtYPosition(
+                                    (componentViewport?.y || 0) +
+                                      0 +
+                                      ((componentViewport?.height || 454) - 0 - 622 + 322 + 0) +
+                                      20 +
+                                      43 +
+                                      16 +
+                                      0 +
+                                      78.5283
+                                  ),
+                                  pixelHeight: 1e3,
+                                  pixelWidth: 667,
+                                  positionX: "center",
+                                  positionY: "top",
+                                  src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
+                                },
+                              },
+                              xPuuhzSH0: {
+                                background: {
+                                  alt: "",
+                                  fit: "fill",
+                                  loading: getLoadingLazyAtYPosition(
+                                    (componentViewport?.y || 0) +
+                                      0 +
+                                      ((componentViewport?.height || 454) - 0 - 622 + 322 + 0) +
+                                      20 +
+                                      43 +
+                                      16 +
+                                      0 +
+                                      78.5283
+                                  ),
+                                  pixelHeight: 1e3,
+                                  pixelWidth: 667,
+                                  positionX: "center",
+                                  positionY: "top",
+                                  src: "https://framerusercontent.com/images/VYqk8YaBSjOBxLqNhlU7wSuMkE.jpg?scale-down-to=512",
+                                },
+                              },
+                            },
+                            baseVariant,
+                            gestureVariant
+                          )}
+                        />
+                        <motion.div
+                          className={"framer-8fkbi1"}
+                          layoutDependency={layoutDependency}
+                          layoutId={"fBMEKYXHN"}
+                        >
+                          <RichText
+                            __fromCanvasComponent={true}
+                            className={"framer-ku4ek3"}
+                            fonts={["Inter"]}
+                            layoutDependency={layoutDependency}
+                            layoutId={"qJIZdr41y"}
+                            style={{
+                              "--extracted-2gxw0f":
+                                "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                              "--extracted-r6o4lv":
+                                "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                              "--framer-link-text-color": "rgb(0, 153, 255)",
+                              "--framer-link-text-decoration": "underline",
+                            }}
+                            verticalAlignment={"top"}
+                            withExternalLayout={true}
+                          >
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--framer-font-size": "12px",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                                }}
+                              >
+                                {"Superwear Heritage "}
+                              </motion.p>
+                              <motion.p
+                                style={{
+                                  "--framer-font-size": "12px",
+                                  "--framer-text-color":
+                                    "var(--extracted-2gxw0f, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                                }}
+                              >
+                                {"Hoodie - Black"}
+                              </motion.p>
+                            </React.Fragment>
+                          </RichText>
+                          <RichText
+                            __fromCanvasComponent={true}
+                            className={"framer-10w9hs4"}
+                            fonts={["Inter"]}
+                            layoutDependency={layoutDependency}
+                            layoutId={"xgKrdzg7v"}
+                            style={{
+                              "--extracted-r6o4lv":
+                                "var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105))",
+                              "--framer-link-text-color": "rgb(0, 153, 255)",
+                              "--framer-link-text-decoration": "underline",
+                            }}
+                            verticalAlignment={"top"}
+                            withExternalLayout={true}
+                          >
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--framer-font-size": "10px",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105)))",
+                                }}
+                              >
+                                {"Size - L"}
+                              </motion.p>
+                            </React.Fragment>
+                          </RichText>
+                        </motion.div>
+                      </MotionDivWithFXWithOptimizedAppearEffect>
+                    )}
+                    {isDisplayed() && (
+                      <MotionDivWithFXWithOptimizedAppearEffect
+                        __perspectiveFX={false}
+                        __smartComponentFX={true}
+                        __targetOpacity={1}
+                        animate={animation2}
+                        className={"framer-1h3vna7"}
+                        data-border={true}
+                        data-framer-appear-id={"1h3vna7"}
+                        initial={animation1}
+                        layoutDependency={layoutDependency}
+                        layoutId={"UizVfHnVB"}
+                        optimized={true}
+                        style={{
+                          "--border-bottom-width": "0.37735849618911743px",
+                          "--border-color": "rgb(239, 239, 239)",
+                          "--border-left-width": "0.37735849618911743px",
+                          "--border-right-width": "0.37735849618911743px",
+                          "--border-style": "solid",
+                          "--border-top-width": "0.37735849618911743px",
+                          backgroundColor: "rgb(249, 249, 249)",
+                          borderBottomLeftRadius: 6.04,
+                          borderBottomRightRadius: 6.04,
+                          borderTopLeftRadius: 6.04,
+                          borderTopRightRadius: 6.04,
+                          boxShadow:
+                            "0px 2.264151096343994px 4.528302192687988px -1.5094339847564697px rgba(33, 36, 80, 0.1), 0px 6.037735939025879px 7.5471696853637695px -3.0188679695129395px rgba(33, 36, 80, 0.09), 0px 18.8679256439209px 11.320755004882812px -2.264151096343994px rgba(33, 36, 80, 0.05), 0px 0px 6.037735939025879px 0.7547169923782349px rgba(33, 36, 80, 0.04)",
+                        }}
+                      >
+                        <Image
+                          background={{
+                            alt: "",
+                            fit: "fill",
+                            pixelHeight: 1e3,
+                            pixelWidth: 667,
+                            src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
+                          }}
+                          className={"framer-1bfx16l"}
+                          data-framer-name={"Frame 2147227914"}
+                          layoutDependency={layoutDependency}
+                          layoutId={"rN952Cy9m"}
+                          {...addPropertyOverrides(
+                            {
+                              "WauCV_zII-hover": {
+                                background: {
+                                  alt: "",
+                                  fit: "fill",
+                                  loading: getLoadingLazyAtYPosition(
+                                    (componentViewport?.y || 0) +
+                                      0 +
+                                      ((componentViewport?.height || 454) - 0 - 622 + 322 + 0) +
+                                      20 +
+                                      43 +
+                                      16 +
+                                      237.0566 +
+                                      42.5283
+                                  ),
+                                  pixelHeight: 1e3,
+                                  pixelWidth: 667,
+                                  src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
+                                },
+                              },
+                              xPuuhzSH0: {
+                                background: {
+                                  alt: "",
+                                  fit: "fill",
+                                  loading: getLoadingLazyAtYPosition(
+                                    (componentViewport?.y || 0) +
+                                      0 +
+                                      ((componentViewport?.height || 454) - 0 - 622 + 322 + 0) +
+                                      20 +
+                                      43 +
+                                      16 +
+                                      237.0566 +
+                                      42.5283
+                                  ),
+                                  pixelHeight: 1e3,
+                                  pixelWidth: 667,
+                                  src: "https://framerusercontent.com/images/8rXHNwtxRDr3raUOuTTpHHkfWw.jpg?scale-down-to=512",
+                                },
+                              },
+                            },
+                            baseVariant,
+                            gestureVariant
+                          )}
+                        />
+                        <motion.div
+                          className={"framer-fim0ao"}
+                          layoutDependency={layoutDependency}
+                          layoutId={"hQ5PKDpmc"}
+                        >
+                          <RichText
+                            __fromCanvasComponent={true}
+                            className={"framer-16ox55c"}
+                            fonts={["Inter"]}
+                            layoutDependency={layoutDependency}
+                            layoutId={"KM992goP_"}
+                            style={{
+                              "--extracted-r6o4lv":
+                                "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                              "--framer-link-text-color": "rgb(0, 153, 255)",
+                              "--framer-link-text-decoration": "underline",
+                            }}
+                            verticalAlignment={"top"}
+                            withExternalLayout={true}
+                          >
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--framer-font-size": "12px",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                                }}
+                              >
+                                {"T-Shirt Dry Fit"}
+                              </motion.p>
+                            </React.Fragment>
+                          </RichText>
+                          <RichText
+                            __fromCanvasComponent={true}
+                            className={"framer-1ggcy76"}
+                            fonts={["Inter"]}
+                            layoutDependency={layoutDependency}
+                            layoutId={"tSnWF4R1l"}
+                            style={{
+                              "--extracted-r6o4lv":
+                                "var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105))",
+                              "--framer-link-text-color": "rgb(0, 153, 255)",
+                              "--framer-link-text-decoration": "underline",
+                            }}
+                            verticalAlignment={"top"}
+                            withExternalLayout={true}
+                          >
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--framer-font-size": "10px",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(105, 105, 105)))",
+                                }}
+                              >
+                                {"Size - XL"}
+                              </motion.p>
+                            </React.Fragment>
+                          </RichText>
+                        </motion.div>
+                      </MotionDivWithFXWithOptimizedAppearEffect>
+                    )}
+                    {isDisplayed() && (
+                      <MotionDivWithFXWithOptimizedAppearEffect
+                        __perspectiveFX={false}
+                        __smartComponentFX={true}
+                        __targetOpacity={1}
+                        animate={animation3}
+                        className={"framer-92n1zn"}
+                        data-framer-appear-id={"92n1zn"}
+                        initial={animation1}
+                        layoutDependency={layoutDependency}
+                        layoutId={"A2Zf1bJcs"}
+                        optimized={true}
+                        style={{
+                          backgroundColor: "rgb(36, 36, 36)",
+                          borderBottomLeftRadius: 9.06,
+                          borderBottomRightRadius: 9.06,
+                          borderTopLeftRadius: 9.06,
+                          borderTopRightRadius: 9.06,
+                        }}
+                      >
+                        <RichText
+                          __fromCanvasComponent={true}
+                          className={"framer-1nf9bec"}
+                          data-framer-name={"Add to cart"}
+                          fonts={["Inter-Medium"]}
+                          layoutDependency={layoutDependency}
+                          layoutId={"jxpiBtr0Q"}
+                          style={{
+                            "--extracted-r6o4lv":
+                              "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                            "--framer-paragraph-spacing": "0px",
+                          }}
+                          verticalAlignment={"top"}
+                          withExternalLayout={true}
+                        >
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "12px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.01em",
+                                "--framer-line-height": "140%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "capitalize",
+                              }}
+                            >
+                              {"Continue to billing"}
+                            </motion.p>
+                          </React.Fragment>
+                        </RichText>
+                      </MotionDivWithFXWithOptimizedAppearEffect>
+                    )}
+                  </motion.div>
+                )}
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css3 = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-11xFF.framer-tmudfh, .framer-11xFF .framer-tmudfh { display: block; }",
-	".framer-11xFF.framer-gzftvr { align-content: flex-start; align-items: flex-start; cursor: default; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-end; overflow: hidden; padding: 0px; position: relative; width: 360px; will-change: var(--framer-will-change-override, transform); }",
-	".framer-11xFF .framer-1s3ijx1 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 4px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 24px; position: relative; width: 360px; }",
-	".framer-11xFF .framer-1iz58zm, .framer-11xFF .framer-u0piap, .framer-11xFF .framer-ku4ek3, .framer-11xFF .framer-10w9hs4, .framer-11xFF .framer-16ox55c, .framer-11xFF .framer-1ggcy76 { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
-	".framer-11xFF .framer-1izh0pf { -webkit-user-select: none; flex: none; gap: 10px; height: 300px; overflow: hidden; position: relative; user-select: none; width: 100%; }",
-	".framer-11xFF .framer-10xdnk0 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: flex-start; left: 50%; overflow: visible; padding: 16px; position: absolute; top: 20px; width: 300px; }",
-	".framer-11xFF .framer-r5i1j9 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 8px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); }",
-	".framer-11xFF .framer-bs0aug { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-11xFF .framer-12duxj6 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-11xFF .framer-gsjkzd { aspect-ratio: 1 / 1; flex: none; gap: 0px; height: var(--framer-aspect-ratio-supported, 14px); overflow: visible; position: relative; width: 14px; }",
-	".framer-11xFF .framer-l705yr { bottom: 2px; flex: none; left: -1px; position: absolute; right: 2px; top: -1px; }",
-	".framer-11xFF .framer-1qbkoak, .framer-11xFF .framer-1s7ler3, .framer-11xFF .framer-16z4tzc, .framer-11xFF .framer-1nf9bec { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-11xFF .framer-12vo0wt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-11xFF .framer-1sfvi4l { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 6px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); }",
-	".framer-11xFF .framer-o4yx7o, .framer-11xFF .framer-s5r21t, .framer-11xFF .framer-18m7aoj, .framer-11xFF .framer-zvrcgs, .framer-11xFF .framer-1bfx16l { flex: none; height: 68px; position: relative; width: 68px; }",
-	".framer-11xFF .framer-nkc58t, .framer-11xFF .framer-8fkbi1, .framer-11xFF .framer-fim0ao { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 9.056604385375977px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 1px; }",
-	".framer-11xFF .framer-hehsfi { flex: none; height: 29px; position: relative; width: 172px; }",
-	".framer-11xFF .framer-tyvsjy { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 6px 12px 6px 12px; position: relative; width: 100%; }",
-	".framer-11xFF .framer-nnrccr, .framer-11xFF .framer-mhjyjk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: visible; padding: 6px; position: relative; width: 100%; }",
-	".framer-11xFF .framer-r5uoae, .framer-11xFF .framer-fnw2tr { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 9.899999618530273px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 109px; }",
-	".framer-11xFF .framer-1cca3zg, .framer-11xFF .framer-1e3w3qc { flex: none; height: 6px; position: relative; width: 100%; }",
-	".framer-11xFF .framer-g4576h, .framer-11xFF .framer-eci1ah { flex: none; height: 6px; position: relative; width: 64px; }",
-	".framer-11xFF .framer-5ytnhl { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: center; left: 50%; min-height: 249px; overflow: visible; padding: 16px; position: absolute; top: 43px; width: 100%; z-index: 1; }",
-	".framer-11xFF .framer-qn2oyw, .framer-11xFF .framer-1h3vna7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 6px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); z-index: 2; }",
-	".framer-11xFF .framer-92n1zn { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 8px 12px 8px 12px; position: relative; width: 100%; z-index: 2; }",
-	".framer-11xFF.framer-v-rkbb1d .framer-5ytnhl, .framer-11xFF.framer-v-gzftvr.hover .framer-5ytnhl { min-height: unset; }",
-	...css,
-	...css2,
-	'.framer-11xFF[data-border="true"]::after, .framer-11xFF [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-11xFF.framer-tmudfh, .framer-11xFF .framer-tmudfh { display: block; }",
+  ".framer-11xFF.framer-gzftvr { align-content: flex-start; align-items: flex-start; cursor: default; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-end; overflow: hidden; padding: 0px; position: relative; width: 360px; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-11xFF .framer-1s3ijx1 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 4px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 24px; position: relative; width: 360px; }",
+  ".framer-11xFF .framer-1iz58zm, .framer-11xFF .framer-u0piap, .framer-11xFF .framer-ku4ek3, .framer-11xFF .framer-10w9hs4, .framer-11xFF .framer-16ox55c, .framer-11xFF .framer-1ggcy76 { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
+  ".framer-11xFF .framer-1izh0pf { -webkit-user-select: none; flex: none; gap: 10px; height: 300px; overflow: hidden; position: relative; user-select: none; width: 100%; }",
+  ".framer-11xFF .framer-10xdnk0 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: flex-start; left: 50%; overflow: visible; padding: 16px; position: absolute; top: 20px; width: 300px; }",
+  ".framer-11xFF .framer-r5i1j9 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 8px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-11xFF .framer-bs0aug { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+  ".framer-11xFF .framer-12duxj6 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+  ".framer-11xFF .framer-gsjkzd { aspect-ratio: 1 / 1; flex: none; gap: 0px; height: var(--framer-aspect-ratio-supported, 14px); overflow: visible; position: relative; width: 14px; }",
+  ".framer-11xFF .framer-l705yr { bottom: 2px; flex: none; left: -1px; position: absolute; right: 2px; top: -1px; }",
+  ".framer-11xFF .framer-1qbkoak, .framer-11xFF .framer-1s7ler3, .framer-11xFF .framer-16z4tzc, .framer-11xFF .framer-1nf9bec { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+  ".framer-11xFF .framer-12vo0wt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+  ".framer-11xFF .framer-1sfvi4l { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 6px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-11xFF .framer-o4yx7o, .framer-11xFF .framer-s5r21t, .framer-11xFF .framer-18m7aoj, .framer-11xFF .framer-zvrcgs, .framer-11xFF .framer-1bfx16l { flex: none; height: 68px; position: relative; width: 68px; }",
+  ".framer-11xFF .framer-nkc58t, .framer-11xFF .framer-8fkbi1, .framer-11xFF .framer-fim0ao { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 9.056604385375977px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 1px; }",
+  ".framer-11xFF .framer-hehsfi { flex: none; height: 29px; position: relative; width: 172px; }",
+  ".framer-11xFF .framer-tyvsjy { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 6px 12px 6px 12px; position: relative; width: 100%; }",
+  ".framer-11xFF .framer-nnrccr, .framer-11xFF .framer-mhjyjk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: visible; padding: 6px; position: relative; width: 100%; }",
+  ".framer-11xFF .framer-r5uoae, .framer-11xFF .framer-fnw2tr { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 9.899999618530273px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 109px; }",
+  ".framer-11xFF .framer-1cca3zg, .framer-11xFF .framer-1e3w3qc { flex: none; height: 6px; position: relative; width: 100%; }",
+  ".framer-11xFF .framer-g4576h, .framer-11xFF .framer-eci1ah { flex: none; height: 6px; position: relative; width: 64px; }",
+  ".framer-11xFF .framer-5ytnhl { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: center; left: 50%; min-height: 249px; overflow: visible; padding: 16px; position: absolute; top: 43px; width: 100%; z-index: 1; }",
+  ".framer-11xFF .framer-qn2oyw, .framer-11xFF .framer-1h3vna7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 6px; position: relative; width: 100%; will-change: var(--framer-will-change-override, transform); z-index: 2; }",
+  ".framer-11xFF .framer-92n1zn { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: visible; padding: 8px 12px 8px 12px; position: relative; width: 100%; z-index: 2; }",
+  ".framer-11xFF.framer-v-rkbb1d .framer-5ytnhl, .framer-11xFF.framer-v-gzftvr.hover .framer-5ytnhl { min-height: unset; }",
+  ...css,
+  ...css2,
+  '.framer-11xFF[data-border="true"]::after, .framer-11xFF [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
 ];
 var FramerqD5YppHVs = withCSS(Component, css3, "framer-11xFF");
 var stdin_default = FramerqD5YppHVs;
 FramerqD5YppHVs.displayName = "Card/Features card 2";
 FramerqD5YppHVs.defaultProps = {
-	height: 454,
-	width: 360,
+  height: 454,
+  width: 360,
 };
 addPropertyControls(FramerqD5YppHVs, {
-	variant: {
-		options: ["WauCV_zII", "xPuuhzSH0"],
-		optionTitles: ["Desktop", "Mobile"],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
+  variant: {
+    options: ["WauCV_zII", "xPuuhzSH0"],
+    optionTitles: ["Desktop", "Mobile"],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
 });
 addFonts(
-	FramerqD5YppHVs,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
-					weight: "500",
-				},
-			],
-		},
-		...getFontsFromSharedStyle(fonts),
-		...getFontsFromSharedStyle(fonts2),
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FramerqD5YppHVs,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
+          weight: "500",
+        },
+      ],
+    },
+    ...getFontsFromSharedStyle(fonts),
+    ...getFontsFromSharedStyle(fonts2),
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:card/features-card-2
@@ -1380,20 +1329,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -1413,22 +1360,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var features_card_2_default = ComponentWithRoot;

@@ -34,16 +34,16 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/fpYX6XmXLGjL5cd38w45/Kr5d6zNQkA6gtzXCxVKJ/aIpS8Xf7M.js
 import { jsx as _jsx } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getFontsFromSharedStyle,
-	RichText,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getFontsFromSharedStyle,
+  RichText,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
@@ -51,296 +51,284 @@ import { useRef } from "react";
 var cycleOrder = ["YWxHhBJC4", "PamWlfrr1"];
 var serializationHash = "framer-VuUsg";
 var variantClassNames = {
-	PamWlfrr1: "framer-v-1bu4xi4",
-	YWxHhBJC4: "framer-v-1rpirs3",
+  PamWlfrr1: "framer-v-1bu4xi4",
+  YWxHhBJC4: "framer-v-1rpirs3",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var transition1 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	S: "PamWlfrr1",
-	XL: "YWxHhBJC4",
+  S: "PamWlfrr1",
+  XL: "YWxHhBJC4",
 };
 var getProps = ({ height, id, title, width, ...props }) => {
-	return {
-		...props,
-		oB7OUvWGj: title ?? props.oB7OUvWGj ?? "Features",
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "YWxHhBJC4",
-	};
+  return {
+    ...props,
+    oB7OUvWGj: title ?? props.oB7OUvWGj ?? "Features",
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "YWxHhBJC4",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const {
-		style,
-		className: className2,
-		layoutId,
-		variant,
-		oB7OUvWGj,
-		...restProps
-	} = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "YWxHhBJC4",
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [className];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-1rpirs3",
-							className2,
-							classNames,
-						)}
-						data-border={true}
-						data-framer-name={"XL"}
-						layoutDependency={layoutDependency}
-						layoutId={"YWxHhBJC4"}
-						ref={refBinding}
-						style={{
-							"--border-bottom-width": "1px",
-							"--border-color": "rgb(229, 229, 229)",
-							"--border-left-width": "1px",
-							"--border-right-width": "1px",
-							"--border-style": "solid",
-							"--border-top-width": "1px",
-							backgroundColor:
-								"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-							borderBottomLeftRadius: 16,
-							borderBottomRightRadius: 16,
-							borderTopLeftRadius: 16,
-							borderTopRightRadius: 16,
-							boxShadow:
-								"0px 3px 2px -1px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.12)",
-							...style,
-						}}
-						{...addPropertyOverrides(
-							{
-								PamWlfrr1: {
-									"data-framer-name": "S",
-								},
-							},
-							baseVariant,
-							gestureVariant,
-						)}
-					>
-						<RichText
-							__fromCanvasComponent={true}
-							className={"framer-1xbj0gr"}
-							data-framer-name={"Features"}
-							fonts={["Inter"]}
-							layoutDependency={layoutDependency}
-							layoutId={"PO9FKXtXW"}
-							style={{
-								"--extracted-r6o4lv":
-									"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-								"--framer-paragraph-spacing": "0px",
-							}}
-							text={oB7OUvWGj}
-							verticalAlignment={"top"}
-							withExternalLayout={true}
-							{...addPropertyOverrides(
-								{
-									PamWlfrr1: {
-										children: (
-											<React.Fragment>
-												<motion.p
-													style={{
-														"--framer-font-size": "14px",
-														"--framer-letter-spacing": "-0.04em",
-														"--framer-line-height": "150%",
-														"--framer-text-alignment": "left",
-														"--framer-text-color":
-															"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-													}}
-												>
-													{"Features"}
-												</motion.p>
-											</React.Fragment>
-										),
-									},
-								},
-								baseVariant,
-								gestureVariant,
-							)}
-						>
-							<React.Fragment>
-								<motion.p
-									className={"framer-styles-preset-13hsas3"}
-									data-styles-preset={"pwS_W0qLQ"}
-									style={{
-										"--framer-text-color":
-											"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-									}}
-								>
-									{"Features"}
-								</motion.p>
-							</React.Fragment>
-						</RichText>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const {
+    style,
+    className: className2,
+    layoutId,
+    variant,
+    oB7OUvWGj,
+    ...restProps
+  } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "YWxHhBJC4",
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [className];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-1rpirs3", className2, classNames)}
+            data-border={true}
+            data-framer-name={"XL"}
+            layoutDependency={layoutDependency}
+            layoutId={"YWxHhBJC4"}
+            ref={refBinding}
+            style={{
+              "--border-bottom-width": "1px",
+              "--border-color": "rgb(229, 229, 229)",
+              "--border-left-width": "1px",
+              "--border-right-width": "1px",
+              "--border-style": "solid",
+              "--border-top-width": "1px",
+              backgroundColor:
+                "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+              borderBottomLeftRadius: 16,
+              borderBottomRightRadius: 16,
+              borderTopLeftRadius: 16,
+              borderTopRightRadius: 16,
+              boxShadow:
+                "0px 3px 2px -1px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.12)",
+              ...style,
+            }}
+            {...addPropertyOverrides(
+              {
+                PamWlfrr1: {
+                  "data-framer-name": "S",
+                },
+              },
+              baseVariant,
+              gestureVariant
+            )}
+          >
+            <RichText
+              __fromCanvasComponent={true}
+              className={"framer-1xbj0gr"}
+              data-framer-name={"Features"}
+              fonts={["Inter"]}
+              layoutDependency={layoutDependency}
+              layoutId={"PO9FKXtXW"}
+              style={{
+                "--extracted-r6o4lv":
+                  "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                "--framer-paragraph-spacing": "0px",
+              }}
+              text={oB7OUvWGj}
+              verticalAlignment={"top"}
+              withExternalLayout={true}
+              {...addPropertyOverrides(
+                {
+                  PamWlfrr1: {
+                    children: (
+                      <React.Fragment>
+                        <motion.p
+                          style={{
+                            "--framer-font-size": "14px",
+                            "--framer-letter-spacing": "-0.04em",
+                            "--framer-line-height": "150%",
+                            "--framer-text-alignment": "left",
+                            "--framer-text-color":
+                              "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                          }}
+                        >
+                          {"Features"}
+                        </motion.p>
+                      </React.Fragment>
+                    ),
+                  },
+                },
+                baseVariant,
+                gestureVariant
+              )}
+            >
+              <React.Fragment>
+                <motion.p
+                  className={"framer-styles-preset-13hsas3"}
+                  data-styles-preset={"pwS_W0qLQ"}
+                  style={{
+                    "--framer-text-color":
+                      "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                  }}
+                >
+                  {"Features"}
+                </motion.p>
+              </React.Fragment>
+            </RichText>
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css2 = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-VuUsg.framer-phqth7, .framer-VuUsg .framer-phqth7 { display: block; }",
-	".framer-VuUsg.framer-1rpirs3 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: hidden; padding: 8px 16px 8px 16px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
-	".framer-VuUsg .framer-1xbj0gr { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	...css,
-	'.framer-VuUsg[data-border="true"]::after, .framer-VuUsg [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-VuUsg.framer-phqth7, .framer-VuUsg .framer-phqth7 { display: block; }",
+  ".framer-VuUsg.framer-1rpirs3 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: hidden; padding: 8px 16px 8px 16px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-VuUsg .framer-1xbj0gr { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+  ...css,
+  '.framer-VuUsg[data-border="true"]::after, .framer-VuUsg [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
 ];
 var FrameraIpS8Xf7M = withCSS(Component, css2, "framer-VuUsg");
 var stdin_default = FrameraIpS8Xf7M;
 FrameraIpS8Xf7M.displayName = "Component/Section Heading";
 FrameraIpS8Xf7M.defaultProps = {
-	height: 40,
-	width: 96,
+  height: 40,
+  width: 96,
 };
 addPropertyControls(FrameraIpS8Xf7M, {
-	variant: {
-		options: ["YWxHhBJC4", "PamWlfrr1"],
-		optionTitles: ["XL", "S"],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
-	oB7OUvWGj: {
-		defaultValue: "Features",
-		displayTextArea: false,
-		title: "Title",
-		type: ControlType.String,
-	},
+  variant: {
+    options: ["YWxHhBJC4", "PamWlfrr1"],
+    optionTitles: ["XL", "S"],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
+  oB7OUvWGj: {
+    defaultValue: "Features",
+    displayTextArea: false,
+    title: "Title",
+    type: ControlType.String,
+  },
 });
 addFonts(
-	FrameraIpS8Xf7M,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-					weight: "400",
-				},
-			],
-		},
-		...getFontsFromSharedStyle(fonts),
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FrameraIpS8Xf7M,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+          weight: "400",
+        },
+      ],
+    },
+    ...getFontsFromSharedStyle(fonts),
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:component/section-heading
@@ -350,20 +338,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -383,22 +369,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var section_heading_default = ComponentWithRoot;

@@ -36,665 +36,637 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/7yKW84K732Mkzj9w2BbB/wYzYLHZEnqjvloKwegzj/yOxfT111k.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getFonts,
-	Link,
-	RichText,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getFonts,
+  Link,
+  RichText,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
 import { useRef } from "react";
 var ChevronRightFonts = getFonts(stdin_default);
 var enabledGestures = {
-	DUEMt36Ap: {
-		hover: true,
-		pressed: true,
-	},
-	sgljWVnIE: {
-		hover: true,
-		pressed: true,
-	},
-	xh5yBLCh6: {
-		hover: true,
-		pressed: true,
-	},
-	zhDgBjQ4Q: {
-		hover: true,
-		pressed: true,
-	},
+  DUEMt36Ap: {
+    hover: true,
+    pressed: true,
+  },
+  sgljWVnIE: {
+    hover: true,
+    pressed: true,
+  },
+  xh5yBLCh6: {
+    hover: true,
+    pressed: true,
+  },
+  zhDgBjQ4Q: {
+    hover: true,
+    pressed: true,
+  },
 };
 var cycleOrder = ["DUEMt36Ap", "sgljWVnIE", "zhDgBjQ4Q", "xh5yBLCh6"];
 var serializationHash = "framer-rndEh";
 var variantClassNames = {
-	DUEMt36Ap: "framer-v-1ly1z6c",
-	sgljWVnIE: "framer-v-2ourd5",
-	xh5yBLCh6: "framer-v-zk2xu7",
-	zhDgBjQ4Q: "framer-v-1hy6547",
+  DUEMt36Ap: "framer-v-1ly1z6c",
+  sgljWVnIE: "framer-v-2ourd5",
+  xh5yBLCh6: "framer-v-zk2xu7",
+  zhDgBjQ4Q: "framer-v-1hy6547",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var transition1 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	"Variant 1": "DUEMt36Ap",
-	"Variant 2": "sgljWVnIE",
-	"Variant 3": "zhDgBjQ4Q",
-	"Variant 4": "xh5yBLCh6",
+  "Variant 1": "DUEMt36Ap",
+  "Variant 2": "sgljWVnIE",
+  "Variant 3": "zhDgBjQ4Q",
+  "Variant 4": "xh5yBLCh6",
 };
 var getProps = ({ height, id, link, newTab, title, width, ...props }) => {
-	return {
-		...props,
-		aj5Qz2wm6: title ?? props.aj5Qz2wm6 ?? "Book a Call",
-		Aq8fKMnOT: link ?? props.Aq8fKMnOT,
-		gzhiWL02G: newTab ?? props.gzhiWL02G,
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "DUEMt36Ap",
-	};
+  return {
+    ...props,
+    aj5Qz2wm6: title ?? props.aj5Qz2wm6 ?? "Book a Call",
+    Aq8fKMnOT: link ?? props.Aq8fKMnOT,
+    gzhiWL02G: newTab ?? props.gzhiWL02G,
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "DUEMt36Ap",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const {
-		style,
-		className,
-		layoutId,
-		variant,
-		aj5Qz2wm6,
-		Aq8fKMnOT,
-		gzhiWL02G,
-		...restProps
-	} = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "DUEMt36Ap",
-		enabledGestures,
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	const isDisplayed = () => {
-		if (
-			[
-				"sgljWVnIE-hover",
-				"sgljWVnIE-pressed",
-				"zhDgBjQ4Q-hover",
-				"zhDgBjQ4Q-pressed",
-			].includes(gestureVariant)
-		)
-			return false;
-		if (["sgljWVnIE", "zhDgBjQ4Q"].includes(baseVariant)) return false;
-		return true;
-	};
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<Link
-						href={Aq8fKMnOT}
-						motionChild={true}
-						nodeId={"DUEMt36Ap"}
-						openInNewTab={gzhiWL02G}
-						scopeId={"yOxfT111k"}
-						smoothScroll={true}
-					>
-						<motion.a
-							{...restProps}
-							{...gestureHandlers}
-							className={`${cx(scopingClassNames, "framer-1ly1z6c", className, classNames)} framer-2nteq4`}
-							data-framer-name={"Variant 1"}
-							layoutDependency={layoutDependency}
-							layoutId={"DUEMt36Ap"}
-							ref={refBinding}
-							style={{
-								backgroundColor:
-									"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-								borderBottomLeftRadius: 16,
-								borderBottomRightRadius: 16,
-								borderTopLeftRadius: 16,
-								borderTopRightRadius: 16,
-								boxShadow:
-									"0px 16px 30px 0px rgba(0, 0, 0, 0.03), 0px 2px 3px 0px rgba(11, 32, 103, 0.14), 0px 6px 8px 0px rgba(11, 32, 103, 0.05), inset 0px 0px 4px 2px rgba(255, 255, 255, 0.12)",
-								...style,
-							}}
-							variants={{
-								"DUEMt36Ap-hover": {
-									backgroundColor: "rgb(71, 71, 71)",
-								},
-								"DUEMt36Ap-pressed": {
-									backgroundColor: "rgb(71, 71, 71)",
-								},
-								sgljWVnIE: {
-									backgroundColor:
-										"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-									boxShadow: "none",
-								},
-								xh5yBLCh6: {
-									borderBottomLeftRadius: 12,
-									borderBottomRightRadius: 12,
-									borderTopLeftRadius: 12,
-									borderTopRightRadius: 12,
-								},
-								zhDgBjQ4Q: {
-									backgroundColor:
-										"var(--token-656a4b61-7a12-4d14-b5c8-980eafc40097, rgb(240, 240, 240))",
-									boxShadow: "none",
-								},
-							}}
-							{...addPropertyOverrides(
-								{
-									"DUEMt36Ap-hover": {
-										"data-framer-name": void 0,
-									},
-									"DUEMt36Ap-pressed": {
-										"data-framer-name": void 0,
-									},
-									"sgljWVnIE-hover": {
-										"data-framer-name": void 0,
-									},
-									"sgljWVnIE-pressed": {
-										"data-framer-name": void 0,
-									},
-									"xh5yBLCh6-hover": {
-										"data-framer-name": void 0,
-									},
-									"xh5yBLCh6-pressed": {
-										"data-framer-name": void 0,
-									},
-									"zhDgBjQ4Q-hover": {
-										"data-framer-name": void 0,
-									},
-									"zhDgBjQ4Q-pressed": {
-										"data-framer-name": void 0,
-									},
-									sgljWVnIE: {
-										"data-framer-name": "Variant 2",
-									},
-									xh5yBLCh6: {
-										"data-framer-name": "Variant 4",
-									},
-									zhDgBjQ4Q: {
-										"data-framer-name": "Variant 3",
-									},
-								},
-								baseVariant,
-								gestureVariant,
-							)}
-						>
-							<motion.div
-								className={"framer-za4vue"}
-								layoutDependency={layoutDependency}
-								layoutId={"Q71OC2Tk8"}
-							>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-luyxbx"}
-									data-framer-name={"Book a Call"}
-									fonts={["Inter-Medium"]}
-									layoutDependency={layoutDependency}
-									layoutId={"FR7fKtWJ2"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-										"--framer-paragraph-spacing": "0px",
-									}}
-									text={aj5Qz2wm6}
-									variants={{
-										"sgljWVnIE-hover": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										"sgljWVnIE-pressed": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										"xh5yBLCh6-hover": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										"xh5yBLCh6-pressed": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										"zhDgBjQ4Q-hover": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										"zhDgBjQ4Q-pressed": {
-											"--extracted-r6o4lv":
-												"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										},
-										sgljWVnIE: {
-											"--extracted-r6o4lv":
-												"var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128))",
-										},
-										zhDgBjQ4Q: {
-											"--extracted-r6o4lv":
-												"var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128))",
-										},
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-									{...addPropertyOverrides(
-										{
-											"sgljWVnIE-hover": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											"sgljWVnIE-pressed": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											"xh5yBLCh6-hover": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "15px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											"xh5yBLCh6-pressed": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "15px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											"zhDgBjQ4Q-hover": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											"zhDgBjQ4Q-pressed": {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											sgljWVnIE: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											xh5yBLCh6: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "15px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											zhDgBjQ4Q: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItTWVkaXVt",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "18px",
-																"--framer-font-weight": "500",
-																"--framer-letter-spacing": "-0.03em",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128)))",
-															}}
-														>
-															{"Book a Call"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-										},
-										baseVariant,
-										gestureVariant,
-									)}
-								>
-									<React.Fragment>
-										<motion.p
-											style={{
-												"--font-selector": "SW50ZXItTWVkaXVt",
-												"--framer-font-family":
-													'"Inter", "Inter Placeholder", sans-serif',
-												"--framer-font-size": "18px",
-												"--framer-font-weight": "500",
-												"--framer-letter-spacing": "-0.03em",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-											}}
-										>
-											{"Book a Call"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								{isDisplayed() && (
-									<motion.div
-										className={"framer-17fmct5"}
-										layoutDependency={layoutDependency}
-										layoutId={"jGXR5D5jt"}
-									>
-										{_jsx(stdin_default, {
-											animated: true,
-											className: "framer-egiarz",
-											layoutDependency,
-											layoutId: "nxMsIKuez",
-											style: {
-												"--43q7um":
-													"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-											},
-										})}
-										{_jsx(stdin_default, {
-											animated: true,
-											className: "framer-1x2v3f8",
-											layoutDependency,
-											layoutId: "rHgIh5g_C",
-											style: {
-												"--43q7um":
-													"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-											},
-											variants: {
-												xh5yBLCh6: {
-													"--43q7um":
-														"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-												},
-											},
-										})}
-									</motion.div>
-								)}
-							</motion.div>
-						</motion.a>
-					</Link>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const { style, className, layoutId, variant, aj5Qz2wm6, Aq8fKMnOT, gzhiWL02G, ...restProps } =
+    getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "DUEMt36Ap",
+    enabledGestures,
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  const isDisplayed = () => {
+    if (
+      ["sgljWVnIE-hover", "sgljWVnIE-pressed", "zhDgBjQ4Q-hover", "zhDgBjQ4Q-pressed"].includes(
+        gestureVariant
+      )
+    )
+      return false;
+    if (["sgljWVnIE", "zhDgBjQ4Q"].includes(baseVariant)) return false;
+    return true;
+  };
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <Link
+            href={Aq8fKMnOT}
+            motionChild={true}
+            nodeId={"DUEMt36Ap"}
+            openInNewTab={gzhiWL02G}
+            scopeId={"yOxfT111k"}
+            smoothScroll={true}
+          >
+            <motion.a
+              {...restProps}
+              {...gestureHandlers}
+              className={`${cx(scopingClassNames, "framer-1ly1z6c", className, classNames)} framer-2nteq4`}
+              data-framer-name={"Variant 1"}
+              layoutDependency={layoutDependency}
+              layoutId={"DUEMt36Ap"}
+              ref={refBinding}
+              style={{
+                backgroundColor:
+                  "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                borderBottomLeftRadius: 16,
+                borderBottomRightRadius: 16,
+                borderTopLeftRadius: 16,
+                borderTopRightRadius: 16,
+                boxShadow:
+                  "0px 16px 30px 0px rgba(0, 0, 0, 0.03), 0px 2px 3px 0px rgba(11, 32, 103, 0.14), 0px 6px 8px 0px rgba(11, 32, 103, 0.05), inset 0px 0px 4px 2px rgba(255, 255, 255, 0.12)",
+                ...style,
+              }}
+              variants={{
+                "DUEMt36Ap-hover": {
+                  backgroundColor: "rgb(71, 71, 71)",
+                },
+                "DUEMt36Ap-pressed": {
+                  backgroundColor: "rgb(71, 71, 71)",
+                },
+                sgljWVnIE: {
+                  backgroundColor:
+                    "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                  boxShadow: "none",
+                },
+                xh5yBLCh6: {
+                  borderBottomLeftRadius: 12,
+                  borderBottomRightRadius: 12,
+                  borderTopLeftRadius: 12,
+                  borderTopRightRadius: 12,
+                },
+                zhDgBjQ4Q: {
+                  backgroundColor:
+                    "var(--token-656a4b61-7a12-4d14-b5c8-980eafc40097, rgb(240, 240, 240))",
+                  boxShadow: "none",
+                },
+              }}
+              {...addPropertyOverrides(
+                {
+                  "DUEMt36Ap-hover": {
+                    "data-framer-name": void 0,
+                  },
+                  "DUEMt36Ap-pressed": {
+                    "data-framer-name": void 0,
+                  },
+                  "sgljWVnIE-hover": {
+                    "data-framer-name": void 0,
+                  },
+                  "sgljWVnIE-pressed": {
+                    "data-framer-name": void 0,
+                  },
+                  "xh5yBLCh6-hover": {
+                    "data-framer-name": void 0,
+                  },
+                  "xh5yBLCh6-pressed": {
+                    "data-framer-name": void 0,
+                  },
+                  "zhDgBjQ4Q-hover": {
+                    "data-framer-name": void 0,
+                  },
+                  "zhDgBjQ4Q-pressed": {
+                    "data-framer-name": void 0,
+                  },
+                  sgljWVnIE: {
+                    "data-framer-name": "Variant 2",
+                  },
+                  xh5yBLCh6: {
+                    "data-framer-name": "Variant 4",
+                  },
+                  zhDgBjQ4Q: {
+                    "data-framer-name": "Variant 3",
+                  },
+                },
+                baseVariant,
+                gestureVariant
+              )}
+            >
+              <motion.div
+                className={"framer-za4vue"}
+                layoutDependency={layoutDependency}
+                layoutId={"Q71OC2Tk8"}
+              >
+                <RichText
+                  __fromCanvasComponent={true}
+                  className={"framer-luyxbx"}
+                  data-framer-name={"Book a Call"}
+                  fonts={["Inter-Medium"]}
+                  layoutDependency={layoutDependency}
+                  layoutId={"FR7fKtWJ2"}
+                  style={{
+                    "--extracted-r6o4lv":
+                      "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                    "--framer-paragraph-spacing": "0px",
+                  }}
+                  text={aj5Qz2wm6}
+                  variants={{
+                    "sgljWVnIE-hover": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    "sgljWVnIE-pressed": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    "xh5yBLCh6-hover": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    "xh5yBLCh6-pressed": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    "zhDgBjQ4Q-hover": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    "zhDgBjQ4Q-pressed": {
+                      "--extracted-r6o4lv":
+                        "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    },
+                    sgljWVnIE: {
+                      "--extracted-r6o4lv":
+                        "var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128))",
+                    },
+                    zhDgBjQ4Q: {
+                      "--extracted-r6o4lv":
+                        "var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128))",
+                    },
+                  }}
+                  verticalAlignment={"top"}
+                  withExternalLayout={true}
+                  {...addPropertyOverrides(
+                    {
+                      "sgljWVnIE-hover": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      "sgljWVnIE-pressed": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      "xh5yBLCh6-hover": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "15px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      "xh5yBLCh6-pressed": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "15px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      "zhDgBjQ4Q-hover": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      "zhDgBjQ4Q-pressed": {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      sgljWVnIE: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      xh5yBLCh6: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "15px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      zhDgBjQ4Q: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItTWVkaXVt",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "18px",
+                                "--framer-font-weight": "500",
+                                "--framer-letter-spacing": "-0.03em",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, rgb(125, 126, 128)))",
+                              }}
+                            >
+                              {"Book a Call"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                    },
+                    baseVariant,
+                    gestureVariant
+                  )}
+                >
+                  <React.Fragment>
+                    <motion.p
+                      style={{
+                        "--font-selector": "SW50ZXItTWVkaXVt",
+                        "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                        "--framer-font-size": "18px",
+                        "--framer-font-weight": "500",
+                        "--framer-letter-spacing": "-0.03em",
+                        "--framer-text-color":
+                          "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                      }}
+                    >
+                      {"Book a Call"}
+                    </motion.p>
+                  </React.Fragment>
+                </RichText>
+                {isDisplayed() && (
+                  <motion.div
+                    className={"framer-17fmct5"}
+                    layoutDependency={layoutDependency}
+                    layoutId={"jGXR5D5jt"}
+                  >
+                    {_jsx(stdin_default, {
+                      animated: true,
+                      className: "framer-egiarz",
+                      layoutDependency,
+                      layoutId: "nxMsIKuez",
+                      style: {
+                        "--43q7um":
+                          "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                      },
+                    })}
+                    {_jsx(stdin_default, {
+                      animated: true,
+                      className: "framer-1x2v3f8",
+                      layoutDependency,
+                      layoutId: "rHgIh5g_C",
+                      style: {
+                        "--43q7um":
+                          "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                      },
+                      variants: {
+                        xh5yBLCh6: {
+                          "--43q7um":
+                            "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                        },
+                      },
+                    })}
+                  </motion.div>
+                )}
+              </motion.div>
+            </motion.a>
+          </Link>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-rndEh.framer-2nteq4, .framer-rndEh .framer-2nteq4 { display: block; }",
-	".framer-rndEh.framer-1ly1z6c { align-content: center; align-items: center; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 12px 16px 12px 16px; position: relative; text-decoration: none; width: min-content; will-change: var(--framer-will-change-override, transform); }",
-	".framer-rndEh .framer-za4vue { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
-	".framer-rndEh .framer-luyxbx { -webkit-user-select: none; flex: none; height: auto; position: relative; user-select: none; white-space: pre; width: auto; }",
-	".framer-rndEh .framer-17fmct5 { flex: none; height: 24px; overflow: hidden; position: relative; width: 24px; }",
-	".framer-rndEh .framer-egiarz { flex: none; height: var(--framer-aspect-ratio-supported, 24px); left: 0px; position: absolute; right: 0px; top: 0px; width: calc(100% - 0px); }",
-	".framer-rndEh .framer-1x2v3f8 { flex: none; height: var(--framer-aspect-ratio-supported, 24px); left: -30px; position: absolute; top: 0px; width: 24px; }",
-	".framer-rndEh.framer-v-zk2xu7.framer-1ly1z6c { padding: 8px 12px 8px 12px; }",
-	".framer-rndEh.framer-v-zk2xu7 .framer-za4vue { gap: 6px; }",
-	".framer-rndEh.framer-v-zk2xu7 .framer-17fmct5 { height: 20px; width: 20px; }",
-	".framer-rndEh.framer-v-zk2xu7 .framer-egiarz { height: var(--framer-aspect-ratio-supported, 20px); }",
-	".framer-rndEh.framer-v-zk2xu7 .framer-1x2v3f8 { height: var(--framer-aspect-ratio-supported, 20px); left: -20px; width: 20px; }",
-	".framer-rndEh.framer-v-zk2xu7.hover .framer-egiarz, .framer-rndEh.framer-v-zk2xu7.pressed .framer-egiarz { bottom: 0px; height: unset; left: unset; right: -20px; width: var(--framer-aspect-ratio-supported, 20px); }",
-	".framer-rndEh.framer-v-zk2xu7.hover .framer-1x2v3f8, .framer-rndEh.framer-v-zk2xu7.pressed .framer-1x2v3f8, .framer-rndEh.framer-v-1ly1z6c.hover .framer-1x2v3f8, .framer-rndEh.framer-v-1ly1z6c.pressed .framer-1x2v3f8 { left: 0px; }",
-	".framer-rndEh.framer-v-1ly1z6c.hover .framer-egiarz, .framer-rndEh.framer-v-1ly1z6c.pressed .framer-egiarz { bottom: 0px; height: unset; left: unset; right: -30px; width: var(--framer-aspect-ratio-supported, 24px); }",
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-rndEh.framer-2nteq4, .framer-rndEh .framer-2nteq4 { display: block; }",
+  ".framer-rndEh.framer-1ly1z6c { align-content: center; align-items: center; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 12px 16px 12px 16px; position: relative; text-decoration: none; width: min-content; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-rndEh .framer-za4vue { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }",
+  ".framer-rndEh .framer-luyxbx { -webkit-user-select: none; flex: none; height: auto; position: relative; user-select: none; white-space: pre; width: auto; }",
+  ".framer-rndEh .framer-17fmct5 { flex: none; height: 24px; overflow: hidden; position: relative; width: 24px; }",
+  ".framer-rndEh .framer-egiarz { flex: none; height: var(--framer-aspect-ratio-supported, 24px); left: 0px; position: absolute; right: 0px; top: 0px; width: calc(100% - 0px); }",
+  ".framer-rndEh .framer-1x2v3f8 { flex: none; height: var(--framer-aspect-ratio-supported, 24px); left: -30px; position: absolute; top: 0px; width: 24px; }",
+  ".framer-rndEh.framer-v-zk2xu7.framer-1ly1z6c { padding: 8px 12px 8px 12px; }",
+  ".framer-rndEh.framer-v-zk2xu7 .framer-za4vue { gap: 6px; }",
+  ".framer-rndEh.framer-v-zk2xu7 .framer-17fmct5 { height: 20px; width: 20px; }",
+  ".framer-rndEh.framer-v-zk2xu7 .framer-egiarz { height: var(--framer-aspect-ratio-supported, 20px); }",
+  ".framer-rndEh.framer-v-zk2xu7 .framer-1x2v3f8 { height: var(--framer-aspect-ratio-supported, 20px); left: -20px; width: 20px; }",
+  ".framer-rndEh.framer-v-zk2xu7.hover .framer-egiarz, .framer-rndEh.framer-v-zk2xu7.pressed .framer-egiarz { bottom: 0px; height: unset; left: unset; right: -20px; width: var(--framer-aspect-ratio-supported, 20px); }",
+  ".framer-rndEh.framer-v-zk2xu7.hover .framer-1x2v3f8, .framer-rndEh.framer-v-zk2xu7.pressed .framer-1x2v3f8, .framer-rndEh.framer-v-1ly1z6c.hover .framer-1x2v3f8, .framer-rndEh.framer-v-1ly1z6c.pressed .framer-1x2v3f8 { left: 0px; }",
+  ".framer-rndEh.framer-v-1ly1z6c.hover .framer-egiarz, .framer-rndEh.framer-v-1ly1z6c.pressed .framer-egiarz { bottom: 0px; height: unset; left: unset; right: -30px; width: var(--framer-aspect-ratio-supported, 24px); }",
 ];
 var FrameryOxfT111k = withCSS(Component, css, "framer-rndEh");
 var stdin_default2 = FrameryOxfT111k;
 FrameryOxfT111k.displayName = "Button/Nav Button";
 FrameryOxfT111k.defaultProps = {
-	height: 48,
-	width: 154,
+  height: 48,
+  width: 154,
 };
 addPropertyControls(FrameryOxfT111k, {
-	variant: {
-		options: ["DUEMt36Ap", "sgljWVnIE", "zhDgBjQ4Q", "xh5yBLCh6"],
-		optionTitles: ["Variant 1", "Variant 2", "Variant 3", "Variant 4"],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
-	aj5Qz2wm6: {
-		defaultValue: "Book a Call",
-		displayTextArea: false,
-		title: "Title",
-		type: ControlType.String,
-	},
-	Aq8fKMnOT: {
-		title: "Link",
-		type: ControlType.Link,
-	},
-	gzhiWL02G: {
-		defaultValue: false,
-		title: "New Tab",
-		type: ControlType.Boolean,
-	},
+  variant: {
+    options: ["DUEMt36Ap", "sgljWVnIE", "zhDgBjQ4Q", "xh5yBLCh6"],
+    optionTitles: ["Variant 1", "Variant 2", "Variant 3", "Variant 4"],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
+  aj5Qz2wm6: {
+    defaultValue: "Book a Call",
+    displayTextArea: false,
+    title: "Title",
+    type: ControlType.String,
+  },
+  Aq8fKMnOT: {
+    title: "Link",
+    type: ControlType.Link,
+  },
+  gzhiWL02G: {
+    defaultValue: false,
+    title: "New Tab",
+    type: ControlType.Boolean,
+  },
 });
 addFonts(
-	FrameryOxfT111k,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
-					weight: "500",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
-					weight: "500",
-				},
-			],
-		},
-		...ChevronRightFonts,
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FrameryOxfT111k,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
+          weight: "500",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
+          weight: "500",
+        },
+      ],
+    },
+    ...ChevronRightFonts,
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:button/nav-button
@@ -704,20 +676,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default2, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default2, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -737,22 +707,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default2}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default2}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default2);
 var nav_button_default = ComponentWithRoot;

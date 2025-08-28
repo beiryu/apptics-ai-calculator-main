@@ -32,17 +32,17 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/tSgIVa7IBzvaq54n1N90/F4fQ0ZOtCHXmVHw99Pqo/DxiVJ_1WJ.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	RichText,
-	useActiveVariantCallback,
-	useComponentViewport,
-	useLocaleInfo,
-	useOnVariantChange,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  RichText,
+  useActiveVariantCallback,
+  useComponentViewport,
+  useLocaleInfo,
+  useOnVariantChange,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
@@ -50,305 +50,292 @@ import { useRef } from "react";
 var cycleOrder = ["iZccMjGec", "Td3orPZbb"];
 var serializationHash = "framer-8MXF0";
 var variantClassNames = {
-	iZccMjGec: "framer-v-1269icu",
-	Td3orPZbb: "framer-v-137s6xe",
+  iZccMjGec: "framer-v-1269icu",
+  Td3orPZbb: "framer-v-137s6xe",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var transition1 = {
-	delay: 0,
-	duration: 0.5,
-	ease: [0, 0, 1, 1],
-	type: "tween",
+  delay: 0,
+  duration: 0.5,
+  ease: [0, 0, 1, 1],
+  type: "tween",
 };
 var transformTemplate1 = (_, t) => `translate(-50%, -50%) ${t}`;
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	"Variant 1": "iZccMjGec",
-	"Variant 2": "Td3orPZbb",
+  "Variant 1": "iZccMjGec",
+  "Variant 2": "Td3orPZbb",
 };
 var getProps = ({ height, id, width, ...props }) => {
-	return {
-		...props,
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "iZccMjGec",
-	};
+  return {
+    ...props,
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "iZccMjGec",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const { style, className, layoutId, variant, ...restProps } = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "iZccMjGec",
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const { activeVariantCallback, delay } =
-		useActiveVariantCallback(baseVariant);
-	const onAppearh0smgj = activeVariantCallback(async (...args) => {
-		await delay(() => setVariant("Td3orPZbb", true), 1e3);
-	});
-	const onAppear1fy2y6c = activeVariantCallback(async (...args) => {
-		await delay(() => setVariant("iZccMjGec", true), 1e3);
-	});
-	useOnVariantChange(baseVariant, {
-		default: onAppearh0smgj,
-		Td3orPZbb: onAppear1fy2y6c,
-	});
-	const sharedStyleClassNames = [];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-1269icu",
-							className,
-							classNames,
-						)}
-						data-border={true}
-						data-framer-name={"Variant 1"}
-						data-highlight={true}
-						layoutDependency={layoutDependency}
-						layoutId={"iZccMjGec"}
-						ref={refBinding}
-						style={{
-							"--border-bottom-width": "1px",
-							"--border-color": "rgb(234, 234, 234)",
-							"--border-left-width": "1px",
-							"--border-right-width": "1px",
-							"--border-style": "solid",
-							"--border-top-width": "1px",
-							borderBottomLeftRadius: 12,
-							borderBottomRightRadius: 12,
-							borderTopLeftRadius: 12,
-							borderTopRightRadius: 12,
-							...style,
-						}}
-						{...addPropertyOverrides(
-							{
-								Td3orPZbb: {
-									"data-framer-name": "Variant 2",
-								},
-							},
-							baseVariant,
-							gestureVariant,
-						)}
-					>
-						<motion.div
-							className={"framer-14ecr1s"}
-							layoutDependency={layoutDependency}
-							layoutId={"Hnla5NwOv"}
-						>
-							<motion.div
-								className={"framer-ngr7v"}
-								data-framer-name={"Ellipse 3"}
-								layoutDependency={layoutDependency}
-								layoutId={"O0joWGjC0"}
-								style={{
-									backgroundColor: "rgb(36, 178, 113)",
-									borderBottomLeftRadius: "100%",
-									borderBottomRightRadius: "100%",
-									borderTopLeftRadius: "100%",
-									borderTopRightRadius: "100%",
-									filter: "blur(3px)",
-									WebkitFilter: "blur(3px)",
-								}}
-								transformTemplate={transformTemplate1}
-							/>
-							<motion.div
-								className={"framer-1ba01nk"}
-								data-framer-name={"Ellipse 4"}
-								layoutDependency={layoutDependency}
-								layoutId={"FWYe42EiA"}
-								style={{
-									backgroundColor: "rgb(36, 178, 113)",
-									borderBottomLeftRadius: "100%",
-									borderBottomRightRadius: "100%",
-									borderTopLeftRadius: "100%",
-									borderTopRightRadius: "100%",
-								}}
-								transformTemplate={transformTemplate1}
-							/>
-						</motion.div>
-						<RichText
-							__fromCanvasComponent={true}
-							className={"framer-11nevfi"}
-							data-framer-name={"Live"}
-							fonts={["Inter"]}
-							layoutDependency={layoutDependency}
-							layoutId={"E51ULe6ia"}
-							style={{
-								"--extracted-r6o4lv":
-									"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-								"--framer-paragraph-spacing": "0px",
-							}}
-							verticalAlignment={"top"}
-							withExternalLayout={true}
-						>
-							<React.Fragment>
-								<motion.p
-									style={{
-										"--framer-font-size": "14px",
-										"--framer-letter-spacing": "-0.01em",
-										"--framer-text-color":
-											"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-									}}
-								>
-									{"Live"}
-								</motion.p>
-							</React.Fragment>
-						</RichText>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const { style, className, layoutId, variant, ...restProps } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "iZccMjGec",
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const { activeVariantCallback, delay } = useActiveVariantCallback(baseVariant);
+  const onAppearh0smgj = activeVariantCallback(async (...args) => {
+    await delay(() => setVariant("Td3orPZbb", true), 1e3);
+  });
+  const onAppear1fy2y6c = activeVariantCallback(async (...args) => {
+    await delay(() => setVariant("iZccMjGec", true), 1e3);
+  });
+  useOnVariantChange(baseVariant, {
+    default: onAppearh0smgj,
+    Td3orPZbb: onAppear1fy2y6c,
+  });
+  const sharedStyleClassNames = [];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-1269icu", className, classNames)}
+            data-border={true}
+            data-framer-name={"Variant 1"}
+            data-highlight={true}
+            layoutDependency={layoutDependency}
+            layoutId={"iZccMjGec"}
+            ref={refBinding}
+            style={{
+              "--border-bottom-width": "1px",
+              "--border-color": "rgb(234, 234, 234)",
+              "--border-left-width": "1px",
+              "--border-right-width": "1px",
+              "--border-style": "solid",
+              "--border-top-width": "1px",
+              borderBottomLeftRadius: 12,
+              borderBottomRightRadius: 12,
+              borderTopLeftRadius: 12,
+              borderTopRightRadius: 12,
+              ...style,
+            }}
+            {...addPropertyOverrides(
+              {
+                Td3orPZbb: {
+                  "data-framer-name": "Variant 2",
+                },
+              },
+              baseVariant,
+              gestureVariant
+            )}
+          >
+            <motion.div
+              className={"framer-14ecr1s"}
+              layoutDependency={layoutDependency}
+              layoutId={"Hnla5NwOv"}
+            >
+              <motion.div
+                className={"framer-ngr7v"}
+                data-framer-name={"Ellipse 3"}
+                layoutDependency={layoutDependency}
+                layoutId={"O0joWGjC0"}
+                style={{
+                  backgroundColor: "rgb(36, 178, 113)",
+                  borderBottomLeftRadius: "100%",
+                  borderBottomRightRadius: "100%",
+                  borderTopLeftRadius: "100%",
+                  borderTopRightRadius: "100%",
+                  filter: "blur(3px)",
+                  WebkitFilter: "blur(3px)",
+                }}
+                transformTemplate={transformTemplate1}
+              />
+              <motion.div
+                className={"framer-1ba01nk"}
+                data-framer-name={"Ellipse 4"}
+                layoutDependency={layoutDependency}
+                layoutId={"FWYe42EiA"}
+                style={{
+                  backgroundColor: "rgb(36, 178, 113)",
+                  borderBottomLeftRadius: "100%",
+                  borderBottomRightRadius: "100%",
+                  borderTopLeftRadius: "100%",
+                  borderTopRightRadius: "100%",
+                }}
+                transformTemplate={transformTemplate1}
+              />
+            </motion.div>
+            <RichText
+              __fromCanvasComponent={true}
+              className={"framer-11nevfi"}
+              data-framer-name={"Live"}
+              fonts={["Inter"]}
+              layoutDependency={layoutDependency}
+              layoutId={"E51ULe6ia"}
+              style={{
+                "--extracted-r6o4lv":
+                  "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                "--framer-paragraph-spacing": "0px",
+              }}
+              verticalAlignment={"top"}
+              withExternalLayout={true}
+            >
+              <React.Fragment>
+                <motion.p
+                  style={{
+                    "--framer-font-size": "14px",
+                    "--framer-letter-spacing": "-0.01em",
+                    "--framer-text-color":
+                      "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                  }}
+                >
+                  {"Live"}
+                </motion.p>
+              </React.Fragment>
+            </RichText>
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-8MXF0.framer-un2kl7, .framer-8MXF0 .framer-un2kl7 { display: block; }",
-	".framer-8MXF0.framer-1269icu { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 8px 12px 8px 12px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
-	".framer-8MXF0 .framer-14ecr1s { flex: none; height: 10px; overflow: visible; position: relative; width: 10px; }",
-	".framer-8MXF0 .framer-ngr7v, .framer-8MXF0 .framer-1ba01nk { aspect-ratio: 1 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 7px); left: 50%; position: absolute; top: 50%; width: 7px; }",
-	".framer-8MXF0 .framer-11nevfi { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-8MXF0.framer-v-137s6xe .framer-ngr7v { height: var(--framer-aspect-ratio-supported, 4px); width: 4px; }",
-	".framer-8MXF0.framer-v-137s6xe .framer-1ba01nk { height: var(--framer-aspect-ratio-supported, 6px); width: 6px; }",
-	'.framer-8MXF0[data-border="true"]::after, .framer-8MXF0 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-8MXF0.framer-un2kl7, .framer-8MXF0 .framer-un2kl7 { display: block; }",
+  ".framer-8MXF0.framer-1269icu { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 8px 12px 8px 12px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-8MXF0 .framer-14ecr1s { flex: none; height: 10px; overflow: visible; position: relative; width: 10px; }",
+  ".framer-8MXF0 .framer-ngr7v, .framer-8MXF0 .framer-1ba01nk { aspect-ratio: 1 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 7px); left: 50%; position: absolute; top: 50%; width: 7px; }",
+  ".framer-8MXF0 .framer-11nevfi { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+  ".framer-8MXF0.framer-v-137s6xe .framer-ngr7v { height: var(--framer-aspect-ratio-supported, 4px); width: 4px; }",
+  ".framer-8MXF0.framer-v-137s6xe .framer-1ba01nk { height: var(--framer-aspect-ratio-supported, 6px); width: 6px; }",
+  '.framer-8MXF0[data-border="true"]::after, .framer-8MXF0 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
 ];
 var FramerDxiVJ_1WJ = withCSS(Component, css, "framer-8MXF0");
 var stdin_default = FramerDxiVJ_1WJ;
 FramerDxiVJ_1WJ.displayName = "Component/Live Indicator";
 FramerDxiVJ_1WJ.defaultProps = {
-	height: 33,
-	width: 69,
+  height: 33,
+  width: 69,
 };
 addPropertyControls(FramerDxiVJ_1WJ, {
-	variant: {
-		options: ["iZccMjGec", "Td3orPZbb"],
-		optionTitles: ["Variant 1", "Variant 2"],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
+  variant: {
+    options: ["iZccMjGec", "Td3orPZbb"],
+    optionTitles: ["Variant 1", "Variant 2"],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
 });
 addFonts(
-	FramerDxiVJ_1WJ,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-					weight: "400",
-				},
-			],
-		},
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FramerDxiVJ_1WJ,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+          weight: "400",
+        },
+      ],
+    },
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:component/live-indicator
@@ -358,20 +345,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -391,22 +376,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var live_indicator_default = ComponentWithRoot;

@@ -39,104 +39,104 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { addPropertyControls, ControlType } from "unframer";
 import { useMemo } from "react";
 function WistiaPlayer(props) {
-	const { url, borderRadius, background, fill, loop, autoplay, style } = props;
-	const wistiaId = useMemo(() => {
-		if (!url) return null;
-		const match =
-			url.match(/wistia\.com\/medias\/([a-zA-Z0-9]+)/) ||
-			url.match(/wistia\.com\/embed\/iframe\/([a-zA-Z0-9]+)/) ||
-			url.match(/wistia\.net\/embed\/iframe\/([a-zA-Z0-9]+)/);
-		if (match && match[1]) return match[1];
-		if (/^[a-zA-Z0-9]{10,}$/.test(url)) return url;
-		return null;
-	}, [url]);
-	const embedUrl = wistiaId
-		? `https://fast.wistia.net/embed/iframe/${wistiaId}${loop || autoplay ? "?" : ""}${loop ? "endVideoBehavior=loop" : ""}${loop && autoplay ? "&" : ""}${autoplay ? "autoPlay=true" : ""}`
-		: null;
-	return (
-		<div
-			style={{
-				...style,
-				width: "100%",
-				height: "100%",
-				background,
-				borderRadius,
-				overflow: "hidden",
-				display: "flex",
-				alignItems: "center",
-				justifyContent: "center",
-			}}
-		>
-			{embedUrl ? (
-				<iframe
-					src={embedUrl}
-					title={"Wistia Video"}
-					allow={"autoplay; fullscreen"}
-					allowFullScreen={true}
-					style={{
-						width: "100%",
-						height: "100%",
-						border: 0,
-						borderRadius,
-						background: "#000",
-						display: "block",
-						objectFit: fill ? "cover" : "contain",
-					}}
-				/>
-			) : (
-				<span
-					style={{
-						color: "#888",
-						fontSize: 16,
-						textAlign: "center",
-					}}
-				>
-					{"Paste a Wistia link to embed a video"}
-				</span>
-			)}
-		</div>
-	);
+  const { url, borderRadius, background, fill, loop, autoplay, style } = props;
+  const wistiaId = useMemo(() => {
+    if (!url) return null;
+    const match =
+      url.match(/wistia\.com\/medias\/([a-zA-Z0-9]+)/) ||
+      url.match(/wistia\.com\/embed\/iframe\/([a-zA-Z0-9]+)/) ||
+      url.match(/wistia\.net\/embed\/iframe\/([a-zA-Z0-9]+)/);
+    if (match && match[1]) return match[1];
+    if (/^[a-zA-Z0-9]{10,}$/.test(url)) return url;
+    return null;
+  }, [url]);
+  const embedUrl = wistiaId
+    ? `https://fast.wistia.net/embed/iframe/${wistiaId}${loop || autoplay ? "?" : ""}${loop ? "endVideoBehavior=loop" : ""}${loop && autoplay ? "&" : ""}${autoplay ? "autoPlay=true" : ""}`
+    : null;
+  return (
+    <div
+      style={{
+        ...style,
+        width: "100%",
+        height: "100%",
+        background,
+        borderRadius,
+        overflow: "hidden",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {embedUrl ? (
+        <iframe
+          src={embedUrl}
+          title={"Wistia Video"}
+          allow={"autoplay; fullscreen"}
+          allowFullScreen={true}
+          style={{
+            width: "100%",
+            height: "100%",
+            border: 0,
+            borderRadius,
+            background: "#000",
+            display: "block",
+            objectFit: fill ? "cover" : "contain",
+          }}
+        />
+      ) : (
+        <span
+          style={{
+            color: "#888",
+            fontSize: 16,
+            textAlign: "center",
+          }}
+        >
+          {"Paste a Wistia link to embed a video"}
+        </span>
+      )}
+    </div>
+  );
 }
 addPropertyControls(WistiaPlayer, {
-	url: {
-		type: ControlType.String,
-		title: "Wistia Link",
-		placeholder: "Paste Wistia link\u2026",
-		defaultValue: "",
-	},
-	background: {
-		type: ControlType.Color,
-		title: "Background",
-		defaultValue: "#000",
-	},
-	borderRadius: {
-		type: ControlType.Number,
-		title: "Radius",
-		defaultValue: 8,
-		min: 0,
-		max: 64,
-	},
-	fill: {
-		type: ControlType.Boolean,
-		title: "Fill Video",
-		defaultValue: false,
-		enabledTitle: "Fill",
-		disabledTitle: "Fit",
-	},
-	loop: {
-		type: ControlType.Boolean,
-		title: "Loop Video",
-		defaultValue: false,
-		enabledTitle: "Loop",
-		disabledTitle: "Once",
-	},
-	autoplay: {
-		type: ControlType.Boolean,
-		title: "Autoplay",
-		defaultValue: false,
-		enabledTitle: "Auto",
-		disabledTitle: "Manual",
-	},
+  url: {
+    type: ControlType.String,
+    title: "Wistia Link",
+    placeholder: "Paste Wistia link\u2026",
+    defaultValue: "",
+  },
+  background: {
+    type: ControlType.Color,
+    title: "Background",
+    defaultValue: "#000",
+  },
+  borderRadius: {
+    type: ControlType.Number,
+    title: "Radius",
+    defaultValue: 8,
+    min: 0,
+    max: 64,
+  },
+  fill: {
+    type: ControlType.Boolean,
+    title: "Fill Video",
+    defaultValue: false,
+    enabledTitle: "Fill",
+    disabledTitle: "Fit",
+  },
+  loop: {
+    type: ControlType.Boolean,
+    title: "Loop Video",
+    defaultValue: false,
+    enabledTitle: "Loop",
+    disabledTitle: "Once",
+  },
+  autoplay: {
+    type: ControlType.Boolean,
+    title: "Autoplay",
+    defaultValue: false,
+    enabledTitle: "Auto",
+    disabledTitle: "Manual",
+  },
 });
 
 // virtual:wistia-player
@@ -146,18 +146,16 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WistiaPlayer {...rest} />
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WistiaPlayer {...rest} />
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -177,22 +175,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={WistiaPlayer}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={WistiaPlayer}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, WistiaPlayer);
 var wistia_player_default = ComponentWithRoot;

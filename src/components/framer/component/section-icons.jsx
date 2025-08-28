@@ -33,392 +33,358 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/paPCzruYqXIhourVwzOf/SbR5NmxHM0rnBi28Ht1a/oKW4t7w_z.js
 import { jsx as _jsx } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getLoadingLazyAtYPosition,
-	Image,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getLoadingLazyAtYPosition,
+  Image,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
 import { useRef } from "react";
 var cycleOrder = [
-	"VtQ4tqlHA",
-	"t4PEh0Z8J",
-	"xJT_aBf0c",
-	"YClqRjH6F",
-	"ZBzXtUQqt",
-	"ulcbQ78Ez",
-	"daCQK5fji",
-	"hOUtX9xr0",
-	"vaDZRJbaZ",
-	"N9QVHDFmy",
+  "VtQ4tqlHA",
+  "t4PEh0Z8J",
+  "xJT_aBf0c",
+  "YClqRjH6F",
+  "ZBzXtUQqt",
+  "ulcbQ78Ez",
+  "daCQK5fji",
+  "hOUtX9xr0",
+  "vaDZRJbaZ",
+  "N9QVHDFmy",
 ];
 var serializationHash = "framer-bC63v";
 var variantClassNames = {
-	daCQK5fji: "framer-v-qxzk9e",
-	hOUtX9xr0: "framer-v-34fe5b",
-	N9QVHDFmy: "framer-v-1nwubie",
-	t4PEh0Z8J: "framer-v-9sl8xp",
-	ulcbQ78Ez: "framer-v-jrmoxc",
-	vaDZRJbaZ: "framer-v-rrdosg",
-	VtQ4tqlHA: "framer-v-1su0bac",
-	xJT_aBf0c: "framer-v-yrpq8b",
-	YClqRjH6F: "framer-v-1723ohz",
-	ZBzXtUQqt: "framer-v-1n3znok",
+  daCQK5fji: "framer-v-qxzk9e",
+  hOUtX9xr0: "framer-v-34fe5b",
+  N9QVHDFmy: "framer-v-1nwubie",
+  t4PEh0Z8J: "framer-v-9sl8xp",
+  ulcbQ78Ez: "framer-v-jrmoxc",
+  vaDZRJbaZ: "framer-v-rrdosg",
+  VtQ4tqlHA: "framer-v-1su0bac",
+  xJT_aBf0c: "framer-v-yrpq8b",
+  YClqRjH6F: "framer-v-1723ohz",
+  ZBzXtUQqt: "framer-v-1n3znok",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var radiusForCorner = (value, cornerIndex) => {
-	if (typeof value === "number" && Number.isFinite(value))
-		return Math.max(0, value) + "px";
-	if (typeof value !== "string" || typeof cornerIndex !== "number")
-		return void 0;
-	const segments = value.split(" ");
-	return segments[cornerIndex] || segments[cornerIndex - 2] || segments[0];
+  if (typeof value === "number" && Number.isFinite(value)) return Math.max(0, value) + "px";
+  if (typeof value !== "string" || typeof cornerIndex !== "number") return void 0;
+  const segments = value.split(" ");
+  return segments[cornerIndex] || segments[cornerIndex - 2] || segments[0];
 };
 var transition1 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	"Calculator ": "daCQK5fji",
-	"Case studies": "ZBzXtUQqt",
-	"Our Team": "vaDZRJbaZ",
-	Benifits: "t4PEh0Z8J",
-	FAQ: "ulcbQ78Ez",
-	Features: "VtQ4tqlHA",
-	Onboarding: "YClqRjH6F",
-	Pricing: "hOUtX9xr0",
-	Testimonials: "N9QVHDFmy",
-	Vs: "xJT_aBf0c",
+  "Calculator ": "daCQK5fji",
+  "Case studies": "ZBzXtUQqt",
+  "Our Team": "vaDZRJbaZ",
+  Benifits: "t4PEh0Z8J",
+  FAQ: "ulcbQ78Ez",
+  Features: "VtQ4tqlHA",
+  Onboarding: "YClqRjH6F",
+  Pricing: "hOUtX9xr0",
+  Testimonials: "N9QVHDFmy",
+  Vs: "xJT_aBf0c",
 };
 var getProps = ({ height, id, radius, width, ...props }) => {
-	return {
-		...props,
-		jDpMylKrh: radius ?? props.jDpMylKrh ?? "16px",
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "VtQ4tqlHA",
-	};
+  return {
+    ...props,
+    jDpMylKrh: radius ?? props.jDpMylKrh ?? "16px",
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "VtQ4tqlHA",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const { style, className, layoutId, variant, jDpMylKrh, ...restProps } =
-		getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "VtQ4tqlHA",
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-1su0bac",
-							className,
-							classNames,
-						)}
-						data-framer-name={"Features"}
-						layoutDependency={layoutDependency}
-						layoutId={"VtQ4tqlHA"}
-						ref={refBinding}
-						style={{
-							background:
-								"linear-gradient(209.61552567952285deg, rgb(47, 205, 254) 0%, rgb(83, 79, 249) 100%)",
-							borderBottomLeftRadius: radiusForCorner(jDpMylKrh, 3),
-							borderBottomRightRadius: radiusForCorner(jDpMylKrh, 2),
-							borderTopLeftRadius: radiusForCorner(jDpMylKrh, 0),
-							borderTopRightRadius: radiusForCorner(jDpMylKrh, 1),
-							boxShadow:
-								"0px 30px 30px -6px rgba(0, 0, 0, 0.08), 0px 13.999999046325684px 20px -5px rgba(0, 0, 0, 0.08), 0px 2px 4px -1px rgba(11, 32, 103, 0.14), 0px 8px 8px -2px rgba(11, 32, 103, 0.05)",
-							...style,
-						}}
-						{...addPropertyOverrides(
-							{
-								daCQK5fji: {
-									"data-framer-name": "Calculator ",
-								},
-								hOUtX9xr0: {
-									"data-framer-name": "Pricing",
-								},
-								N9QVHDFmy: {
-									"data-framer-name": "Testimonials",
-								},
-								t4PEh0Z8J: {
-									"data-framer-name": "Benifits",
-								},
-								ulcbQ78Ez: {
-									"data-framer-name": "FAQ",
-								},
-								vaDZRJbaZ: {
-									"data-framer-name": "Our Team",
-								},
-								xJT_aBf0c: {
-									"data-framer-name": "Vs",
-								},
-								YClqRjH6F: {
-									"data-framer-name": "Onboarding",
-								},
-								ZBzXtUQqt: {
-									"data-framer-name": "Case studies",
-								},
-							},
-							baseVariant,
-							gestureVariant,
-						)}
-					>
-						<Image
-							background={{
-								alt: "",
-								fit: "fill",
-								loading: getLoadingLazyAtYPosition(
-									(componentViewport?.y || 0) + 0,
-								),
-								pixelHeight: 97,
-								pixelWidth: 97,
-								src: "https://framerusercontent.com/images/Led55HZk8y51YAkMijCTktxBLJU.png",
-							}}
-							className={"framer-zaji78"}
-							layoutDependency={layoutDependency}
-							layoutId={"w_rMxNim1"}
-							{...addPropertyOverrides(
-								{
-									daCQK5fji: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/yyZkkUasemX4Fdthk5hEKgI99do.png",
-										},
-									},
-									hOUtX9xr0: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/vIYcfQmXR01tw943jGuajZJhi3k.png",
-										},
-									},
-									N9QVHDFmy: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/fD0IvmiBs0aJ81SaScSB4NEv7og.png",
-										},
-									},
-									t4PEh0Z8J: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/7qTkdgljrtDwpSz2cn4m3TUYlNw.png",
-										},
-									},
-									ulcbQ78Ez: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/vaLDd7u8crDIdOnRXEZwyVCbs.png",
-										},
-									},
-									vaDZRJbaZ: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/HcOgQtgwieBjBAbnvDp6lb5W5n8.png",
-										},
-									},
-									xJT_aBf0c: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/6PLtldGQTTAmwCohIFmY7SRvOs.png",
-										},
-									},
-									YClqRjH6F: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 97,
-											pixelWidth: 97,
-											src: "https://framerusercontent.com/images/Rxki3XtCd77aOEWD6fQBx0VaKP0.png",
-										},
-									},
-									ZBzXtUQqt: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0,
-											),
-											pixelHeight: 96,
-											pixelWidth: 96,
-											src: "https://framerusercontent.com/images/jubpMC97vlnjbIW3ENkifuHDc4.png",
-										},
-									},
-								},
-								baseVariant,
-								gestureVariant,
-							)}
-						/>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const { style, className, layoutId, variant, jDpMylKrh, ...restProps } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "VtQ4tqlHA",
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-1su0bac", className, classNames)}
+            data-framer-name={"Features"}
+            layoutDependency={layoutDependency}
+            layoutId={"VtQ4tqlHA"}
+            ref={refBinding}
+            style={{
+              background:
+                "linear-gradient(209.61552567952285deg, rgb(47, 205, 254) 0%, rgb(83, 79, 249) 100%)",
+              borderBottomLeftRadius: radiusForCorner(jDpMylKrh, 3),
+              borderBottomRightRadius: radiusForCorner(jDpMylKrh, 2),
+              borderTopLeftRadius: radiusForCorner(jDpMylKrh, 0),
+              borderTopRightRadius: radiusForCorner(jDpMylKrh, 1),
+              boxShadow:
+                "0px 30px 30px -6px rgba(0, 0, 0, 0.08), 0px 13.999999046325684px 20px -5px rgba(0, 0, 0, 0.08), 0px 2px 4px -1px rgba(11, 32, 103, 0.14), 0px 8px 8px -2px rgba(11, 32, 103, 0.05)",
+              ...style,
+            }}
+            {...addPropertyOverrides(
+              {
+                daCQK5fji: {
+                  "data-framer-name": "Calculator ",
+                },
+                hOUtX9xr0: {
+                  "data-framer-name": "Pricing",
+                },
+                N9QVHDFmy: {
+                  "data-framer-name": "Testimonials",
+                },
+                t4PEh0Z8J: {
+                  "data-framer-name": "Benifits",
+                },
+                ulcbQ78Ez: {
+                  "data-framer-name": "FAQ",
+                },
+                vaDZRJbaZ: {
+                  "data-framer-name": "Our Team",
+                },
+                xJT_aBf0c: {
+                  "data-framer-name": "Vs",
+                },
+                YClqRjH6F: {
+                  "data-framer-name": "Onboarding",
+                },
+                ZBzXtUQqt: {
+                  "data-framer-name": "Case studies",
+                },
+              },
+              baseVariant,
+              gestureVariant
+            )}
+          >
+            <Image
+              background={{
+                alt: "",
+                fit: "fill",
+                loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                pixelHeight: 97,
+                pixelWidth: 97,
+                src: "https://framerusercontent.com/images/Led55HZk8y51YAkMijCTktxBLJU.png",
+              }}
+              className={"framer-zaji78"}
+              layoutDependency={layoutDependency}
+              layoutId={"w_rMxNim1"}
+              {...addPropertyOverrides(
+                {
+                  daCQK5fji: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/yyZkkUasemX4Fdthk5hEKgI99do.png",
+                    },
+                  },
+                  hOUtX9xr0: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/vIYcfQmXR01tw943jGuajZJhi3k.png",
+                    },
+                  },
+                  N9QVHDFmy: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/fD0IvmiBs0aJ81SaScSB4NEv7og.png",
+                    },
+                  },
+                  t4PEh0Z8J: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/7qTkdgljrtDwpSz2cn4m3TUYlNw.png",
+                    },
+                  },
+                  ulcbQ78Ez: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/vaLDd7u8crDIdOnRXEZwyVCbs.png",
+                    },
+                  },
+                  vaDZRJbaZ: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/HcOgQtgwieBjBAbnvDp6lb5W5n8.png",
+                    },
+                  },
+                  xJT_aBf0c: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/6PLtldGQTTAmwCohIFmY7SRvOs.png",
+                    },
+                  },
+                  YClqRjH6F: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 97,
+                      pixelWidth: 97,
+                      src: "https://framerusercontent.com/images/Rxki3XtCd77aOEWD6fQBx0VaKP0.png",
+                    },
+                  },
+                  ZBzXtUQqt: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0),
+                      pixelHeight: 96,
+                      pixelWidth: 96,
+                      src: "https://framerusercontent.com/images/jubpMC97vlnjbIW3ENkifuHDc4.png",
+                    },
+                  },
+                },
+                baseVariant,
+                gestureVariant
+              )}
+            />
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-bC63v.framer-1mp537k, .framer-bC63v .framer-1mp537k { display: block; }",
-	".framer-bC63v.framer-1su0bac { gap: 0px; height: 48px; overflow: hidden; position: relative; width: 48px; will-change: var(--framer-will-change-override, transform); }",
-	".framer-bC63v .framer-zaji78 { bottom: 0px; flex: none; left: 0px; overflow: hidden; position: absolute; top: 0px; width: 100%; }",
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-bC63v.framer-1mp537k, .framer-bC63v .framer-1mp537k { display: block; }",
+  ".framer-bC63v.framer-1su0bac { gap: 0px; height: 48px; overflow: hidden; position: relative; width: 48px; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-bC63v .framer-zaji78 { bottom: 0px; flex: none; left: 0px; overflow: hidden; position: absolute; top: 0px; width: 100%; }",
 ];
 var FrameroKW4t7w_z = withCSS(Component, css, "framer-bC63v");
 var stdin_default = FrameroKW4t7w_z;
 FrameroKW4t7w_z.displayName = "Component/Section Icons";
 FrameroKW4t7w_z.defaultProps = {
-	height: 48,
-	width: 48,
+  height: 48,
+  width: 48,
 };
 addPropertyControls(FrameroKW4t7w_z, {
-	variant: {
-		options: [
-			"VtQ4tqlHA",
-			"t4PEh0Z8J",
-			"xJT_aBf0c",
-			"YClqRjH6F",
-			"ZBzXtUQqt",
-			"ulcbQ78Ez",
-			"daCQK5fji",
-			"hOUtX9xr0",
-			"vaDZRJbaZ",
-			"N9QVHDFmy",
-		],
-		optionTitles: [
-			"Features",
-			"Benifits",
-			"Vs",
-			"Onboarding",
-			"Case studies",
-			"FAQ",
-			"Calculator ",
-			"Pricing",
-			"Our Team",
-			"Testimonials",
-		],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
-	jDpMylKrh: {
-		defaultValue: "16px",
-		title: "Radius",
-		type: ControlType.BorderRadius,
-	},
+  variant: {
+    options: [
+      "VtQ4tqlHA",
+      "t4PEh0Z8J",
+      "xJT_aBf0c",
+      "YClqRjH6F",
+      "ZBzXtUQqt",
+      "ulcbQ78Ez",
+      "daCQK5fji",
+      "hOUtX9xr0",
+      "vaDZRJbaZ",
+      "N9QVHDFmy",
+    ],
+    optionTitles: [
+      "Features",
+      "Benifits",
+      "Vs",
+      "Onboarding",
+      "Case studies",
+      "FAQ",
+      "Calculator ",
+      "Pricing",
+      "Our Team",
+      "Testimonials",
+    ],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
+  jDpMylKrh: {
+    defaultValue: "16px",
+    title: "Radius",
+    type: ControlType.BorderRadius,
+  },
 });
 addFonts(
-	FrameroKW4t7w_z,
-	[
-		{
-			explicitInter: true,
-			fonts: [],
-		},
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FrameroKW4t7w_z,
+  [
+    {
+      explicitInter: true,
+      fonts: [],
+    },
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:component/section-icons
@@ -428,20 +394,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -461,22 +425,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var section_icons_default = ComponentWithRoot;

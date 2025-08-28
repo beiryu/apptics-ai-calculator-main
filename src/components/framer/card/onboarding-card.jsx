@@ -23,11 +23,7 @@
 }} Props
 
  */
-import {
-	className as className2,
-	css as css2,
-	fonts as fonts2,
-} from "../chunks/chunk-S56WLUKL.js";
+import { className as className2, css as css2, fonts as fonts2 } from "../chunks/chunk-S56WLUKL.js";
 import { className, css, fonts } from "../chunks/chunk-ZDFCFOXJ.js";
 import { routes } from "../chunks/chunk-VAWW4KIH.js";
 
@@ -38,1479 +34,1426 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/ezqsEO4ZK6WCRnZBQmJ8/ZnHVilj49AheTMBebbry/hxCncky0K.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getFontsFromSharedStyle,
-	getLoadingLazyAtYPosition,
-	Image,
-	RichText,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getFontsFromSharedStyle,
+  getLoadingLazyAtYPosition,
+  Image,
+  RichText,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
 import { useRef } from "react";
 var cycleOrder = [
-	"Sjey0przw",
-	"eLNnBHEBv",
-	"cxjbQK6LS",
-	"MHps1_FOh",
-	"HKNts7h7y",
-	"iOppqTRQs",
-	"t1xBNzzRg",
-	"mgFnNV_g8",
-	"GLmS7x_uS",
-	"hGbWN63KG",
-	"jcjeVP1uE",
-	"BWxeXFfQM",
+  "Sjey0przw",
+  "eLNnBHEBv",
+  "cxjbQK6LS",
+  "MHps1_FOh",
+  "HKNts7h7y",
+  "iOppqTRQs",
+  "t1xBNzzRg",
+  "mgFnNV_g8",
+  "GLmS7x_uS",
+  "hGbWN63KG",
+  "jcjeVP1uE",
+  "BWxeXFfQM",
 ];
 var serializationHash = "framer-vZy50";
 var variantClassNames = {
-	BWxeXFfQM: "framer-v-1rfvvc3",
-	cxjbQK6LS: "framer-v-o4bxbt",
-	eLNnBHEBv: "framer-v-gqa1dh",
-	GLmS7x_uS: "framer-v-4kw6jf",
-	hGbWN63KG: "framer-v-8nrsdy",
-	HKNts7h7y: "framer-v-via1hx",
-	iOppqTRQs: "framer-v-r2y9rb",
-	jcjeVP1uE: "framer-v-1iwjl1x",
-	mgFnNV_g8: "framer-v-xhny5m",
-	MHps1_FOh: "framer-v-1fr016o",
-	Sjey0przw: "framer-v-15d2p9o",
-	t1xBNzzRg: "framer-v-slda3w",
+  BWxeXFfQM: "framer-v-1rfvvc3",
+  cxjbQK6LS: "framer-v-o4bxbt",
+  eLNnBHEBv: "framer-v-gqa1dh",
+  GLmS7x_uS: "framer-v-4kw6jf",
+  hGbWN63KG: "framer-v-8nrsdy",
+  HKNts7h7y: "framer-v-via1hx",
+  iOppqTRQs: "framer-v-r2y9rb",
+  jcjeVP1uE: "framer-v-1iwjl1x",
+  mgFnNV_g8: "framer-v-xhny5m",
+  MHps1_FOh: "framer-v-1fr016o",
+  Sjey0przw: "framer-v-15d2p9o",
+  t1xBNzzRg: "framer-v-slda3w",
 };
 function addPropertyOverrides(overrides, ...variants) {
-	const nextOverrides = {};
-	variants?.forEach(
-		(variant) => variant && Object.assign(nextOverrides, overrides[variant]),
-	);
-	return nextOverrides;
+  const nextOverrides = {};
+  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
+  return nextOverrides;
 }
 var transition1 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
 var humanReadableVariantMap = {
-	"Variant 1": "Sjey0przw",
-	"Variant 10": "hGbWN63KG",
-	"Variant 11": "jcjeVP1uE",
-	"Variant 12": "BWxeXFfQM",
-	"Variant 2": "eLNnBHEBv",
-	"Variant 3": "cxjbQK6LS",
-	"Variant 4": "MHps1_FOh",
-	"Variant 5": "HKNts7h7y",
-	"Variant 6": "iOppqTRQs",
-	"Variant 7": "t1xBNzzRg",
-	"Variant 8": "mgFnNV_g8",
-	"Variant 9": "GLmS7x_uS",
+  "Variant 1": "Sjey0przw",
+  "Variant 10": "hGbWN63KG",
+  "Variant 11": "jcjeVP1uE",
+  "Variant 12": "BWxeXFfQM",
+  "Variant 2": "eLNnBHEBv",
+  "Variant 3": "cxjbQK6LS",
+  "Variant 4": "MHps1_FOh",
+  "Variant 5": "HKNts7h7y",
+  "Variant 6": "iOppqTRQs",
+  "Variant 7": "t1xBNzzRg",
+  "Variant 8": "mgFnNV_g8",
+  "Variant 9": "GLmS7x_uS",
 };
 var getProps = ({ height, id, width, ...props }) => {
-	return {
-		...props,
-		variant:
-			humanReadableVariantMap[props.variant] ?? props.variant ?? "Sjey0przw",
-	};
+  return {
+    ...props,
+    variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "Sjey0przw",
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const {
-		style,
-		className: className3,
-		layoutId,
-		variant,
-		...restProps
-	} = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		cycleOrder,
-		defaultVariant: "Sjey0przw",
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [className2, className];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	const isDisplayed = () => {
-		if (
-			[
-				"HKNts7h7y",
-				"iOppqTRQs",
-				"t1xBNzzRg",
-				"mgFnNV_g8",
-				"GLmS7x_uS",
-				"hGbWN63KG",
-				"jcjeVP1uE",
-				"BWxeXFfQM",
-			].includes(baseVariant)
-		)
-			return false;
-		return true;
-	};
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-15d2p9o",
-							className3,
-							classNames,
-						)}
-						data-border={true}
-						data-framer-name={"Variant 1"}
-						layoutDependency={layoutDependency}
-						layoutId={"Sjey0przw"}
-						ref={refBinding}
-						style={{
-							"--border-bottom-width": "1px",
-							"--border-color": "rgb(231, 231, 231)",
-							"--border-left-width": "1px",
-							"--border-right-width": "1px",
-							"--border-style": "solid",
-							"--border-top-width": "1px",
-							backgroundColor: "rgb(239, 239, 239)",
-							borderBottomLeftRadius: 16,
-							borderBottomRightRadius: 16,
-							borderTopLeftRadius: 16,
-							borderTopRightRadius: 16,
-							...style,
-						}}
-						{...addPropertyOverrides(
-							{
-								BWxeXFfQM: {
-									"data-framer-name": "Variant 12",
-								},
-								cxjbQK6LS: {
-									"data-framer-name": "Variant 3",
-								},
-								eLNnBHEBv: {
-									"data-framer-name": "Variant 2",
-								},
-								GLmS7x_uS: {
-									"data-framer-name": "Variant 9",
-								},
-								hGbWN63KG: {
-									"data-framer-name": "Variant 10",
-								},
-								HKNts7h7y: {
-									"data-framer-name": "Variant 5",
-								},
-								iOppqTRQs: {
-									"data-framer-name": "Variant 6",
-								},
-								jcjeVP1uE: {
-									"data-framer-name": "Variant 11",
-								},
-								mgFnNV_g8: {
-									"data-framer-name": "Variant 8",
-								},
-								MHps1_FOh: {
-									"data-framer-name": "Variant 4",
-								},
-								t1xBNzzRg: {
-									"data-framer-name": "Variant 7",
-								},
-							},
-							baseVariant,
-							gestureVariant,
-						)}
-					>
-						<motion.div
-							className={"framer-1y1a6mn"}
-							layoutDependency={layoutDependency}
-							layoutId={"zMp8zF8F5"}
-						>
-							{isDisplayed() && (
-								<motion.div
-									className={"framer-bb2fei"}
-									layoutDependency={layoutDependency}
-									layoutId={"Jx_JqDeax"}
-								>
-									<RichText
-										__fromCanvasComponent={true}
-										className={"framer-122fpi0"}
-										data-framer-name={"01"}
-										fonts={["Inter-Bold"]}
-										layoutDependency={layoutDependency}
-										layoutId={"UozkzWYRh"}
-										style={{
-											"--extracted-r6o4lv":
-												"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-											"--framer-paragraph-spacing": "0px",
-											textShadow:
-												"0px 2px 4px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.04)",
-										}}
-										verticalAlignment={"top"}
-										withExternalLayout={true}
-										{...addPropertyOverrides(
-											{
-												cxjbQK6LS: {
-													children: (
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--font-selector": "SW50ZXItQm9sZA==",
-																	"--framer-font-family":
-																		'"Inter", "Inter Placeholder", sans-serif',
-																	"--framer-font-size": "90px",
-																	"--framer-font-weight": "700",
-																	"--framer-letter-spacing": "-0.06em",
-																	"--framer-line-height": "1em",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																}}
-															>
-																{"03"}
-															</motion.p>
-														</React.Fragment>
-													),
-												},
-												eLNnBHEBv: {
-													children: (
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--font-selector": "SW50ZXItQm9sZA==",
-																	"--framer-font-family":
-																		'"Inter", "Inter Placeholder", sans-serif',
-																	"--framer-font-size": "90px",
-																	"--framer-font-weight": "700",
-																	"--framer-letter-spacing": "-0.06em",
-																	"--framer-line-height": "1em",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																}}
-															>
-																{"02"}
-															</motion.p>
-														</React.Fragment>
-													),
-												},
-												MHps1_FOh: {
-													children: (
-														<React.Fragment>
-															<motion.p
-																style={{
-																	"--font-selector": "SW50ZXItQm9sZA==",
-																	"--framer-font-family":
-																		'"Inter", "Inter Placeholder", sans-serif',
-																	"--framer-font-size": "90px",
-																	"--framer-font-weight": "700",
-																	"--framer-letter-spacing": "-0.06em",
-																	"--framer-line-height": "1em",
-																	"--framer-text-color":
-																		"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																}}
-															>
-																{"04"}
-															</motion.p>
-														</React.Fragment>
-													),
-												},
-											},
-											baseVariant,
-											gestureVariant,
-										)}
-									>
-										<React.Fragment>
-											<motion.p
-												style={{
-													"--font-selector": "SW50ZXItQm9sZA==",
-													"--framer-font-family":
-														'"Inter", "Inter Placeholder", sans-serif',
-													"--framer-font-size": "90px",
-													"--framer-font-weight": "700",
-													"--framer-letter-spacing": "-0.06em",
-													"--framer-line-height": "1em",
-													"--framer-text-color":
-														"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-												}}
-											>
-												{"01"}
-											</motion.p>
-										</React.Fragment>
-									</RichText>
-								</motion.div>
-							)}
-							<motion.div
-								className={"framer-1wlvhaf"}
-								data-border={true}
-								layoutDependency={layoutDependency}
-								layoutId={"RrEyvwfTi"}
-								style={{
-									"--border-bottom-width": "0.5px",
-									"--border-color": "rgba(255, 255, 255, 0.5)",
-									"--border-left-width": "0.5px",
-									"--border-right-width": "0.5px",
-									"--border-style": "solid",
-									"--border-top-width": "0.5px",
-									background:
-										"linear-gradient(170.59180934780187deg, rgb(17, 178, 248) 44.49746012687683%, rgb(80, 77, 249) 100%)",
-									borderBottomLeftRadius: 11,
-									borderBottomRightRadius: 11,
-									borderTopLeftRadius: 11,
-									borderTopRightRadius: 11,
-									boxShadow:
-										"0px 1px 2px 0px rgba(54, 58, 109, 0.25), 0px 4px 4px 0px rgba(54, 58, 109, 0.1), 0px 8px 4px 0px rgba(0, 0, 0, 0.08), 0px 18px 7px 0px rgba(54, 58, 109, 0.09)",
-								}}
-							>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-lc4xra"}
-									data-framer-name={"Step 1"}
-									fonts={["Inter-SemiBold"]}
-									layoutDependency={layoutDependency}
-									layoutId={"bAFT0urHX"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-										"--framer-paragraph-spacing": "0px",
-									}}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-									{...addPropertyOverrides(
-										{
-											BWxeXFfQM: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "12px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 4"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											cxjbQK6LS: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 3"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											eLNnBHEBv: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 2"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											GLmS7x_uS: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "12px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 1"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											hGbWN63KG: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "12px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 2"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											iOppqTRQs: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 2"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											jcjeVP1uE: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "12px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 3"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											mgFnNV_g8: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 4"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											MHps1_FOh: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 4"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-											t1xBNzzRg: {
-												children: (
-													<React.Fragment>
-														<motion.p
-															style={{
-																"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-																"--framer-font-family":
-																	'"Inter", "Inter Placeholder", sans-serif',
-																"--framer-font-size": "14px",
-																"--framer-font-weight": "600",
-																"--framer-letter-spacing": "-0.02em",
-																"--framer-line-height": "150%",
-																"--framer-text-color":
-																	"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-																"--framer-text-transform": "uppercase",
-															}}
-														>
-															{"Step 3"}
-														</motion.p>
-													</React.Fragment>
-												),
-											},
-										},
-										baseVariant,
-										gestureVariant,
-									)}
-								>
-									<React.Fragment>
-										<motion.p
-											style={{
-												"--font-selector": "SW50ZXItU2VtaUJvbGQ=",
-												"--framer-font-family":
-													'"Inter", "Inter Placeholder", sans-serif',
-												"--framer-font-size": "14px",
-												"--framer-font-weight": "600",
-												"--framer-letter-spacing": "-0.02em",
-												"--framer-line-height": "150%",
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
-												"--framer-text-transform": "uppercase",
-											}}
-										>
-											{"Step 1"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-							</motion.div>
-							<RichText
-								__fromCanvasComponent={true}
-								className={"framer-b69dhv"}
-								data-framer-name={"Connect your business"}
-								fonts={["Inter", "Inter-Bold"]}
-								layoutDependency={layoutDependency}
-								layoutId={"wu3NOD5Mk"}
-								style={{
-									"--extracted-r6o4lv":
-										"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-									"--framer-paragraph-spacing": "0px",
-								}}
-								verticalAlignment={"top"}
-								withExternalLayout={true}
-								{...addPropertyOverrides(
-									{
-										BWxeXFfQM: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>{"Grow on autopilot"}</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										cxjbQK6LS: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Turn clicks into cash"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										eLNnBHEBv: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Unlock your growth strategy"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										hGbWN63KG: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Unlock your growth strategy"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										iOppqTRQs: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Unlock your growth strategy"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										jcjeVP1uE: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Turn clicks into cash"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										mgFnNV_g8: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>{"Grow on autopilot"}</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										MHps1_FOh: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>{"Grow on autopilot"}</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										t1xBNzzRg: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-c1cxty"}
-														data-styles-preset={"DqPpqUUr0"}
-														style={{
-															"--framer-text-alignment": "left",
-															"--framer-text-color":
-																"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-														}}
-													>
-														<motion.strong>
-															{"Turn clicks into cash"}
-														</motion.strong>
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-									},
-									baseVariant,
-									gestureVariant,
-								)}
-							>
-								<React.Fragment>
-									<motion.p
-										className={"framer-styles-preset-c1cxty"}
-										data-styles-preset={"DqPpqUUr0"}
-										style={{
-											"--framer-text-alignment": "left",
-											"--framer-text-color":
-												"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-										}}
-									>
-										<motion.strong>{"Connect your business"}</motion.strong>
-									</motion.p>
-								</React.Fragment>
-							</RichText>
-							<RichText
-								__fromCanvasComponent={true}
-								className={"framer-1hocgwv"}
-								data-framer-name={
-									"Connect payment systems, set up compliance, & sync your store. We manage the full technical setup & guide you through approvals if you\u2019re not processing payments"
-								}
-								fonts={["Inter"]}
-								layoutDependency={layoutDependency}
-								layoutId={"zCXEG2wKL"}
-								style={{
-									"--framer-paragraph-spacing": "0px",
-								}}
-								verticalAlignment={"top"}
-								withExternalLayout={true}
-								{...addPropertyOverrides(
-									{
-										BWxeXFfQM: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Track real time analytics and scale while we run the backend. spot growth opportunities and expand operation with full support form our platform team"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										cxjbQK6LS: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"We transform your store to create seamless subscription checkout flows and set up intelligent upsells that turn onetime buyers into repeat customers."
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										eLNnBHEBv: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Answer a few questions & get subscriptions strategies built for you. Receive expert guidance & support from account managers who understand your businesses\u2019 goal."
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										hGbWN63KG: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Answer few questions & get subscriptions strategies built for you. receiving expert guidance & support from account managers who understand your business goal"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										iOppqTRQs: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Answer few questions & get subscriptions strategies built for you. receiving expert guidance & support from account managers who understand your business goal"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										jcjeVP1uE: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"We transform your store to create seamless purchase flow checkouts and set uo intelligent upsells that turn onetime buyers into repeat customers with Apptics"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										mgFnNV_g8: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Track real time analytics and scale while we run the backend. spot growth opportunities and expand operation with full support form our platform team"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										MHps1_FOh: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"Track real-time analytics and scale faster with recurring revenue checkouts. Uncover hidden growth opportunities and expand faster with full support from our expert team."
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-										t1xBNzzRg: {
-											children: (
-												<React.Fragment>
-													<motion.p
-														className={"framer-styles-preset-13hsas3"}
-														data-styles-preset={"pwS_W0qLQ"}
-													>
-														{
-															"We transform your store to create seamless purchase flow checkouts and set uo intelligent upsells that turn onetime buyers into repeat customers with Apptics"
-														}
-													</motion.p>
-												</React.Fragment>
-											),
-										},
-									},
-									baseVariant,
-									gestureVariant,
-								)}
-							>
-								<React.Fragment>
-									<motion.p
-										className={"framer-styles-preset-13hsas3"}
-										data-styles-preset={"pwS_W0qLQ"}
-									>
-										{
-											"Connect payment systems, set up compliance, & sync your store. We manage the full technical setup & guide you through approvals if you\u2019re not processing payments."
-										}
-									</motion.p>
-								</React.Fragment>
-							</RichText>
-						</motion.div>
-						<Image
-							background={{
-								alt: "",
-								fit: "fill",
-								loading: getLoadingLazyAtYPosition(
-									(componentViewport?.y || 0) +
-										(0 +
-											((componentViewport?.height || 380) -
-												0 -
-												((componentViewport?.height || 380) - 0) * 1) /
-												2),
-								),
-								pixelHeight: 760,
-								pixelWidth: 850,
-								sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-								src: "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png",
-								srcSet:
-									"https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png?scale-down-to=512 512w,https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png 850w",
-							}}
-							className={"framer-vbijyw"}
-							layoutDependency={layoutDependency}
-							layoutId={"oqsVvxGNL"}
-							{...addPropertyOverrides(
-								{
-									BWxeXFfQM: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0 + 0,
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											positionX: "center",
-											positionY: "top",
-											sizes: componentViewport?.width || "100vw",
-											src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
-											srcSet:
-												"https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
-										},
-									},
-									cxjbQK6LS: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 380) -
-															0 -
-															((componentViewport?.height || 380) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 760,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
-											srcSet:
-												"https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
-										},
-									},
-									eLNnBHEBv: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 380) - 0 - 380) / 2),
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: "425px",
-											src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
-											srcSet:
-												"https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
-										},
-									},
-									GLmS7x_uS: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0 + 0,
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: componentViewport?.width || "100vw",
-											src: "https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png",
-											srcSet:
-												"https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png?scale-down-to=512 512w,https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png 850w",
-										},
-									},
-									hGbWN63KG: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0 + 0,
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: componentViewport?.width || "100vw",
-											src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
-											srcSet:
-												"https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
-										},
-									},
-									HKNts7h7y: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 313) -
-															0 -
-															((componentViewport?.height || 313) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 760,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png",
-											srcSet:
-												"https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png?scale-down-to=512 512w,https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png 850w",
-										},
-									},
-									iOppqTRQs: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 313) -
-															0 -
-															((componentViewport?.height || 313) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
-											srcSet:
-												"https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
-										},
-									},
-									jcjeVP1uE: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) + 0 + 0,
-											),
-											pixelHeight: 760,
-											pixelWidth: 850,
-											positionX: "center",
-											positionY: "top",
-											sizes: componentViewport?.width || "100vw",
-											src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
-											srcSet:
-												"https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
-										},
-									},
-									mgFnNV_g8: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 313) -
-															0 -
-															((componentViewport?.height || 313) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
-											srcSet:
-												"https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
-										},
-									},
-									MHps1_FOh: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 380) -
-															0 -
-															((componentViewport?.height || 380) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 761,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
-											srcSet:
-												"https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
-										},
-									},
-									t1xBNzzRg: {
-										background: {
-											alt: "",
-											fit: "fill",
-											loading: getLoadingLazyAtYPosition(
-												(componentViewport?.y || 0) +
-													(0 +
-														((componentViewport?.height || 313) -
-															0 -
-															((componentViewport?.height || 313) - 0) * 1) /
-															2),
-											),
-											pixelHeight: 760,
-											pixelWidth: 850,
-											sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
-											src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
-											srcSet:
-												"https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
-										},
-									},
-								},
-								baseVariant,
-								gestureVariant,
-							)}
-						/>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const { style, className: className3, layoutId, variant, ...restProps } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    cycleOrder,
+    defaultVariant: "Sjey0przw",
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [className2, className];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  const isDisplayed = () => {
+    if (
+      [
+        "HKNts7h7y",
+        "iOppqTRQs",
+        "t1xBNzzRg",
+        "mgFnNV_g8",
+        "GLmS7x_uS",
+        "hGbWN63KG",
+        "jcjeVP1uE",
+        "BWxeXFfQM",
+      ].includes(baseVariant)
+    )
+      return false;
+    return true;
+  };
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-15d2p9o", className3, classNames)}
+            data-border={true}
+            data-framer-name={"Variant 1"}
+            layoutDependency={layoutDependency}
+            layoutId={"Sjey0przw"}
+            ref={refBinding}
+            style={{
+              "--border-bottom-width": "1px",
+              "--border-color": "rgb(231, 231, 231)",
+              "--border-left-width": "1px",
+              "--border-right-width": "1px",
+              "--border-style": "solid",
+              "--border-top-width": "1px",
+              backgroundColor: "rgb(239, 239, 239)",
+              borderBottomLeftRadius: 16,
+              borderBottomRightRadius: 16,
+              borderTopLeftRadius: 16,
+              borderTopRightRadius: 16,
+              ...style,
+            }}
+            {...addPropertyOverrides(
+              {
+                BWxeXFfQM: {
+                  "data-framer-name": "Variant 12",
+                },
+                cxjbQK6LS: {
+                  "data-framer-name": "Variant 3",
+                },
+                eLNnBHEBv: {
+                  "data-framer-name": "Variant 2",
+                },
+                GLmS7x_uS: {
+                  "data-framer-name": "Variant 9",
+                },
+                hGbWN63KG: {
+                  "data-framer-name": "Variant 10",
+                },
+                HKNts7h7y: {
+                  "data-framer-name": "Variant 5",
+                },
+                iOppqTRQs: {
+                  "data-framer-name": "Variant 6",
+                },
+                jcjeVP1uE: {
+                  "data-framer-name": "Variant 11",
+                },
+                mgFnNV_g8: {
+                  "data-framer-name": "Variant 8",
+                },
+                MHps1_FOh: {
+                  "data-framer-name": "Variant 4",
+                },
+                t1xBNzzRg: {
+                  "data-framer-name": "Variant 7",
+                },
+              },
+              baseVariant,
+              gestureVariant
+            )}
+          >
+            <motion.div
+              className={"framer-1y1a6mn"}
+              layoutDependency={layoutDependency}
+              layoutId={"zMp8zF8F5"}
+            >
+              {isDisplayed() && (
+                <motion.div
+                  className={"framer-bb2fei"}
+                  layoutDependency={layoutDependency}
+                  layoutId={"Jx_JqDeax"}
+                >
+                  <RichText
+                    __fromCanvasComponent={true}
+                    className={"framer-122fpi0"}
+                    data-framer-name={"01"}
+                    fonts={["Inter-Bold"]}
+                    layoutDependency={layoutDependency}
+                    layoutId={"UozkzWYRh"}
+                    style={{
+                      "--extracted-r6o4lv":
+                        "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                      "--framer-paragraph-spacing": "0px",
+                      textShadow:
+                        "0px 2px 4px rgba(0, 0, 0, 0.06), 0px 2px 2px rgba(0, 0, 0, 0.04)",
+                    }}
+                    verticalAlignment={"top"}
+                    withExternalLayout={true}
+                    {...addPropertyOverrides(
+                      {
+                        cxjbQK6LS: {
+                          children: (
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--font-selector": "SW50ZXItQm9sZA==",
+                                  "--framer-font-family":
+                                    '"Inter", "Inter Placeholder", sans-serif',
+                                  "--framer-font-size": "90px",
+                                  "--framer-font-weight": "700",
+                                  "--framer-letter-spacing": "-0.06em",
+                                  "--framer-line-height": "1em",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                }}
+                              >
+                                {"03"}
+                              </motion.p>
+                            </React.Fragment>
+                          ),
+                        },
+                        eLNnBHEBv: {
+                          children: (
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--font-selector": "SW50ZXItQm9sZA==",
+                                  "--framer-font-family":
+                                    '"Inter", "Inter Placeholder", sans-serif',
+                                  "--framer-font-size": "90px",
+                                  "--framer-font-weight": "700",
+                                  "--framer-letter-spacing": "-0.06em",
+                                  "--framer-line-height": "1em",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                }}
+                              >
+                                {"02"}
+                              </motion.p>
+                            </React.Fragment>
+                          ),
+                        },
+                        MHps1_FOh: {
+                          children: (
+                            <React.Fragment>
+                              <motion.p
+                                style={{
+                                  "--font-selector": "SW50ZXItQm9sZA==",
+                                  "--framer-font-family":
+                                    '"Inter", "Inter Placeholder", sans-serif',
+                                  "--framer-font-size": "90px",
+                                  "--framer-font-weight": "700",
+                                  "--framer-letter-spacing": "-0.06em",
+                                  "--framer-line-height": "1em",
+                                  "--framer-text-color":
+                                    "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                }}
+                              >
+                                {"04"}
+                              </motion.p>
+                            </React.Fragment>
+                          ),
+                        },
+                      },
+                      baseVariant,
+                      gestureVariant
+                    )}
+                  >
+                    <React.Fragment>
+                      <motion.p
+                        style={{
+                          "--font-selector": "SW50ZXItQm9sZA==",
+                          "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                          "--framer-font-size": "90px",
+                          "--framer-font-weight": "700",
+                          "--framer-letter-spacing": "-0.06em",
+                          "--framer-line-height": "1em",
+                          "--framer-text-color":
+                            "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                        }}
+                      >
+                        {"01"}
+                      </motion.p>
+                    </React.Fragment>
+                  </RichText>
+                </motion.div>
+              )}
+              <motion.div
+                className={"framer-1wlvhaf"}
+                data-border={true}
+                layoutDependency={layoutDependency}
+                layoutId={"RrEyvwfTi"}
+                style={{
+                  "--border-bottom-width": "0.5px",
+                  "--border-color": "rgba(255, 255, 255, 0.5)",
+                  "--border-left-width": "0.5px",
+                  "--border-right-width": "0.5px",
+                  "--border-style": "solid",
+                  "--border-top-width": "0.5px",
+                  background:
+                    "linear-gradient(170.59180934780187deg, rgb(17, 178, 248) 44.49746012687683%, rgb(80, 77, 249) 100%)",
+                  borderBottomLeftRadius: 11,
+                  borderBottomRightRadius: 11,
+                  borderTopLeftRadius: 11,
+                  borderTopRightRadius: 11,
+                  boxShadow:
+                    "0px 1px 2px 0px rgba(54, 58, 109, 0.25), 0px 4px 4px 0px rgba(54, 58, 109, 0.1), 0px 8px 4px 0px rgba(0, 0, 0, 0.08), 0px 18px 7px 0px rgba(54, 58, 109, 0.09)",
+                }}
+              >
+                <RichText
+                  __fromCanvasComponent={true}
+                  className={"framer-lc4xra"}
+                  data-framer-name={"Step 1"}
+                  fonts={["Inter-SemiBold"]}
+                  layoutDependency={layoutDependency}
+                  layoutId={"bAFT0urHX"}
+                  style={{
+                    "--extracted-r6o4lv":
+                      "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+                    "--framer-paragraph-spacing": "0px",
+                  }}
+                  verticalAlignment={"top"}
+                  withExternalLayout={true}
+                  {...addPropertyOverrides(
+                    {
+                      BWxeXFfQM: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "12px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 4"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      cxjbQK6LS: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 3"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      eLNnBHEBv: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 2"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      GLmS7x_uS: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "12px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 1"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      hGbWN63KG: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "12px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 2"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      iOppqTRQs: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 2"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      jcjeVP1uE: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "12px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 3"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      mgFnNV_g8: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 4"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      MHps1_FOh: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 4"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                      t1xBNzzRg: {
+                        children: (
+                          <React.Fragment>
+                            <motion.p
+                              style={{
+                                "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                                "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                                "--framer-font-size": "14px",
+                                "--framer-font-weight": "600",
+                                "--framer-letter-spacing": "-0.02em",
+                                "--framer-line-height": "150%",
+                                "--framer-text-color":
+                                  "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                                "--framer-text-transform": "uppercase",
+                              }}
+                            >
+                              {"Step 3"}
+                            </motion.p>
+                          </React.Fragment>
+                        ),
+                      },
+                    },
+                    baseVariant,
+                    gestureVariant
+                  )}
+                >
+                  <React.Fragment>
+                    <motion.p
+                      style={{
+                        "--font-selector": "SW50ZXItU2VtaUJvbGQ=",
+                        "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif',
+                        "--framer-font-size": "14px",
+                        "--framer-font-weight": "600",
+                        "--framer-letter-spacing": "-0.02em",
+                        "--framer-line-height": "150%",
+                        "--framer-text-color":
+                          "var(--extracted-r6o4lv, var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255)))",
+                        "--framer-text-transform": "uppercase",
+                      }}
+                    >
+                      {"Step 1"}
+                    </motion.p>
+                  </React.Fragment>
+                </RichText>
+              </motion.div>
+              <RichText
+                __fromCanvasComponent={true}
+                className={"framer-b69dhv"}
+                data-framer-name={"Connect your business"}
+                fonts={["Inter", "Inter-Bold"]}
+                layoutDependency={layoutDependency}
+                layoutId={"wu3NOD5Mk"}
+                style={{
+                  "--extracted-r6o4lv":
+                    "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                  "--framer-paragraph-spacing": "0px",
+                }}
+                verticalAlignment={"top"}
+                withExternalLayout={true}
+                {...addPropertyOverrides(
+                  {
+                    BWxeXFfQM: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Grow on autopilot"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    cxjbQK6LS: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Turn clicks into cash"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    eLNnBHEBv: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Unlock your growth strategy"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    hGbWN63KG: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Unlock your growth strategy"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    iOppqTRQs: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Unlock your growth strategy"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    jcjeVP1uE: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Turn clicks into cash"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    mgFnNV_g8: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Grow on autopilot"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    MHps1_FOh: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Grow on autopilot"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    t1xBNzzRg: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-c1cxty"}
+                            data-styles-preset={"DqPpqUUr0"}
+                            style={{
+                              "--framer-text-alignment": "left",
+                              "--framer-text-color":
+                                "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                            }}
+                          >
+                            <motion.strong>{"Turn clicks into cash"}</motion.strong>
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                  },
+                  baseVariant,
+                  gestureVariant
+                )}
+              >
+                <React.Fragment>
+                  <motion.p
+                    className={"framer-styles-preset-c1cxty"}
+                    data-styles-preset={"DqPpqUUr0"}
+                    style={{
+                      "--framer-text-alignment": "left",
+                      "--framer-text-color":
+                        "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                    }}
+                  >
+                    <motion.strong>{"Connect your business"}</motion.strong>
+                  </motion.p>
+                </React.Fragment>
+              </RichText>
+              <RichText
+                __fromCanvasComponent={true}
+                className={"framer-1hocgwv"}
+                data-framer-name={
+                  "Connect payment systems, set up compliance, & sync your store. We manage the full technical setup & guide you through approvals if you\u2019re not processing payments"
+                }
+                fonts={["Inter"]}
+                layoutDependency={layoutDependency}
+                layoutId={"zCXEG2wKL"}
+                style={{
+                  "--framer-paragraph-spacing": "0px",
+                }}
+                verticalAlignment={"top"}
+                withExternalLayout={true}
+                {...addPropertyOverrides(
+                  {
+                    BWxeXFfQM: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Track real time analytics and scale while we run the backend. spot growth opportunities and expand operation with full support form our platform team"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    cxjbQK6LS: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "We transform your store to create seamless subscription checkout flows and set up intelligent upsells that turn onetime buyers into repeat customers."
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    eLNnBHEBv: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Answer a few questions & get subscriptions strategies built for you. Receive expert guidance & support from account managers who understand your businesses\u2019 goal."
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    hGbWN63KG: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Answer few questions & get subscriptions strategies built for you. receiving expert guidance & support from account managers who understand your business goal"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    iOppqTRQs: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Answer few questions & get subscriptions strategies built for you. receiving expert guidance & support from account managers who understand your business goal"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    jcjeVP1uE: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "We transform your store to create seamless purchase flow checkouts and set uo intelligent upsells that turn onetime buyers into repeat customers with Apptics"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    mgFnNV_g8: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Track real time analytics and scale while we run the backend. spot growth opportunities and expand operation with full support form our platform team"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    MHps1_FOh: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "Track real-time analytics and scale faster with recurring revenue checkouts. Uncover hidden growth opportunities and expand faster with full support from our expert team."
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                    t1xBNzzRg: {
+                      children: (
+                        <React.Fragment>
+                          <motion.p
+                            className={"framer-styles-preset-13hsas3"}
+                            data-styles-preset={"pwS_W0qLQ"}
+                          >
+                            {
+                              "We transform your store to create seamless purchase flow checkouts and set uo intelligent upsells that turn onetime buyers into repeat customers with Apptics"
+                            }
+                          </motion.p>
+                        </React.Fragment>
+                      ),
+                    },
+                  },
+                  baseVariant,
+                  gestureVariant
+                )}
+              >
+                <React.Fragment>
+                  <motion.p
+                    className={"framer-styles-preset-13hsas3"}
+                    data-styles-preset={"pwS_W0qLQ"}
+                  >
+                    {
+                      "Connect payment systems, set up compliance, & sync your store. We manage the full technical setup & guide you through approvals if you\u2019re not processing payments."
+                    }
+                  </motion.p>
+                </React.Fragment>
+              </RichText>
+            </motion.div>
+            <Image
+              background={{
+                alt: "",
+                fit: "fill",
+                loading: getLoadingLazyAtYPosition(
+                  (componentViewport?.y || 0) +
+                    (0 +
+                      ((componentViewport?.height || 380) -
+                        0 -
+                        ((componentViewport?.height || 380) - 0) * 1) /
+                        2)
+                ),
+                pixelHeight: 760,
+                pixelWidth: 850,
+                sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                src: "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png",
+                srcSet:
+                  "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png?scale-down-to=512 512w,https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png 850w",
+              }}
+              className={"framer-vbijyw"}
+              layoutDependency={layoutDependency}
+              layoutId={"oqsVvxGNL"}
+              {...addPropertyOverrides(
+                {
+                  BWxeXFfQM: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0 + 0),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      positionX: "center",
+                      positionY: "top",
+                      sizes: componentViewport?.width || "100vw",
+                      src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
+                    },
+                  },
+                  cxjbQK6LS: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 380) -
+                              0 -
+                              ((componentViewport?.height || 380) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 760,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
+                    },
+                  },
+                  eLNnBHEBv: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 + ((componentViewport?.height || 380) - 0 - 380) / 2)
+                      ),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: "425px",
+                      src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
+                    },
+                  },
+                  GLmS7x_uS: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0 + 0),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: componentViewport?.width || "100vw",
+                      src: "https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png?scale-down-to=512 512w,https://framerusercontent.com/images/OKgTGoEA6VDqHZ1mSp0isdUfiQ8.png 850w",
+                    },
+                  },
+                  hGbWN63KG: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0 + 0),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: componentViewport?.width || "100vw",
+                      src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
+                    },
+                  },
+                  HKNts7h7y: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 313) -
+                              0 -
+                              ((componentViewport?.height || 313) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 760,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png?scale-down-to=512 512w,https://framerusercontent.com/images/OF7RROQwF5wqKEGXwxqlCHPggCk.png 850w",
+                    },
+                  },
+                  iOppqTRQs: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 313) -
+                              0 -
+                              ((componentViewport?.height || 313) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png?scale-down-to=512 512w,https://framerusercontent.com/images/hmz4gzCoJFjBTTH9TOrT9hjTTE.png 850w",
+                    },
+                  },
+                  jcjeVP1uE: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 0 + 0),
+                      pixelHeight: 760,
+                      pixelWidth: 850,
+                      positionX: "center",
+                      positionY: "top",
+                      sizes: componentViewport?.width || "100vw",
+                      src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
+                    },
+                  },
+                  mgFnNV_g8: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 313) -
+                              0 -
+                              ((componentViewport?.height || 313) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
+                    },
+                  },
+                  MHps1_FOh: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 380) -
+                              0 -
+                              ((componentViewport?.height || 380) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 761,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png?scale-down-to=512 512w,https://framerusercontent.com/images/n3YK92vyfgo3H9hYjYabmvOm6r4.png 850w",
+                    },
+                  },
+                  t1xBNzzRg: {
+                    background: {
+                      alt: "",
+                      fit: "fill",
+                      loading: getLoadingLazyAtYPosition(
+                        (componentViewport?.y || 0) +
+                          (0 +
+                            ((componentViewport?.height || 313) -
+                              0 -
+                              ((componentViewport?.height || 313) - 0) * 1) /
+                              2)
+                      ),
+                      pixelHeight: 760,
+                      pixelWidth: 850,
+                      sizes: `calc(${componentViewport?.width || "100vw"} / 2)`,
+                      src: "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png",
+                      srcSet:
+                        "https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png?scale-down-to=512 512w,https://framerusercontent.com/images/wTC2U4WveBQ9zIeVSzoJWw92aGo.png 850w",
+                    },
+                  },
+                },
+                baseVariant,
+                gestureVariant
+              )}
+            />
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css3 = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-vZy50.framer-afdigq, .framer-vZy50 .framer-afdigq { display: block; }",
-	".framer-vZy50.framer-15d2p9o { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: 380px; justify-content: flex-start; overflow: hidden; padding: 0px; position: relative; width: 850px; will-change: var(--framer-will-change-override, transform); }",
-	".framer-vZy50 .framer-1y1a6mn { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: 100%; justify-content: flex-end; overflow: hidden; padding: 24px 40px 24px 40px; position: relative; width: 1px; }",
-	".framer-vZy50 .framer-bb2fei { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 68px; justify-content: center; left: 40px; overflow: visible; padding: 8px 0px 8px 0px; position: absolute; top: 24px; width: min-content; z-index: 1; }",
-	".framer-vZy50 .framer-122fpi0, .framer-vZy50 .framer-lc4xra { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-vZy50 .framer-1wlvhaf { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: hidden; padding: 6px 19px 6px 19px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
-	".framer-vZy50 .framer-b69dhv, .framer-vZy50 .framer-1hocgwv { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
-	".framer-vZy50 .framer-vbijyw { flex: none; gap: 0px; height: 100%; overflow: hidden; position: relative; width: 50%; }",
-	".framer-vZy50.framer-v-gqa1dh.framer-15d2p9o, .framer-vZy50.framer-v-o4bxbt.framer-15d2p9o, .framer-vZy50.framer-v-1fr016o.framer-15d2p9o { aspect-ratio: 2.236842105263158 / 1; height: var(--framer-aspect-ratio-supported, 380px); }",
-	".framer-vZy50.framer-v-gqa1dh .framer-vbijyw { height: 380px; width: 425px; }",
-	".framer-vZy50.framer-v-via1hx.framer-15d2p9o, .framer-vZy50.framer-v-r2y9rb.framer-15d2p9o, .framer-vZy50.framer-v-slda3w.framer-15d2p9o, .framer-vZy50.framer-v-xhny5m.framer-15d2p9o { aspect-ratio: 2.236842105263158 / 1; height: var(--framer-aspect-ratio-supported, 313px); width: 700px; }",
-	".framer-vZy50.framer-v-via1hx .framer-1y1a6mn, .framer-vZy50.framer-v-r2y9rb .framer-1y1a6mn, .framer-vZy50.framer-v-slda3w .framer-1y1a6mn, .framer-vZy50.framer-v-xhny5m .framer-1y1a6mn { justify-content: center; }",
-	".framer-vZy50.framer-v-4kw6jf.framer-15d2p9o, .framer-vZy50.framer-v-8nrsdy.framer-15d2p9o, .framer-vZy50.framer-v-1iwjl1x.framer-15d2p9o, .framer-vZy50.framer-v-1rfvvc3.framer-15d2p9o { flex-direction: column; height: min-content; width: 350px; }",
-	".framer-vZy50.framer-v-4kw6jf .framer-1y1a6mn, .framer-vZy50.framer-v-8nrsdy .framer-1y1a6mn, .framer-vZy50.framer-v-1iwjl1x .framer-1y1a6mn, .framer-vZy50.framer-v-1rfvvc3 .framer-1y1a6mn { flex: none; gap: 8px; height: min-content; justify-content: center; order: 1; padding: 20px; width: 100%; }",
-	".framer-vZy50.framer-v-4kw6jf .framer-vbijyw, .framer-vZy50.framer-v-8nrsdy .framer-vbijyw, .framer-vZy50.framer-v-1iwjl1x .framer-vbijyw, .framer-vZy50.framer-v-1rfvvc3 .framer-vbijyw { aspect-ratio: 1.25 / 1; height: var(--framer-aspect-ratio-supported, 160px); order: 0; width: 100%; }",
-	...css2,
-	...css,
-	'.framer-vZy50[data-border="true"]::after, .framer-vZy50 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-vZy50.framer-afdigq, .framer-vZy50 .framer-afdigq { display: block; }",
+  ".framer-vZy50.framer-15d2p9o { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: 380px; justify-content: flex-start; overflow: hidden; padding: 0px; position: relative; width: 850px; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-vZy50 .framer-1y1a6mn { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: 100%; justify-content: flex-end; overflow: hidden; padding: 24px 40px 24px 40px; position: relative; width: 1px; }",
+  ".framer-vZy50 .framer-bb2fei { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 68px; justify-content: center; left: 40px; overflow: visible; padding: 8px 0px 8px 0px; position: absolute; top: 24px; width: min-content; z-index: 1; }",
+  ".framer-vZy50 .framer-122fpi0, .framer-vZy50 .framer-lc4xra { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+  ".framer-vZy50 .framer-1wlvhaf { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: center; overflow: hidden; padding: 6px 19px 6px 19px; position: relative; width: min-content; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-vZy50 .framer-b69dhv, .framer-vZy50 .framer-1hocgwv { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
+  ".framer-vZy50 .framer-vbijyw { flex: none; gap: 0px; height: 100%; overflow: hidden; position: relative; width: 50%; }",
+  ".framer-vZy50.framer-v-gqa1dh.framer-15d2p9o, .framer-vZy50.framer-v-o4bxbt.framer-15d2p9o, .framer-vZy50.framer-v-1fr016o.framer-15d2p9o { aspect-ratio: 2.236842105263158 / 1; height: var(--framer-aspect-ratio-supported, 380px); }",
+  ".framer-vZy50.framer-v-gqa1dh .framer-vbijyw { height: 380px; width: 425px; }",
+  ".framer-vZy50.framer-v-via1hx.framer-15d2p9o, .framer-vZy50.framer-v-r2y9rb.framer-15d2p9o, .framer-vZy50.framer-v-slda3w.framer-15d2p9o, .framer-vZy50.framer-v-xhny5m.framer-15d2p9o { aspect-ratio: 2.236842105263158 / 1; height: var(--framer-aspect-ratio-supported, 313px); width: 700px; }",
+  ".framer-vZy50.framer-v-via1hx .framer-1y1a6mn, .framer-vZy50.framer-v-r2y9rb .framer-1y1a6mn, .framer-vZy50.framer-v-slda3w .framer-1y1a6mn, .framer-vZy50.framer-v-xhny5m .framer-1y1a6mn { justify-content: center; }",
+  ".framer-vZy50.framer-v-4kw6jf.framer-15d2p9o, .framer-vZy50.framer-v-8nrsdy.framer-15d2p9o, .framer-vZy50.framer-v-1iwjl1x.framer-15d2p9o, .framer-vZy50.framer-v-1rfvvc3.framer-15d2p9o { flex-direction: column; height: min-content; width: 350px; }",
+  ".framer-vZy50.framer-v-4kw6jf .framer-1y1a6mn, .framer-vZy50.framer-v-8nrsdy .framer-1y1a6mn, .framer-vZy50.framer-v-1iwjl1x .framer-1y1a6mn, .framer-vZy50.framer-v-1rfvvc3 .framer-1y1a6mn { flex: none; gap: 8px; height: min-content; justify-content: center; order: 1; padding: 20px; width: 100%; }",
+  ".framer-vZy50.framer-v-4kw6jf .framer-vbijyw, .framer-vZy50.framer-v-8nrsdy .framer-vbijyw, .framer-vZy50.framer-v-1iwjl1x .framer-vbijyw, .framer-vZy50.framer-v-1rfvvc3 .framer-vbijyw { aspect-ratio: 1.25 / 1; height: var(--framer-aspect-ratio-supported, 160px); order: 0; width: 100%; }",
+  ...css2,
+  ...css,
+  '.framer-vZy50[data-border="true"]::after, .framer-vZy50 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; pointer-events: none; }',
 ];
 var FramerhxCncky0K = withCSS(Component, css3, "framer-vZy50");
 var stdin_default = FramerhxCncky0K;
 FramerhxCncky0K.displayName = "Card/Onboarding Card";
 FramerhxCncky0K.defaultProps = {
-	height: 380,
-	width: 850,
+  height: 380,
+  width: 850,
 };
 addPropertyControls(FramerhxCncky0K, {
-	variant: {
-		options: [
-			"Sjey0przw",
-			"eLNnBHEBv",
-			"cxjbQK6LS",
-			"MHps1_FOh",
-			"HKNts7h7y",
-			"iOppqTRQs",
-			"t1xBNzzRg",
-			"mgFnNV_g8",
-			"GLmS7x_uS",
-			"hGbWN63KG",
-			"jcjeVP1uE",
-			"BWxeXFfQM",
-		],
-		optionTitles: [
-			"Variant 1",
-			"Variant 2",
-			"Variant 3",
-			"Variant 4",
-			"Variant 5",
-			"Variant 6",
-			"Variant 7",
-			"Variant 8",
-			"Variant 9",
-			"Variant 10",
-			"Variant 11",
-			"Variant 12",
-		],
-		title: "Variant",
-		type: ControlType.Enum,
-	},
+  variant: {
+    options: [
+      "Sjey0przw",
+      "eLNnBHEBv",
+      "cxjbQK6LS",
+      "MHps1_FOh",
+      "HKNts7h7y",
+      "iOppqTRQs",
+      "t1xBNzzRg",
+      "mgFnNV_g8",
+      "GLmS7x_uS",
+      "hGbWN63KG",
+      "jcjeVP1uE",
+      "BWxeXFfQM",
+    ],
+    optionTitles: [
+      "Variant 1",
+      "Variant 2",
+      "Variant 3",
+      "Variant 4",
+      "Variant 5",
+      "Variant 6",
+      "Variant 7",
+      "Variant 8",
+      "Variant 9",
+      "Variant 10",
+      "Variant 11",
+      "Variant 12",
+    ],
+    title: "Variant",
+    type: ControlType.Enum,
+  },
 });
 addFonts(
-	FramerhxCncky0K,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
-					weight: "600",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-					weight: "400",
-				},
-			],
-		},
-		...getFontsFromSharedStyle(fonts2),
-		...getFontsFromSharedStyle(fonts),
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FramerhxCncky0K,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
+          weight: "600",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+          weight: "400",
+        },
+      ],
+    },
+    ...getFontsFromSharedStyle(fonts2),
+    ...getFontsFromSharedStyle(fonts),
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:card/onboarding-card
@@ -1520,20 +1463,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -1553,22 +1494,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var onboarding_card_default = ComponentWithRoot;

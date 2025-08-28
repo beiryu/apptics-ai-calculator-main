@@ -37,18 +37,18 @@ import { ContextProviders } from "unframer";
 // /:https://framerusercontent.com/modules/tbo34yVVWRH0GFV5A6Xm/1aSfgayWMihtwzMbcHeD/jFtGDuFUa.js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import {
-	addFonts,
-	addPropertyControls,
-	ControlType,
-	cx,
-	getFontsFromSharedStyle,
-	getLoadingLazyAtYPosition,
-	Image,
-	RichText,
-	useComponentViewport,
-	useLocaleInfo,
-	useVariantState,
-	withCSS,
+  addFonts,
+  addPropertyControls,
+  ControlType,
+  cx,
+  getFontsFromSharedStyle,
+  getLoadingLazyAtYPosition,
+  Image,
+  RichText,
+  useComponentViewport,
+  useLocaleInfo,
+  useVariantState,
+  withCSS,
 } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
@@ -56,1267 +56,1211 @@ import { useRef } from "react";
 
 // /:https://framerusercontent.com/modules/xSvxspJxdrmK3WMmGHBo/pNENN9nA6nP5bEoYkiPo/aBX13zmz9.js
 import { fontStore } from "unframer";
-fontStore.loadFonts([
-	"Inter",
-	"Inter-Bold",
-	"Inter-BoldItalic",
-	"Inter-Italic",
-]);
+fontStore.loadFonts(["Inter", "Inter-Bold", "Inter-BoldItalic", "Inter-Italic"]);
 var fonts2 = [
-	{
-		explicitInter: true,
-		fonts: [
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/vFzuJY0c65av44uhEKB6vyjFMg.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
-				weight: "400",
-			},
-		],
-	},
+  {
+    explicitInter: true,
+    fonts: [
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/vFzuJY0c65av44uhEKB6vyjFMg.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
+        weight: "400",
+      },
+    ],
+  },
 ];
 var css2 = [
-	'.framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 18px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
-	'@media (max-width: 1199px) and (min-width: 810px) { .framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 18px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
-	'@media (max-width: 809px) and (min-width: 0px) { .framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
+  '.framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 18px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
+  '@media (max-width: 1199px) and (min-width: 810px) { .framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 18px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
+  '@media (max-width: 809px) and (min-width: 0px) { .framer-JjKMP .framer-styles-preset-cdklo7:not(.rich-text-wrapper), .framer-JjKMP .framer-styles-preset-cdklo7.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.01em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
 ];
 var className2 = "framer-JjKMP";
 
 // /:https://framerusercontent.com/modules/tB1MIUxCk4g9SMl8Vruk/H0dujnnh04VmX3I20Mdu/D5KfVnha7.js
 import { fontStore as fontStore2 } from "unframer";
-fontStore2.loadFonts([
-	"Inter-SemiBold",
-	"Inter-Bold",
-	"Inter-BoldItalic",
-	"Inter-SemiBoldItalic",
-]);
+fontStore2.loadFonts(["Inter-SemiBold", "Inter-Bold", "Inter-BoldItalic", "Inter-SemiBoldItalic"]);
 var fonts3 = [
-	{
-		explicitInter: true,
-		fonts: [
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/vxBnBhH8768IFAXAb4Qf6wQHKs.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/zSsEuoJdh8mcFVk976C05ZfQr8.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/b8ezwLrN7h2AUoPEENcsTMVJ0.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/mvNEIBLyHbscgHtwfsByjXUz3XY.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/6FI2EneKzM3qBy5foOZXey7coCA.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/fuyXZpVvOjq8NesCOfgirHCWyg.woff2",
-				weight: "600",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/NHHeAKJVP0ZWHk5YZnQQChIsBM.woff2",
-				weight: "600",
-			},
-		],
-	},
+  {
+    explicitInter: true,
+    fonts: [
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/vxBnBhH8768IFAXAb4Qf6wQHKs.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/zSsEuoJdh8mcFVk976C05ZfQr8.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/b8ezwLrN7h2AUoPEENcsTMVJ0.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/mvNEIBLyHbscgHtwfsByjXUz3XY.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/6FI2EneKzM3qBy5foOZXey7coCA.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/fuyXZpVvOjq8NesCOfgirHCWyg.woff2",
+        weight: "600",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/NHHeAKJVP0ZWHk5YZnQQChIsBM.woff2",
+        weight: "600",
+      },
+    ],
+  },
 ];
 var css3 = [
-	'.framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 20px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
-	'@media (max-width: 1199px) and (min-width: 810px) { .framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 20px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
-	'@media (max-width: 809px) and (min-width: 0px) { .framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
+  '.framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 20px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
+  '@media (max-width: 1199px) and (min-width: 810px) { .framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 20px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
+  '@media (max-width: 809px) and (min-width: 0px) { .framer-eiqj0 .framer-styles-preset-16o54if:not(.rich-text-wrapper), .framer-eiqj0 .framer-styles-preset-16o54if.rich-text-wrapper p { --framer-font-family: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 600; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 600; --framer-letter-spacing: -0.02em; --framer-line-height: 150%; --framer-paragraph-spacing: 20px; --framer-text-alignment: start; --framer-text-color: var(--token-ad43a539-e7dd-4526-9939-6d192077376e, #242424); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; } }',
 ];
 var className3 = "framer-eiqj0";
 
 // /:https://framerusercontent.com/modules/j9TVkFdaXYaaDEJrACkx/TRX8NSg4sF2kcyThPe5G/XJEwEaO2g.js
 import { fontStore as fontStore3 } from "unframer";
-fontStore3.loadFonts([
-	"Inter",
-	"Inter-Bold",
-	"Inter-BoldItalic",
-	"Inter-Italic",
-]);
+fontStore3.loadFonts(["Inter", "Inter-Bold", "Inter-BoldItalic", "Inter-Italic"]);
 var fonts4 = [
-	{
-		explicitInter: true,
-		fonts: [
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "normal",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
-				weight: "700",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-				url: "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-				url: "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+1F00-1FFF",
-				url: "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange: "U+0370-03FF",
-				url: "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-				url: "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-				url: "https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
-				weight: "400",
-			},
-			{
-				family: "Inter",
-				source: "framer",
-				style: "italic",
-				unicodeRange:
-					"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-				url: "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
-				weight: "400",
-			},
-		],
-	},
+  {
+    explicitInter: true,
+    fonts: [
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "normal",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+        weight: "700",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        url: "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        url: "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+1F00-1FFF",
+        url: "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange: "U+0370-03FF",
+        url: "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        url: "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        url: "https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
+        weight: "400",
+      },
+      {
+        family: "Inter",
+        source: "framer",
+        style: "italic",
+        unicodeRange:
+          "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+        url: "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
+        weight: "400",
+      },
+    ],
+  },
 ];
 var css4 = [
-	'.framer-PeatM .framer-styles-preset-e4773h:not(.rich-text-wrapper), .framer-PeatM .framer-styles-preset-e4773h.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 14px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.04em; --framer-line-height: 140%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
+  '.framer-PeatM .framer-styles-preset-e4773h:not(.rich-text-wrapper), .framer-PeatM .framer-styles-preset-e4773h.rich-text-wrapper p { --framer-font-family: "Inter", sans-serif; --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif; --framer-font-open-type-features: normal; --framer-font-size: 14px; --framer-font-style: normal; --framer-font-style-bold: normal; --framer-font-style-bold-italic: italic; --framer-font-style-italic: italic; --framer-font-variation-axes: normal; --framer-font-weight: 400; --framer-font-weight-bold: 700; --framer-font-weight-bold-italic: 700; --framer-font-weight-italic: 400; --framer-letter-spacing: -0.04em; --framer-line-height: 140%; --framer-paragraph-spacing: 20px; --framer-text-alignment: center; --framer-text-color: var(--token-94158dc5-efda-4690-8a29-fea011c5c81e, #7d7e80); --framer-text-decoration: none; --framer-text-stroke-color: initial; --framer-text-stroke-width: initial; --framer-text-transform: none; }',
 ];
 var className4 = "framer-PeatM";
 
 // /:https://framerusercontent.com/modules/tbo34yVVWRH0GFV5A6Xm/1aSfgayWMihtwzMbcHeD/jFtGDuFUa.js
 var serializationHash = "framer-6QAho";
 var variantClassNames = {
-	EHB9VFKAX: "framer-v-9avgot",
+  EHB9VFKAX: "framer-v-9avgot",
 };
 var transition1 = {
-	bounce: 0.2,
-	delay: 0,
-	duration: 0.4,
-	type: "spring",
+  bounce: 0.2,
+  delay: 0,
+  duration: 0.4,
+  type: "spring",
 };
 var toResponsiveImage = (value) => {
-	if (
-		typeof value === "object" &&
-		value !== null &&
-		typeof value.src === "string"
-	) {
-		return value;
-	}
-	return typeof value === "string"
-		? {
-				src: value,
-			}
-		: void 0;
+  if (typeof value === "object" && value !== null && typeof value.src === "string") {
+    return value;
+  }
+  return typeof value === "string"
+    ? {
+        src: value,
+      }
+    : void 0;
 };
 var Transition = ({ value, children }) => {
-	const config = React.useContext(MotionConfigContext);
-	const transition = value ?? config.transition;
-	const contextValue = React.useMemo(
-		() => ({
-			...config,
-			transition,
-		}),
-		[JSON.stringify(transition)],
-	);
-	return (
-		<MotionConfigContext.Provider value={contextValue}>
-			{children}
-		</MotionConfigContext.Provider>
-	);
+  const config = React.useContext(MotionConfigContext);
+  const transition = value ?? config.transition;
+  const contextValue = React.useMemo(
+    () => ({
+      ...config,
+      transition,
+    }),
+    [JSON.stringify(transition)]
+  );
+  return (
+    <MotionConfigContext.Provider value={contextValue}>{children}</MotionConfigContext.Provider>
+  );
 };
 var Variants = motion.create(React.Fragment);
-var getProps = ({
-	avatar,
-	height,
-	id,
-	name1,
-	occupation,
-	review,
-	title,
-	width,
-	...props
-}) => {
-	return {
-		...props,
-		bo1Rw1GEB: occupation ?? props.bo1Rw1GEB ?? "Online Clothing Retailer",
-		J610ZLIS5:
-			title ?? props.J610ZLIS5 ?? "Increased Customer Retention by 40%!",
-		kGcD8_1gt: avatar ??
-			props.kGcD8_1gt ?? {
-				alt: "",
-				pixelHeight: 4096,
-				pixelWidth: 4096,
-				src: "https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=512",
-				srcSet:
-					"https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg 4096w",
-			},
-		lyg16xsJk: name1 ?? props.lyg16xsJk ?? "Sophia x.",
-		vTWVdsuVs:
-			review ??
-			props.vTWVdsuVs ??
-			`\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`,
-	};
+var getProps = ({ avatar, height, id, name1, occupation, review, title, width, ...props }) => {
+  return {
+    ...props,
+    bo1Rw1GEB: occupation ?? props.bo1Rw1GEB ?? "Online Clothing Retailer",
+    J610ZLIS5: title ?? props.J610ZLIS5 ?? "Increased Customer Retention by 40%!",
+    kGcD8_1gt: avatar ??
+      props.kGcD8_1gt ?? {
+        alt: "",
+        pixelHeight: 4096,
+        pixelWidth: 4096,
+        src: "https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=512",
+        srcSet:
+          "https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/EgbSo49WrGXy2L102CLROqCnBNA.jpg 4096w",
+      },
+    lyg16xsJk: name1 ?? props.lyg16xsJk ?? "Sophia x.",
+    vTWVdsuVs:
+      review ??
+      props.vTWVdsuVs ??
+      `\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`,
+  };
 };
 var createLayoutDependency = (props, variants) => {
-	if (props.layoutDependency)
-		return variants.join("-") + props.layoutDependency;
-	return variants.join("-");
+  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
+  return variants.join("-");
 };
 var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
-	const fallbackRef = useRef(null);
-	const refBinding = ref ?? fallbackRef;
-	const defaultLayoutId = React.useId();
-	const { activeLocale, setLocale } = useLocaleInfo();
-	const componentViewport = useComponentViewport();
-	const {
-		style,
-		className: className5,
-		layoutId,
-		variant,
-		J610ZLIS5,
-		vTWVdsuVs,
-		kGcD8_1gt,
-		lyg16xsJk,
-		bo1Rw1GEB,
-		...restProps
-	} = getProps(props);
-	const {
-		baseVariant,
-		classNames,
-		clearLoadingGesture,
-		gestureHandlers,
-		gestureVariant,
-		isLoading,
-		setGestureState,
-		setVariant,
-		variants,
-	} = useVariantState({
-		defaultVariant: "EHB9VFKAX",
-		ref: refBinding,
-		variant,
-		variantClassNames,
-	});
-	const layoutDependency = createLayoutDependency(props, variants);
-	const sharedStyleClassNames = [className3, className2, className, className4];
-	const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
-	return (
-		<LayoutGroup id={layoutId ?? defaultLayoutId}>
-			<Variants animate={variants} initial={false}>
-				<Transition value={transition1}>
-					<motion.div
-						{...restProps}
-						{...gestureHandlers}
-						className={cx(
-							scopingClassNames,
-							"framer-9avgot",
-							className5,
-							classNames,
-						)}
-						data-framer-name={"Variant 1"}
-						layoutDependency={layoutDependency}
-						layoutId={"EHB9VFKAX"}
-						ref={refBinding}
-						style={{
-							backgroundColor:
-								"var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
-							borderBottomLeftRadius: 16,
-							borderBottomRightRadius: 16,
-							borderTopLeftRadius: 16,
-							borderTopRightRadius: 16,
-							...style,
-						}}
-					>
-						<RichText
-							__fromCanvasComponent={true}
-							className={"framer-1vkd3dn"}
-							data-framer-name={"Increased Customer Retention by 40%!"}
-							fonts={["Inter", "Inter-Bold"]}
-							layoutDependency={layoutDependency}
-							layoutId={"NNl5obGzv"}
-							style={{
-								"--framer-paragraph-spacing": "0px",
-							}}
-							text={J610ZLIS5}
-							verticalAlignment={"top"}
-							withExternalLayout={true}
-						>
-							<React.Fragment>
-								<motion.p
-									className={"framer-styles-preset-16o54if"}
-									data-styles-preset={"D5KfVnha7"}
-								>
-									<motion.strong>
-										{"Increased Customer Retention by 40%!"}
-									</motion.strong>
-								</motion.p>
-							</React.Fragment>
-						</RichText>
-						<RichText
-							__fromCanvasComponent={true}
-							className={"framer-kdrxq0"}
-							data-framer-name={`\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`}
-							fonts={["Inter"]}
-							layoutDependency={layoutDependency}
-							layoutId={"vro5BWupe"}
-							style={{
-								"--framer-paragraph-spacing": "0px",
-							}}
-							text={vTWVdsuVs}
-							verticalAlignment={"top"}
-							withExternalLayout={true}
-						>
-							<React.Fragment>
-								<motion.p
-									className={"framer-styles-preset-cdklo7"}
-									data-styles-preset={"aBX13zmz9"}
-									style={{
-										"--framer-text-alignment": "left",
-									}}
-								>{`\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`}</motion.p>
-							</React.Fragment>
-						</RichText>
-						<motion.div
-							className={"framer-ttsxm6"}
-							layoutDependency={layoutDependency}
-							layoutId={"TnE9ooKzB"}
-						>
-							<Image
-								background={{
-									alt: "",
-									fit: "fill",
-									loading: getLoadingLazyAtYPosition(
-										(componentViewport?.y || 0) + 24 + 333 + 84,
-									),
-									sizes: "50px",
-									...toResponsiveImage(kGcD8_1gt),
-								}}
-								className={"framer-17dcgff"}
-								data-framer-name={"Avatar"}
-								layoutDependency={layoutDependency}
-								layoutId={"lZKHDXxNP"}
-								style={{
-									borderBottomLeftRadius: 99,
-									borderBottomRightRadius: 99,
-									borderTopLeftRadius: 99,
-									borderTopRightRadius: 99,
-								}}
-							/>
-							<motion.div
-								className={"framer-ey9dfg"}
-								layoutDependency={layoutDependency}
-								layoutId={"Q6sGrpQEW"}
-							>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-1ugme4c"}
-									data-framer-name={"Sophia K."}
-									fonts={["Inter", "Inter-Bold"]}
-									layoutDependency={layoutDependency}
-									layoutId={"YYz51Una3"}
-									style={{
-										"--extracted-r6o4lv":
-											"var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
-										"--framer-paragraph-spacing": "0px",
-									}}
-									text={lyg16xsJk}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-13hsas3"}
-											data-styles-preset={"pwS_W0qLQ"}
-											style={{
-												"--framer-text-color":
-													"var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
-											}}
-										>
-											<motion.strong>{"Sophia x."}</motion.strong>
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-								<RichText
-									__fromCanvasComponent={true}
-									className={"framer-zqxsrj"}
-									data-framer-name={"Online Clothing Retailer"}
-									fonts={["Inter"]}
-									layoutDependency={layoutDependency}
-									layoutId={"J2AYiYs6p"}
-									style={{
-										"--framer-paragraph-spacing": "0px",
-									}}
-									text={bo1Rw1GEB}
-									verticalAlignment={"top"}
-									withExternalLayout={true}
-								>
-									<React.Fragment>
-										<motion.p
-											className={"framer-styles-preset-e4773h"}
-											data-styles-preset={"XJEwEaO2g"}
-											style={{
-												"--framer-text-alignment": "left",
-											}}
-										>
-											{"Online Clothing Retailer"}
-										</motion.p>
-									</React.Fragment>
-								</RichText>
-							</motion.div>
-						</motion.div>
-					</motion.div>
-				</Transition>
-			</Variants>
-		</LayoutGroup>
-	);
+  const fallbackRef = useRef(null);
+  const refBinding = ref ?? fallbackRef;
+  const defaultLayoutId = React.useId();
+  const { activeLocale, setLocale } = useLocaleInfo();
+  const componentViewport = useComponentViewport();
+  const {
+    style,
+    className: className5,
+    layoutId,
+    variant,
+    J610ZLIS5,
+    vTWVdsuVs,
+    kGcD8_1gt,
+    lyg16xsJk,
+    bo1Rw1GEB,
+    ...restProps
+  } = getProps(props);
+  const {
+    baseVariant,
+    classNames,
+    clearLoadingGesture,
+    gestureHandlers,
+    gestureVariant,
+    isLoading,
+    setGestureState,
+    setVariant,
+    variants,
+  } = useVariantState({
+    defaultVariant: "EHB9VFKAX",
+    ref: refBinding,
+    variant,
+    variantClassNames,
+  });
+  const layoutDependency = createLayoutDependency(props, variants);
+  const sharedStyleClassNames = [className3, className2, className, className4];
+  const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
+  return (
+    <LayoutGroup id={layoutId ?? defaultLayoutId}>
+      <Variants animate={variants} initial={false}>
+        <Transition value={transition1}>
+          <motion.div
+            {...restProps}
+            {...gestureHandlers}
+            className={cx(scopingClassNames, "framer-9avgot", className5, classNames)}
+            data-framer-name={"Variant 1"}
+            layoutDependency={layoutDependency}
+            layoutId={"EHB9VFKAX"}
+            ref={refBinding}
+            style={{
+              backgroundColor:
+                "var(--token-8131141a-ffe7-4934-93a9-c74e05c4423c, rgb(255, 255, 255))",
+              borderBottomLeftRadius: 16,
+              borderBottomRightRadius: 16,
+              borderTopLeftRadius: 16,
+              borderTopRightRadius: 16,
+              ...style,
+            }}
+          >
+            <RichText
+              __fromCanvasComponent={true}
+              className={"framer-1vkd3dn"}
+              data-framer-name={"Increased Customer Retention by 40%!"}
+              fonts={["Inter", "Inter-Bold"]}
+              layoutDependency={layoutDependency}
+              layoutId={"NNl5obGzv"}
+              style={{
+                "--framer-paragraph-spacing": "0px",
+              }}
+              text={J610ZLIS5}
+              verticalAlignment={"top"}
+              withExternalLayout={true}
+            >
+              <React.Fragment>
+                <motion.p
+                  className={"framer-styles-preset-16o54if"}
+                  data-styles-preset={"D5KfVnha7"}
+                >
+                  <motion.strong>{"Increased Customer Retention by 40%!"}</motion.strong>
+                </motion.p>
+              </React.Fragment>
+            </RichText>
+            <RichText
+              __fromCanvasComponent={true}
+              className={"framer-kdrxq0"}
+              data-framer-name={`\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`}
+              fonts={["Inter"]}
+              layoutDependency={layoutDependency}
+              layoutId={"vro5BWupe"}
+              style={{
+                "--framer-paragraph-spacing": "0px",
+              }}
+              text={vTWVdsuVs}
+              verticalAlignment={"top"}
+              withExternalLayout={true}
+            >
+              <React.Fragment>
+                <motion.p
+                  className={"framer-styles-preset-cdklo7"}
+                  data-styles-preset={"aBX13zmz9"}
+                  style={{
+                    "--framer-text-alignment": "left",
+                  }}
+                >{`\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`}</motion.p>
+              </React.Fragment>
+            </RichText>
+            <motion.div
+              className={"framer-ttsxm6"}
+              layoutDependency={layoutDependency}
+              layoutId={"TnE9ooKzB"}
+            >
+              <Image
+                background={{
+                  alt: "",
+                  fit: "fill",
+                  loading: getLoadingLazyAtYPosition((componentViewport?.y || 0) + 24 + 333 + 84),
+                  sizes: "50px",
+                  ...toResponsiveImage(kGcD8_1gt),
+                }}
+                className={"framer-17dcgff"}
+                data-framer-name={"Avatar"}
+                layoutDependency={layoutDependency}
+                layoutId={"lZKHDXxNP"}
+                style={{
+                  borderBottomLeftRadius: 99,
+                  borderBottomRightRadius: 99,
+                  borderTopLeftRadius: 99,
+                  borderTopRightRadius: 99,
+                }}
+              />
+              <motion.div
+                className={"framer-ey9dfg"}
+                layoutDependency={layoutDependency}
+                layoutId={"Q6sGrpQEW"}
+              >
+                <RichText
+                  __fromCanvasComponent={true}
+                  className={"framer-1ugme4c"}
+                  data-framer-name={"Sophia K."}
+                  fonts={["Inter", "Inter-Bold"]}
+                  layoutDependency={layoutDependency}
+                  layoutId={"YYz51Una3"}
+                  style={{
+                    "--extracted-r6o4lv":
+                      "var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36))",
+                    "--framer-paragraph-spacing": "0px",
+                  }}
+                  text={lyg16xsJk}
+                  verticalAlignment={"top"}
+                  withExternalLayout={true}
+                >
+                  <React.Fragment>
+                    <motion.p
+                      className={"framer-styles-preset-13hsas3"}
+                      data-styles-preset={"pwS_W0qLQ"}
+                      style={{
+                        "--framer-text-color":
+                          "var(--extracted-r6o4lv, var(--token-ad43a539-e7dd-4526-9939-6d192077376e, rgb(36, 36, 36)))",
+                      }}
+                    >
+                      <motion.strong>{"Sophia x."}</motion.strong>
+                    </motion.p>
+                  </React.Fragment>
+                </RichText>
+                <RichText
+                  __fromCanvasComponent={true}
+                  className={"framer-zqxsrj"}
+                  data-framer-name={"Online Clothing Retailer"}
+                  fonts={["Inter"]}
+                  layoutDependency={layoutDependency}
+                  layoutId={"J2AYiYs6p"}
+                  style={{
+                    "--framer-paragraph-spacing": "0px",
+                  }}
+                  text={bo1Rw1GEB}
+                  verticalAlignment={"top"}
+                  withExternalLayout={true}
+                >
+                  <React.Fragment>
+                    <motion.p
+                      className={"framer-styles-preset-e4773h"}
+                      data-styles-preset={"XJEwEaO2g"}
+                      style={{
+                        "--framer-text-alignment": "left",
+                      }}
+                    >
+                      {"Online Clothing Retailer"}
+                    </motion.p>
+                  </React.Fragment>
+                </RichText>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </Transition>
+      </Variants>
+    </LayoutGroup>
+  );
 });
 var css5 = [
-	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-6QAho.framer-1m3yxwm, .framer-6QAho .framer-1m3yxwm { display: block; }",
-	".framer-6QAho.framer-9avgot { align-content: flex-start; align-items: flex-start; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: visible; padding: 24px; position: relative; width: 360px; }",
-	".framer-6QAho .framer-1vkd3dn, .framer-6QAho .framer-kdrxq0, .framer-6QAho .framer-1ugme4c, .framer-6QAho .framer-zqxsrj { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
-	".framer-6QAho .framer-ttsxm6 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-6QAho .framer-17dcgff { aspect-ratio: 1 / 1; flex: none; gap: 0px; height: var(--framer-aspect-ratio-supported, 50px); overflow: hidden; position: relative; width: 50px; will-change: var(--framer-will-change-override, transform); }",
-	".framer-6QAho .framer-ey9dfg { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 1px; }",
-	...css3,
-	...css2,
-	...css,
-	...css4,
+  "@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
+  ".framer-6QAho.framer-1m3yxwm, .framer-6QAho .framer-1m3yxwm { display: block; }",
+  ".framer-6QAho.framer-9avgot { align-content: flex-start; align-items: flex-start; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: visible; padding: 24px; position: relative; width: 360px; }",
+  ".framer-6QAho .framer-1vkd3dn, .framer-6QAho .framer-kdrxq0, .framer-6QAho .framer-1ugme4c, .framer-6QAho .framer-zqxsrj { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
+  ".framer-6QAho .framer-ttsxm6 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 12px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+  ".framer-6QAho .framer-17dcgff { aspect-ratio: 1 / 1; flex: none; gap: 0px; height: var(--framer-aspect-ratio-supported, 50px); overflow: hidden; position: relative; width: 50px; will-change: var(--framer-will-change-override, transform); }",
+  ".framer-6QAho .framer-ey9dfg { align-content: flex-start; align-items: flex-start; display: flex; flex: 1 0 0px; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 1px; }",
+  ...css3,
+  ...css2,
+  ...css,
+  ...css4,
 ];
 var FramerjFtGDuFUa = withCSS(Component, css5, "framer-6QAho");
 var stdin_default = FramerjFtGDuFUa;
 FramerjFtGDuFUa.displayName = "Card/Testimonials";
 FramerjFtGDuFUa.defaultProps = {
-	height: 395,
-	width: 360,
+  height: 395,
+  width: 360,
 };
 addPropertyControls(FramerjFtGDuFUa, {
-	J610ZLIS5: {
-		defaultValue: "Increased Customer Retention by 40%!",
-		displayTextArea: false,
-		title: "Title",
-		type: ControlType.String,
-	},
-	vTWVdsuVs: {
-		defaultValue: `\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`,
-		displayTextArea: true,
-		title: "Review",
-		type: ControlType.String,
-	},
-	kGcD8_1gt: {
-		__defaultAssetReference:
-			"data:framer/asset-reference,EgbSo49WrGXy2L102CLROqCnBNA.jpg?originalFilename=Frame+2147228191.jpg&preferredSize=auto",
-		__vekterDefault: {
-			alt: "",
-			assetReference:
-				"data:framer/asset-reference,EgbSo49WrGXy2L102CLROqCnBNA.jpg?originalFilename=Frame+2147228191.jpg&preferredSize=auto",
-		},
-		title: "Avatar",
-		type: ControlType.ResponsiveImage,
-	},
-	lyg16xsJk: {
-		defaultValue: "Sophia x.",
-		displayTextArea: false,
-		title: "Name",
-		type: ControlType.String,
-	},
-	bo1Rw1GEB: {
-		defaultValue: "Online Clothing Retailer",
-		displayTextArea: false,
-		title: "Occupation",
-		type: ControlType.String,
-	},
+  J610ZLIS5: {
+    defaultValue: "Increased Customer Retention by 40%!",
+    displayTextArea: false,
+    title: "Title",
+    type: ControlType.String,
+  },
+  vTWVdsuVs: {
+    defaultValue: `\u201CSince implementing Apptics, my customer retention has skyrocketed. The analytics they provide help me understand my customers better, allowing me to tailor my offerings. It's been a game changer for my business!"`,
+    displayTextArea: true,
+    title: "Review",
+    type: ControlType.String,
+  },
+  kGcD8_1gt: {
+    __defaultAssetReference:
+      "data:framer/asset-reference,EgbSo49WrGXy2L102CLROqCnBNA.jpg?originalFilename=Frame+2147228191.jpg&preferredSize=auto",
+    __vekterDefault: {
+      alt: "",
+      assetReference:
+        "data:framer/asset-reference,EgbSo49WrGXy2L102CLROqCnBNA.jpg?originalFilename=Frame+2147228191.jpg&preferredSize=auto",
+    },
+    title: "Avatar",
+    type: ControlType.ResponsiveImage,
+  },
+  lyg16xsJk: {
+    defaultValue: "Sophia x.",
+    displayTextArea: false,
+    title: "Name",
+    type: ControlType.String,
+  },
+  bo1Rw1GEB: {
+    defaultValue: "Online Clothing Retailer",
+    displayTextArea: false,
+    title: "Occupation",
+    type: ControlType.String,
+  },
 });
 addFonts(
-	FramerjFtGDuFUa,
-	[
-		{
-			explicitInter: true,
-			fonts: [
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
-					weight: "400",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
-					url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
-					url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+1F00-1FFF",
-					url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange: "U+0370-03FF",
-					url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
-					url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
-					url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
-					weight: "700",
-				},
-				{
-					family: "Inter",
-					source: "framer",
-					style: "normal",
-					unicodeRange:
-						"U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
-					url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
-					weight: "700",
-				},
-			],
-		},
-		...getFontsFromSharedStyle(fonts3),
-		...getFontsFromSharedStyle(fonts2),
-		...getFontsFromSharedStyle(fonts),
-		...getFontsFromSharedStyle(fonts4),
-	],
-	{
-		supportsExplicitInterCodegen: true,
-	},
+  FramerjFtGDuFUa,
+  [
+    {
+      explicitInter: true,
+      fonts: [
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+          weight: "400",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+          url: "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+          url: "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+1F00-1FFF",
+          url: "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange: "U+0370-03FF",
+          url: "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          url: "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+          weight: "700",
+        },
+        {
+          family: "Inter",
+          source: "framer",
+          style: "normal",
+          unicodeRange:
+            "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+          url: "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+          weight: "700",
+        },
+      ],
+    },
+    ...getFontsFromSharedStyle(fonts3),
+    ...getFontsFromSharedStyle(fonts2),
+    ...getFontsFromSharedStyle(fonts),
+    ...getFontsFromSharedStyle(fonts4),
+  ],
+  {
+    supportsExplicitInterCodegen: true,
+  }
 );
 
 // virtual:card/testimonials
@@ -1326,20 +1270,18 @@ var locales = [];
 var defaultResponsiveVariants = {};
 /** @type {function(Props): any} */
 function ComponentWithRoot({ locale, ...rest }) {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			{jsx(stdin_default, {
-				...rest,
-			})}
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      {jsx(stdin_default, {
+        ...rest,
+      })}
+    </ContextProviders>
+  );
 }
 /**
  * @type {import("unframer").UnframerBreakpoint}
@@ -1359,22 +1301,20 @@ function ComponentWithRoot({ locale, ...rest }) {
  * @returns {any}
  */
 ComponentWithRoot.Responsive = ({ locale = "", ...rest }) => {
-	return (
-		<ContextProviders
-			routes={routes}
-			framerSiteId={
-				"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"
-			}
-			locale={locale}
-			locales={locales}
-		>
-			<WithFramerBreakpoints
-				Component={stdin_default}
-				variants={defaultResponsiveVariants}
-				{...rest}
-			/>
-		</ContextProviders>
-	);
+  return (
+    <ContextProviders
+      routes={routes}
+      framerSiteId={"82805ebdf0b5ff0d009fec4f748e6f81207f7e9b7f138594ce37e1d247ff0150"}
+      locale={locale}
+      locales={locales}
+    >
+      <WithFramerBreakpoints
+        Component={stdin_default}
+        variants={defaultResponsiveVariants}
+        {...rest}
+      />
+    </ContextProviders>
+  );
 };
 Object.assign(ComponentWithRoot, stdin_default);
 var testimonials_default = ComponentWithRoot;
