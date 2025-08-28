@@ -1,7 +1,84 @@
 import { scrollAnimationVariants } from "@/libs/framer-motion";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+
+const caseStudies1AnimationVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.1,
+    },
+  },
+};
+
+const caseStudies2AnimationVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.2,
+    },
+  },
+};
+const caseStudies3AnimationVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 60,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    skewX: 0,
+    skewY: 0,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      delay: 0.3,
+    },
+  },
+};
 
 const CaseStudies = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -61,14 +138,14 @@ const CaseStudies = () => {
               Apptics
             </div>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={scrollAnimationVariants}
-            className="self-stretch flex flex-col items-start justify-start gap-[60px] text-gray-300"
-          >
-            <div className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4">
+          <div className="self-stretch flex flex-col items-start justify-start gap-[60px] text-gray-300">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies1AnimationVariants}
+              className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -142,8 +219,14 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies2AnimationVariants}
+              className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -219,8 +302,14 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies3AnimationVariants}
+              className="self-stretch rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -296,8 +385,8 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
     );
@@ -336,14 +425,14 @@ const CaseStudies = () => {
               Apptics
             </div>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            variants={scrollAnimationVariants}
-            className="self-stretch flex flex-row items-start justify-start gap-[30px] text-gray-300"
-          >
-            <div className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4">
+          <div className="self-stretch flex flex-row items-start justify-start gap-[30px] text-gray-300">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies1AnimationVariants}
+              className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -415,8 +504,14 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies2AnimationVariants}
+              className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -490,8 +585,14 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={caseStudies3AnimationVariants}
+              className="flex-1 rounded-2xl flex flex-col items-start justify-start gap-4"
+            >
               <div className="self-stretch rounded-xl bg-white overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch overflow-hidden flex flex-col items-start justify-start pt-4 px-4 pb-2">
                   <div className="self-stretch flex flex-row items-center justify-between gap-0">
@@ -565,8 +666,8 @@ const CaseStudies = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
     );

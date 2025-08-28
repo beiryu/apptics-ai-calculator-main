@@ -153,7 +153,13 @@ const OurTeam = () => {
               </div>
               <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[150%] text-gray-200">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore `}</div>
             </motion.div>
-            <div className="self-stretch rounded-3xl bg-white overflow-hidden flex flex-col items-start justify-start py-6 px-4 gap-8 text-2xl text-gray-300 font-plus-jakarta-sans">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.01 }}
+              variants={scrollAnimationVariants}
+              className="self-stretch rounded-3xl bg-white overflow-hidden flex flex-col items-start justify-start py-6 px-4 gap-8 text-2xl text-gray-300 font-plus-jakarta-sans"
+            >
               <div className="self-stretch flex flex-row items-center justify-start gap-4 overflow-x-auto pb-4">
                 {teamMembers.map((member, index) => (
                   <TeamMember
@@ -164,7 +170,7 @@ const OurTeam = () => {
                   />
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </>

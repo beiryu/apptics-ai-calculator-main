@@ -36,7 +36,7 @@ const Benefits = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.01, margin: "-150px" }}
               variants={scrollAnimationVariants}
               className="self-stretch flex flex-col items-center justify-start relative gap-5"
             >
@@ -436,7 +436,7 @@ const Benefits = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.01, margin: "-150px" }}
               variants={scrollAnimationVariants}
               className="w-full max-w-[780px] flex flex-col items-center justify-start relative gap-6"
             >
@@ -467,7 +467,7 @@ const Benefits = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.01, margin: "-150px" }}
               variants={scrollAnimationVariants}
               className="self-stretch flex flex-row items-center justify-start gap-5 text-left text-sm text-gray-300"
             >

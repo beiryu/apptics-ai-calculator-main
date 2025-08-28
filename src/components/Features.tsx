@@ -2,13 +2,16 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { scrollAnimationVariants } from "@/libs/framer-motion";
+import FeaturesCard1FramerComponent from "@/components/framer/card/features-card-1";
+import FeaturesCard2FramerComponent from "@/components/framer/card/features-card-2";
+import FeaturesCard3FramerComponent from "@/components/framer/card/features-card-3";
 
 const Features = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 1024);
+      setIsMobile(window.innerWidth < 1280);
     };
 
     // Initial check
@@ -30,7 +33,7 @@ const Features = () => {
           className="self-stretch flex flex-col items-center justify-start py-0 px-5 sm:px-20 md:px-32 z-[3]"
         >
           <div className="self-stretch flex flex-col items-center justify-start py-12 px-0 gap-12">
-            <motion.b
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -61,9 +64,45 @@ const Features = () => {
               <div className="w-[270.3px] relative text-sm tracking-[-0.01em] leading-[150%] text-gray-200 inline-block z-[2]">
                 Everything you need to build and scale subscriptions – all in one platform.
               </div>
-            </motion.b>
+            </motion.div>
             <div className="w-full self-stretch flex flex-col items-start justify-center gap-5 text-left text-gray-300 font-plus-jakarta-sans">
-              <motion.b
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end"
+              >
+                <FeaturesCard1FramerComponent.Responsive
+                  className="w-full"
+                  style={{ width: "100%" }}
+                />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end"
+              >
+                <FeaturesCard2FramerComponent.Responsive
+                  className="w-full"
+                  style={{ width: "100%" }}
+                />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={scrollAnimationVariants}
+                className="w-full shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] overflow-hidden flex flex-col items-start justify-end"
+              >
+                <FeaturesCard3FramerComponent.Responsive
+                  className="w-full"
+                  style={{ width: "100%" }}
+                />
+              </motion.div>
+              {/* <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -141,8 +180,8 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </motion.b>
-              <motion.b
+              </motion.div>
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -223,8 +262,8 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </motion.b>
-              <motion.b
+              </motion.div>
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -361,7 +400,7 @@ const Features = () => {
                     </div>
                   </div>
                 </div>
-              </motion.b>
+              </motion.div> */}
             </div>
           </div>
         </div>
@@ -409,8 +448,40 @@ const Features = () => {
               Everything you need to build and scale subscriptions – all in one platform.
             </div>
           </motion.div>
-          <div className="self-stretch flex flex-col md:flex-row items-center justify-start gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
+          <div className="self-stretch flex flex-col md:flex-row items-center justify-center gap-5 text-left text-xl text-gray-300 font-plus-jakarta-sans">
             <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border overflow-hidden flex flex-col items-start justify-end"
+            >
+              <FeaturesCard1FramerComponent.Responsive
+                title={"Create & Manage Subscriptions"}
+                subText={
+                  "Turn one-time buyers into subscribers without lifting a finger. We don't just, 'manage subscriptions' we build you a growth engine."
+                }
+              />
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border overflow-hidden flex flex-col items-start justify-end"
+            >
+              <FeaturesCard2FramerComponent.Responsive />
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={scrollAnimationVariants}
+              className="shadow-[0px_24px_35px_-12px_rgba(27,_40,_66,_0.05),_0px_3px_1px_rgba(255,_255,_255,_0.25)_inset] rounded-2xl bg-gray-100 border-white border-solid border-[0.8px] box-border overflow-hidden flex flex-col items-start justify-end"
+            >
+              <FeaturesCard3FramerComponent.Responsive />
+            </motion.div>
+            {/* <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -724,7 +795,7 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

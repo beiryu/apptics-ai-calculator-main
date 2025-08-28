@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import FaqFramerComponent from "@/components/framer/component/faq";
 
 const Faqs = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -19,10 +19,6 @@ const Faqs = () => {
 
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
-
-  const toggleQuestion = (index: number) => {
-    setActiveQuestion(activeQuestion === index ? null : index);
-  };
 
   const MobileVersion = () => {
     const faqItems = [
@@ -121,7 +117,14 @@ const Faqs = () => {
               key={index}
               className="w-full shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden"
             >
-              <div
+              <FaqFramerComponent.Responsive
+                answer={item.answer}
+                question={item.question}
+                style={{
+                  width: "100%",
+                }}
+              />
+              {/* <div
                 className="w-full flex flex-row items-center justify-between p-4 cursor-pointer"
                 onClick={() => toggleQuestion(index)}
               >
@@ -145,7 +148,7 @@ const Faqs = () => {
                 <div className="px-4 pb-4 relative tracking-[-0.03em] leading-[150%] text-gray-700">
                   {item.answer}
                 </div>
-              )}
+              )} */}
             </div>
           ))}
 
@@ -298,9 +301,16 @@ const Faqs = () => {
                   {faqItems.map((item, index) => (
                     <div
                       key={`col1-${index}`}
-                      className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-6 gap-[14.5px]"
+                      className="w-full shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden"
                     >
-                      <div
+                      <FaqFramerComponent.Responsive
+                        answer={item.answer}
+                        question={item.question}
+                        style={{
+                          width: "100%",
+                        }}
+                      />
+                      {/* <div
                         className="self-stretch flex flex-row items-center justify-center gap-2.5 cursor-pointer"
                         onClick={() => toggleQuestion(index)}
                       >
@@ -326,7 +336,7 @@ const Faqs = () => {
                         className={`w-[540px] relative tracking-[-0.03em] leading-[150%] text-gray-700 ${activeQuestion === index ? "" : "hidden"}`}
                       >
                         {item.answer}
-                      </div>
+                      </div> */}
                     </div>
                   ))}
                 </div>
@@ -338,8 +348,6 @@ const Faqs = () => {
                   className="flex-1 flex flex-col items-start justify-start gap-4"
                 >
                   {faqItems2.map((item, index) => {
-                    const actualIndex = index + faqItems.length;
-
                     if (item.isContactUs) {
                       return (
                         <div
@@ -347,13 +355,13 @@ const Faqs = () => {
                           className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] box-border h-[74px] flex flex-col items-center justify-center p-6"
                         >
                           <div className="self-stretch flex flex-row items-center justify-center gap-2.5">
-                            <div className="flex-1 relative tracking-[-0.03em] leading-[150%] font-medium">
+                            <div className="flex-1 relative text-gray-1400 tracking-[-0.03em] leading-[150%] font-medium">
                               {item.question}
                             </div>
                             <Link
                               href="https://cal.com/akash-fmj/30min"
                               target="_blank"
-                              className="cursor-pointer hover:shadow-none transition-all duration-300 shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]"
+                              className="cursor-pointer transition-all duration-300 shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_9.735769271850586px_9.74px_rgba(11,_32,_103,_0.05),_0px_1.3908241987228394px_2.78px_rgba(11,_32,_103,_0.14),_0px_36.24705123901367px_48.33px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white overflow-hidden flex flex-row items-center justify-center py-3 px-4 gap-[14.4px]"
                             >
                               <div className="relative tracking-[-0.03em] font-medium">
                                 Contact Us
@@ -377,9 +385,16 @@ const Faqs = () => {
                     return (
                       <div
                         key={`col2-${index}`}
-                        className="self-stretch shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-6 gap-[14.5px]"
+                        className="w-full shadow-[0px_6px_4px_rgba(255,_255,_255,_0.36)_inset,_0px_2px_2px_-1px_rgba(11,_32,_103,_0.05),_0px_0px_30px_-4px_rgba(0,_0,_0,_0.03)] rounded-2xl bg-white border-white border-solid border-[1px] overflow-hidden"
                       >
-                        <div
+                        <FaqFramerComponent.Responsive
+                          answer={item.answer}
+                          question={item.question}
+                          style={{
+                            width: "100%",
+                          }}
+                        />
+                        {/* <div
                           className="self-stretch flex flex-row items-center justify-center gap-2.5 cursor-pointer"
                           onClick={() => toggleQuestion(actualIndex)}
                         >
@@ -400,12 +415,12 @@ const Faqs = () => {
                               }
                             />
                           </div>
-                        </div>
-                        <div
-                          className={`w-[540px] relative tracking-[-0.03em] leading-[150%] text-gray-700 ${activeQuestion === actualIndex ? "" : "hidden"}`}
+                        </div> */}
+                        {/* <div
+                          className={`w-[540px] relative tracking-[-0.03em] leading-[150%] text-gray-700 ${? "" : "hidden"}`}
                         >
                           {item.answer}
-                        </div>
+                        </div> */}
                       </div>
                     );
                   })}

@@ -166,7 +166,7 @@ const Hero: NextPage = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 1024);
+      setIsMobile(window.innerWidth < 1200);
     };
 
     // Initial check
@@ -212,11 +212,11 @@ const Hero: NextPage = () => {
                 className="self-stretch flex flex-col items-center justify-start gap-[9px] text-[47px] font-plus-jakarta-sans"
               >
                 <div className="self-stretch flex flex-col items-center justify-start gap-0.5">
-                  <b className="relative tracking-[-0.06em]">{`Turn your `}</b>
-                  <div className="h-[46px] flex flex-row items-center justify-start gap-[5px]">
+                  <b className="relative tracking-[-0.06em]">{`Turn your Shoppers into`}</b>
+                  {/* <div className="h-[46px] flex flex-row items-center justify-start gap-[5px]">
                     <b className="relative tracking-[-0.06em]">Shoppers</b>
                     <b className="relative tracking-[-0.06em]">into</b>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="h-[46px] flex flex-row items-center justify-start py-0 pl-0 pr-1 box-border gap-[5px]">
                   <div className="w-[51.9px] relative rounded-[12.32px] h-[51.9px] shrink-0 overflow-hidden flex items-center justify-center">
@@ -276,7 +276,7 @@ const Hero: NextPage = () => {
               </div> */}
             </motion.div>
           </div>
-          <div className="self-stretch relative h-[230px] text-left text-[6.97px] text-dimgray flex items-center justify-center">
+          <div className="self-stretch relative h-[230px] my-0 sm:my-5 md:my-10 lg:my-20 text-left text-[6.97px] text-dimgray flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-center -z-10">
               {/* Mobile Hero Animation/Images */}
               <MyLottieComponent animationType="hero" width="w-full" height="h-full" />
@@ -314,7 +314,7 @@ const Hero: NextPage = () => {
           className="self-stretch overflow-hidden flex flex-col items-center justify-start py-8 px-0 z-[2] text-gray-300 font-plus-jakarta-sans"
         >
           <div className="self-stretch relative rounded-2xl h-[102px] overflow-hidden shrink-0">
-            <div className="absolute top-[0px] left-[calc(50%_-_153.71px)] leading-[110%] font-medium inline-block w-[407.4px] mb-[30px] z-10">
+            <div className="absolute top-[0px] left-[0px] leading-[110%] font-medium inline-block w-full mb-[40px] z-10">
               Seamless Integration Across all your Apps
             </div>
             <div className="absolute top-[42px] w-full">

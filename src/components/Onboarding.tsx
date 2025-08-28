@@ -2,6 +2,7 @@ import { scrollAnimationVariants } from "@/libs/framer-motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import OnboardingCardFramerComponent from "./framer/card/onboarding-card";
 
 const Onboarding = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -350,6 +351,7 @@ const Onboarding = () => {
                 </div>
               </motion.div>
               <div className="self-stretch flex flex-col items-center justify-start gap-10 text-left text-sm text-white">
+                <OnboardingCardFramerComponent.Responsive />
                 <div className="self-stretch rounded-2xl bg-whitesmoke-400 border-gainsboro-200 border-solid border-[1px] box-border h-[380px] overflow-hidden shrink-0 flex flex-row items-center justify-start">
                   <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-end py-6 px-10 relative gap-4">
                     <div className="shadow-[0px_18px_7px_rgba(54,_58,_109,_0.09),_0px_8px_4px_rgba(0,_0,_0,_0.12),_0px_4px_4px_rgba(54,_58,_109,_0.51),_0px_1px_2px_rgba(54,_58,_109,_0.59)] rounded-[99px] [background:linear-gradient(137.69deg,_#12b2f9_44.5%,_#514dfa)] border-gray-900 border-solid border-[0.5px] overflow-hidden flex flex-row items-center justify-center py-1.5 px-[19px] z-[0]">

@@ -263,48 +263,46 @@ const SubCalculator: NextPage = () => {
             </div>
             {isMobile ? (
               <b className="w-full relative text-[28px] tracking-[-0.02em] leading-[130%] capitalize inline-block font-plus-jakarta-sans z-[1] text-center text-gray-300">
-                <p className="m-0">{`Calculate how Apptics `}</p>
-                <p className="m-0">{`could transform `}</p>
-                <p className="m-0">
-                  <span className="whitespace-pre-wrap">{`        `}</span>
-                  <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                    your business
+                <p className="m-0">{`Calculate how Apptics could transform `}</p>
+                <p className="m-0 relative">
+                  <span className="relative inline-block">
+                    <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                      your business
+                    </span>
+                    <div className="w-[56.2px] absolute top-[-10px] left-[-55px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
+                      <Image
+                        className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.457)]"
+                        width={56.2}
+                        height={56.2}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/calculator/Frame 2147227937.svg"
+                      />
+                    </div>
                   </span>
                 </p>
               </b>
             ) : (
-              <b className="w-[644.3px] relative text-[44px] tracking-[-0.02em] leading-[130%] capitalize inline-block font-plus-jakarta-sans z-[1] text-center text-gray-300">
-                <p className="m-0">Calculate how Apptics could</p>
-                <p className="m-0">
-                  <span className="whitespace-pre-wrap">{` transform         `}</span>
-                  <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                    your business
+              <b className="w-[844.3px] relative text-[44px] tracking-[-0.02em] leading-[130%] capitalize inline-block font-plus-jakarta-sans z-[1] text-center text-gray-300">
+                <p className="m-0">Calculate how Apptics could transform</p>
+                <p className="m-0 relative">
+                  <span className="relative inline-block">
+                    <span className="text-transparent !bg-clip-text [background:linear-gradient(90.31deg,_#12b2f9,_#514dfa)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                      your business
+                    </span>
+                    <div className="w-[56.2px] absolute top-[-5px] left-[-60px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
+                      <Image
+                        className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.757)]"
+                        width={56.2}
+                        height={56.2}
+                        sizes="100vw"
+                        alt=""
+                        src="/assets/calculator/Frame 2147227937.svg"
+                      />
+                    </div>
                   </span>
                 </p>
               </b>
-            )}
-            {isMobile ? (
-              <div className="w-[56.2px] absolute !!m-[0 important] top-[130px] left-[150px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
-                <Image
-                  className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.757)]"
-                  width={56.2}
-                  height={56.2}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/calculator/Frame 2147227937.svg"
-                />
-              </div>
-            ) : (
-              <div className="w-[56.2px] absolute !!m-[0 important] top-[118.92px] left-[330.24px] rounded-2xl h-[56.2px] shrink-0 overflow-hidden flex items-center justify-center z-[2]">
-                <Image
-                  className="w-full h-full overflow-hidden shrink-0 object-cover absolute left-[0px] top-[26px] [transform:scale(1.757)]"
-                  width={56.2}
-                  height={56.2}
-                  sizes="100vw"
-                  alt=""
-                  src="/assets/calculator/Frame 2147227937.svg"
-                />
-              </div>
             )}
           </motion.div>
           <motion.div
@@ -312,9 +310,9 @@ const SubCalculator: NextPage = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
             variants={scrollAnimationVariants}
-            className="max-w-[1050px] shadow-[0px_0px_8px_4px_rgba(255,_255,_255,_0.69)_inset,_0px_0px_24px_8px_rgba(255,_255,_255,_0.8)_inset] rounded-[32px] overflow-hidden mx-auto px-4 py-6 w-full flex flex-col items-start gap-4 lg:gap-6 relative text-left"
+            className="max-w-[1050px] shadow-xs bg-white rounded-[32px] overflow-hidden mx-auto px-4 py-6 w-full flex flex-col items-start gap-4 lg:gap-6 relative text-left"
           >
-            <div className="rounded-[32px] max-w-[1020px] overflow-hidden mx-auto w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6 relative text-left">
+            <div className="max-w-[1020px] overflow-hidden mx-auto w-full flex flex-col lg:flex-row items-start gap-4 lg:gap-6 relative text-left">
               <div className="w-full lg:w-[400px] h-auto lg:h-[532px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] box-border overflow-hidden flex flex-col items-start justify-start p-5 z-[3]">
                 <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-6">
                   <div className="self-stretch flex flex-row items-center justify-start gap-4">
@@ -509,7 +507,7 @@ const SubCalculator: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[532px] z-[3]">
+              <div className="w-full flex-1 flex flex-col items-stretch justify-between gap-4 lg:gap-8.5 text-lg h-auto lg:h-[540px] pb-2 z-[3]">
                 <div className="w-full lg:h-[330px] h-[420px] shadow-[0px_6px_4px_rgba(0,_0,_0,_0.08),_0px_0px_12px_5px_rgba(255,_255,_255,_0.5)_inset] rounded-[20px] bg-white border-aliceblue-300 border-solid border-[1px] overflow-hidden flex flex-col items-center justify-start p-4 lg:p-5 gap-3 lg:gap-4">
                   <div className="self-stretch flex flex-row items-center justify-start gap-1 text-left text-xl">
                     <div className="relative tracking-[-0.02em] leading-[110%] font-semibold text-gray-300">
